@@ -13,3 +13,6 @@ D:\Work\Ds Project\Course Prerequsites WPF\obj\Debug\Course Prerequsites WPF.csp
 D:\Work\Ds Project\Course Prerequsites WPF\obj\Debug\Course Prerequsites WPF.csproj.CoreCompileInputs.cache
 D:\Work\Ds Project\Course Prerequsites WPF\obj\Debug\Course Prerequsites WPF.exe
 D:\Work\Ds Project\Course Prerequsites WPF\obj\Debug\Course Prerequsites WPF.pdb
+D:\Work\Ds Project\Course Prerequsites WPF\obj\Debug\UIs\AllCoursesTree.g.cs
+D:\Work\Ds Project\Course Prerequsites WPF\obj\Debug\Course Prerequsites WPF_Content.g.cs
+D:\Work\Ds Project\Course Prerequsites WPF\obj\Debug\UIs\AllCoursesTree.baml
