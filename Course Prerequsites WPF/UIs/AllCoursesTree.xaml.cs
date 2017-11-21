@@ -31,7 +31,10 @@ namespace Course_Prerequsites_WPF.UIs
             {
                 var branch = new TreeViewItem();
                 branch.Header = item;
+                branch.Tag = item;
+
                 AllCourses.Items.Add(branch);
+                branch.Items.Add(null);
             }
         }
     }

@@ -8,8 +8,6 @@
         mc:Ignorable="d"
         Title="AllCoursesTree" Height="700" Width="700">
 
-
-
     <Grid>
         <TreeView x:Name="AllCourses">
             <TreeView.Resources>
@@ -18,16 +16,14 @@
                         <Setter.Value>
                             <DataTemplate>
                                 <StackPanel Orientation="Horizontal">
-                                    <Image Margin="5,0,5,0" Height="30px" Width="30px" Source="/Images/Math1.jpg"/>
+                                    <Image Margin="5" Width="30px" Source="/Images/Pic.jpg"/>
                                     <TextBlock Text="{Binding}" VerticalAlignment="Center"/>
                                 </StackPanel>
                             </DataTemplate>
                         </Setter.Value>
                     </Setter>
                 </Style>
-
             </TreeView.Resources>
         </TreeView>
     </Grid>
-
 </Window>
