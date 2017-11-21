@@ -40,21 +40,29 @@ namespace Course_Prerequsites_WPF.Classes
             FileStream fs = new FileStream("ReadingTrial.txt", FileMode.Open);
             StreamReader sr = new StreamReader(fs);
 
+            // 3 string arrays 
             string[] fileds;
             string[] records;
             string[] prerequirds;
 
+            //list of prerequired courses 
             List<string> pr = new List<string>();
+
+            //List of objects <this is the return of the function>
             List<Course> l = new List<Course>();
 
             while (sr.Peek() != -1)
             {
+                //splits the inputs into Courses (using the # delimter)
                 records = sr.ReadLine().Split('#');
+
+                //loops until it reaches the number of courses
 
                 for (int i = 0; i < records.Length - 1; i++)
                 {
+                    //splits each course into number of feilds  
                     fileds = records[i].Split('%');
-
+                    //the course details
                     Code = fileds[0];
                     CourseName = fileds[1];
                     MaximumNumberOfStudents = fileds[2];
@@ -63,18 +71,26 @@ namespace Course_Prerequsites_WPF.Classes
                     Hours = fileds[5];
                     Instructor = fileds[6];
                     Description = fileds[7];
+
+                    //creates an array of the PreREquried subjects 
                     prerequirds = fileds[8].Split('*');
 
+                    //fills the array that exists in the class with the one in the file
                     for (int j = 0; j < prerequirds.Length; j++)
                     {
                         pr.Add(prerequirds[j]);
                     }
                 }
 
+
+                //Creates a costume obkject of the courses cllass 
                 Course c = new Course(Code, CourseName, MaximumNumberOfStudents, PassingGrade, CourseGrade, Hours, Instructor, Description, PreRequiredCourses);
+
+                //adds it ot the list pf Courss
                 l.Add(c);
             }
 
+            //returns list of objs
             return l;
 
         }
