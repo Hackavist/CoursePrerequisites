@@ -16,3 +16,20 @@ D:\Work\Ds Project\Course Prerequsites WPF\obj\Debug\Course Prerequsites WPF.pdb
 D:\Work\Ds Project\Course Prerequsites WPF\obj\Debug\UIs\AllCoursesTree.g.cs
 D:\Work\Ds Project\Course Prerequsites WPF\obj\Debug\Course Prerequsites WPF_Content.g.cs
 D:\Work\Ds Project\Course Prerequsites WPF\obj\Debug\UIs\AllCoursesTree.baml
+E:\Course Prerequisits\Course Prerequsites WPF\bin\Debug\Course Prerequsites WPF.exe.config
+E:\Course Prerequisits\Course Prerequsites WPF\obj\Debug\Course Prerequsites WPF.exe
+E:\Course Prerequisits\Course Prerequsites WPF\obj\Debug\Course Prerequsites WPF.pdb
+E:\Course Prerequisits\Course Prerequsites WPF\bin\Debug\Course Prerequsites WPF.exe
+E:\Course Prerequisits\Course Prerequsites WPF\bin\Debug\Course Prerequsites WPF.pdb
+E:\Course Prerequisits\Course Prerequsites WPF\obj\Debug\Course Prerequsites WPF.csprojResolveAssemblyReference.cache
+E:\Course Prerequisits\Course Prerequsites WPF\obj\Debug\UIs\AllCoursesTree.g.cs
+E:\Course Prerequisits\Course Prerequsites WPF\obj\Debug\UIs\MainWindow.g.cs
+E:\Course Prerequisits\Course Prerequsites WPF\obj\Debug\App.g.cs
+E:\Course Prerequisits\Course Prerequsites WPF\obj\Debug\Course Prerequsites WPF_Content.g.cs
+E:\Course Prerequisits\Course Prerequsites WPF\obj\Debug\Course Prerequsites WPF_MarkupCompile.cache
+E:\Course Prerequisits\Course Prerequsites WPF\obj\Debug\Course Prerequsites WPF_MarkupCompile.lref
+E:\Course Prerequisits\Course Prerequsites WPF\obj\Debug\UIs\AllCoursesTree.baml
+E:\Course Prerequisits\Course Prerequsites WPF\obj\Debug\UIs\MainWindow.baml
+E:\Course Prerequisits\Course Prerequsites WPF\obj\Debug\Course Prerequsites WPF.g.resources
+E:\Course Prerequisits\Course Prerequsites WPF\obj\Debug\Course_Prerequsites_WPF.Properties.Resources.resources
+E:\Course Prerequisits\Course Prerequsites WPF\obj\Debug\Course Prerequsites WPF.csproj.GenerateResource.Cache
