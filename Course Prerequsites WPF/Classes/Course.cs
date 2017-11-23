@@ -78,7 +78,27 @@ namespace Course_Prerequsites_WPF.Classes
             return l;
 
         }
-
+        //Function to give a certain course with all it's information
+        public Course ObjectDetails(string Name)
+        {
+            List<Course> Objects = AllCourses();//Read all Courses from file in alist using this funtion
+            bool check = false;//To chaeck if this course exist or not
+            foreach (Course x in Objects)//loop to search for certaion subjects in all the subjects
+            {
+                if (x.CourseName == Name)
+                {
+                    check = true;
+                    return x;
+                }
+            }
+            if (check == false)
+            {
+                Console.WriteLine("Not Found!!");
+                return null;
+            }
+            else return null;
+        }
 
     }
+
 }
