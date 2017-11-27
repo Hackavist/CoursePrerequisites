@@ -12,6 +12,7 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
 using System.IO;
+using Course_Prerequsites_WPF.Classes;
 
 namespace Course_Prerequsites_WPF.UIs
 {
@@ -28,6 +29,7 @@ namespace Course_Prerequsites_WPF.UIs
         //tree Parents Appear On Load
         private void Window_Loaded(object sender, RoutedEventArgs e)
         {
+            /*
             // get every local drive on the machine 
             foreach(var item in Directory.GetLogicalDrives() )
             {
@@ -46,6 +48,22 @@ namespace Course_Prerequsites_WPF.UIs
 
                 AllCourses.Items.Add(branch);
                 branch.Items.Add(null);
+            }*/
+
+            List<Course> AllCoursesObj = new List<Course> () ;
+            Course cour = new Course();
+            AllCoursesObj= cour.GetAllCourses();
+
+            foreach (var course in AllCoursesObj)
+            {
+                var branch = new TreeViewItem();
+
+                branch.Header = course.CourseName;
+                branch.Tag = course.CourseName;
+
+                AllCourses.Items.Add(branch);
+                
+
             }
         }
 

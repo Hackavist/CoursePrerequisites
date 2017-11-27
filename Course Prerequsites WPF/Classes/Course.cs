@@ -8,7 +8,7 @@ using System.IO;
 
 namespace Course_Prerequsites_WPF.Classes
 {
-    class Course
+    public class Course
     {
         public string Code { get; set; }
         public string CourseName { get; set; }
@@ -20,8 +20,12 @@ namespace Course_Prerequsites_WPF.Classes
         public string Description { get; set; }
         public List<string> PreRequiredCourses { get; set; }
 
+        public Course()
+        {
 
-        Course(string code, string coursename, string Maximumnumber, string passinggrade, string coursegrade, string hours, string instructor, string description, List<string> pre)
+        }
+
+        public Course(string code, string coursename, string Maximumnumber, string passinggrade, string coursegrade, string hours, string instructor, string description, List<string> pre)
         {
             Code = code;
             CourseName = coursename;
@@ -35,7 +39,7 @@ namespace Course_Prerequsites_WPF.Classes
         }
 
 
-        public List<Course> AllCourses()
+        public List<Course> GetAllCourses()
         {
             FileStream fs = new FileStream("ReadingTrial.txt", FileMode.Open);
             StreamReader sr = new StreamReader(fs);
@@ -79,15 +83,15 @@ namespace Course_Prerequsites_WPF.Classes
                     for (int j = 0; j < prerequirds.Length; j++)
                     {
                         pr.Add(prerequirds[j]);
+                        //Creates a costume obkject of the courses cllass 
+                        Course c = new Course(Code, CourseName, MaximumNumberOfStudents, PassingGrade, CourseGrade, Hours, Instructor, Description, PreRequiredCourses);
+
+                        //adds it ot the list pf Courss
+                        l.Add(c);
                     }
                 }
 
 
-                //Creates a costume obkject of the courses cllass 
-                Course c = new Course(Code, CourseName, MaximumNumberOfStudents, PassingGrade, CourseGrade, Hours, Instructor, Description, PreRequiredCourses);
-
-                //adds it ot the list pf Courss
-                l.Add(c);
             }
 
             //returns list of objs
