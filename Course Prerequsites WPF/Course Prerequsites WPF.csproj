@@ -103,10 +103,6 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Images\Math1.jpg" />
-    <Content Include="Images\Math2.jpg" />
-    <Content Include="Images\Math3.jpg" />
-    <Content Include="Images\Math4.jpg" />
     <Resource Include="Images\Pic.jpg" />
     <Resource Include="TextFiles\ReadingTrial.txt" />
   </ItemGroup>

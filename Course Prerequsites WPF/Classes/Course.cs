@@ -35,13 +35,18 @@ namespace Course_Prerequsites_WPF.Classes
             Hours = hours;
             Instructor = instructor;
             Description = description;
-            PreRequiredCourses = pre;
+            PreRequiredCourses = new List<string>();
+
+            foreach (var item in pre)
+            {
+                PreRequiredCourses.Add(item);
+            }
         }
 
 
         public List<Course> GetAllCourses()
         {
-            FileStream fs = new FileStream("ReadingTrial.txt", FileMode.Open);
+            FileStream fs = new FileStream("ReadingTrial.txt", FileMode.Open,FileAccess.Read);
             StreamReader sr = new StreamReader(fs);
 
             // 3 string arrays 
@@ -83,12 +88,12 @@ namespace Course_Prerequsites_WPF.Classes
                     for (int j = 0; j < prerequirds.Length; j++)
                     {
                         pr.Add(prerequirds[j]);
-                        //Creates a costume obkject of the courses cllass 
-                        Course c = new Course(Code, CourseName, MaximumNumberOfStudents, PassingGrade, CourseGrade, Hours, Instructor, Description, PreRequiredCourses);
-
-                        //adds it ot the list pf Courss
-                        l.Add(c);
                     }
+                    //Creates a costume obkject of the courses cllass 
+                    Course c = new Course(Code, CourseName, MaximumNumberOfStudents, PassingGrade, CourseGrade, Hours, Instructor, Description, pr);
+
+                    //adds it ot the list pf Courss
+                    l.Add(c);
                 }
 
 
@@ -98,6 +103,7 @@ namespace Course_Prerequsites_WPF.Classes
             return l;
 
         }
+
         //Function to give a certain course with all it's information
         public Course ObjectDetails(string Name)
         {
@@ -113,7 +119,6 @@ namespace Course_Prerequsites_WPF.Classes
             }
             if (check == false)
             {
-                Console.WriteLine("Not Found!!");
                 return null;
             }
             else return null;
