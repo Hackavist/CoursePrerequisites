@@ -25,7 +25,7 @@ namespace Course_Prerequsites_WPF.UIs
         {
             InitializeComponent();
         }
-        
+
         //tree Parents Appear On Load
         private void Window_Loaded(object sender, RoutedEventArgs e)
         {
@@ -50,19 +50,22 @@ namespace Course_Prerequsites_WPF.UIs
                 branch.Items.Add(null);
             }*/
 
-            List<Course> AllCoursesObj = new List<Course> () ;
+            List<Course> AllCoursesObj = new List<Course>();
             Course cour = new Course();
-            AllCoursesObj= cour.GetAllCourses();
+            AllCoursesObj = cour.GetAllCourses();
 
             foreach (var course in AllCoursesObj)
             {
                 var branch = new TreeViewItem();
 
                 branch.Header = course.CourseName;
-                branch.Tag = course.CourseName;
 
                 AllCourses.Items.Add(branch);
-                
+
+                foreach (var pre in course.PreRequiredCourses)
+                {
+                    branch.Items.Add(course.ObjectDetails(pre));
+                }
 
             }
         }
@@ -71,7 +74,7 @@ namespace Course_Prerequsites_WPF.UIs
         {
             var item = (TreeViewItem)sender;
             //checks if the containing are dummy data  
-            if (item.Items.Count!=1||item.Items[0]!=null)
+            if (item.Items.Count != 1 || item.Items[0] != null)
             {
                 return;
             }
@@ -80,7 +83,7 @@ namespace Course_Prerequsites_WPF.UIs
             item.Items.Clear();
 
             //Get folder path
-            var Branchpath = (string) item.Tag; ;
+            var Branchpath = (string)item.Tag; ;
 
 
         }

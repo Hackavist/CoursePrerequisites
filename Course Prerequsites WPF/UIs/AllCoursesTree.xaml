@@ -15,9 +15,14 @@
                     <Setter Property="HeaderTemplate">
                         <Setter.Value>
                             <DataTemplate>
-                                <StackPanel Orientation="Horizontal">
-                                    <Image Margin="5" Width="30px" Source="/Images/Pic.jpg"/>
+                                <StackPanel>
+                                    <!-- <Image Margin="5" Width="30px" Source="/Images/Pic.jpg"/>
                                     <TextBlock x:Name="TreeLine" Text="{Binding}"  VerticalAlignment="Center"/>
+                                       -->
+                                    <Grid Width="200" Height="100">
+                                        <Ellipse Margin="10,10,10,10" Fill="CornflowerBlue" Stroke="Black"/>
+                                        <TextBlock HorizontalAlignment="Center" Text="{Binding}" TextAlignment="Center" VerticalAlignment="Center"/>
+                                    </Grid>
                                 </StackPanel>
                             </DataTemplate>
                         </Setter.Value>
@@ -26,4 +31,5 @@
             </TreeView.Resources>
         </TreeView>
     </Grid>
+
 </Window>
