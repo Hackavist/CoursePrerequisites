@@ -83,12 +83,12 @@ namespace Course_Prerequsites_WPF.Classes
                     for (int j = 0; j < prerequirds.Length; j++)
                     {
                         pr.Add(prerequirds[j]);
-                        //Creates a costume obkject of the courses cllass 
-                        Course c = new Course(Code, CourseName, MaximumNumberOfStudents, PassingGrade, CourseGrade, Hours, Instructor, Description, PreRequiredCourses);
-
-                        //adds it ot the list pf Courss
-                        l.Add(c);
                     }
+                    //Creates a costume obkject of the courses cllass 
+                    Course c = new Course(Code, CourseName, MaximumNumberOfStudents, PassingGrade, CourseGrade, Hours, Instructor, Description, PreRequiredCourses);
+
+                    //adds it ot the list pf Courss
+                    l.Add(c);
                 }
 
 
@@ -112,8 +112,7 @@ namespace Course_Prerequsites_WPF.Classes
                 }
             }
             if (check == false)
-            {
-                Console.WriteLine("Not Found!!");
+            { 
                 return null;
             }
             else return null;

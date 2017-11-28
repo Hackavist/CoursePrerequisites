@@ -33,3 +33,5 @@ E:\Course Prerequisits\Course Prerequsites WPF\obj\Debug\UIs\MainWindow.baml
 E:\Course Prerequisits\Course Prerequsites WPF\obj\Debug\Course Prerequsites WPF.g.resources
 E:\Course Prerequisits\Course Prerequsites WPF\obj\Debug\Course_Prerequsites_WPF.Properties.Resources.resources
 E:\Course Prerequisits\Course Prerequsites WPF\obj\Debug\Course Prerequsites WPF.csproj.GenerateResource.Cache
+E:\Course Prerequisits\Course Prerequsites WPF\obj\Debug\UIs\CourseDetails.g.cs
+E:\Course Prerequisits\Course Prerequsites WPF\obj\Debug\UIs\CourseDetails.baml

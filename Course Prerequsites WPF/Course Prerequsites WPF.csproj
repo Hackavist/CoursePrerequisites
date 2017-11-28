@@ -54,7 +54,14 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Compile Include="UIs\w2.xaml.cs">
+      <DependentUpon>w2.xaml</DependentUpon>
+    </Compile>
     <Page Include="UIs\AllCoursesTree.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="UIs\CourseDetails.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -70,10 +77,17 @@
     <Compile Include="UIs\AllCoursesTree.xaml.cs">
       <DependentUpon>AllCoursesTree.xaml</DependentUpon>
     </Compile>
+    <Compile Include="UIs\CourseDetails.xaml.cs">
+      <DependentUpon>CourseDetails.xaml</DependentUpon>
+    </Compile>
     <Compile Include="UIs\MainWindow.xaml.cs">
       <DependentUpon>MainWindow.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
+    <Page Include="UIs\w2.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Properties\AssemblyInfo.cs">
@@ -103,12 +117,11 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Images\Math1.jpg" />
-    <Content Include="Images\Math2.jpg" />
-    <Content Include="Images\Math3.jpg" />
-    <Content Include="Images\Math4.jpg" />
     <Resource Include="Images\Pic.jpg" />
     <Resource Include="TextFiles\ReadingTrial.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\1.jpg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
