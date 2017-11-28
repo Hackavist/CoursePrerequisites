@@ -101,7 +101,7 @@ namespace Course_Prerequsites_WPF.Classes
         //Function to give a certain course with all it's information
         public Course ObjectDetails(string Name)
         {
-            List<Course> Objects = AllCourses();//Read all Courses from file in alist using this funtion
+            List<Course> Objects = GetAllCourses();//Read all Courses from file in alist using this funtion
             bool check = false;//To chaeck if this course exist or not
             foreach (Course x in Objects)//loop to search for certaion subjects in all the subjects
             {
