@@ -25,20 +25,28 @@ namespace Course_Prerequsites_WPF.UIs
             InitializeComponent();
         }
 
+        // Fills up the form with the data of the course
+
         private void Window_Loaded(object sender, RoutedEventArgs e)
         {
-           Course obj = new Course();
-            obj = obj.ObjectDetails("Math3");
+            Course obj = new Course();
+
+            obj = obj.ObjectDetails("Math3");//Call the Function ObjectDetails to getbthe data of Math3
+
             CourseTitle.Text = obj.CourseName;
+
             CourseInstructor.Text = obj.Instructor;
+
             CourseHours.Text = obj.Hours;
 
+            CourseGrades.Text = obj.CourseGrade;
+
+            NotesBlock.Text = obj.Description;
+
 
         }
 
-        private void LeadToWindow2_Click(object sender, RoutedEventArgs e)
-        {
-            CourseDetails.cont
-        }
+     
+        
     }
 }

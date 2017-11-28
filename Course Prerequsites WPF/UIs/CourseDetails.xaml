@@ -8,22 +8,26 @@
         mc:Ignorable="d"
         Title="CourseDetails" Height="300" Width="300">
     <Grid Background="Khaki">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+            <ColumnDefinition Width="0*"/>
+            <ColumnDefinition Width="0*"/>
+        </Grid.ColumnDefinitions>
 
-        <TextBlock x:Name="CourseTitle" FontSize="20" HorizontalAlignment="Left" TextWrapping="Wrap" Text="TextBlock" VerticalAlignment="Top" Margin="120,19,0,0"/>
-        <TextBlock x:Name="Hours" FontSize="15" HorizontalAlignment="Left" Margin="21,64,0,0" TextWrapping="Wrap" Text="CourseHourse:-" VerticalAlignment="Top"/>
-        <TextBlock x:Name="Grades" FontSize="15" HorizontalAlignment="Left" Margin="21,95,0,0" TextWrapping="Wrap" Text="CourseGrades:-" VerticalAlignment="Top"/>
-        <TextBlock x:Name="Instructor" FontSize="15" HorizontalAlignment="Left" Margin="21,125,0,0" TextWrapping="Wrap" Text="Instructor:-" VerticalAlignment="Top"/>
-        <TextBlock x:Name="Notes" FontSize="14" HorizontalAlignment="Left" Margin="21,154,0,0" TextWrapping="Wrap" Text="Notes" VerticalAlignment="Top"/>
-        <TextBox x:Name="NotesTextBox" FontSize="15" HorizontalAlignment="Left" Height="48" Margin="65,156,0,0" TextWrapping="Wrap" Text="&#xD;&#xA;" VerticalAlignment="Top" Width="185"/>
+        <TextBlock x:Name="CourseTitle" FontSize="20" HorizontalAlignment="Left" TextWrapping="Wrap" Text="TextBlock" VerticalAlignment="Top" Margin="120,19,0,0" Height="27" Width="82"/>
+        <TextBlock x:Name="Hours" FontSize="15" HorizontalAlignment="Left" Margin="21,64,0,0" TextWrapping="Wrap" Text="CourseHourse:-" VerticalAlignment="Top" Height="20" Width="103"/>
+        <TextBlock x:Name="Grades" FontSize="15" HorizontalAlignment="Left" Margin="21,95,0,0" TextWrapping="Wrap" Text="CourseGrades:-" VerticalAlignment="Top" Height="20" Width="101"/>
+        <TextBlock x:Name="Instructor" FontSize="15" HorizontalAlignment="Left" Margin="21,125,0,0" TextWrapping="Wrap" Text="Instructor:-" VerticalAlignment="Top" Height="20" Width="73"/>
+        <TextBlock x:Name="Notes" FontSize="14" HorizontalAlignment="Left" Margin="21,154,0,0" TextWrapping="Wrap" Text="Notes" VerticalAlignment="Top" Height="19" Width="37"/>
 
         <!--
         ////////////////////////////////////////////////////////////////////////////
         -->
 
-        <TextBlock x:Name="CourseHours" HorizontalAlignment="Right" Margin="0,68,20,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="145"/>
-        <TextBlock x:Name="CourseGrades" HorizontalAlignment="Right" Margin="0,95,20,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="150"/>
-        <TextBlock x:Name="CourseInstructor" HorizontalAlignment="Right" Margin="0,129,33,0" TextWrapping="Wrap" Text=" " VerticalAlignment="Top" Width="160"/>
-        <Button x:Name="LeadToWindow2" Content="Back" HorizontalAlignment="Left" Margin="235,239,0,0" VerticalAlignment="Top" Width="47" Click="LeadToWindow2_Click"/>
+        <TextBlock x:Name="CourseHours" HorizontalAlignment="Left" Margin="129,68,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="145" Height="16"/>
+        <TextBlock x:Name="CourseGrades" HorizontalAlignment="Left" Margin="132,99,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="150" Height="16"/>
+        <TextBlock x:Name="CourseInstructor" HorizontalAlignment="Left" Margin="99,132,0,0" TextWrapping="Wrap" Text=" " VerticalAlignment="Top" Width="160" Height="16"/>
+        <TextBlock x:Name="NotesBlock" FontSize="10" HorizontalAlignment="Left" Margin="70,160,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Height="60" Width="180"/>
 
 
     </Grid>
