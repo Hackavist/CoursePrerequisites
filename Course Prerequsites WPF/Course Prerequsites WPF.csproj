@@ -107,6 +107,7 @@
     <Content Include="Images\Math2.jpg" />
     <Content Include="Images\Math3.jpg" />
     <Content Include="Images\Math4.jpg" />
+    <Resource Include="Images\Pic.jpg" />
     <Resource Include="TextFiles\ReadingTrial.txt" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
