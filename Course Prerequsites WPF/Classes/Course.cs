@@ -12,24 +12,34 @@ namespace Course_Prerequsites_WPF.Classes
     {
         public string Code { get; set; }
         public string CourseName { get; set; }
-        public string MaximumNumberOfStudents { get; set; }
-        public string PassingGrade { get; set; }
-        public string CourseGrade { get; set; }
-        public string Hours { get; set; }
+        public int MaximumNumberOfStudents { get; set; }
+        public int CurrentNumberOfStudents { get; set; }
+        public int PassingGrade { get; set; }
+        public int CourseGrade { get; set; }
+        public int Hours { get; set; }
         public string Instructor { get; set; }
         public string Description { get; set; }
         public List<string> PreRequiredCourses { get; set; }
 
         public Course()
         {
-
+            Code = "";
+            CourseName = "";
+            MaximumNumberOfStudents = 0;
+            CurrentNumberOfStudents = 0;
+            PassingGrade = 0;
+            CourseGrade = 0;
+            Hours = 0;
+            Instructor = "";
+            Description = "";
         }
 
-        public Course(string code, string coursename, string Maximumnumber, string passinggrade, string coursegrade, string hours, string instructor, string description, List<string> pre)
+        public Course(string code, string coursename, int Maximumnumber, int CurrentNumber, int passinggrade, int coursegrade, int hours, string instructor, string description, List<string> pre)
         {
             Code = code;
             CourseName = coursename;
             MaximumNumberOfStudents = Maximumnumber;
+            CurrentNumberOfStudents = CurrentNumber;
             PassingGrade = passinggrade;
             CourseGrade = coursegrade;
             Hours = hours;
@@ -43,10 +53,9 @@ namespace Course_Prerequsites_WPF.Classes
             }
         }
 
-
-        public List<Course> GetAllCourses()
+        public Dictionary<string, Course> GetAllCourses()
         {
-            FileStream fs = new FileStream("ReadingTrial.txt", FileMode.Open,FileAccess.Read);
+            FileStream fs = new FileStream("AllCoursesFile.txt", FileMode.Open, FileAccess.Read);
             StreamReader sr = new StreamReader(fs);
 
             // 3 string arrays 
@@ -58,7 +67,7 @@ namespace Course_Prerequsites_WPF.Classes
             List<string> pr = new List<string>();
 
             //List of objects <this is the return of the function>
-            List<Course> l = new List<Course>();
+            Dictionary<string, Course> M = new Dictionary<string, Course>();
 
             while (sr.Peek() != -1)
             {
@@ -74,15 +83,16 @@ namespace Course_Prerequsites_WPF.Classes
                     //the course details
                     Code = fileds[0];
                     CourseName = fileds[1];
-                    MaximumNumberOfStudents = fileds[2];
-                    PassingGrade = fileds[3];
-                    CourseGrade = fileds[4];
-                    Hours = fileds[5];
-                    Instructor = fileds[6];
-                    Description = fileds[7];
+                    MaximumNumberOfStudents = Convert.ToInt32(fileds[2]);
+                    CurrentNumberOfStudents = Convert.ToInt32(fileds[3]);
+                    PassingGrade = Convert.ToInt32(fileds[4]);
+                    CourseGrade = Convert.ToInt32(fileds[5]);
+                    Hours = Convert.ToInt32(fileds[6]);
+                    Instructor = fileds[7];
+                    Description = fileds[8];
 
                     //creates an array of the PreREquried subjects 
-                    prerequirds = fileds[8].Split('*');
+                    prerequirds = fileds[9].Split('*');
 
                     //fills the array that exists in the class with the one in the file
                     for (int j = 0; j < prerequirds.Length; j++)
@@ -90,31 +100,34 @@ namespace Course_Prerequsites_WPF.Classes
                         pr.Add(prerequirds[j]);
                     }
                     //Creates a costume obkject of the courses cllass 
-                    Course c = new Course(Code, CourseName, MaximumNumberOfStudents, PassingGrade, CourseGrade, Hours, Instructor, Description, pr);
+                    Course c = new Course(Code, CourseName, MaximumNumberOfStudents, CurrentNumberOfStudents, PassingGrade, CourseGrade, Hours, Instructor, Description, pr);
 
                     //adds it ot the list pf Courss
-                    l.Add(c);
+                    M[CourseName] = c;
+
                 }
 
 
             }
 
             //returns list of objs
-            return l;
+            return M;
 
         }
 
         //Function to give a certain course with all it's information
-        public Course ObjectDetails(string Name)
+        public Course ReturnObj(string Name)
         {
-            List<Course> Objects = GetAllCourses();//Read all Courses from file in alist using this funtion
+            Dictionary<string, Course> Objects = GetAllCourses();//Read all Courses from file in alist using this funtion
+
             bool check = false;//To chaeck if this course exist or not
-            foreach (Course x in Objects)//loop to search for certaion subjects in all the subjects
+
+            foreach (var x in Objects)//loop to search for certaion subjects in all the subjects
             {
-                if (x.CourseName == Name)
+                if (x.Key == Name)
                 {
                     check = true;
-                    return x;
+                    return x.Value;
                 }
             }
             if (check == false)

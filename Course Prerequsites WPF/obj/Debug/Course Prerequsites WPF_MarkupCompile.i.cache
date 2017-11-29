@@ -4,17 +4,17 @@
 winexe
 C#
 .cs
-E:\Course Prerequisits\Course Prerequsites WPF\obj\Debug\
+D:\Work\Ds Project\Course Prerequsites WPF\obj\Debug\
 Course_Prerequsites_WPF
 none
 false
 DEBUG;TRACE
-E:\Course Prerequisits\Course Prerequsites WPF\App.xaml
-2431445800
+D:\Work\Ds Project\Course Prerequsites WPF\App.xaml
+31001958586
 
-11-173642671
+131988887391
 131569487696
-UIs\AllCoursesTree.xaml;UIs\MainWindow.xaml;
+UIs\AllCoursesTree.xaml;UIs\MainWindow.xaml;UIs\MyCourses.xaml;
 
-True
+False
 

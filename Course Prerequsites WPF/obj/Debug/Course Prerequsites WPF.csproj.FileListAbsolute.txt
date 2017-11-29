@@ -35,3 +35,5 @@ E:\Course Prerequisits\Course Prerequsites WPF\obj\Debug\UIs\CourseDetails.g.cs
 E:\Course Prerequisits\Course Prerequsites WPF\obj\Debug\UIs\CourseDetails.baml
 E:\Course Prerequisits\Course Prerequsites WPF\obj\Debug\UIs\w2.g.cs
 E:\Course Prerequisits\Course Prerequsites WPF\obj\Debug\UIs\w2.baml
+D:\Work\Ds Project\Course Prerequsites WPF\obj\Debug\UIs\MyCourses.g.cs
+D:\Work\Ds Project\Course Prerequsites WPF\obj\Debug\UIs\MyCourses.baml

@@ -50,7 +50,7 @@ namespace Course_Prerequsites_WPF.UIs
                 branch.Items.Add(null);
             }*/
 
-            List<Course> AllCoursesObj = new List<Course>();
+            Dictionary<string,Course> AllCoursesObj = new Dictionary<string, Course>();
             Course cour = new Course();
             AllCoursesObj = cour.GetAllCourses();
 
@@ -58,14 +58,18 @@ namespace Course_Prerequsites_WPF.UIs
             {
                 var branch = new TreeViewItem();
 
-                branch.Header = course.CourseName;
+                branch.Header = course.Value.CourseName;
 
                 AllCourses.Items.Add(branch);
 
-                foreach (var pre in course.PreRequiredCourses)
+                foreach (var pre in course.Value.PreRequiredCourses)
                 {
-                    branch.Items.Add(course.ObjectDetails(pre));
+                    var leaf = new TreeViewItem();
+                    var l = course.Value.ReturnObj(pre);
+                    leaf.Header = pre;
+                    branch.Items.Add(l);
                 }
+
 
             }
         }

@@ -54,6 +54,9 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Compile Include="UIs\MyCourses.xaml.cs">
+      <DependentUpon>MyCourses.xaml</DependentUpon>
+    </Compile>
     <Page Include="UIs\AllCoursesTree.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
@@ -67,6 +70,7 @@
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="Classes\Course.cs" />
+    <Compile Include="Classes\Student.cs" />
     <Compile Include="UIs\AllCoursesTree.xaml.cs">
       <DependentUpon>AllCoursesTree.xaml</DependentUpon>
     </Compile>
@@ -74,6 +78,10 @@
       <DependentUpon>MainWindow.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
+    <Page Include="UIs\MyCourses.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Properties\AssemblyInfo.cs">
