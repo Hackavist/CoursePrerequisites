@@ -187,8 +187,8 @@ namespace Course_Prerequsites_WPF.Classes
             }
             else
             {
-                //Does nothing if the object is Equal to null 
-                return;
+                //throws an exceptions that says Unimplmented 
+                throw new NotImplementedException();
             }
         }
 
