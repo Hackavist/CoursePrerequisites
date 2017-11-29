@@ -147,7 +147,7 @@ namespace Course_Prerequsites_WPF.Classes
 
         public void WriteObj(Course cour)
         {
-            if (cour!=null)
+            if (cour != null)
             {
                 FileStream File = new FileStream("AllCoursesFile.txt", FileMode.Append, FileAccess.Write);
                 StreamWriter Sw = new StreamWriter(File);
