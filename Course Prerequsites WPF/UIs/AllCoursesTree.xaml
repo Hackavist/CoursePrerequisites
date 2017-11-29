@@ -7,7 +7,6 @@
         Loaded="Window_Loaded"
         mc:Ignorable="d"
         Title="AllCoursesTree" Height="700" Width="700">
-
     <Grid>
         <TreeView x:Name="AllCourses">
             <TreeView.Resources>
@@ -16,12 +15,9 @@
                         <Setter.Value>
                             <DataTemplate>
                                 <StackPanel>
-                                    <!-- <Image Margin="5" Width="30px" Source="/Images/Pic.jpg"/>
-                                    <TextBlock x:Name="TreeLine" Text="{Binding}"  VerticalAlignment="Center"/>
-                                       -->
-                                    <Grid Width="200" Height="100">
-                                        <Ellipse Margin="10,10,10,10" Fill="CornflowerBlue" Stroke="Black"/>
-                                        <TextBlock HorizontalAlignment="Center" Text="{Binding}" TextAlignment="Center" VerticalAlignment="Center"/>
+                                    <Grid Width="200" Height="150">
+                                        <Ellipse Margin="10,10,10,10" Fill="PowderBlue" Stroke="Black"/>
+                                        <TextBlock  HorizontalAlignment="Center" FontSize="20" Text="{Binding}"  FontStyle="Normal" FontWeight="Bold" TextAlignment="Center" VerticalAlignment="Center"/>
                                     </Grid>
                                 </StackPanel>
                             </DataTemplate>
@@ -31,5 +27,6 @@
             </TreeView.Resources>
         </TreeView>
     </Grid>
+
 
 </Window>

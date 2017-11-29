@@ -55,10 +55,10 @@ namespace Course_Prerequsites_WPF.UIs
 
         private void Branch_Expanded(object sender, RoutedEventArgs e)
         {
+            //parces the sender object into a mai
             var x = (TreeViewItem)sender;
 
             // check if there is a null 
-
             if (x.Items.Count != 1 || x.Items[0] != null)
             {
                 return;
@@ -73,6 +73,9 @@ namespace Course_Prerequsites_WPF.UIs
             // creates an object of the given name 
             Course cour = new Course();
             cour= cour.ReturnObj(name);
+
+            //Reveses the list to out the prequisists in the correct order 
+            cour.PreRequiredCourses.Reverse();
 
             // loops on the list of prequesists  
             foreach (var pre in cour.PreRequiredCourses)
