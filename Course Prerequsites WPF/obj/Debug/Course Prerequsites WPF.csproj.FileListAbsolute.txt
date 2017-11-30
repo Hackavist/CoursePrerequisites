@@ -37,3 +37,6 @@ E:\Course Prerequisits\Course Prerequsites WPF\obj\Debug\UIs\w2.g.cs
 E:\Course Prerequisits\Course Prerequsites WPF\obj\Debug\UIs\w2.baml
 D:\Work\Ds Project\Course Prerequsites WPF\obj\Debug\UIs\MyCourses.g.cs
 D:\Work\Ds Project\Course Prerequsites WPF\obj\Debug\UIs\MyCourses.baml
+C:\Users\hazem\Source\Repos\CoursePrerequisites3\Course Prerequsites WPF\bin\Debug\Course Prerequsites WPF.exe.config
+C:\Users\hazem\Source\Repos\CoursePrerequisites3\Course Prerequsites WPF\obj\Debug\Course Prerequsites WPF.exe
+C:\Users\hazem\Source\Repos\CoursePrerequisites3\Course Prerequsites WPF\obj\Debug\Course Prerequsites WPF.pdb
