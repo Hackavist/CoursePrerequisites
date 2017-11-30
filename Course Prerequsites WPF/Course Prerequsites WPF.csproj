@@ -56,9 +56,16 @@
       <SubType>Designer</SubType>
     </ApplicationDefinition>
     <Compile Include="Classes\Admin.cs" />
+    <Compile Include="UIs\AddNewCourse.xaml.cs">
+      <DependentUpon>AddNewCourse.xaml</DependentUpon>
+    </Compile>
     <Compile Include="UIs\MyCourses.xaml.cs">
       <DependentUpon>MyCourses.xaml</DependentUpon>
     </Compile>
+    <Page Include="UIs\AddNewCourse.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="UIs\AllCoursesTree.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
