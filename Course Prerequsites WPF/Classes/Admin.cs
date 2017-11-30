@@ -11,14 +11,14 @@ namespace Course_Prerequsites_WPF.Classes
         public string UserName { get; set; }
         public string Password { get; set; }
         public bool GeneralManager { get; set; }
-        
-        Admin()
+
+        public Admin()
         {
             UserName = "";
             Password = "";
             GeneralManager = false;
         }
-        Admin(string Name , string Pass , bool Flag)
+        public Admin(string Name, string Pass, bool Flag)
         {
             UserName = Name;
             Password = Pass;
