@@ -25,7 +25,8 @@
             <Label Content="Description" HorizontalAlignment="Left" VerticalAlignment="Top" Canvas.Top="237"/>
 
         </Canvas>
-        <Button Content="Add Course" HorizontalAlignment="Left" Height="32" Margin="77,307,0,0" VerticalAlignment="Top" Width="224" x:Name="AddCourseButton" Click="AddCourseButton_Click"/>
+        <Button Content="Add Course" HorizontalAlignment="Left" Height="32" Margin="26,307,0,0" VerticalAlignment="Top" Width="133" x:Name="AddCourseButton" Click="AddCourseButton_Click"/>
+        <Button Content="Edit Course" HorizontalAlignment="Left" Height="32" Margin="241,307,0,0" VerticalAlignment="Top" Width="133" x:Name="EditCourseButton" Click="EditCourseButton_Click"/>
 
     </Grid>
 </Window>
