@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Course_Prerequsites_WPF.Classes
 {
-    class Student
+    public class Student
     {
         public string Name { get; set; }
         public string Id { get; set; }
@@ -14,6 +14,18 @@ namespace Course_Prerequsites_WPF.Classes
         public List<Course> FinishedCourses { get; set; }
         public int AcademicYear { get; set; }
         public List<Course> CoursesInProgress { get; set; }
+
+        //created a default constructor
+        public Student()
+        {
+            Name = "";
+            Id = "";
+            Password = "";
+            FinishedCourses = new List<Course>() ;
+            AcademicYear = 0;
+            CoursesInProgress = new List<Course>();
+        }
+
 
         public Student(string n, string id, string pass, List<Course>li, int year, List<Course>linprog)
         {

@@ -40,3 +40,13 @@ D:\Work\Ds Project\Course Prerequsites WPF\obj\Debug\UIs\MyCourses.baml
 C:\Users\hazem\Source\Repos\CoursePrerequisites3\Course Prerequsites WPF\bin\Debug\Course Prerequsites WPF.exe.config
 C:\Users\hazem\Source\Repos\CoursePrerequisites3\Course Prerequsites WPF\obj\Debug\Course Prerequsites WPF.exe
 C:\Users\hazem\Source\Repos\CoursePrerequisites3\Course Prerequsites WPF\obj\Debug\Course Prerequsites WPF.pdb
+C:\Users\lenovo\Source\Repos\CoursePrerequisites2\Course Prerequsites WPF\obj\Debug\Course Prerequsites WPF.csprojResolveAssemblyReference.cache
+C:\Users\lenovo\Source\Repos\CoursePrerequisites2\Course Prerequsites WPF\obj\Debug\UIs\AdminLogIn.g.cs
+C:\Users\lenovo\Source\Repos\CoursePrerequisites2\Course Prerequsites WPF\obj\Debug\UIs\AllCoursesTree.g.cs
+C:\Users\lenovo\Source\Repos\CoursePrerequisites2\Course Prerequsites WPF\obj\Debug\UIs\MainWindow.g.cs
+C:\Users\lenovo\Source\Repos\CoursePrerequisites2\Course Prerequsites WPF\obj\Debug\UIs\MyCourses.g.cs
+C:\Users\lenovo\Source\Repos\CoursePrerequisites2\Course Prerequsites WPF\obj\Debug\App.g.cs
+C:\Users\lenovo\Source\Repos\CoursePrerequisites2\Course Prerequsites WPF\obj\Debug\Course Prerequsites WPF_MarkupCompile.cache
+C:\Users\lenovo\Source\Repos\CoursePrerequisites2\Course Prerequsites WPF\obj\Debug\Course Prerequsites WPF_MarkupCompile.lref
+C:\Users\lenovo\Source\Repos\CoursePrerequisites2\Course Prerequsites WPF\obj\Debug\Course Prerequsites WPF.exe
+C:\Users\lenovo\Source\Repos\CoursePrerequisites2\Course Prerequsites WPF\obj\Debug\Course Prerequsites WPF.pdb
