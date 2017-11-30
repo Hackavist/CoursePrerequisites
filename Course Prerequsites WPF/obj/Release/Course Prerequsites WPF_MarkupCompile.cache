@@ -10,11 +10,11 @@ none
 false
 TRACE
 C:\Users\lenovo\Source\Repos\CoursePrerequisites2\Course Prerequsites WPF\App.xaml
-4-459273927
+7-581763560
 
-112107709492
+141564517058
 13-1142990016
-UIs\AdminLogIn.xaml;UIs\AllCoursesTree.xaml;UIs\MainWindow.xaml;UIs\MyCourses.xaml;
+UIs\AddStudent.xaml;UIs\AdminLogIn.xaml;UIs\AllCoursesTree.xaml;UIs\MainWindow.xaml;UIs\MyCourses.xaml;UIs\ViewStudentOrCourse.xaml;UIs\ViewStudentsInCourse.xaml;
 
 True
 
