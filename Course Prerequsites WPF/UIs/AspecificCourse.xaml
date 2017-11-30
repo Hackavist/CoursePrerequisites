@@ -1,0 +1,41 @@
+﻿<Window x:Class="Course_Prerequsites_WPF.UIs.AspecificCourse"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Course_Prerequsites_WPF.UIs"
+        mc:Ignorable="d"
+        Title="AspecificCourse" Height="600" Width="700">
+    <Grid>
+        <Canvas Margin="10,0,0,0">
+            <Label Content="Hours:- " HorizontalAlignment="Left" VerticalAlignment="Top" Canvas.Top="243" Canvas.Left="3" FontSize="15"/>
+            <Label Content="CourseGrade:- " HorizontalAlignment="Left" VerticalAlignment="Top" Canvas.Top="213" FontSize="15" Canvas.Left="3"/>
+            <Label Content="PassingGrade:- " HorizontalAlignment="Left" VerticalAlignment="Top" Canvas.Top="177" FontSize="15" Canvas.Left="3"/>
+            <Label Content="CurrentNumberOfStudents:- " HorizontalAlignment="Left" VerticalAlignment="Top" Canvas.Top="138" FontSize="15" Canvas.Left="3"/>
+            <Label Content="Instructor:- " HorizontalAlignment="Left" VerticalAlignment="Top" Canvas.Top="273" Width="124" FontSize="15"/>
+            <Label Content="Code:- " HorizontalAlignment="Left" VerticalAlignment="Top" FontSize="15" Canvas.Left="3" Canvas.Top="73" Width="75"/>
+            <Label Content="MaximumNumberOfStudents:- " HorizontalAlignment="Left" VerticalAlignment="Top" Canvas.Top="103" FontSize="15"/>
+            <Label Content="Description:- " HorizontalAlignment="Left" VerticalAlignment="Top" Canvas.Top="304" FontSize="15"/>
+            <RichTextBox x:Name="Description" BorderBrush="Black" BorderThickness="1.5" Height="110" Canvas.Left="104" Canvas.Top="320" Width="406">
+                <FlowDocument>
+                    <Paragraph>
+                        <Run Text="RichTextBox"/>
+                    </Paragraph>
+                </FlowDocument>
+            </RichTextBox>
+            <Label x:Name="Code"  Content="Label" Canvas.Left="61" Canvas.Top="73" Width="193" Height="25">
+
+            </Label>
+            <Label x:Name="MaximumNumberOfStudents" Content="Label" Canvas.Left="222" Canvas.Top="103" Width="193"/>
+            <Label x:Name="CurrentNumberOfStudents" Content="Label" Canvas.Left="204" Canvas.Top="142" Width="193"/>
+            <Label x:Name="PassingGrade" Content="Label" Canvas.Left="115" Canvas.Top="181" Width="193"/>
+            <Label x:Name="CourseGrade" Content="Label" Canvas.Left="112" Canvas.Top="217" Width="193"/>
+            <Label x:Name="Hours" Content="Label" Canvas.Left="61" Canvas.Top="248" Width="193"/>
+            <Label x:Name="Instructor" Content="Label" Canvas.Left="87" Canvas.Top="277" Width="193"/>
+            <TextBox x:Name="CourseName" BorderBrush="Black" BorderThickness="1.5" Height="43" Canvas.Left="222" TextWrapping="Wrap" Text="Course Name" Canvas.Top="25" Width="145" FontSize="20" />
+
+        </Canvas>
+        <Button Content="Back" HorizontalAlignment="Left" Height="32" Margin="533,475,0,0" VerticalAlignment="Top" Width="112" x:Name="ReturnBack" Click="AddCourseButton_Click" FontSize="20" />
+
+    </Grid>
+</Window>
