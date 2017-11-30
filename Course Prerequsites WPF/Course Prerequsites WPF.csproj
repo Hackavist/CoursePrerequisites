@@ -59,9 +59,6 @@
     <Compile Include="UIs\AddNewCourse.xaml.cs">
       <DependentUpon>AddNewCourse.xaml</DependentUpon>
     </Compile>
-    <Compile Include="UIs\AspecificCourse.xaml.cs">
-      <DependentUpon>AspecificCourse.xaml</DependentUpon>
-    </Compile>
     <Compile Include="UIs\MyCourses.xaml.cs">
       <DependentUpon>MyCourses.xaml</DependentUpon>
     </Compile>
@@ -70,10 +67,6 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="UIs\AllCoursesTree.xaml">
-      <SubType>Designer</SubType>
-      <Generator>MSBuild:Compile</Generator>
-    </Page>
-    <Page Include="UIs\AspecificCourse.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
