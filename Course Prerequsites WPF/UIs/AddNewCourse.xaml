@@ -4,6 +4,7 @@
         Title="AddNewCourse" Height="600" Width="700">
     <Grid>
         <Canvas Margin="26,26,19.6,81.4">
+
             <TextBox HorizontalAlignment="Left" Height="26" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120" x:Name="CodeTextBox" Canvas.Left="228" SpellCheck.IsEnabled="True"/>
             <TextBox HorizontalAlignment="Left" Height="23" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120" x:Name="CourseNameTextBox" Canvas.Left="228" Canvas.Top="28"/>
             <Label Content="Course Name" HorizontalAlignment="Left" VerticalAlignment="Top" Height="28" Canvas.Top="28"/>
