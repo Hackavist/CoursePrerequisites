@@ -42,12 +42,7 @@ namespace Course_Prerequsites_WPF.Classes
             Hours = hours;
             Instructor = instructor;
             Description = description;
-            PreRequiredCourses = new List<string>();
-
-            foreach (var item in pre)
-            {
-                PreRequiredCourses.Add(item);
-            }
+            PreRequiredCourses = pre; // removed for each loop 
         }
 
 
