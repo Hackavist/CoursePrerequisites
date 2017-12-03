@@ -40,5 +40,7 @@ namespace Course_Prerequsites_WPF.UIs
             Instructor.Content = cour.Instructor;
             par.Text = cour.Description;
         }
+
+       
     }
 }
