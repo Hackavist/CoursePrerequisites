@@ -32,7 +32,7 @@
             <Label x:Name="CourseGrade" Content="Label" FontSize="20" Canvas.Left="317" Canvas.Top="322" Width="193"/>
             <Label x:Name="Hours" Content="Label" Canvas.Left="317"  FontSize="20" Canvas.Top="365" Width="193"/>
             <Label x:Name="Instructor" Content="Label"  FontSize="20" Canvas.Left="317" Canvas.Top="413" Width="193"/>
-            <TextBox x:Name="CourseName" BorderBrush="Black"   TextAlignment="Center" BorderThickness="1.5" Height="43" Canvas.Left="147" TextWrapping="Wrap" Text="Course Name" Canvas.Top="32" Width="243" FontSize="24" TextChanged="CourseName_TextChanged" />
+            <TextBox x:Name="CourseName" BorderBrush="Black"  TextAlignment="Center" BorderThickness="1.5" Height="43" Canvas.Left="147" TextWrapping="Wrap" Text="Course Name" Canvas.Top="32" Width="243" FontSize="24" TextChanged="CourseName_TextChanged" />
 
         </Canvas>
         <Button Content="Back" HorizontalAlignment="Left" Height="42" Margin="450,603,0,0" VerticalAlignment="Top" Width="112" x:Name="ReturnBack"  FontSize="24" />
