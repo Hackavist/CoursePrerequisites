@@ -28,5 +28,10 @@ namespace Course_Prerequsites_WPF.UIs
         {
 
         }
+
+        private void CourseName_TextChanged(object sender, TextChangedEventArgs e)
+        {
+
+        }
     }
 }
