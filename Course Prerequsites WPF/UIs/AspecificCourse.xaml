@@ -8,11 +8,11 @@
         Title="AspecificCourse" Height="700" Width="600">
     <Grid>
         <Canvas Margin="0,10,0,-36">
-            <Label Content="Hours:- " HorizontalAlignment="Left" VerticalAlignment="Top" Canvas.Top="356" FontSize="20"/>
+            <Label Content="Hours:- " HorizontalAlignment="Left" VerticalAlignment="Top" Canvas.Top="365" FontSize="20"/>
             <Label Content="CourseGrade:- " HorizontalAlignment="Left" VerticalAlignment="Top" Canvas.Top="313" FontSize="20"/>
             <Label Content="PassingGrade:- " HorizontalAlignment="Left" VerticalAlignment="Top" Canvas.Top="262" FontSize="20" Canvas.Left="3"/>
             <Label Content="CurrentNumberOfStudents:- " HorizontalAlignment="Left" VerticalAlignment="Top" Canvas.Top="209" FontSize="20"/>
-            <Label Content="Instructor:- " HorizontalAlignment="Left" VerticalAlignment="Top" Canvas.Top="402" Width="124" FontSize="20" Canvas.Left="3"/>
+            <Label Content="Instructor:- " HorizontalAlignment="Left" VerticalAlignment="Top" Canvas.Top="413" Width="124" FontSize="20" Canvas.Left="3" RenderTransformOrigin="0.46,1.027"/>
             <Label Content="Code:- " HorizontalAlignment="Left" VerticalAlignment="Top" FontSize="20" Canvas.Top="113" Width="75"/>
             <Label Content="MaximumNumberOfStudents:- " HorizontalAlignment="Left" VerticalAlignment="Top" Canvas.Top="155" FontSize="20"/>
             <Label Content="Description:- " HorizontalAlignment="Left" VerticalAlignment="Top" Canvas.Top="466" FontSize="20"/>
