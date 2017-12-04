@@ -1,0 +1,14 @@
+﻿<Window x:Class="Course_Prerequsites_WPF.UIs.ViewStudentOrCourse"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Course_Prerequsites_WPF.UIs"
+        mc:Ignorable="d"
+        Title="ViewStudentOrCourse" Height="700" Width="600" Background="#FF0C2132">
+    <Grid>
+        <Button Content="Student" VerticalAlignment="Top" Margin="154,155,154.333,0" Height="57"/>
+        <Button Content="Course" VerticalAlignment="Top" Margin="154,321,154.333,0" Height="57"/>
+
+    </Grid>
+</Window>
