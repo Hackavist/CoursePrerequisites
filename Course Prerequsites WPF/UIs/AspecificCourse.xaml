@@ -7,7 +7,7 @@
         mc:Ignorable="d"
         Title="AspecificCourse" Height="700" Width="600">
     <Grid>
-        <Canvas Margin="0,10,0,-36">
+        <Canvas  Margin="0,10,0,-36">
             <Label Content="Hours:- " HorizontalAlignment="Left" VerticalAlignment="Top" Canvas.Top="365" FontSize="20"/>
             <Label Content="CourseGrade:- " HorizontalAlignment="Left" VerticalAlignment="Top" Canvas.Top="313" FontSize="20"/>
             <Label Content="PassingGrade:- " HorizontalAlignment="Left" VerticalAlignment="Top" Canvas.Top="262" FontSize="20" Canvas.Left="3"/>
