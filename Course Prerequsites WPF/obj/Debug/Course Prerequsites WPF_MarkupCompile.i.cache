@@ -10,11 +10,11 @@ none
 false
 DEBUG;TRACE
 E:\Course Prerequisits\Course Prerequsites WPF\App.xaml
-6-1284088397
+121398854142
 
-171990074050
+23-111342159
 13-1142990016
-UIs\AddNewCourse.xaml;UIs\AllCoursesTree.xaml;UIs\AspecificCourse.xaml;UIs\MainWindow.xaml;UIs\MyCourses.xaml;UIs\ViewAllCoursesOfStudent.xaml;
+UIs\AddCoursePrerequisite.xaml;UIs\AddNewCourse.xaml;UIs\AddStudent.xaml;UIs\AdminLogIn.xaml;UIs\AllCoursesTree.xaml;UIs\AspecificCourse.xaml;UIs\CourseDetails.xaml;UIs\MainWindow.xaml;UIs\MyCourses.xaml;UIs\ViewAllCoursesOfStudent.xaml;UIs\ViewStudentOrCourse.xaml;UIs\ViewStudentsInCourse.xaml;
 
 True
 

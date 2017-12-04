@@ -11,24 +11,22 @@ using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
-using Course_Prerequsites_WPF;
 
 namespace Course_Prerequsites_WPF.UIs
 {
     /// <summary>
-    /// Interaction logic for TestingForm.xaml
+    /// Interaction logic for AddCoursePrerequisite.xaml
     /// </summary>
-    public partial class TestingForm : Window
+    public partial class AddCoursePrerequisite : Window
     {
-        public TestingForm()
+        public AddCoursePrerequisite()
         {
             InitializeComponent();
         }
 
-        private void button_Click(object sender, RoutedEventArgs e)
+        private void textBox_TextChanged(object sender, TextChangedEventArgs e)
         {
-            List<Course_Prerequsites_WPF.Classes.Course> Test = new List<Classes.Course>();
-            Test = AllCourses();
+
         }
     }
 }

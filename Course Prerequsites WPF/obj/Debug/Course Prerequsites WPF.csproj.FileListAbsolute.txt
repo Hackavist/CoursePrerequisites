@@ -67,3 +67,5 @@ D:\Work\Course Prequsits\Course Prerequsites WPF\obj\Debug\Course Prerequsites W
 D:\Work\Course Prequsits\Course Prerequsites WPF\obj\Debug\Course Prerequsites WPF.csproj.CoreCompileInputs.cache
 D:\Work\Course Prequsits\Course Prerequsites WPF\obj\Debug\UIs\ViewAllCoursesOfStudent.baml
 D:\Work\Course Prequsits\Course Prerequsites WPF\obj\Debug\UIs\ViewAllCoursesOfStudent.g.cs
+E:\Course Prerequisits\Course Prerequsites WPF\obj\Debug\UIs\ViewAllCoursesOfStudent.baml
+E:\Course Prerequisits\Course Prerequsites WPF\obj\Debug\UIs\ViewAllCoursesOfStudent.g.cs
