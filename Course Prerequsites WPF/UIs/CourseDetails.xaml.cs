@@ -31,15 +31,15 @@ namespace Course_Prerequsites_WPF.UIs
         {
             Course obj = new Course();
 
-            obj = obj.ObjectDetails("Math3");//Call the Function ObjectDetails to getbthe data of Math3
+            obj = obj.ReturnObj("Math3");//Call the Function ObjectDetails to getbthe data of Math3
 
             CourseTitle.Text = obj.CourseName;
 
             CourseInstructor.Text = obj.Instructor;
 
-            CourseHours.Text = obj.Hours;
+            CourseHours.Text = Convert.ToString( obj.Hours);
 
-            CourseGrades.Text = obj.CourseGrade;
+            CourseGrades.Text = Convert.ToString(obj.CourseGrade);
 
             NotesBlock.Text = obj.Description;
 

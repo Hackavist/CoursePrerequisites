@@ -11,6 +11,7 @@ using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
+using Course_Prerequsites_WPF.Classes;
 
 namespace Course_Prerequsites_WPF.UIs
 {
@@ -24,14 +25,20 @@ namespace Course_Prerequsites_WPF.UIs
             InitializeComponent();
         }
 
-        private void richTextBox_TextChanged(object sender, TextChangedEventArgs e)
+        private void Window_Loaded(object sender, RoutedEventArgs e)
         {
+            Course cour = new Course();
+            cour = cour.ReturnObj("Math3");
 
-        }
-
-        private void CourseName_TextChanged(object sender, TextChangedEventArgs e)
-        {
-
+            CourseName.Text = cour.CourseName;
+            Code.Content = cour.Code;
+            MaximumNumberOfStudents.Content = Convert.ToString(cour.MaximumNumberOfStudents);
+            CurrentNumberOfStudents.Content = Convert.ToString(cour.CurrentNumberOfStudents);
+            PassingGrade.Content = Convert.ToString(cour.PassingGrade);
+            CourseGrade.Content = Convert.ToString(cour.CourseGrade);
+            Hours.Content = Convert.ToString(cour.Hours);
+            Instructor.Content = cour.Instructor;
+            Description.Text = cour.Description;
         }
     }
 }
