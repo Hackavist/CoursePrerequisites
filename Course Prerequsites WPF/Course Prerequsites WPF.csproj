@@ -56,9 +56,6 @@
       <SubType>Designer</SubType>
     </ApplicationDefinition>
     <Compile Include="Classes\Admin.cs" />
-    <Compile Include="UIs\AddCoursePrerequisite.xaml.cs">
-      <DependentUpon>AddCoursePrerequisite.xaml</DependentUpon>
-    </Compile>
     <Compile Include="UIs\AddNewCourse.xaml.cs">
       <DependentUpon>AddNewCourse.xaml</DependentUpon>
     </Compile>
@@ -86,10 +83,6 @@
     <Compile Include="UIs\ViewStudentsInCourse.xaml.cs">
       <DependentUpon>ViewStudentsInCourse.xaml</DependentUpon>
     </Compile>
-    <Page Include="UIs\AddCoursePrerequisite.xaml">
-      <Generator>MSBuild:Compile</Generator>
-      <SubType>Designer</SubType>
-    </Page>
     <Page Include="UIs\AddNewCourse.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>

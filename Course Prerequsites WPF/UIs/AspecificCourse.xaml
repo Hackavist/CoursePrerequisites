@@ -5,6 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Course_Prerequsites_WPF.UIs"
         mc:Ignorable="d"
+        Loaded="Window_Loaded"
         Title="AspecificCourse" Height="700" Width="600">
     <Grid>
         <Canvas Margin="0,10,0,-36">
@@ -14,12 +15,12 @@
             <Label Content="CurrentNumberOfStudents:- " HorizontalAlignment="Left" VerticalAlignment="Top" Canvas.Top="209" FontSize="20"/>
             <Label Content="Instructor:- " HorizontalAlignment="Left" VerticalAlignment="Top" Canvas.Top="413" Width="124" FontSize="20" Canvas.Left="3" RenderTransformOrigin="0.46,1.027"/>
             <Label Content="Code:- " HorizontalAlignment="Left" VerticalAlignment="Top" FontSize="20" Canvas.Top="113" Width="75"/>
-            <Label Content="MaximumNumberOfStudents:- " HorizontalAlignment="Left" VerticalAlignment="Top" Canvas.Top="155" FontSize="20"/>
+            <Label Content="Maximum Number Of Students:- " HorizontalAlignment="Left" VerticalAlignment="Top" Canvas.Top="155" FontSize="20"/>
             <Label Content="Description:- " HorizontalAlignment="Left" VerticalAlignment="Top" Canvas.Top="466" FontSize="20"/>
-            <RichTextBox x:Name="Description" BorderBrush="Black" BorderThickness="1.5" Height="110" FontSize="20" Canvas.Left="133" Canvas.Top="470" Width="406">
+            <RichTextBox  BorderBrush="Black" BorderThickness="1.5" Height="110" FontSize="20" Canvas.Left="133" Canvas.Top="470" Width="406">
                 <FlowDocument>
                     <Paragraph>
-                        <Run Text="RichTextBox"/>
+                        <Run x:Name="Description" Text="RichTextBox"/>
                     </Paragraph>
                 </FlowDocument>
             </RichTextBox>
@@ -32,7 +33,7 @@
             <Label x:Name="CourseGrade" Content="Label" FontSize="20" Canvas.Left="317" Canvas.Top="322" Width="193"/>
             <Label x:Name="Hours" Content="Label" Canvas.Left="317"  FontSize="20" Canvas.Top="365" Width="193"/>
             <Label x:Name="Instructor" Content="Label"  FontSize="20" Canvas.Left="317" Canvas.Top="413" Width="193"/>
-            <TextBox x:Name="CourseName" BorderBrush="Black"  TextAlignment="Center" BorderThickness="1.5" Height="43" Canvas.Left="147" TextWrapping="Wrap" Text="Course Name" Canvas.Top="32" Width="243" FontSize="24" TextChanged="CourseName_TextChanged" />
+            <TextBox x:Name="CourseName" BorderBrush="Black"  TextAlignment="Center" BorderThickness="1.5" Height="43" Canvas.Left="147" TextWrapping="Wrap" Text="Course Name" Canvas.Top="32" Width="243" FontSize="24" />
 
         </Canvas>
         <Button Content="Back" HorizontalAlignment="Left" Height="42" Margin="450,603,0,0" VerticalAlignment="Top" Width="112" x:Name="ReturnBack"  FontSize="24" />

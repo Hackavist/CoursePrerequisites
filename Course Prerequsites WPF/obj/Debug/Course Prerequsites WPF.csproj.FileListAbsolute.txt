@@ -67,5 +67,13 @@ D:\Work\Course Prequsits\Course Prerequsites WPF\obj\Debug\Course Prerequsites W
 D:\Work\Course Prequsits\Course Prerequsites WPF\obj\Debug\Course Prerequsites WPF.csproj.CoreCompileInputs.cache
 D:\Work\Course Prequsits\Course Prerequsites WPF\obj\Debug\UIs\ViewAllCoursesOfStudent.baml
 D:\Work\Course Prequsits\Course Prerequsites WPF\obj\Debug\UIs\ViewAllCoursesOfStudent.g.cs
-E:\Course Prerequisits\Course Prerequsites WPF\obj\Debug\UIs\ViewAllCoursesOfStudent.baml
-E:\Course Prerequisits\Course Prerequsites WPF\obj\Debug\UIs\ViewAllCoursesOfStudent.g.cs
+D:\Work\Course Prequsits\Course Prerequsites WPF\obj\Debug\UIs\AddStudent.g.cs
+D:\Work\Course Prequsits\Course Prerequsites WPF\obj\Debug\UIs\AdminLogIn.g.cs
+D:\Work\Course Prequsits\Course Prerequsites WPF\obj\Debug\UIs\CourseDetails.g.cs
+D:\Work\Course Prequsits\Course Prerequsites WPF\obj\Debug\UIs\ViewStudentOrCourse.g.cs
+D:\Work\Course Prequsits\Course Prerequsites WPF\obj\Debug\UIs\ViewStudentsInCourse.g.cs
+D:\Work\Course Prequsits\Course Prerequsites WPF\obj\Debug\UIs\AddStudent.baml
+D:\Work\Course Prequsits\Course Prerequsites WPF\obj\Debug\UIs\AdminLogIn.baml
+D:\Work\Course Prequsits\Course Prerequsites WPF\obj\Debug\UIs\CourseDetails.baml
+D:\Work\Course Prequsits\Course Prerequsites WPF\obj\Debug\UIs\ViewStudentOrCourse.baml
+D:\Work\Course Prequsits\Course Prerequsites WPF\obj\Debug\UIs\ViewStudentsInCourse.baml

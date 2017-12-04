@@ -34,17 +34,17 @@ namespace Course_Prerequsites_WPF.UIs
             else
             {
 
-                string courseName = SearchCourseName.Text;
-                Student s = new Student();
-                List<Student> stud = s.GetPersonalInfo(); //waiting for team student
+                //string courseName = SearchCourseName.Text;
+                //Student s = new Student();
+                //List<Student> stud = s.GetPersonalInfo(); //waiting for team student
 
-                for(int i=0 ; i<stud.Capacity ; i++)
-                {
-                    stud[i].CoursesInProgress
-                        // if course name == name in textbox
-                        //display student's name
+                //for(int i=0 ; i<stud.Capacity ; i++)
+                //{
+                //    stud[i].CoursesInProgress
+                //        // if course name == name in textbox
+                //        //display student's name
 
-                }
+                //}
 
 
 
