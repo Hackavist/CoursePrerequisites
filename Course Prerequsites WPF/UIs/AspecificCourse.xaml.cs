@@ -28,17 +28,17 @@ namespace Course_Prerequsites_WPF.UIs
         private void Window_Loaded(object sender, RoutedEventArgs e)
         {
             Course cour = new Course();
-            cour=cour.ReturnObj("Math3");
+            cour = cour.ReturnObj("Math3");
 
             CourseName.Text = cour.CourseName;
             Code.Content = cour.Code;
-            MaximumNumberOfStudents.Content = cour.MaximumNumberOfStudents;
-            CurrentNumberOfStudents.Content = cour.CurrentNumberOfStudents;
-            PassingGrade.Content = cour.PassingGrade;
-            CourseGrade.Content = cour.CourseGrade;
-            Hours.Content = cour.Hours;
+            MaximumNumberOfStudents.Content = Convert.ToString(cour.MaximumNumberOfStudents);
+            CurrentNumberOfStudents.Content = Convert.ToString(cour.CurrentNumberOfStudents);
+            PassingGrade.Content = Convert.ToString(cour.PassingGrade);
+            CourseGrade.Content = Convert.ToString(cour.CourseGrade);
+            Hours.Content = Convert.ToString(cour.Hours);
             Instructor.Content = cour.Instructor;
-            par.Text = cour.Description;
+            Description.Text = cour.Description;
         }
     }
 }
