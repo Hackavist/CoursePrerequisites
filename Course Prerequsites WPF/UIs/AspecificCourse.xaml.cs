@@ -27,8 +27,8 @@ namespace Course_Prerequsites_WPF.UIs
 
         private void Window_Loaded(object sender, RoutedEventArgs e)
         {
-            Course cour = new Course();
-            cour = cour.ReturnObj("Math3");
+           
+            Course cour =MainWindow.Course.ReturnObj("Math3");
 
             CourseName.Text = cour.CourseName;
             Code.Content = cour.Code;
@@ -40,5 +40,13 @@ namespace Course_Prerequsites_WPF.UIs
             Instructor.Content = cour.Instructor;
             Description.Text = cour.Description;
         }
+
+        private void ReturnBack_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+      
+      
     }
 }

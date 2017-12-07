@@ -26,7 +26,7 @@ namespace Course_Prerequsites_WPF.UIs
 
         private void AddCourseButton_Click(object sender, RoutedEventArgs e)
         {
-            if (CodeTextBox.Text.Length==0 ||  CourseNameTextBox.Text.Length==0 || MaximumNumberOfStudentsTextBox.Text.Length==0 || CurrentNumberOfStudentsTextBox.Text.Length==0 || PassingGradeTextBox.Text.Length==0 || CourseGradeTextBox.Text.Length==0 || HoursTextBox.Text.Length==0 || InstructorTextBox.Text.Length==0 || DescriptionTextBox.Text.Length==0 )
+            if (CodeTextBox.Text.Length == 0 || CourseNameTextBox.Text.Length == 0 || MaximumNumberOfStudentsTextBox.Text.Length == 0 || CurrentNumberOfStudentsTextBox.Text.Length == 0 || PassingGradeTextBox.Text.Length == 0 || CourseGradeTextBox.Text.Length == 0 || HoursTextBox.Text.Length == 0 || InstructorTextBox.Text.Length == 0 || DescriptionTextBox.Text.Length == 0)
             {
                 MessageBox.Show("Some text box is missing");
             }
@@ -41,9 +41,9 @@ namespace Course_Prerequsites_WPF.UIs
                 int Hours = int.Parse(HoursTextBox.Text);
                 string Instructor = InstructorTextBox.Text;
                 string Description = DescriptionTextBox.Text;
-                List <string > tmp =new List <string>() ;
+                List<string> tmp = new List<string>();
                 Course x = new Course();
-                Dictionary<string,Course> di =  x.GetAllCourses();
+                Dictionary<string, Course> di = x.GetAllCourses();
                 if (di.ContainsKey(CourseName))
                 {
                     MessageBox.Show("This course already exists ");
@@ -52,8 +52,8 @@ namespace Course_Prerequsites_WPF.UIs
                 else
                 {
 
-                Course newcourse = new Course(Code, CourseName, MaximumNumber, CurrentNumber, PassingGrade, CourseGrade, Hours, Instructor, Description, tmp);
-                di[CourseName] = newcourse;
+                    Course newcourse = new Course(Code, CourseName, MaximumNumber, CurrentNumber, PassingGrade, CourseGrade, Hours, Instructor, Description, tmp);
+                    di[CourseName] = newcourse;
                 }
             }
         }
@@ -75,7 +75,9 @@ namespace Course_Prerequsites_WPF.UIs
                 int Hours = int.Parse(HoursTextBox.Text);
                 string Instructor = InstructorTextBox.Text;
                 string Description = DescriptionTextBox.Text;
+
                 List<string> tmp = new List<string>();
+
                 Course x = new Course();
                 Dictionary<string, Course> di = x.GetAllCourses();
                 if (di.ContainsKey(CourseName))
@@ -87,7 +89,7 @@ namespace Course_Prerequsites_WPF.UIs
                 else
                 {
 
-                    MessageBox.Show( " This course doesn't exists !" ) ;
+                    MessageBox.Show(" This course doesn't exists !");
                 }
             }
         }

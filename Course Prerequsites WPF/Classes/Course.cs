@@ -42,7 +42,13 @@ namespace Course_Prerequsites_WPF.Classes
             Hours = hours;
             Instructor = instructor;
             Description = description;
-            PreRequiredCourses = pre; // removed for each loop 
+
+            PreRequiredCourses = new List<string>();
+
+            foreach (var item in pre)
+            {
+                PreRequiredCourses.Add(item); // Batl Le3b ya 7azem ya 7azem  
+            }
         }
 
 
@@ -97,14 +103,12 @@ namespace Course_Prerequsites_WPF.Classes
                     //Creates a costume obkject of the courses class 
                     Course c = new Course(Code, CourseName, MaximumNumberOfStudents, CurrentNumberOfStudents, PassingGrade, CourseGrade, Hours, Instructor, Description, pr);
 
-                    //emptys the list to avoid extra entries 
-                    pr.Clear();
                     //adds it ot the Dictionary of Coures
                     M[CourseName] = c;
 
+                    //emptys the list to avoid extra entries 
+                    pr.Clear();
                 }
-
-
             }
             //closes the stream reader and the file stream 
             sr.Close();
@@ -118,7 +122,7 @@ namespace Course_Prerequsites_WPF.Classes
         //Function takes the name and returnsthe object of it 
         public Course ReturnObj(string Name)
         {
-            Dictionary<string, Course> Objects = GetAllCourses();//Read all Courses from file in a Dictionary 
+            Dictionary<string, Course> Objects = MainWindow.AllCoursesDictionary;//Read all Courses from file in a Dictionary 
 
             bool check = false;//To chaeck if this course exist or not
 
@@ -141,6 +145,7 @@ namespace Course_Prerequsites_WPF.Classes
         {
             if (cour != null)
             {
+                int c = 0;
                 FileStream File = new FileStream("AllCoursesFile.txt", FileMode.Append, FileAccess.Write);
                 StreamWriter Sw = new StreamWriter(File);
 
@@ -166,8 +171,12 @@ namespace Course_Prerequsites_WPF.Classes
                 //loops on the list of prequsites and add '*' delimiter between them
                 foreach (var item in cour.PreRequiredCourses)
                 {
+                    c++;
                     Sw.Write(item);
-                    Sw.Write('*');
+                    if (c != cour.PreRequiredCourses.Capacity - 1)
+                    {
+                        Sw.Write('*');
+                    }
                 }
 
                 //end of record dilimter

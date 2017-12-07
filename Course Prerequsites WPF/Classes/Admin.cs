@@ -4,6 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.IO;
+using Course_Prerequsites_WPF.Classes;
 
 namespace Course_Prerequsites_WPF.Classes
 {
@@ -19,6 +20,7 @@ namespace Course_Prerequsites_WPF.Classes
             Password = "";
             GeneralManager = false;
         }
+
         public Admin(string Name, string Pass, bool Flag)
         {
             UserName = Name;
@@ -26,19 +28,19 @@ namespace Course_Prerequsites_WPF.Classes
             GeneralManager = Flag;
         }
 
-        public List<Admin> GetAdminData()
+        public List<Admin> GetAllAdmins ()
         {
             FileStream fs = new FileStream("AdminData.txt", FileMode.Open);
             StreamReader sr = new StreamReader(fs);
 
-            string[] field , record;
-            
+            string[] field, record;
 
-            while(sr.Peek()!=-1)
+
+            while (sr.Peek() != -1)
             {
                 record = sr.ReadLine().Split('#');
 
-                for(int i=0;i<record.Length;i++)
+                for (int i = 0; i < record.Length; i++)
                 {
                     field = record[i].Split('*');
                     UserName = field[0];
@@ -48,18 +50,48 @@ namespace Course_Prerequsites_WPF.Classes
 
             }
 
-            Admin data = new Admin(UserName, Password,GeneralManager);
+            Admin data = new Admin(UserName, Password, GeneralManager);
 
             List<Admin> ListOfAdminData = new List<Admin>();
+
             ListOfAdminData.Add(data);
 
             sr.Close();
-            
+            fs.Close(); // missing filestream close  : nour 
+
             return ListOfAdminData;
-            
+
 
         }
-        
-       
+
+
+
+
+        public void AddCoursePrerquisite(string coursename, string prerequisitename)
+        {
+
+            Course obj = new Course();
+
+            obj = obj.ReturnObj(coursename);
+
+            obj.PreRequiredCourses.Add(prerequisitename);
+
+            Course newobj = new Course();
+
+            Dictionary<string, Course> M = newobj.GetAllCourses();
+
+            M.Remove(coursename);
+
+            M.Add(coursename, obj);
+
+            FileStream fs = new FileStream("AllCoursesFile.txt", FileMode.Create);
+
+            fs.Close();
+
+            foreach (var item in M)
+            {
+                obj.WriteObj(item.Value);
+            }
+        }
     }
 }

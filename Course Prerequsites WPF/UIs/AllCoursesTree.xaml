@@ -19,7 +19,7 @@
                                     <StackPanel>
                                         <Grid Width="200" Height="150">
                                             <Ellipse Margin="10,10,10,10" Fill="PowderBlue" Stroke="Black"/>
-                                            <TextBlock  HorizontalAlignment="Center" FontSize="20" Text="{Binding}"  FontStyle="Normal" FontWeight="Bold" TextAlignment="Center" VerticalAlignment="Center"/>
+                                            <TextBlock  HorizontalAlignment="Center" FontSize="20" Text="{Binding}"  FontStyle="Normal" FontWeight="Bold" TextAlignment="Center" VerticalAlignment="Center"  />
                                         </Grid>
                                     </StackPanel>
                                 </DataTemplate>
