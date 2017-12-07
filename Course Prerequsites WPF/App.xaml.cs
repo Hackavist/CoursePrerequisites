@@ -13,5 +13,6 @@ namespace Course_Prerequsites_WPF
     /// </summary>
     public partial class App : Application
     {
+
     }
 }
