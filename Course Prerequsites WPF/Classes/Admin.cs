@@ -70,28 +70,28 @@ namespace Course_Prerequsites_WPF.Classes
         public void AddCoursePrerquisite(string coursename, string prerequisitename)
         {
 
-            Course obj = new Course();
+            //Course obj = new Course();
 
-            obj = obj.ReturnObj(coursename);
+            //obj = obj.ReturnObj(coursename);
 
-            obj.PreRequiredCourses.Add(prerequisitename);
+            //obj.PreRequiredCourses.Add(prerequisitename);
 
-            Course newobj = new Course();
+           // Dictionary<string, Course> M =MainWindow.AllCoursesDictionary;
 
-            Dictionary<string, Course> M = newobj.GetAllCourses();
+            MainWindow.AllCoursesDictionary[coursename].PreRequiredCourses.Add(prerequisitename);
 
-            M.Remove(coursename);
+            //M.Remove(coursename);
 
-            M.Add(coursename, obj);
+            //M.Add(coursename, obj);
 
-            FileStream fs = new FileStream("AllCoursesFile.txt", FileMode.Create);
+            //FileStream fs = new FileStream("AllCoursesFile.txt", FileMode.Create);
 
-            fs.Close();
+            //fs.Close();
 
-            foreach (var item in M)
-            {
-                obj.WriteObj(item.Value);
-            }
+            //foreach (var item in M)
+            //{
+              //  obj.WriteObj(item.Value);
+            //}
         }
     }
 }

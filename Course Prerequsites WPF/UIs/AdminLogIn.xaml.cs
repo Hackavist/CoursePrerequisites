@@ -48,7 +48,7 @@ namespace Course_Prerequsites_WPF.UIs
 
                Admin ad = new Admin();
 
-               List < Admin > check = ad.GetAdminData();
+               List < Admin > check = ad.GetAllAdmins();
                // Dictionary < string, Admin> dic = new Dictionary<string, Admin>();
                 for (int i = 0; i < check.Capacity; i++)
                 {

@@ -120,15 +120,13 @@ namespace Course_Prerequsites_WPF.Classes
         }
 
         //Function takes the name and returnsthe object of it 
-        public Course ReturnObj(string Name)
+        public Course ReturnObj(string CourseName)
         {
-            Dictionary<string, Course> Objects = MainWindow.AllCoursesDictionary;//Read all Courses from file in a Dictionary 
-
             bool check = false;//To chaeck if this course exist or not
 
-            foreach (var x in Objects)//loop to search for certaion subjects in all the subjects
+            foreach (var x in MainWindow.AllCoursesDictionary)//loop to search for certaion subjects in all the subjects
             {
-                if (x.Key == Name) // commpares the kety of the dictionary with the course's name
+                if (x.Key == CourseName) // commpares the kety of the dictionary with the course's name
                 {
                     check = true;
                     return x.Value; //retuns the object of the course
