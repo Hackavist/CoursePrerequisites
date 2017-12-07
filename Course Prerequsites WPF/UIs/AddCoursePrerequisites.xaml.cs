@@ -28,9 +28,12 @@ namespace Course_Prerequsites_WPF.UIs
         private void Add_Click(object sender, RoutedEventArgs e)
         {
             bool check = true;
+
             Admin ad = new Admin();
+
             string coursename = CourseNameTextBox.Text;
             string prerequisitename = PrerequisiteNameTextBox.Text;
+             
             if (coursename.Length == 0)
             {
                 MessageBox.Show("Please enter the Course name!!");
