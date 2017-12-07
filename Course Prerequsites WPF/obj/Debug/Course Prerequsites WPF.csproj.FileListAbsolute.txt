@@ -93,3 +93,6 @@ E:\Course Prerequisits\Course Prerequsites WPF\obj\Debug\UIs\AddCoursePrerequisi
 E:\Course Prerequisits\Course Prerequsites WPF\obj\Debug\Course Prerequsites WPF.csprojResolveAssemblyReference.cache
 D:\Work\Course Prequsits\Course Prerequsites WPF\obj\Debug\UIs\AddCoursePrerequisites.g.cs
 D:\Work\Course Prequsits\Course Prerequsites WPF\obj\Debug\UIs\AddCoursePrerequisites.baml
+C:\Users\hazem\Source\Repos\CoursePrerequisites\Course Prerequsites WPF\bin\Debug\Course Prerequsites WPF.exe.config
+C:\Users\hazem\Source\Repos\CoursePrerequisites\Course Prerequsites WPF\obj\Debug\Course Prerequsites WPF.exe
+C:\Users\hazem\Source\Repos\CoursePrerequisites\Course Prerequsites WPF\obj\Debug\Course Prerequsites WPF.pdb
