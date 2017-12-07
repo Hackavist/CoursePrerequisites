@@ -28,7 +28,7 @@ namespace Course_Prerequsites_WPF.Classes
             GeneralManager = Flag;
         }
 
-        public List<Admin> GetAllAdmins ()
+        public Dictionary<string , Admin> GetAllAdmins ()
         {
             FileStream fs = new FileStream("AdminData.txt", FileMode.Open);
             StreamReader sr = new StreamReader(fs);
@@ -52,14 +52,15 @@ namespace Course_Prerequsites_WPF.Classes
 
             Admin data = new Admin(UserName, Password, GeneralManager);
 
-            List<Admin> ListOfAdminData = new List<Admin>();
+            Dictionary<string, Admin> AllAdmins = new Dictionary<string, Admin>();
+            AllAdmins[UserName] = data;
 
-            ListOfAdminData.Add(data);
+           
 
             sr.Close();
-            fs.Close(); // missing filestream close  : nour 
+            fs.Close(); 
 
-            return ListOfAdminData;
+            return AllAdmins;
 
 
         }
@@ -70,28 +71,28 @@ namespace Course_Prerequsites_WPF.Classes
         public void AddCoursePrerquisite(string coursename, string prerequisitename)
         {
 
-            Course obj = new Course();
+            //Course obj = new Course();
 
-            obj = obj.ReturnObj(coursename);
+            //obj = obj.ReturnObj(coursename);
 
-            obj.PreRequiredCourses.Add(prerequisitename);
+            //obj.PreRequiredCourses.Add(prerequisitename);
 
-            Course newobj = new Course();
+           // Dictionary<string, Course> M =MainWindow.AllCoursesDictionary;
 
-            Dictionary<string, Course> M = newobj.GetAllCourses();
+            MainWindow.AllCoursesDictionary[coursename].PreRequiredCourses.Add(prerequisitename);
 
-            M.Remove(coursename);
+            //M.Remove(coursename);
 
-            M.Add(coursename, obj);
+            //M.Add(coursename, obj);
 
-            FileStream fs = new FileStream("AllCoursesFile.txt", FileMode.Create);
+            //FileStream fs = new FileStream("AllCoursesFile.txt", FileMode.Create);
 
-            fs.Close();
+            //fs.Close();
 
-            foreach (var item in M)
-            {
-                obj.WriteObj(item.Value);
-            }
+            //foreach (var item in M)
+            //{
+              //  obj.WriteObj(item.Value);
+            //}
         }
     }
 }
