@@ -122,7 +122,7 @@ namespace Course_Prerequsites_WPF.Classes
         //Function takes the name and returnsthe object of it 
         public Course ReturnObj(string Name)
         {
-            Dictionary<string, Course> Objects = GetAllCourses();//Read all Courses from file in a Dictionary 
+            Dictionary<string, Course> Objects = MainWindow.AllCoursesDictionary;//Read all Courses from file in a Dictionary 
 
             bool check = false;//To chaeck if this course exist or not
 
@@ -145,6 +145,7 @@ namespace Course_Prerequsites_WPF.Classes
         {
             if (cour != null)
             {
+                int c = 0;
                 FileStream File = new FileStream("AllCoursesFile.txt", FileMode.Append, FileAccess.Write);
                 StreamWriter Sw = new StreamWriter(File);
 
@@ -170,8 +171,12 @@ namespace Course_Prerequsites_WPF.Classes
                 //loops on the list of prequsites and add '*' delimiter between them
                 foreach (var item in cour.PreRequiredCourses)
                 {
+                    c++;
                     Sw.Write(item);
-                    Sw.Write('*');
+                    if (c != cour.PreRequiredCourses.Capacity - 1)
+                    {
+                        Sw.Write('*');
+                    }
                 }
 
                 //end of record dilimter

@@ -28,7 +28,7 @@ namespace Course_Prerequsites_WPF.Classes
             GeneralManager = Flag;
         }
 
-        public List<Admin> GetAdminData()
+        public List<Admin> GetAllAdmins ()
         {
             FileStream fs = new FileStream("AdminData.txt", FileMode.Open);
             StreamReader sr = new StreamReader(fs);
@@ -79,7 +79,7 @@ namespace Course_Prerequsites_WPF.Classes
             Course newobj = new Course();
 
             Dictionary<string, Course> M = newobj.GetAllCourses();
-            
+
             M.Remove(coursename);
 
             M.Add(coursename, obj);
@@ -92,10 +92,6 @@ namespace Course_Prerequsites_WPF.Classes
             {
                 obj.WriteObj(item.Value);
             }
-
-
         }
-
-
     }
 }
