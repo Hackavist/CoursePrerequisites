@@ -7,7 +7,7 @@ using System.IO;
 
 namespace Course_Prerequsites_WPF.Classes
 {
-    class Student
+    public class Student
     {
         public string Name { get; set; }
         public string Id { get; set; }
@@ -34,6 +34,14 @@ namespace Course_Prerequsites_WPF.Classes
             FinishedCourses = finished;
             AcademicYear = year;
             CoursesInProgress = progess;
+        }
+
+        public Student(string n , string id , string pass , int year)
+        {
+            Name = n;
+            Id = id;
+            Password = pass;
+            AcademicYear = year;
         }
 
         //writing Format:   Id % Name % Password % AcademicYear % finishd course1 * finished course2 % Course in progress1*Course in progress2 #

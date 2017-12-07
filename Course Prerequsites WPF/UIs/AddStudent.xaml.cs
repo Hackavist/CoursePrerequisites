@@ -11,6 +11,7 @@ using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
+using Course_Prerequsites_WPF.Classes;
 
 namespace Course_Prerequsites_WPF.UIs
 {
@@ -22,6 +23,38 @@ namespace Course_Prerequsites_WPF.UIs
         public AddStudent()
         {
             InitializeComponent();
+        }
+
+        private void Button_Click(object sender, RoutedEventArgs e)
+        {
+            if(  string.IsNullOrEmpty(StudName.Text) || string.IsNullOrEmpty(StudID.Text) || string.IsNullOrEmpty(StudPassword.Text) || string.IsNullOrEmpty(StudYear.Text) )
+            {
+                MessageBox.Show("Please Enter Missing Data");
+            }
+            else
+            {
+                string name = StudName.Text;
+                string id = StudID.Text;
+                string pass = StudPassword.Text;
+                int  year = int.Parse(StudYear.Text);
+
+                Student stuData = new Student();
+                Dictionary<string, Student> dic = stuData.GetAllStudents();
+
+                if(dic.ContainsKey(Name))
+                {
+                    MessageBox.Show("Student already exist");
+                }
+
+                else
+                {
+                    Student addStud = new Student(name, id, pass, year);
+                    dic[name] = addStud;
+                }
+
+                
+            }
+
         }
     }
 }
