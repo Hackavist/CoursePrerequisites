@@ -40,5 +40,13 @@ namespace Course_Prerequsites_WPF.UIs
             Instructor.Content = cour.Instructor;
             Description.Text = cour.Description;
         }
+
+        private void ReturnBack_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+      
+      
     }
 }

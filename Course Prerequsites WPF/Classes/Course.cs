@@ -45,9 +45,7 @@ namespace Course_Prerequsites_WPF.Classes
             PreRequiredCourses = pre; // removed for each loop 
         }
 
-
         //returns a Dictionary that Contains all existing couses indexed by course name and Course object
-
         public Dictionary<string, Course> GetAllCourses()
         {
             FileStream fs = new FileStream("AllCoursesFile.txt", FileMode.Open, FileAccess.Read);
@@ -58,8 +56,8 @@ namespace Course_Prerequsites_WPF.Classes
             string[] records;
             string[] prerequirds;
 
-            //list of prerequired courses 
-            List<string> pr = new List<string>();
+            
+
 
             //Dictionary of objects <this is the return of the function>
             Dictionary<string, Course> M = new Dictionary<string, Course>();
@@ -72,7 +70,8 @@ namespace Course_Prerequsites_WPF.Classes
                 //loops until it reaches the number of courses
 
                 for (int i = 0; i < records.Length - 1; i++)
-                {
+                {//list of prerequired courses
+                    List<string> pr = new List<string>();
                     //splits each course into number of feilds  
                     fileds = records[i].Split('%');
                     //the course details
@@ -92,28 +91,31 @@ namespace Course_Prerequsites_WPF.Classes
                     //fills the array that exists in the class with the one in the file
                     for (int j = 0; j < prerequirds.Length; j++)
                     {
-                        pr.Add(prerequirds[j]);
+                        if (prerequirds[j] != "")
+                            pr.Add(prerequirds[j]);
                     }
-                    //Creates a costume obkject of the courses class 
+                    //Creates a costume object of the courses class 
                     Course c = new Course(Code, CourseName, MaximumNumberOfStudents, CurrentNumberOfStudents, PassingGrade, CourseGrade, Hours, Instructor, Description, pr);
 
                     //emptys the list to avoid extra entries 
-                    pr.Clear();
+                    // pr.Clear();
                     //adds it ot the Dictionary of Coures
                     M[CourseName] = c;
 
-                }
+                 }
 
-
+                
             }
+            
             //closes the stream reader and the file stream 
             sr.Close();
             fs.Close();
 
-            //returns list of objs
+            //returns Dictionary of objs
             return M;
 
         }
+
 
         //Function takes the name and returnsthe object of it 
         public Course ReturnObj(string Name)
