@@ -177,5 +177,8 @@
   <ItemGroup>
     <Resource Include="Images\Pic.jpg" />
   </ItemGroup>
+  <ItemGroup>
+    <Resource Include="bin\Debug\AdminData.txt" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
