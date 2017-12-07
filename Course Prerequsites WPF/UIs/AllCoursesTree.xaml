@@ -10,7 +10,7 @@
 
     <ScrollViewer Width="590" HorizontalScrollBarVisibility="Auto" VerticalScrollBarVisibility="Auto" Margin="2,10,1.6,17.4">
         <Grid>
-            <TreeView x:Name="AllCourses" MouseDoubleClick="AllCourses_MouseDoubleClick">
+            <TreeView x:Name="AllCourses">
                 <TreeView.Resources>
                     <Style TargetType="{x:Type TreeViewItem}">
                         <Setter Property="HeaderTemplate">

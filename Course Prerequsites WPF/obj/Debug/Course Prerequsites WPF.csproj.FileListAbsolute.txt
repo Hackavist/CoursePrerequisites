@@ -91,3 +91,5 @@ E:\Course Prerequisits\Course Prerequsites WPF\obj\Debug\UIs\ViewStudentsInCours
 E:\Course Prerequisits\Course Prerequsites WPF\obj\Debug\UIs\AddCoursePrerequisites.g.cs
 E:\Course Prerequisits\Course Prerequsites WPF\obj\Debug\UIs\AddCoursePrerequisites.baml
 E:\Course Prerequisits\Course Prerequsites WPF\obj\Debug\Course Prerequsites WPF.csprojResolveAssemblyReference.cache
+D:\Work\Course Prequsits\Course Prerequsites WPF\obj\Debug\UIs\AddCoursePrerequisites.g.cs
+D:\Work\Course Prequsits\Course Prerequsites WPF\obj\Debug\UIs\AddCoursePrerequisites.baml

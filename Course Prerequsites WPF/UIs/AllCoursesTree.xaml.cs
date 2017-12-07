@@ -39,7 +39,7 @@ namespace Course_Prerequsites_WPF.UIs
 
                 branch.Expanded += Branch_Expanded; // what happens when the tree is expanded 
 
-                AllCourses.Items.Add(branch); // addes the branch to the parent 
+               AllCourses.Items.Add(branch); // addes the branch to the parent 
 
             }
         }
