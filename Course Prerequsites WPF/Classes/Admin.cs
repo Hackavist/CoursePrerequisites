@@ -28,7 +28,7 @@ namespace Course_Prerequsites_WPF.Classes
             GeneralManager = Flag;
         }
 
-        public List<Admin> GetAllAdmins ()
+        public Dictionary<string , Admin> GetAllAdmins ()
         {
             FileStream fs = new FileStream("AdminData.txt", FileMode.Open);
             StreamReader sr = new StreamReader(fs);
@@ -52,14 +52,15 @@ namespace Course_Prerequsites_WPF.Classes
 
             Admin data = new Admin(UserName, Password, GeneralManager);
 
-            List<Admin> ListOfAdminData = new List<Admin>();
+            Dictionary<string, Admin> AllAdmins = new Dictionary<string, Admin>();
+            AllAdmins[UserName] = data;
 
-            ListOfAdminData.Add(data);
+           
 
             sr.Close();
-            fs.Close(); // missing filestream close  : nour 
+            fs.Close(); 
 
-            return ListOfAdminData;
+            return AllAdmins;
 
 
         }
