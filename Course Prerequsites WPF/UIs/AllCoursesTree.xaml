@@ -10,7 +10,7 @@
 
     <ScrollViewer Width="590" HorizontalScrollBarVisibility="Auto" VerticalScrollBarVisibility="Auto" Margin="2,10,1.6,17.4">
         <Grid>
-            <TreeView x:Name="AllCourses">
+            <TreeView x:Name="AllCourses" MouseDoubleClick="AllCourses_MouseDoubleClick">
                 <TreeView.Resources>
                     <Style TargetType="{x:Type TreeViewItem}">
                         <Setter Property="HeaderTemplate">
@@ -19,7 +19,7 @@
                                     <StackPanel>
                                         <Grid Width="200" Height="150">
                                             <Ellipse Margin="10,10,10,10" Fill="PowderBlue" Stroke="Black"/>
-                                            <TextBlock  HorizontalAlignment="Center" FontSize="20" Text="{Binding}"  FontStyle="Normal" FontWeight="Bold" TextAlignment="Center" VerticalAlignment="Center"/>
+                                            <TextBlock  HorizontalAlignment="Center" FontSize="20" Text="{Binding}"  FontStyle="Normal" FontWeight="Bold" TextAlignment="Center" VerticalAlignment="Center"  />
                                         </Grid>
                                     </StackPanel>
                                 </DataTemplate>

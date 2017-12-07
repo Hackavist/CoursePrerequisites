@@ -42,7 +42,13 @@ namespace Course_Prerequsites_WPF.Classes
             Hours = hours;
             Instructor = instructor;
             Description = description;
-            PreRequiredCourses = pre; // removed for each loop 
+
+            PreRequiredCourses = new List<string>();
+
+            foreach (var item in pre)
+            {
+                PreRequiredCourses.Add(item); // Batl Le3b ya 7azem ya 7azem  
+            }
         }
 
 
@@ -97,14 +103,12 @@ namespace Course_Prerequsites_WPF.Classes
                     //Creates a costume obkject of the courses class 
                     Course c = new Course(Code, CourseName, MaximumNumberOfStudents, CurrentNumberOfStudents, PassingGrade, CourseGrade, Hours, Instructor, Description, pr);
 
-                    //emptys the list to avoid extra entries 
-                    pr.Clear();
                     //adds it ot the Dictionary of Coures
                     M[CourseName] = c;
 
+                    //emptys the list to avoid extra entries 
+                    pr.Clear();
                 }
-
-
             }
             //closes the stream reader and the file stream 
             sr.Close();

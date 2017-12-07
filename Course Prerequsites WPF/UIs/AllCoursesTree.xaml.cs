@@ -21,6 +21,7 @@ namespace Course_Prerequsites_WPF.UIs
         {
             //returns a dictionary full of all courses 
             Dictionary<string, Course> AllCoursesObj = new Dictionary<string, Course>();
+
             Course cour = new Course();
             //dictionary of all courses
             AllCoursesObj = cour.GetAllCourses();
@@ -43,7 +44,7 @@ namespace Course_Prerequsites_WPF.UIs
             }
         }
 
-        private void Branch_Expanded(object sender, RoutedEventArgs e)
+        public void Branch_Expanded(object sender, RoutedEventArgs e )
         {
             //parces the sender object into a mai
             var x = (TreeViewItem)sender;
@@ -66,7 +67,6 @@ namespace Course_Prerequsites_WPF.UIs
 
             //Reveses the list to out the prequisists in the correct order 
             cour.PreRequiredCourses.Reverse();
-
             // loops on the list of prequesists  
             foreach (var pre in cour.PreRequiredCourses)
             {
@@ -78,6 +78,15 @@ namespace Course_Prerequsites_WPF.UIs
                 x.Items.Add(subitem);
 
             }
+        }
+
+        private void AllCourses_MouseDoubleClick(object sender, System.Windows.Input.MouseButtonEventArgs e)
+        {
+            //if (Branch_Expanded==true)
+            //{
+                
+            //}
+            //MessageBox.Show("Test suc");
         }
     }
 }
