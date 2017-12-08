@@ -42,9 +42,8 @@ namespace Course_Prerequsites_WPF.UIs
                 string Instructor = InstructorTextBox.Text;
                 string Description = DescriptionTextBox.Text;
                 List<string> tmp = new List<string>();
-                Course x = new Course();
-                Dictionary<string, Course> di = x.GetAllCourses();
-                if (di.ContainsKey(CourseName))
+                
+                if (MainWindow.AllCoursesDictionary.ContainsKey(CourseName))
                 {
                     MessageBox.Show("This course already exists ");
 
@@ -53,7 +52,7 @@ namespace Course_Prerequsites_WPF.UIs
                 {
 
                     Course newcourse = new Course(Code, CourseName, MaximumNumber, CurrentNumber, PassingGrade, CourseGrade, Hours, Instructor, Description, tmp);
-                    di[CourseName] = newcourse;
+                    MainWindow.AllCoursesDictionary[CourseName] = newcourse;
                 }
             }
         }
@@ -77,13 +76,11 @@ namespace Course_Prerequsites_WPF.UIs
                 string Description = DescriptionTextBox.Text;
 
                 List<string> tmp = new List<string>();
-
-                Course x = new Course();
-                Dictionary<string, Course> di = x.GetAllCourses();
-                if (di.ContainsKey(CourseName))
+                
+                if (MainWindow.AllCoursesDictionary.ContainsKey(CourseName))
                 {
                     Course newcourse = new Course(Code, CourseName, MaximumNumber, CurrentNumber, PassingGrade, CourseGrade, Hours, Instructor, Description, tmp);
-                    di[CourseName] = newcourse;
+                    MainWindow.AllCoursesDictionary[CourseName] = newcourse;
 
                 }
                 else

@@ -4,17 +4,17 @@
 winexe
 C#
 .cs
-D:\Work\Course Prequsits\Course Prerequsites WPF\obj\Debug\
+C:\Users\hazem\Source\Repos\CoursePrerequisites\Course Prerequsites WPF\obj\Debug\
 Course_Prerequsites_WPF
 none
 false
 DEBUG;TRACE
-D:\Work\Course Prequsits\Course Prerequsites WPF\App.xaml
-12-508970050
+C:\Users\hazem\Source\Repos\CoursePrerequisites\Course Prerequsites WPF\App.xaml
+131213913235
 
-1935993066
+201698007513
 13-1142990016
-UIs\AddCoursePrerequisites.xaml;UIs\AddNewCourse.xaml;UIs\AddStudent.xaml;UIs\AdminLogIn.xaml;UIs\AllCoursesTree.xaml;UIs\AspecificCourse.xaml;UIs\CourseDetails.xaml;UIs\MainWindow.xaml;UIs\MyCourses.xaml;UIs\ViewAllCoursesOfStudent.xaml;UIs\ViewStudentOrCourse.xaml;UIs\ViewStudentsInCourse.xaml;
+UIs\AddCoursePrerequisites.xaml;UIs\AddNewCourse.xaml;UIs\AddStudent.xaml;UIs\AdminLogIn.xaml;UIs\AllCoursesTree.xaml;UIs\AspecificCourse.xaml;UIs\CourseDetails.xaml;UIs\MainWindow.xaml;UIs\MyCourses.xaml;UIs\StudentLogIn.xaml;UIs\ViewAllCoursesOfStudent.xaml;UIs\ViewStudentOrCourse.xaml;UIs\ViewStudentsInCourse.xaml;
 
-False
+True
 
