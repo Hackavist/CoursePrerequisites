@@ -33,20 +33,33 @@ namespace Course_Prerequsites_WPF.UIs
             }
             else
             {
+                string name = SearchCourseName.Text;
+                Student s = new Student();
+                List<Course> listOfCourses = s.CoursesInProgress;
 
-                //string courseName = SearchCourseName.Text;
-                //Student s = new Student();
-                //List<Student> stud = s.GetPersonalInfo(); //waiting for team student
+                if(MainWindow.AllCoursesDictionary.ContainsKey(name))
+                {
+                    for(int i=0 ; i<MainWindow.AllStudentsDictionary.Count ; i++)
+                    {
+                        for(int j=0 ; j<listOfCourses.Count ; j++)
+                        {
+                            if(listOfCourses[i].CourseName==name)
+                            {
+                                DisplayID.Content += s.Id + '\n';
+                                DisplayName.Content += s.Name + '\n';
+                            }
+                            break;
 
-                //for(int i=0 ; i<stud.Capacity ; i++)
-                //{
-                //    stud[i].CoursesInProgress
-                //        // if course name == name in textbox
-                //        //display student's name
-
-                //}
+                        }
+                    }
 
 
+                    
+                }
+                else
+                {
+                    MessageBox.Show("Course Does Not Exist");
+                }
 
             }
         }

@@ -5,12 +5,15 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Course_Prerequsites_WPF.UIs"
         mc:Ignorable="d"
-        Title="ViewStudentsInCourse" Height="700" Width="600" Background="#FF0C2132">
+        Title="ViewStudentsInCourse" Height="757.333" Width="674.667" Background="#FF0C2132">
     <Grid>
         <TextBox x:Name="SearchCourseName" Height="35" Margin="135,204,142.333,0" TextWrapping="Wrap" VerticalAlignment="Top"/>
         <Label Content="enter course name&#xD;&#xA;" Height="29" Margin="135,170,66.333,0" VerticalAlignment="Top" FontFamily="Orator Std" FontSize="18" FontWeight="Bold" Foreground="#FFA5E11B"/>
         <Button Content="Display" HorizontalAlignment="Left" Height="35" Margin="343,285,0,0" VerticalAlignment="Top" Width="108" Click="Button_Click"/>
-        <ScrollViewer HorizontalAlignment="Left" Height="263" Margin="58,376,0,0" VerticalAlignment="Top" Width="499"/>
+        <Label Content="ID" HorizontalAlignment="Left" Height="25" Margin="53,387,0,0" VerticalAlignment="Top" Width="106" Foreground="#FFF9F5F5" FontFamily="Times New Roman" FontSize="18"/>
+        <Label Content="Name" HorizontalAlignment="Left" Height="25" Margin="216,387,0,0" VerticalAlignment="Top" Width="106" Foreground="#FFF9F5F5" FontFamily="Times New Roman" FontSize="18"/>
+        <Label x:Name="DisplayID" Content="" HorizontalAlignment="Left" Height="24" Margin="53,459,0,0" VerticalAlignment="Top" Width="106"/>
+        <Label x:Name="DisplayName" Content="" HorizontalAlignment="Left" Height="24" Margin="216,459,0,0" VerticalAlignment="Top" Width="106"/>
 
     </Grid>
 </Window>
