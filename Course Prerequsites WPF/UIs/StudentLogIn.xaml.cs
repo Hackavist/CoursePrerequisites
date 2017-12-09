@@ -19,6 +19,7 @@ namespace Course_Prerequsites_WPF.UIs
     /// </summary>
     public partial class StudentLogIn : Window
     {
+        public static string StudentID ="Nour";
         public StudentLogIn()
         {
             InitializeComponent();
@@ -26,17 +27,17 @@ namespace Course_Prerequsites_WPF.UIs
 
         private void loginButton_Click(object sender, RoutedEventArgs e)
         {
-            string id = idTextBox.Text;
+            StudentID = idTextBox.Text;
             string password = passwordTextBox.Text;
-            if (id=="" || password=="")
+            if (StudentID=="" || password=="")
             {
                 MessageBox.Show("Please enter valid username and password.");
             }
             else
             {
-                if (MainWindow.AllStudentsDictionary.ContainsKey(id))
+                if (MainWindow.AllStudentsDictionary.ContainsKey(StudentID))
                 {
-                    if (MainWindow.AllStudentsDictionary[id].Password==password)
+                    if (MainWindow.AllStudentsDictionary[StudentID].Password==password)
                     {
                         MessageBox.Show("WE ARE DONE!!!");
                     }

@@ -72,7 +72,7 @@ namespace Course_Prerequsites_WPF.Classes
                 Records = sr.ReadLine().Split('#');
 
                 //Loops on all reacords 
-                for (int i = 0; i < Records.Length; i++)
+                for (int i = 0; i < Records.Length-1; i++)
                 {
                     //splits the Records into datamembers 
                     Datamembes = Records[i].Split('%');
