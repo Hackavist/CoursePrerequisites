@@ -2,7 +2,6 @@
 using System.Collections.Generic;
 using System.IO;
 
-
 namespace Course_Prerequsites_WPF.Classes
 {
     public class Course
@@ -53,10 +52,9 @@ namespace Course_Prerequsites_WPF.Classes
 
 
         //returns a Dictionary that Contains all existing couses indexed by course name and Course object
-
         public Dictionary<string, Course> GetAllCourses()
         {
-            FileStream fs = new FileStream("AllCoursesFile.txt", FileMode.Open, FileAccess.Read);
+            FileStream fs = new FileStream("AllCoursesFile.txt", FileMode.Open);
             StreamReader sr = new StreamReader(fs);
 
             // 3 string arrays to split the readings in 
@@ -109,11 +107,11 @@ namespace Course_Prerequsites_WPF.Classes
                     //emptys the list to avoid extra entries 
                     pr.Clear();
                 }
-            }
+            }   
             //closes the stream reader and the file stream 
             sr.Close();
             fs.Close();
-
+        
             //returns list of objs
             return M;
 

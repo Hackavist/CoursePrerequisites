@@ -30,7 +30,6 @@ namespace Course_Prerequsites_WPF
         public static Dictionary<string, Student> AllStudentsDictionary = Student.GetAllStudents();
 
         //Get All Admins Dictionary 
-
         public static Admin Admin = new Admin();
         public static Dictionary<string, Admin> AllAdminsDictionary = Admin.GetAllAdmins();
 

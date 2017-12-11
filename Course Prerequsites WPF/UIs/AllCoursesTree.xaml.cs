@@ -34,9 +34,9 @@ namespace Course_Prerequsites_WPF.UIs
 
                 branch.HeaderStringFormat = course.Value.CourseName;
 
-                branch.Items.Add(null); // addes a node to the tree 
+               branch.Items.Add(null); // addes a node to the tree 
 
-                branch.Expanded += Branch_Expanded; // what happens when the tree is expanded 
+               branch.Expanded += Branch_Expanded; // what happens when the tree is expanded 
 
                AllCourses.Items.Add(branch); // addes the branch to the parent 
 
