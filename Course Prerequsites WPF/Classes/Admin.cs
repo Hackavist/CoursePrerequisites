@@ -28,7 +28,7 @@ namespace Course_Prerequsites_WPF.Classes
             GeneralManager = Flag; // changed into int 
         }
 
-        public Dictionary<string , Admin> GetAllAdmins ()
+        public Dictionary<string, Admin> GetAllAdmins()
         {
             FileStream fs = new FileStream("AdminData.txt", FileMode.Open);
             StreamReader sr = new StreamReader(fs);
@@ -40,7 +40,7 @@ namespace Course_Prerequsites_WPF.Classes
             {
                 record = sr.ReadLine().Split('#');
 
-                for (int i = 0; i < record.Length-1; i++)
+                for (int i = 0; i < record.Length - 1; i++)
                 {
                     field = record[i].Split('*');
                     UserName = field[0];
@@ -54,38 +54,14 @@ namespace Course_Prerequsites_WPF.Classes
             AllAdmins[UserName] = data;
 
             sr.Close();
-            fs.Close(); 
+            fs.Close();
 
             return AllAdmins;
-
-
         }
 
         public void AddCoursePrerquisite(string coursename, string prerequisitename)
         {
-
-            //Course obj = new Course();
-
-            //obj = obj.ReturnObj(coursename);
-
-            //obj.PreRequiredCourses.Add(prerequisitename);
-
-           // Dictionary<string, Course> M =MainWindow.AllCoursesDictionary;
-
             MainWindow.AllCoursesDictionary[coursename].PreRequiredCourses.Add(prerequisitename);
-
-            //M.Remove(coursename);
-
-            //M.Add(coursename, obj);
-
-            //FileStream fs = new FileStream("AllCoursesFile.txt", FileMode.Create);
-
-            //fs.Close();
-
-            //foreach (var item in M)
-            //{
-              //  obj.WriteObj(item.Value);
-            //}
         }
     }
 }
