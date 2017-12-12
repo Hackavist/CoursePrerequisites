@@ -2,7 +2,8 @@
              xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
              xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
              xmlns:local="clr-namespace:Course_Prerequsites_WPF"
-             StartupUri="UIs/AllCoursesTree.xaml">
+             StartupUri="UIs/AllCoursesTree.xaml"
+             Exit="Application_Exit">
     <Application.Resources>
          
     </Application.Resources>

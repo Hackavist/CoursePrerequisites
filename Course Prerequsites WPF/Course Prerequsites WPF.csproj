@@ -92,6 +92,9 @@
     <Compile Include="UIs\ViewStudentsInCourse.xaml.cs">
       <DependentUpon>ViewStudentsInCourse.xaml</DependentUpon>
     </Compile>
+    <Compile Include="UIs\WelcomePage.xaml.cs">
+      <DependentUpon>WelcomePage.xaml</DependentUpon>
+    </Compile>
     <Page Include="UIs\AddCoursePrerequisites.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
@@ -161,6 +164,10 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </Page>
+    <Page Include="UIs\WelcomePage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Properties\AssemblyInfo.cs">
@@ -194,7 +201,7 @@
     <Resource Include="Images\Pic.jpg" />
   </ItemGroup>
   <ItemGroup>
-    <Resource Include="bin\Debug\AdminData.txt" />
+    <Folder Include="bin\Debug\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

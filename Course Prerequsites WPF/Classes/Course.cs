@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.IO;
+using Course_Prerequsites_WPF.UIs;
 
 namespace Course_Prerequsites_WPF.Classes
 {
@@ -107,11 +108,11 @@ namespace Course_Prerequsites_WPF.Classes
                     //emptys the list to avoid extra entries 
                     pr.Clear();
                 }
-            }   
+            }
             //closes the stream reader and the file stream 
             sr.Close();
             fs.Close();
-        
+
             //returns list of objs
             return M;
 
@@ -122,7 +123,7 @@ namespace Course_Prerequsites_WPF.Classes
         {
             bool check = false;//To chaeck if this course exist or not
 
-            foreach (var x in MainWindow.AllCoursesDictionary)//loop to search for certaion subjects in all the subjects
+            foreach (var x in WelcomePage.AllCoursesDictionary)//loop to search for certaion subjects in all the subjects
             {
                 if (x.Key == CourseName) // commpares the kety of the dictionary with the course's name
                 {
@@ -137,46 +138,48 @@ namespace Course_Prerequsites_WPF.Classes
             else return null;
         }
 
-        public void WriteObj(Course cour)
+        public void WriteFile()
         {
-            if (cour != null)
+            if (WelcomePage.AllCoursesDictionary != null)
             {
                 int c = 0;
                 FileStream File = new FileStream("AllCoursesFile.txt", FileMode.Append, FileAccess.Write);
                 StreamWriter Sw = new StreamWriter(File);
-
-                Sw.Write(cour.Code);
-                Sw.Write('%');
-                Sw.Write(cour.CourseName);
-                Sw.Write('%');
-                Sw.Write(Convert.ToString(cour.MaximumNumberOfStudents));//converts the intgers to strings then writes them in the file 
-                Sw.Write('%');
-                Sw.Write(Convert.ToString(cour.CurrentNumberOfStudents));//converts the intgers to strings then writes them in the file 
-                Sw.Write('%');
-                Sw.Write(Convert.ToString(cour.PassingGrade));//converts the intgers to strings then writes them in the file 
-                Sw.Write('%');
-                Sw.Write(Convert.ToString(cour.CourseGrade));//converts the intgers to strings then writes them in the file 
-                Sw.Write('%');
-                Sw.Write(Convert.ToString(cour.Hours));//converts the intgers to strings then writes them in the file 
-                Sw.Write('%');
-                Sw.Write(cour.Instructor);
-                Sw.Write('%');
-                Sw.Write(cour.Description);
-                Sw.Write('%');
-
-                //loops on the list of prequsites and add '*' delimiter between them
-                foreach (var item in cour.PreRequiredCourses)
+                foreach (var cour in WelcomePage.AllCoursesDictionary.Values)
                 {
-                    c++;
-                    Sw.Write(item);
-                    if (c != cour.PreRequiredCourses.Capacity - 1)
-                    {
-                        Sw.Write('*');
-                    }
-                }
 
-                //end of record dilimter
-                Sw.Write('#');
+                    Sw.Write(cour.Code);
+                    Sw.Write('%');
+                    Sw.Write(cour.CourseName);
+                    Sw.Write('%');
+                    Sw.Write(Convert.ToString(cour.MaximumNumberOfStudents));//converts the intgers to strings then writes them in the file 
+                    Sw.Write('%');
+                    Sw.Write(Convert.ToString(cour.CurrentNumberOfStudents));//converts the intgers to strings then writes them in the file 
+                    Sw.Write('%');
+                    Sw.Write(Convert.ToString(cour.PassingGrade));//converts the intgers to strings then writes them in the file 
+                    Sw.Write('%');
+                    Sw.Write(Convert.ToString(cour.CourseGrade));//converts the intgers to strings then writes them in the file 
+                    Sw.Write('%');
+                    Sw.Write(Convert.ToString(cour.Hours));//converts the intgers to strings then writes them in the file 
+                    Sw.Write('%');
+                    Sw.Write(cour.Instructor);
+                    Sw.Write('%');
+                    Sw.Write(cour.Description);
+                    Sw.Write('%');
+
+                    //loops on the list of prequsites and add '*' delimiter between them
+                    foreach (var item in cour.PreRequiredCourses)
+                    {
+                        c++;
+                        Sw.Write(item);
+                        if (c != cour.PreRequiredCourses.Capacity - 1)
+                        {
+                            Sw.Write('*');
+                        }
+                    }
+                    //end of record dilimter
+                    Sw.Write('#');
+                }
 
                 //closes the stream writer and the file stream 
                 Sw.Close();

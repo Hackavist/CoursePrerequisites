@@ -46,9 +46,9 @@ namespace Course_Prerequsites_WPF.UIs
                string name = Username_txt.Text;
                string password = Password_txt.Password;
 
-               if(MainWindow.AllAdminsDictionary.ContainsKey(name))
+               if(WelcomePage.AllAdminsDictionary.ContainsKey(name))
                 {
-                    if(MainWindow.AllAdminsDictionary[name].Password==password)
+                    if(WelcomePage.AllAdminsDictionary[name].Password==password)
                     {
                         MessageBox.Show("Logging In");
                         //opens next window : admin controls

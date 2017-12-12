@@ -11,6 +11,7 @@ using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
+using Course_Prerequsites_WPF.UIs;
 using Course_Prerequsites_WPF.Classes;
 
 namespace Course_Prerequsites_WPF.UIs
@@ -40,7 +41,7 @@ namespace Course_Prerequsites_WPF.UIs
 
                 Student s = new Student(name, id, pass, year);
 
-                if (MainWindow.AllStudentsDictionary.ContainsKey(id))
+                if (WelcomePage.AllStudentsDictionary.ContainsKey(id))
                 {
                     MessageBox.Show("Student already exist");
 
@@ -48,7 +49,7 @@ namespace Course_Prerequsites_WPF.UIs
 
                 else
                 {
-                    MainWindow.AllStudentsDictionary[id]=s;
+                    WelcomePage.AllStudentsDictionary[id]=s;
                     MessageBox.Show("Student Added");
                 }
               
