@@ -185,6 +185,7 @@ namespace Course_Prerequsites_WPF.Classes
                             Sw.Write('*');
                         }
                     }
+                    Sw.Write('%');
                     // writes the courses in progress
                     foreach (var item in stud.CoursesInProgress)
                     {
