@@ -57,5 +57,10 @@ namespace Course_Prerequsites_WPF.UIs
             }
 
         }
+
+        private void StudName_TextChanged(object sender, TextChangedEventArgs e)
+        {
+
+        }
     }
 }

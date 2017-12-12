@@ -92,6 +92,9 @@
     <Compile Include="UIs\ViewStudentsInCourse.xaml.cs">
       <DependentUpon>ViewStudentsInCourse.xaml</DependentUpon>
     </Compile>
+    <Compile Include="UIs\EditMyData.xaml.cs">
+      <DependentUpon>EditMyData.xaml</DependentUpon>
+    </Compile>
     <Page Include="UIs\AddCoursePrerequisites.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
@@ -160,6 +163,10 @@
     <Page Include="UIs\ViewStudentsInCourse.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
+    </Page>
+    <Page Include="UIs\EditMyData.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
     </Page>
   </ItemGroup>
   <ItemGroup>

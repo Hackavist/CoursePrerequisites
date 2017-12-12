@@ -19,7 +19,7 @@ namespace Course_Prerequsites_WPF.UIs
     /// </summary>
     public partial class StudentLogIn : Window
     {
-        public static string StudentID ="Nour";
+        public static string StudentID ;
         public StudentLogIn()
         {
             InitializeComponent();
@@ -51,6 +51,11 @@ namespace Course_Prerequsites_WPF.UIs
                     MessageBox.Show("User does not exist.");
                 }
             }
+        }
+
+        private void idTextBox_TextChanged(object sender, TextChangedEventArgs e)
+        {
+
         }
     }
 }
