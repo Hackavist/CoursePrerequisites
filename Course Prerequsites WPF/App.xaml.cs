@@ -23,6 +23,16 @@ namespace Course_Prerequsites_WPF
             WelcomePage.Course.WriteFile();
             WelcomePage.Student.WriteFile();
             WelcomePage.Admin.WriteFile();
+
+            // Logs the student out 
+            WelcomePage.StudentLogedIn = false;
+            WelcomePage.StudentId = "";
+            WelcomePage.StudentPassword = "";
+
+            //logs the admin out
+            WelcomePage.AdminLogedIn = false;
+            WelcomePage.AdminUserName = "";
+            WelcomePage.AdminPassword = "";
         }
     }
 }

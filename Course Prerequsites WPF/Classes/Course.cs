@@ -97,7 +97,10 @@ namespace Course_Prerequsites_WPF.Classes
                     //fills the array that exists in the class with the one in the file
                     for (int j = 0; j < prerequirds.Length; j++)
                     {
-                        pr.Add(prerequirds[j]);
+                        if (prerequirds[j] != "")
+                        {
+                            pr.Add(prerequirds[j]);
+                        }
                     }
                     //Creates a costume obkject of the courses class 
                     Course c = new Course(Code, CourseName, MaximumNumberOfStudents, CurrentNumberOfStudents, PassingGrade, CourseGrade, Hours, Instructor, Description, pr);
@@ -173,7 +176,7 @@ namespace Course_Prerequsites_WPF.Classes
                         c++;
                         Sw.Write(item);
 
-                        if (c != cour.PreRequiredCourses.Count - 1)
+                        if (c <= cour.PreRequiredCourses.Count - 1)
                         {
                             Sw.Write('*');
                         }

@@ -33,8 +33,17 @@ namespace Course_Prerequsites_WPF.Classes
             Id = id;
             Password = pass;
             AcademicYear = year;
-            FinishedCourses = finished;
-            CoursesInProgress = progess;
+            FinishedCourses = new List<Course>();
+            foreach (Course item in finished)
+            {
+                FinishedCourses.Add(item);
+            }
+
+            CoursesInProgress = new List<Course>();
+            foreach (Course item in progess)
+            {
+                CoursesInProgress.Add(item);
+            }
         }
 
         public Student(string id, string n, string pass, int year)
@@ -97,6 +106,9 @@ namespace Course_Prerequsites_WPF.Classes
 
                 }
             }
+
+            Sr.Close();
+            File.Close();
 
             return AllStudents;
 
@@ -162,12 +174,13 @@ namespace Course_Prerequsites_WPF.Classes
                     Sw.Write('%');
                     Sw.Write(Convert.ToString(stud.AcademicYear));
                     Sw.Write('%');
+
                     //writes the finished courses
                     foreach (var item in stud.FinishedCourses)
                     {
                         c++;
                         Sw.Write(item.CourseName);
-                        if (c != stud.FinishedCourses.Count - 1)
+                        if (c <= stud.FinishedCourses.Count - 1)
                         {
                             Sw.Write('*');
                         }
@@ -177,7 +190,7 @@ namespace Course_Prerequsites_WPF.Classes
                     {
                         i++;
                         Sw.Write(item.CourseName);
-                        if (i != stud.CoursesInProgress.Count - 1)
+                        if (i <= stud.CoursesInProgress.Count - 1)
                         {
                             Sw.Write('*');
                         }
@@ -203,7 +216,7 @@ namespace Course_Prerequsites_WPF.Classes
         {
             File.WriteAllText(@"AllStudentsFile.txt", string.Empty);
         }
-        
+
     }
 }
 

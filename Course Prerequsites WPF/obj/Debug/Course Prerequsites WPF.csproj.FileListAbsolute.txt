@@ -125,7 +125,6 @@ D:\Work\Course Prequsits\Course Prerequsites WPF\obj\Debug\UIs\WelcomePage.baml
 D:\Work\Course Registration System\Course Prerequsites WPF\bin\Debug\Course Prerequsites WPF.exe.config
 D:\Work\Course Registration System\Course Prerequsites WPF\bin\Debug\Course Prerequsites WPF.exe
 D:\Work\Course Registration System\Course Prerequsites WPF\bin\Debug\Course Prerequsites WPF.pdb
-D:\Work\Course Registration System\Course Prerequsites WPF\obj\Debug\Course Prerequsites WPF.csprojResolveAssemblyReference.cache
 D:\Work\Course Registration System\Course Prerequsites WPF\obj\Debug\UIs\AddNewCourse.baml
 D:\Work\Course Registration System\Course Prerequsites WPF\obj\Debug\UIs\StudentLogIn.baml
 D:\Work\Course Registration System\Course Prerequsites WPF\obj\Debug\UIs\ViewAllCourses.baml

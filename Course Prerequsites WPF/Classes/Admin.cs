@@ -38,6 +38,7 @@ namespace Course_Prerequsites_WPF.Classes
 
             string[] field, record;
 
+            Dictionary<string, Admin> AllAdmins = new Dictionary<string, Admin>();
 
             while (sr.Peek() != -1)
             {
@@ -49,12 +50,11 @@ namespace Course_Prerequsites_WPF.Classes
                     UserName = field[0];
                     Password = field[1];
                     GeneralManager = Convert.ToInt32(field[2]); // Converted to int 
+                    Admin data = new Admin(UserName, Password, GeneralManager);
+
+                    AllAdmins[UserName] = data;
                 }
             }
-            Admin data = new Admin(UserName, Password, GeneralManager);
-
-            Dictionary<string, Admin> AllAdmins = new Dictionary<string, Admin>();
-            AllAdmins[UserName] = data;
 
             sr.Close();
             fs.Close();
