@@ -67,7 +67,7 @@ namespace Course_Prerequsites_WPF.Classes
             while (Sr.Peek() != -1)
             {
                 Records = Sr.ReadLine().Split('#');
-                for (int i = 0; i < Records.Length-1; i++)
+                for (int i = 0; i < Records.Length - 1; i++)
                 {
                     fields = Records[i].Split('%');
 
@@ -146,7 +146,7 @@ namespace Course_Prerequsites_WPF.Classes
             if (WelcomePage.AllStudentsDictionary != null)
             {
                 //counters for the * typing
-                int c = 0,i=0;
+                int c = 0, i = 0;
 
                 FileStream File = new FileStream("AllStudentsFile.txt", FileMode.Append, FileAccess.Write);
                 StreamWriter Sw = new StreamWriter(File);
@@ -167,7 +167,7 @@ namespace Course_Prerequsites_WPF.Classes
                     {
                         c++;
                         Sw.Write(item.CourseName);
-                        if (c != stud.FinishedCourses.Capacity - 1)
+                        if (c != stud.FinishedCourses.Count - 1)
                         {
                             Sw.Write('*');
                         }
@@ -177,13 +177,15 @@ namespace Course_Prerequsites_WPF.Classes
                     {
                         i++;
                         Sw.Write(item.CourseName);
-                        if (i != stud.CoursesInProgress.Capacity - 1)
+                        if (i != stud.CoursesInProgress.Count - 1)
                         {
                             Sw.Write('*');
                         }
                     }
                     //end of record dilimter
                     Sw.Write('#');
+                    c = 0;
+                    i = 0;
                 }
 
                 //closes the stream writer and the file stream 
@@ -197,6 +199,11 @@ namespace Course_Prerequsites_WPF.Classes
             }
         }
 
+        public void FileClear()
+        {
+            File.WriteAllText(@"AllStudentsFile.txt", string.Empty);
+        }
+        
     }
 }
 

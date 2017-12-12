@@ -98,5 +98,10 @@ namespace Course_Prerequsites_WPF.Classes
                 throw new NotImplementedException();
             }
         }
+
+        public void FileClear()
+        {
+            File.WriteAllText(@"AllAdminsFile.txt", string.Empty);
+        }
     }
 }

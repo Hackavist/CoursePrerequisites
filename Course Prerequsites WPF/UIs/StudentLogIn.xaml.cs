@@ -40,6 +40,10 @@ namespace Course_Prerequsites_WPF.UIs
                     if (WelcomePage.AllStudentsDictionary[StudentID].Password==password)
                     {
                         MessageBox.Show("WE ARE DONE!!!");
+                        WelcomePage.StudentLogedIn = true;
+                        WelcomePage.StudentId = idTextBox.Text;
+                        WelcomePage.StudentPassword = passwordTextBox.Text;
+
                     }
                     else
                     {

@@ -13,6 +13,13 @@ namespace Course_Prerequsites_WPF
     {
         private void Application_Exit(object sender, ExitEventArgs e)
         {
+
+            //clears the previous files 
+            WelcomePage.Course.FileClear();
+            WelcomePage.Student.FileClear();
+            WelcomePage.Admin.FileClear();
+
+            //writes the whole file for each classs
             WelcomePage.Course.WriteFile();
             WelcomePage.Student.WriteFile();
             WelcomePage.Admin.WriteFile();

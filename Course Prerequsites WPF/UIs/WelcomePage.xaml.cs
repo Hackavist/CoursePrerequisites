@@ -32,6 +32,19 @@ namespace Course_Prerequsites_WPF.UIs
         public static Admin Admin = new Admin();
         public static Dictionary<string, Admin> AllAdminsDictionary = Admin.GetAllAdmins();
 
+        //check student login 
+        public static bool StudentLogedIn;
+        public static string StudentId;
+        public static string StudentPassword;
+
+        //check admin login 
+        public static bool AdminLogedIn;
+        public static string AdminUserName;
+        public static string AdminPassword;
+
+
+
+
         public WelcomePage()
         {
             InitializeComponent();

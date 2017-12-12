@@ -91,7 +91,7 @@ namespace Course_Prerequsites_WPF.Classes
                     Instructor = fileds[7];
                     Description = fileds[8];
 
-                    //creates an array of the PreREquried subjects 
+                    //creates an array of the Prerequried subjects 
                     prerequirds = fileds[9].Split('*');
 
                     //fills the array that exists in the class with the one in the file
@@ -172,13 +172,15 @@ namespace Course_Prerequsites_WPF.Classes
                     {
                         c++;
                         Sw.Write(item);
-                        if (c != cour.PreRequiredCourses.Capacity - 1)
+
+                        if (c != cour.PreRequiredCourses.Count - 1)
                         {
                             Sw.Write('*');
                         }
                     }
                     //end of record dilimter
                     Sw.Write('#');
+                    c = 0;
                 }
 
                 //closes the stream writer and the file stream 
@@ -190,6 +192,11 @@ namespace Course_Prerequsites_WPF.Classes
                 //throws an exceptions that says Unimplmented 
                 throw new NotImplementedException();
             }
+        }
+
+        public void FileClear()
+        {
+            File.WriteAllText(@"AllCoursesFile.txt", string.Empty);
         }
 
     }
