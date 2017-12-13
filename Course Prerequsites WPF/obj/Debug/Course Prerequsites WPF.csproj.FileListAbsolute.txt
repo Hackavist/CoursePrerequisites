@@ -164,3 +164,8 @@ D:\Work\Course Registration System\Course Prerequsites WPF\obj\Debug\Course Prer
 D:\Work\Course Registration System\Course Prerequsites WPF\obj\Debug\Course Prerequsites WPF.csproj.CoreCompileInputs.cache
 D:\Work\Course Registration System\Course Prerequsites WPF\obj\Debug\Course Prerequsites WPF.exe
 D:\Work\Course Registration System\Course Prerequsites WPF\obj\Debug\Course Prerequsites WPF.pdb
+D:\Work\Course Registration System\Course Prerequsites WPF\bin\Debug\De.TorstenMandelkow.MetroChart.dll
+D:\Work\Course Registration System\Course Prerequsites WPF\bin\Debug\MetroFramework.Design.dll
+D:\Work\Course Registration System\Course Prerequsites WPF\bin\Debug\MetroFramework.dll
+D:\Work\Course Registration System\Course Prerequsites WPF\bin\Debug\MetroFramework.Fonts.dll
+D:\Work\Course Registration System\Course Prerequsites WPF\obj\Debug\Course Prerequsites WPF.csprojResolveAssemblyReference.cache
