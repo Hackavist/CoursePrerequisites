@@ -4,7 +4,8 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.IO;
-
+using Course_Prerequsites_WPF;
+using Course_Prerequsites_WPF.UIs;
 namespace Course_Prerequsites_WPF.Classes
 {
     public class Student
@@ -22,8 +23,8 @@ namespace Course_Prerequsites_WPF.Classes
             Id = "";
             Password = "";
             AcademicYear = 0;
-            FinishedCourses = null;
-            CoursesInProgress = null;
+            FinishedCourses = new List<Course>();
+            CoursesInProgress = new List<Course>();
         }
 
         public Student(string id, string n, string pass, int year, List<Course> finished, List<Course> progess)
@@ -130,15 +131,12 @@ namespace Course_Prerequsites_WPF.Classes
             return true;
         }
 
-
+      
 
         public void Register(Course NewCourse)
         {
-            //To be added: NewCourse.NumberOfRegisteredStudents
-            if (CheckPrequired(NewCourse.CourseName) == true/* &&  NewCourse.MaximumNumberOfStudents - NewCourse.NumberOfRegisteredStudents*/)
-            {
-                CoursesInProgress.Add(NewCourse);
-            }
+            
+
         }
 
     }
