@@ -46,13 +46,13 @@ namespace Course_Prerequsites_WPF.Classes
                     UserName = field[0];
                     Password = field[1];
                     GeneralManager = Convert.ToInt32(field[2]); // Converted to int 
+
                 }
             }
-            Admin data = new Admin(UserName, Password, GeneralManager);
+                    Admin data = new Admin(UserName, Password, GeneralManager);
 
-            Dictionary<string, Admin> AllAdmins = new Dictionary<string, Admin>();
-            AllAdmins[UserName] = data;
-
+                    Dictionary<string, Admin> AllAdmins = new Dictionary<string, Admin>();
+                    AllAdmins[UserName] = data;
             sr.Close();
             fs.Close();
 

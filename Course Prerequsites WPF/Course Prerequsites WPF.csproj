@@ -74,6 +74,9 @@
     <Compile Include="UIs\CourseDetails.xaml.cs">
       <DependentUpon>CourseDetails.xaml</DependentUpon>
     </Compile>
+    <Compile Include="UIs\Drop.xaml.cs">
+      <DependentUpon>Drop.xaml</DependentUpon>
+    </Compile>
     <Compile Include="UIs\MyCourses.xaml.cs">
       <DependentUpon>MyCourses.xaml</DependentUpon>
     </Compile>
@@ -122,6 +125,10 @@
     <Page Include="UIs\CourseDetails.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
+    </Page>
+    <Page Include="UIs\Drop.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="UIs\MainWindow.xaml">
       <Generator>MSBuild:Compile</Generator>
