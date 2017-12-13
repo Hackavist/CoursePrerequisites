@@ -11,6 +11,8 @@ using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
+using Course_Prerequsites_WPF.UIs;
+
 using Course_Prerequsites_WPF.Classes;
 
 namespace Course_Prerequsites_WPF.UIs
@@ -37,9 +39,9 @@ namespace Course_Prerequsites_WPF.UIs
                 Student s = new Student();
                 List<Course> listOfCourses = s.CoursesInProgress;
 
-                if(MainWindow.AllCoursesDictionary.ContainsKey(name))
+                if(WelcomePage.AllCoursesDictionary.ContainsKey(name))
                 {
-                    for(int i=0 ; i<MainWindow.AllStudentsDictionary.Count ; i++)
+                    for(int i=0 ; i<WelcomePage.AllStudentsDictionary.Count ; i++)
                     {
                         for(int j=0 ; j<listOfCourses.Count ; j++)
                         {

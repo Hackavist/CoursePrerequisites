@@ -43,7 +43,7 @@ namespace Course_Prerequsites_WPF.UIs
                 string Description = DescriptionTextBox.Text;
                 List<string> tmp = new List<string>();
                 
-                if (MainWindow.AllCoursesDictionary.ContainsKey(CourseName))
+                if (WelcomePage.AllCoursesDictionary.ContainsKey(CourseName))
                 {
                     MessageBox.Show("This course already exists ");
 
@@ -52,7 +52,7 @@ namespace Course_Prerequsites_WPF.UIs
                 {
 
                     Course newcourse = new Course(Code, CourseName, MaximumNumber, CurrentNumber, PassingGrade, CourseGrade, Hours, Instructor, Description, tmp);
-                    MainWindow.AllCoursesDictionary[CourseName] = newcourse;
+                    WelcomePage.AllCoursesDictionary[CourseName] = newcourse;
                 }
             }
         }
@@ -77,10 +77,10 @@ namespace Course_Prerequsites_WPF.UIs
 
                 List<string> tmp = new List<string>();
                 
-                if (MainWindow.AllCoursesDictionary.ContainsKey(CourseName))
+                if (WelcomePage.AllCoursesDictionary.ContainsKey(CourseName))
                 {
                     Course newcourse = new Course(Code, CourseName, MaximumNumber, CurrentNumber, PassingGrade, CourseGrade, Hours, Instructor, Description, tmp);
-                    MainWindow.AllCoursesDictionary[CourseName] = newcourse;
+                    WelcomePage.AllCoursesDictionary[CourseName] = newcourse;
 
                 }
                 else

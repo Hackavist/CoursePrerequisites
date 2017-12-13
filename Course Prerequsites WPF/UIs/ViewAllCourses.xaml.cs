@@ -11,7 +11,6 @@ using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
-using Course_Prerequsites_WPF.UIs;
 using Course_Prerequsites_WPF.Classes;
 
 namespace Course_Prerequsites_WPF.UIs
@@ -29,7 +28,7 @@ namespace Course_Prerequsites_WPF.UIs
         private void Window_Loaded(object sender, RoutedEventArgs e)
         {
             label1.Content = "";
-            List<Course> progress = MainWindow.AllStudentsDictionary[StudentLogIn.StudentID].CoursesInProgress;
+            List<Course> progress = WelcomePage.AllStudentsDictionary[StudentLogIn.StudentID].CoursesInProgress;
             for (int i=0;i<progress.Count;i++)
             {
                 label1.Content += progress[i] +"\n";

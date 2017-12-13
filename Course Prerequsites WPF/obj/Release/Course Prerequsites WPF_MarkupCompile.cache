@@ -4,17 +4,17 @@
 winexe
 C#
 .cs
-C:\Users\lenovo\Source\Repos\CoursePrerequisites2\Course Prerequsites WPF\obj\Release\
+D:\Work\Course Registration System\Course Prerequsites WPF\obj\Release\
 Course_Prerequsites_WPF
 none
 false
 TRACE
-C:\Users\lenovo\Source\Repos\CoursePrerequisites2\Course Prerequsites WPF\App.xaml
-14-1097130084
+D:\Work\Course Registration System\Course Prerequsites WPF\App.xaml
+15-495804186
 
-211113234246
+22407649342
 13-1142990016
-UIs\AddCoursePrerequisites.xaml;UIs\AddNewCourse.xaml;UIs\AddStudent.xaml;UIs\AdminLogIn.xaml;UIs\AllCoursesTree.xaml;UIs\AspecificCourse.xaml;UIs\CourseDetails.xaml;UIs\MainWindow.xaml;UIs\MyCourses.xaml;UIs\StudentLogIn.xaml;UIs\ViewAllCourses.xaml;UIs\ViewAllCoursesOfStudent.xaml;UIs\ViewStudentOrCourse.xaml;UIs\ViewStudentsInCourse.xaml;
+UIs\AddCoursePrerequisites.xaml;UIs\AddNewCourse.xaml;UIs\AddStudent.xaml;UIs\AdminLogIn.xaml;UIs\AllCoursesTree.xaml;UIs\AspecificCourse.xaml;UIs\CourseDetails.xaml;UIs\MainWindow.xaml;UIs\MyCourses.xaml;UIs\StudentLogIn.xaml;UIs\ViewAllCourses.xaml;UIs\ViewAllCoursesOfStudent.xaml;UIs\ViewStudentOrCourse.xaml;UIs\ViewStudentsInCourse.xaml;UIs\WelcomePage.xaml;
 
 True
 
