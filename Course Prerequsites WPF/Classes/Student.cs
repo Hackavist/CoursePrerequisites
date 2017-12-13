@@ -23,8 +23,8 @@ namespace Course_Prerequsites_WPF.Classes
             Id = "";
             Password = "";
             AcademicYear = 0;
-            FinishedCourses = null;
-            CoursesInProgress = null;
+            FinishedCourses = new List<Course>();
+            CoursesInProgress = new List<Course>();
         }
 
         public Student(string id, string n, string pass, int year, List<Course> finished, List<Course> progess)

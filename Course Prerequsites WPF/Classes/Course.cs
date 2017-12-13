@@ -29,6 +29,7 @@ namespace Course_Prerequsites_WPF.Classes
             Hours = 0;
             Instructor = "";
             Description = "";
+            PreRequiredCourses = new List<string>();
         }
 
         public Course(string code, string coursename, int Maximumnumber, int CurrentNumber, int passinggrade, int coursegrade, int hours, string instructor, string description, List<string> pre)
