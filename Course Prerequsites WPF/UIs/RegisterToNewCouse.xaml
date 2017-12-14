@@ -1,0 +1,17 @@
+﻿<Window x:Class="Course_Prerequsites_WPF.UIs.RegisterToNewCouse"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Course_Prerequsites_WPF.UIs"
+        mc:Ignorable="d"
+        Title="RegisterToNewCouse" Height="300" Width="300" Loaded="Window_Loaded">
+    <Grid>
+        <ComboBox x:Name="AvailableCourseBox" HorizontalAlignment="Left" Margin="150,103,0,0" VerticalAlignment="Top" Width="120"/>
+        <Label x:Name="label" Content="All Available Courses:-" HorizontalAlignment="Left" Margin="10,101,0,0" VerticalAlignment="Top" Width="120" FontWeight="Bold" FontFamily="Goudy Old Style"/>
+        <Button x:Name="button" Content="Back" HorizontalAlignment="Left" Margin="195,215,0,0" VerticalAlignment="Top" Width="75"/>
+        <Button x:Name="button1" Content="Regist" HorizontalAlignment="Left" Margin="195,180,0,0" VerticalAlignment="Top" Width="75" Click="button1_Click"/>
+        <Label x:Name="label1" Content="Registertion Form" HorizontalAlignment="Left" Margin="85,24,0,0" VerticalAlignment="Top" Width="115" FontWeight="Bold"/>
+
+    </Grid>
+</Window>
