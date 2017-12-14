@@ -160,3 +160,5 @@ E:\Ds_Project\Course Prerequsites WPF\obj\Debug\Course_Prerequsites_WPF.Properti
 E:\Ds_Project\Course Prerequsites WPF\obj\Debug\Course Prerequsites WPF.csproj.GenerateResource.Cache
 E:\Ds_Project\Course Prerequsites WPF\obj\Debug\UIs\RegisterToNewCouse.g.cs
 E:\Ds_Project\Course Prerequsites WPF\obj\Debug\UIs\RegisterToNewCouse.baml
+E:\Ds_Project\Course Prerequsites WPF\obj\Debug\UIs\EditMyData.g.cs
+E:\Ds_Project\Course Prerequsites WPF\obj\Debug\UIs\EditMyData.baml

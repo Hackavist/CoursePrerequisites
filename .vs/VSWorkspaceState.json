@@ -2,8 +2,10 @@
   "ExpandedNodes": [
     "",
     "\\Course Prerequsites WPF",
+    "\\Course Prerequsites WPF\\Classes",
+    "\\Course Prerequsites WPF\\Properties",
     "\\Course Prerequsites WPF\\UIs"
   ],
-  "SelectedNode": "\\Course Prerequsites WPF\\Course Prerequsites WPF.sln",
+  "SelectedNode": "\\Course Prerequsites WPF\\UIs",
   "PreviewInSolutionExplorer": false
 }
