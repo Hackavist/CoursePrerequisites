@@ -23,10 +23,50 @@ namespace Course_Prerequsites_WPF.UIs
         {
             InitializeComponent();
         }
-
-        private void Button_Click(object sender, RoutedEventArgs e)
+        private void View_button_Click(object sender, RoutedEventArgs e)
         {
+            ListOfCompletedCoursesOfStudent.Items.Clear();
+            ListOfProgressCoursesOfStudent.Items.Clear();
+            if (SelectStudentComboBox.SelectedItem == null)
+            {
+                MessageBox.Show("please select a student to view his courses");
+            }
+            else
+            {
+                string selectedstudent = SelectStudentComboBox.SelectedValue.ToString();
+                if (WelcomePage.AllStudentsDictionary[selectedstudent].CoursesInProgress.Count == 0)
+                {
+                    ListOfProgressCoursesOfStudent.Items.Add("This student have no courses in progress");
+                }
+                else
+                {
 
+                    foreach (var x in WelcomePage.AllStudentsDictionary[selectedstudent].CoursesInProgress)
+                    {
+                        ListOfProgressCoursesOfStudent.Items.Add(x.CourseName);
+                    }
+                }
+                
+                if (WelcomePage.AllStudentsDictionary[selectedstudent].FinishedCourses.Count == 0)
+                {
+                    ListOfCompletedCoursesOfStudent.Items.Add("This student have no finished courses");
+                }
+                else
+                {
+
+                    foreach (var x in WelcomePage.AllStudentsDictionary[selectedstudent].FinishedCourses)
+                    {
+                        ListOfCompletedCoursesOfStudent.Items.Add(x.CourseName);
+                    }
+                }
+            }
+        }
+        private void Window_Loaded(object sender, RoutedEventArgs e)
+        {
+            foreach (var x in WelcomePage.AllStudentsDictionary)
+            {
+                SelectStudentComboBox.Items.Add(x.Key);
+            }
         }
     }
 }
