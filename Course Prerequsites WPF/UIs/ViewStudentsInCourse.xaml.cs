@@ -11,6 +11,8 @@ using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
+using Course_Prerequsites_WPF.UIs;
+
 using Course_Prerequsites_WPF.Classes;
 
 namespace Course_Prerequsites_WPF.UIs
@@ -33,20 +35,33 @@ namespace Course_Prerequsites_WPF.UIs
             }
             else
             {
+                string name = SearchCourseName.Text;
+                Student s = new Student();
+                List<Course> listOfCourses = s.CoursesInProgress;
 
-                //string courseName = SearchCourseName.Text;
-                //Student s = new Student();
-                //List<Student> stud = s.GetPersonalInfo(); //waiting for team student
+                if(WelcomePage.AllCoursesDictionary.ContainsKey(name))
+                {
+                    for(int i=0 ; i<WelcomePage.AllStudentsDictionary.Count ; i++)
+                    {
+                        for(int j=0 ; j<listOfCourses.Count ; j++)
+                        {
+                            if(listOfCourses[i].CourseName==name)
+                            {
+                                DisplayID.Content += s.Id + '\n';
+                                DisplayName.Content += s.Name + '\n';
+                            }
+                            break;
 
-                //for(int i=0 ; i<stud.Capacity ; i++)
-                //{
-                //    stud[i].CoursesInProgress
-                //        // if course name == name in textbox
-                //        //display student's name
-
-                //}
+                        }
+                    }
 
 
+                    
+                }
+                else
+                {
+                    MessageBox.Show("Course Does Not Exist");
+                }
 
             }
         }

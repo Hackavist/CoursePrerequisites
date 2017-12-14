@@ -7,12 +7,13 @@
         mc:Ignorable="d"
         Title="AdminLogIn" Height="700" Width="600" Background="#FF0C2132">
     <Grid>
-        <TextBox x:Name="Username_txt" Height="35" Margin="135,204,142.333,0" TextWrapping="Wrap" VerticalAlignment="Top" TextChanged="Username_txt_TextChanged_1"/>
+        <TextBox x:Name="Username_txt" Height="35" Margin="135,204,142.333,0" TextWrapping="Wrap" VerticalAlignment="Top"/>
         <Button x:Name="LogIn_txt" Content="Log In" Height="42" Margin="226,525,227.333,0" VerticalAlignment="Top" Click="LogIn_txt_Click" FontFamily="Orator Std" FontSize="18" FontWeight="Bold" Background="#FFC20A0A" Foreground="#FFD5DFBE"/>
-        <PasswordBox x:Name="Password_txt" HorizontalAlignment="Left" Height="35" Margin="135,364,0,0" VerticalAlignment="Top" Width="316" PasswordChar="*"/>
+        <PasswordBox x:Name="Password_txt" HorizontalAlignment="Left" Height="35" Margin="135,364,0,0" VerticalAlignment="Top" Width="316" PasswordChar="●"/>
         <Label Content="Username&#xD;&#xA;" Height="29" Margin="135,170,66.333,0" VerticalAlignment="Top" FontFamily="Orator Std" FontSize="18" FontWeight="Bold" Foreground="#FFA5E11B"/>
         <Label Content="Password&#xD;&#xA;&#xA;" HorizontalAlignment="Left" Height="29" Margin="135,330,0,0" VerticalAlignment="Top" Width="192" FontFamily="Orator Std" FontSize="18" FontWeight="Bold" Foreground="#FFA5E11B"/>
         <Label Content="Log In" Height="45" Margin="203,70,202.333,0" VerticalAlignment="Top" HorizontalContentAlignment="Center" FontWeight="Bold" FontFamily="Orator Std" FontSize="36" Foreground="#FFF3F5F1"/>
+        <PasswordBox HorizontalAlignment="Left" Margin="423,399,0,0" VerticalAlignment="Top"/>
 
     </Grid>
 </Window>

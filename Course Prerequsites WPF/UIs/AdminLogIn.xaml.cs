@@ -46,26 +46,27 @@ namespace Course_Prerequsites_WPF.UIs
                string name = Username_txt.Text;
                string password = Password_txt.Password;
 
-               Admin ad = new Admin();
-
-               List < Admin > check = ad.GetAllAdmins();
-               // Dictionary < string, Admin> dic = new Dictionary<string, Admin>();
-                for (int i = 0; i < check.Capacity; i++)
+               if(WelcomePage.AllAdminsDictionary.ContainsKey(name))
                 {
-                    if (check[i].UserName==name && check[i].Password==password)
+                    if(WelcomePage.AllAdminsDictionary[name].Password==password)
                     {
-                        
-                        ViewStudentOrCourse v = new ViewStudentOrCourse();
-                        v.Show();
-
-                        this.Close();
-
-                        break;
-
+                        MessageBox.Show("Logging In");
+                        WelcomePage.AdminLogedIn = true;
+                        WelcomePage.AdminUserName = name;
+                        WelcomePage.AdminPassword = password;
+                        //opens next window : admin controls
+                    }
+                    else
+                    {
+                        MessageBox.Show("Wrong Password");
                     }
                 }
+               else
+                {
+                    MessageBox.Show("Admin Does Not Exist");
+                }
                 
-                    MessageBox.Show("Wrong Username or Password");
+                  
                 
 
 

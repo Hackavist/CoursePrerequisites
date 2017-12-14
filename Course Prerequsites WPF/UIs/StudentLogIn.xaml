@@ -1,8 +1,17 @@
 ﻿<Window x:Class="Course_Prerequsites_WPF.UIs.StudentLogIn"
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-        Title="StudentLogIn" Height="300" Width="300">
-    <Grid>
-        
+        Title="StudentLogIn" Height="313.861" Width="510.891">
+    <Grid Margin="0,0,-6.4,8.4" RenderTransformOrigin="0.493,0.418">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="19*"/>
+            <ColumnDefinition Width="56*"/>
+        </Grid.ColumnDefinitions>
+        <Label Content="ID" HorizontalAlignment="Left" Margin="57,55,0,0" VerticalAlignment="Top"/>
+        <Label Content="Password" HorizontalAlignment="Left" Margin="57,112,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="idTextBox" HorizontalAlignment="Left" Height="23" Margin="66.24,55,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Grid.Column="1"/>
+        <TextBox x:Name="passwordTextBox" HorizontalAlignment="Left" Height="23" Margin="66.24,112,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Grid.Column="1"/>
+        <Button x:Name="loginButton" Content="Login" Grid.Column="1" HorizontalAlignment="Left" Margin="215.4,174,0,0" VerticalAlignment="Top" Width="75" Click="loginButton_Click"/>
+
     </Grid>
 </Window>

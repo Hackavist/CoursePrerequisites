@@ -11,6 +11,7 @@ using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
+using Course_Prerequsites_WPF.UIs;
 using Course_Prerequsites_WPF.Classes;
 
 namespace Course_Prerequsites_WPF.UIs
@@ -38,22 +39,28 @@ namespace Course_Prerequsites_WPF.UIs
                 string pass = StudPassword.Text;
                 int  year = int.Parse(StudYear.Text);
 
-                Student stuData = new Student();
-                Dictionary<string, Student> dic = stuData.GetAllStudents();
+                Student s = new Student(name, id, pass, year);
 
-                if(dic.ContainsKey(Name))
+                if (WelcomePage.AllStudentsDictionary.ContainsKey(id))
                 {
                     MessageBox.Show("Student already exist");
+
                 }
 
                 else
                 {
-                    Student addStud = new Student(name, id, pass, year);
-                    dic[name] = addStud;
+                    WelcomePage.AllStudentsDictionary[id]=s;
+                    MessageBox.Show("Student Added");
                 }
+              
 
                 
             }
+
+        }
+
+        private void StudName_TextChanged(object sender, TextChangedEventArgs e)
+        {
 
         }
     }
