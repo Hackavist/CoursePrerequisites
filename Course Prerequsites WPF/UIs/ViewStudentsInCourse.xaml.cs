@@ -11,6 +11,8 @@ using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
+using Course_Prerequsites_WPF.UIs;
+
 using Course_Prerequsites_WPF.Classes;
 
 namespace Course_Prerequsites_WPF.UIs
@@ -27,7 +29,7 @@ namespace Course_Prerequsites_WPF.UIs
 
         private void Button_Click(object sender, RoutedEventArgs e)
         {
-            if (string.IsNullOrEmpty(SearchCourseName.Text))
+            if(string.IsNullOrEmpty(SearchCourseName.Text) )
             {
                 MessageBox.Show("Please Enter Course Name");
             }
@@ -37,13 +39,13 @@ namespace Course_Prerequsites_WPF.UIs
                 Student s = new Student();
                 List<Course> listOfCourses = s.CoursesInProgress;
 
-                if (MainWindow.AllCoursesDictionary.ContainsKey(name))
+                if(WelcomePage.AllCoursesDictionary.ContainsKey(name))
                 {
-                    for (int i = 0; i < MainWindow.AllStudentsDictionary.Count; i++)
+                    for(int i=0 ; i<WelcomePage.AllStudentsDictionary.Count ; i++)
                     {
-                        for (int j = 0; j < listOfCourses.Count; j++)
+                        for(int j=0 ; j<listOfCourses.Count ; j++)
                         {
-                            if (listOfCourses[i].CourseName == name)
+                            if(listOfCourses[i].CourseName==name)
                             {
                                 DisplayID.Content += s.Id + '\n';
                                 DisplayName.Content += s.Name + '\n';
@@ -54,7 +56,7 @@ namespace Course_Prerequsites_WPF.UIs
                     }
 
 
-
+                    
                 }
                 else
                 {

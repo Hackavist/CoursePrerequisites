@@ -65,7 +65,7 @@ namespace Course_Prerequsites_WPF.UIs
 
         private void Window_Loaded(object sender, RoutedEventArgs e)
         {
-            foreach (var x in MainWindow.AllCoursesDictionary)
+            foreach (var x in WelcomePage.AllCoursesDictionary)
             CourseNameBox.Items.Add(x.Key);
         }
     }

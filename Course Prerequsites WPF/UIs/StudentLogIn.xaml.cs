@@ -35,11 +35,15 @@ namespace Course_Prerequsites_WPF.UIs
             }
             else
             {
-                if (MainWindow.AllStudentsDictionary.ContainsKey(StudentID))
+                if (WelcomePage.AllStudentsDictionary.ContainsKey(StudentID))
                 {
-                    if (MainWindow.AllStudentsDictionary[StudentID].Password==password)
+                    if (WelcomePage.AllStudentsDictionary[StudentID].Password==password)
                     {
                         MessageBox.Show("WE ARE DONE!!!");
+                        WelcomePage.StudentLogedIn = true;
+                        WelcomePage.StudentId = idTextBox.Text;
+                        WelcomePage.StudentPassword = passwordTextBox.Text;
+
                     }
                     else
                     {

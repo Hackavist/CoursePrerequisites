@@ -33,7 +33,7 @@ namespace Course_Prerequsites_WPF.UIs
 
 
             Student s = new Student();
-            foreach (var x in MainWindow.AllCoursesDictionary)
+            foreach (var x in WelcomePage.AllCoursesDictionary)
             {
                 if ((s.CheckPrequired(x.Key) == true) && (x.Value.CurrentNumberOfStudents < x.Value.MaximumNumberOfStudents))
                 {
@@ -51,8 +51,8 @@ namespace Course_Prerequsites_WPF.UIs
         private void button1_Click(object sender, RoutedEventArgs e)
         {
             Course c = new Course();
-            MainWindow.AllStudentsDictionary[StudentLogIn.StudentID].CoursesInProgress.Add(c);
-            MainWindow.AllCoursesDictionary[c.CourseName].CurrentNumberOfStudents++;
+            WelcomePage.AllStudentsDictionary[StudentLogIn.StudentID].CoursesInProgress.Add(c);
+           WelcomePage.AllCoursesDictionary[c.CourseName].CurrentNumberOfStudents++;
         }
     }
 }

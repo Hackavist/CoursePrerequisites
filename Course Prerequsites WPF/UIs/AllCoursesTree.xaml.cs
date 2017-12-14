@@ -23,7 +23,7 @@ namespace Course_Prerequsites_WPF.UIs
             Dictionary<string, Course> AllCoursesObj = new Dictionary<string, Course>();
 
             //dictionary of all courses
-            AllCoursesObj = MainWindow.AllCoursesDictionary ;
+            AllCoursesObj = WelcomePage.AllCoursesDictionary ;
 
             //for each course in the dictionary create and  add a tree view item 
             foreach (var course in AllCoursesObj)
