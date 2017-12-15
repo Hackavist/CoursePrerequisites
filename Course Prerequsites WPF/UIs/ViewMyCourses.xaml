@@ -1,0 +1,61 @@
+﻿<Window x:Class="Course_Prerequsites_WPF.UIs.ViewMyCourses"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Course_Prerequsites_WPF.UIs"
+        xmlns:l ="clr-namespace:Course_Prerequsites_WPF.ViewModels"
+        mc:Ignorable="d"
+        Title="ViewMyCourses" Height="700" Width="700">
+    <Window.DataContext>
+        <l:StackViewModel/>
+    </Window.DataContext>
+    <Grid
+    xmlns:chart="clr-namespace:De.TorstenMandelkow.MetroChart;assembly=De.TorstenMandelkow.MetroChart" >
+
+        <Grid.RowDefinitions>
+            <RowDefinition Height="2*"></RowDefinition>
+            <RowDefinition Height="*"></RowDefinition>
+        </Grid.RowDefinitions>
+
+
+        <chart:StackedBarChart                                
+         Grid.Row="0" 
+         x:Name="CoursesChart"
+         Style="{DynamicResource ChartStyleVariableSize}"
+         ChartTitle="All My Courses "
+         ChartSubTitle="This Contains all the courses i have finished and curently taking"
+         ToolTip="My Courses " 
+         Palette="{StaticResource ResourceKey=colortest}"
+         Height="Auto" Width="Auto" IsEnabled="True"  
+         SelectedItem="{Binding Path=SelectedItem, Mode=TwoWay}" Margin="0,0,9.6,10.4"
+         MouseUp="CoursesChart_MouseUp">
+            <chart:StackedBarChart.Series>
+                <chart:ChartSeries
+                        SeriesTitle="Finshed Courses"
+                        DisplayMember="Category"
+                        ValueMember="Number"
+                        ItemsSource="{Binding Path=FinishedItem}" />
+                <chart:ChartSeries
+                        SeriesTitle="Courses In Progress"
+                        DisplayMember="Category"
+                        ValueMember="Number"
+                        ItemsSource="{Binding Path=InProgressItem}" />
+            </chart:StackedBarChart.Series>
+        </chart:StackedBarChart>
+
+        <Canvas Grid.Column="1">
+            <TextBlock x:Name="CourseTitle" Text="{Binding Path=SelectedItem.Category}" Style="{StaticResource HeaderTextStyle}" Canvas.Left="18" Canvas.Top="450"/>
+            <TextBlock x:Name="Course_Code" Text="Course Code: " Style="{StaticResource BasicTextStyle}" Canvas.Left="18" Canvas.Top="529" VerticalAlignment="Center"/>
+            <TextBlock x:Name="CourseCode" Text="" Style="{StaticResource BasicTextStyle}" Canvas.Left="146" Canvas.Top="529"/>
+            <TextBlock x:Name="Course_PassingGrade" Text="Passing Grade: " Style="{StaticResource BasicTextStyle}" Canvas.Left="208" Canvas.Top="529" VerticalAlignment="Center"/>
+            <TextBlock x:Name="PassingGrade" Text="" Style="{StaticResource BasicTextStyle}" Canvas.Left="342" Canvas.Top="529"/>
+            <TextBlock x:Name="instuctor" Text="Instructor: " Style="{StaticResource BasicTextStyle}" Canvas.Left="419" Canvas.Top="529" VerticalAlignment="Center"/>
+            <TextBlock x:Name="Instuctor" Text="" Style="{StaticResource BasicTextStyle}" Canvas.Left="519" Canvas.Top="529"/>
+            <TextBlock x:Name="Description_text" Text="Description: " Style="{StaticResource BasicTextStyle}" Canvas.Left="18" Canvas.Top="586"/>
+            <TextBlock x:Name="Description" Text="" Style="{StaticResource BasicTextStyle}" Canvas.Left="128" Canvas.Top="586"/>
+        </Canvas>
+
+    </Grid>
+
+</Window>

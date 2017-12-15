@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Course_Prerequsites_WPF.Classes;
+using System;
 using System.Collections.Generic;
 using System.Collections.ObjectModel;
 using System.Linq;
@@ -12,25 +13,28 @@ using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
-using Course_Prerequsites_WPF.Classes;
 using Course_Prerequsites_WPF.ViewModels;
 
 namespace Course_Prerequsites_WPF.UIs
 {
     /// <summary>
-    /// Interaction logic for AllCoursesChart.xaml
+    /// Interaction logic for ViewMyCourses.xaml
     /// </summary>
-    public partial class AllCoursesChart : Window
+    public partial class ViewMyCourses : Window
     {
-        public AllCoursesChart()
+        public ViewMyCourses()
         {
             InitializeComponent();
         }
 
-        private void CoursesChart_Click(object sender, MouseButtonEventArgs e)
+        private void CoursesChart_MouseUp(object sender, MouseButtonEventArgs e)
         {
-            AspecificCourse asd = new AspecificCourse(ChartViewModel.SelectedText);
-            asd.Show();
+            Course cour = WelcomePage.Course.ReturnObj(StackViewModel.SelectedText);
+            CourseCode.Text = cour.Code;
+            PassingGrade.Text = Convert.ToString(cour.PassingGrade);
+            Instuctor.Text = cour.Instructor;
+            Description.Text = cour.Description;
+            
         }
     }
 }

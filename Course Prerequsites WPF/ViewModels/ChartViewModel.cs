@@ -1,29 +1,14 @@
-﻿using Course_Prerequsites_WPF.UIs;
+﻿using Course_Prerequsites_WPF.Classes;
+using Course_Prerequsites_WPF.UIs;
 using System;
 using System.Collections.Generic;
 using System.Collections.ObjectModel;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using System.Windows;
-using System.Windows.Controls;
-using System.Windows.Data;
-using System.Windows.Documents;
-using System.Windows.Input;
-using System.Windows.Media;
-using System.Windows.Media.Imaging;
-using System.Windows.Shapes;
 
-
-namespace Course_Prerequsites_WPF.Classes
+namespace Course_Prerequsites_WPF.ViewModels
 {
-    // class which represent a data point in the chart
-    public class Elements
-    {
-        public string Category { get; set; }
-
-        public int Number { get; set; }
-    }
     public class ChartViewModel
     {
         public ObservableCollection<Elements> ChartItem { get; private set; }
@@ -31,11 +16,11 @@ namespace Course_Prerequsites_WPF.Classes
         public ChartViewModel()
         {
             ChartItem = new ObservableCollection<Elements>();
-            foreach (var item in WelcomePage.AllCoursesDictionary.Keys)
+            foreach (var item in WelcomePage.AllCoursesDictionary)
             {
                 var obj = new Elements();
-                obj.Category = item;
-                obj.Number = 100 / WelcomePage.AllCoursesDictionary.Count;
+                obj.Category = item.Key;
+                obj.Number = item.Value.Hours;
                 ChartItem.Add(obj);
             }
             //PieChartItem.Add(new TestClass() { Category = "Globalization", Number = 55 });
@@ -58,4 +43,5 @@ namespace Course_Prerequsites_WPF.Classes
             }
         }
     }
+
 }
