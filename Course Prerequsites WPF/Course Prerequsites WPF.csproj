@@ -68,7 +68,9 @@
       <SubType>Designer</SubType>
     </ApplicationDefinition>
     <Compile Include="Classes\Admin.cs" />
-    <Compile Include="Classes\ChartViewModel.cs" />
+    <Compile Include="Classes\Elements.cs" />
+    <Compile Include="ViewModels\ChartViewModel.cs" />
+    <Compile Include="ViewModels\StackViewModel.cs" />
     <Compile Include="UIs\AddCoursePrerequisites.xaml.cs">
       <DependentUpon>AddCoursePrerequisites.xaml</DependentUpon>
     </Compile>
@@ -101,6 +103,9 @@
     </Compile>
     <Compile Include="UIs\ViewAllCoursesOfStudent.xaml.cs">
       <DependentUpon>ViewAllCoursesOfStudent.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="UIs\ViewMyCourses.xaml.cs">
+      <DependentUpon>ViewMyCourses.xaml</DependentUpon>
     </Compile>
     <Compile Include="UIs\ViewStudentOrCourse.xaml.cs">
       <DependentUpon>ViewStudentOrCourse.xaml</DependentUpon>
@@ -158,6 +163,10 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="UIs\ViewAllCoursesOfStudent.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="UIs\ViewMyCourses.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

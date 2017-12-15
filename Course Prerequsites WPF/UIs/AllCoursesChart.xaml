@@ -4,12 +4,12 @@
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Course_Prerequsites_WPF.UIs"
-        
+        xmlns:l ="clr-namespace:Course_Prerequsites_WPF.ViewModels"
         mc:Ignorable="d"
         Title="AllCoursesChart" Height="700" Width="700">
 
     <Window.DataContext>
-        <local:ChartViewModel/>
+        <l:ChartViewModel/>
     </Window.DataContext>
     <Grid
     xmlns:chart="clr-namespace:De.TorstenMandelkow.MetroChart;assembly=De.TorstenMandelkow.MetroChart" >
@@ -20,12 +20,11 @@
         ChartTitle="All Available Courses "
         ChartSubTitle="This Contains All Available Courses"
         ToolTip="All Available Courses "
-        InnerRadiusRatio="0.67" 
-         Margin="10,0,9.6,8.4"
+        InnerRadiusRatio="0.77" 
+        Margin="10,0,9.6,8.4"
         Height="Auto" Width="Auto" IsEnabled="True"  
         SelectedItem="{Binding Path=SelectedItem, Mode=TwoWay}"
-        Mouse.MouseUp="CoursesChart_Click"
-        >
+        Mouse.MouseUp="CoursesChart_Click">
             <chart:PieChart.Series>
                 <chart:ChartSeries
                 SeriesTitle="PieChartItem"
