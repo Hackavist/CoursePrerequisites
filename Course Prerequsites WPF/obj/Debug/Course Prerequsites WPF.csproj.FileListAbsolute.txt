@@ -244,3 +244,5 @@ D:\Work\Course Registration System\Course Prerequsites WPF\bin\Debug\MahApps.Met
 D:\Work\Course Registration System\Course Prerequsites WPF\bin\Debug\System.Windows.Interactivity.dll
 D:\Work\Course Registration System\Course Prerequsites WPF\bin\Debug\MahApps.Metro.pdb
 D:\Work\Course Registration System\Course Prerequsites WPF\bin\Debug\MahApps.Metro.xml
+D:\Work\Course Registration System\Course Prerequsites WPF\obj\Debug\UIs\EnterStudentGrades.baml
+D:\Work\Course Registration System\Course Prerequsites WPF\obj\Debug\UIs\EnterStudentGrades.g.cs
