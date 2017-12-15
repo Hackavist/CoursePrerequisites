@@ -35,8 +35,17 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="De.TorstenMandelkow.MetroChart">
+    <Reference Include="De.TorstenMandelkow.MetroChart, Version=0.9.5818.20693, Culture=neutral, processorArchitecture=MSIL">
       <HintPath>packages\ModernUICharts.WPF.Beta.0.9.1\lib\De.TorstenMandelkow.MetroChart.dll</HintPath>
+    </Reference>
+    <Reference Include="MetroFramework, Version=1.4.0.0, Culture=neutral, PublicKeyToken=5f91a84759bf584a, processorArchitecture=MSIL">
+      <HintPath>packages\MetroModernUI.1.4.0.0\lib\net\MetroFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="MetroFramework.Design, Version=1.4.0.0, Culture=neutral, PublicKeyToken=5f91a84759bf584a, processorArchitecture=MSIL">
+      <HintPath>packages\MetroModernUI.1.4.0.0\lib\net\MetroFramework.Design.dll</HintPath>
+    </Reference>
+    <Reference Include="MetroFramework.Fonts, Version=1.4.0.0, Culture=neutral, PublicKeyToken=5f91a84759bf584a, processorArchitecture=MSIL">
+      <HintPath>packages\MetroModernUI.1.4.0.0\lib\net\MetroFramework.Fonts.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Data" />
@@ -59,6 +68,7 @@
       <SubType>Designer</SubType>
     </ApplicationDefinition>
     <Compile Include="Classes\Admin.cs" />
+    <Compile Include="Classes\ChartViewModel.cs" />
     <Compile Include="UIs\AddCoursePrerequisites.xaml.cs">
       <DependentUpon>AddCoursePrerequisites.xaml</DependentUpon>
     </Compile>
@@ -71,20 +81,14 @@
     <Compile Include="UIs\AdminLogIn.xaml.cs">
       <DependentUpon>AdminLogIn.xaml</DependentUpon>
     </Compile>
+    <Compile Include="UIs\AllCoursesChart.xaml.cs">
+      <DependentUpon>AllCoursesChart.xaml</DependentUpon>
+    </Compile>
     <Compile Include="UIs\AspecificCourse.xaml.cs">
       <DependentUpon>AspecificCourse.xaml</DependentUpon>
     </Compile>
-    <Compile Include="UIs\CourseDetails.xaml.cs">
-      <DependentUpon>CourseDetails.xaml</DependentUpon>
-    </Compile>
     <Compile Include="UIs\Drop.xaml.cs">
       <DependentUpon>Drop.xaml</DependentUpon>
-    </Compile>
-    <Compile Include="UIs\EnterStudentGrades.xaml.cs">
-      <DependentUpon>EnterStudentGrades.xaml</DependentUpon>
-    </Compile>
-    <Compile Include="UIs\MyCourses.xaml.cs">
-      <DependentUpon>MyCourses.xaml</DependentUpon>
     </Compile>
     <Compile Include="UIs\RegisterToNewCouse.xaml.cs">
       <DependentUpon>RegisterToNewCouse.xaml</DependentUpon>
@@ -123,7 +127,7 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </Page>
-    <Page Include="UIs\AllCoursesTree.xaml">
+    <Page Include="UIs\AllCoursesChart.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -131,21 +135,9 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="UIs\CourseDetails.xaml">
-      <Generator>MSBuild:Compile</Generator>
-      <SubType>Designer</SubType>
-    </Page>
     <Page Include="UIs\Drop.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
-    </Page>
-    <Page Include="UIs\EnterStudentGrades.xaml">
-      <SubType>Designer</SubType>
-      <Generator>MSBuild:Compile</Generator>
-    </Page>
-    <Page Include="UIs\MainWindow.xaml">
-      <Generator>MSBuild:Compile</Generator>
-      <SubType>Designer</SubType>
     </Page>
     <Compile Include="App.xaml.cs">
       <DependentUpon>App.xaml</DependentUpon>
@@ -153,17 +145,6 @@
     </Compile>
     <Compile Include="Classes\Course.cs" />
     <Compile Include="Classes\Student.cs" />
-    <Compile Include="UIs\AllCoursesTree.xaml.cs">
-      <DependentUpon>AllCoursesTree.xaml</DependentUpon>
-    </Compile>
-    <Compile Include="UIs\MainWindow.xaml.cs">
-      <DependentUpon>MainWindow.xaml</DependentUpon>
-      <SubType>Code</SubType>
-    </Compile>
-    <Page Include="UIs\MyCourses.xaml">
-      <SubType>Designer</SubType>
-      <Generator>MSBuild:Compile</Generator>
-    </Page>
     <Page Include="UIs\RegisterToNewCouse.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>

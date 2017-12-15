@@ -1,0 +1,41 @@
+﻿<Window x:Class="Course_Prerequsites_WPF.UIs.AllCoursesChart"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Course_Prerequsites_WPF.UIs"
+        
+        mc:Ignorable="d"
+        Title="AllCoursesChart" Height="700" Width="700">
+
+    <Window.DataContext>
+        <local:ChartViewModel/>
+    </Window.DataContext>
+    <Grid
+    xmlns:chart="clr-namespace:De.TorstenMandelkow.MetroChart;assembly=De.TorstenMandelkow.MetroChart" >
+
+        <chart:DoughnutChart
+        x:Name="CoursesChart"
+        Style="{DynamicResource ChartStyleVariableSize}"
+        ChartTitle="All Available Courses "
+        ChartSubTitle="This Contains All Available Courses"
+        ToolTip="All Available Courses "
+        InnerRadiusRatio="0.67" 
+         Margin="10,0,9.6,8.4"
+        Height="Auto" Width="Auto" IsEnabled="True"  
+        SelectedItem="{Binding Path=SelectedItem, Mode=TwoWay}"
+        Mouse.MouseUp="CoursesChart_Click"
+        >
+            <chart:PieChart.Series>
+                <chart:ChartSeries
+                SeriesTitle="PieChartItem"
+                DisplayMember="Category"
+                ValueMember="Number"
+                ItemsSource="{Binding Path=ChartItem}" 
+                />
+            </chart:PieChart.Series>
+        </chart:DoughnutChart>
+
+    </Grid>
+
+</Window>
