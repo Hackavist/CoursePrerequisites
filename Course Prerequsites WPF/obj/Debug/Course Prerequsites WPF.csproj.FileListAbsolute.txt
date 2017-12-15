@@ -240,3 +240,7 @@ D:\Work\Course Registration System\Course Prerequsites WPF\obj\Debug\Course Prer
 D:\Work\Course Registration System\Course Prerequsites WPF\obj\Debug\Course Prerequsites WPF.exe
 D:\Work\Course Registration System\Course Prerequsites WPF\obj\Debug\Course Prerequsites WPF.pdb
 D:\Work\Course Registration System\Course Prerequsites WPF\obj\Debug\Course Prerequsites WPF.csprojResolveAssemblyReference.cache
+D:\Work\Course Registration System\Course Prerequsites WPF\bin\Debug\MahApps.Metro.dll
+D:\Work\Course Registration System\Course Prerequsites WPF\bin\Debug\System.Windows.Interactivity.dll
+D:\Work\Course Registration System\Course Prerequsites WPF\bin\Debug\MahApps.Metro.pdb
+D:\Work\Course Registration System\Course Prerequsites WPF\bin\Debug\MahApps.Metro.xml
