@@ -39,29 +39,25 @@ namespace Course_Prerequsites_WPF.UIs
                 string pass = StudPassword.Text;
                 int  year = int.Parse(StudYear.Text);
 
-                Student s = new Student(name, id, pass, year);
+                Student s = new Student()
+                {
+                    Id = id,
+                    Name = name,
+                    Password=pass,
+                    AcademicYear = year,
+                };
 
                 if (WelcomePage.AllStudentsDictionary.ContainsKey(id))
                 {
                     MessageBox.Show("Student already exist");
 
                 }
-
                 else
                 {
-                    WelcomePage.AllStudentsDictionary[id]=s;
+                    WelcomePage.AllStudentsDictionary[name]=s;
                     MessageBox.Show("Student Added");
                 }
-              
-
-                
             }
-
-        }
-
-        private void StudName_TextChanged(object sender, TextChangedEventArgs e)
-        {
-
         }
     }
 }

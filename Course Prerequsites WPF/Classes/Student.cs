@@ -45,15 +45,6 @@ namespace Course_Prerequsites_WPF.Classes
                 CoursesInProgress.Add(item);
             }
         }
-
-        public Student(string id, string n, string pass, int year)
-        {
-            Name = n;
-            Id = id;
-            Password = pass;
-            AcademicYear = year;
-        }
-
         //writing Format:   Id % Name % Password % AcademicYear % finishd course1 * finished course2 % Course in progress1*Course in progress2 #
 
         public Dictionary<string, Student> GetAllStudents()

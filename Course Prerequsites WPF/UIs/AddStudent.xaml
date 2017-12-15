@@ -7,7 +7,7 @@
         mc:Ignorable="d"
         Title="AddStudent" Height="700" Width="600">
     <Grid Margin="0,0,3.333,11.667">
-        <TextBox x:Name="StudName" HorizontalAlignment="Left" Height="34" Margin="140,77,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="208" TextChanged="StudName_TextChanged"/>
+        <TextBox x:Name="StudName" HorizontalAlignment="Left" Height="34" Margin="140,77,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="208" />
         <TextBox x:Name="StudPassword" HorizontalAlignment="Left" Height="34" Margin="140,202,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="208"/>
         <TextBox x:Name="StudYear" HorizontalAlignment="Left" Height="30" Margin="140,283,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="208"/>
         <TextBox x:Name="StudID" HorizontalAlignment="Left" Height="34" Margin="140,136,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="208"/>
