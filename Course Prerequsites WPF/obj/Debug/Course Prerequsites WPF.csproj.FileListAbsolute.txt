@@ -164,8 +164,72 @@ D:\Work\Course Registration System\Course Prerequsites WPF\obj\Debug\Course Prer
 D:\Work\Course Registration System\Course Prerequsites WPF\obj\Debug\Course Prerequsites WPF.csproj.CoreCompileInputs.cache
 D:\Work\Course Registration System\Course Prerequsites WPF\obj\Debug\Course Prerequsites WPF.exe
 D:\Work\Course Registration System\Course Prerequsites WPF\obj\Debug\Course Prerequsites WPF.pdb
-D:\Work\Course Registration System\Course Prerequsites WPF\bin\Debug\De.TorstenMandelkow.MetroChart.dll
-D:\Work\Course Registration System\Course Prerequsites WPF\bin\Debug\MetroFramework.Design.dll
-D:\Work\Course Registration System\Course Prerequsites WPF\bin\Debug\MetroFramework.dll
-D:\Work\Course Registration System\Course Prerequsites WPF\bin\Debug\MetroFramework.Fonts.dll
-D:\Work\Course Registration System\Course Prerequsites WPF\obj\Debug\Course Prerequsites WPF.csprojResolveAssemblyReference.cache
+E:\Ds_Project\Course Prerequsites WPF\obj\Debug\Course Prerequsites WPF.csprojResolveAssemblyReference.cache
+E:\Ds_Project\Course Prerequsites WPF\obj\Debug\UIs\AddNewCourse.baml
+E:\Ds_Project\Course Prerequsites WPF\obj\Debug\UIs\StudentLogIn.baml
+E:\Ds_Project\Course Prerequsites WPF\obj\Debug\UIs\ViewAllCourses.baml
+E:\Ds_Project\Course Prerequsites WPF\obj\Debug\UIs\ViewAllCoursesOfStudent.baml
+E:\Ds_Project\Course Prerequsites WPF\obj\Debug\UIs\AddCoursePrerequisites.g.cs
+E:\Ds_Project\Course Prerequsites WPF\obj\Debug\UIs\AddNewCourse.g.cs
+E:\Ds_Project\Course Prerequsites WPF\obj\Debug\UIs\AddStudent.g.cs
+E:\Ds_Project\Course Prerequsites WPF\obj\Debug\UIs\AdminLogIn.g.cs
+E:\Ds_Project\Course Prerequsites WPF\obj\Debug\UIs\AllCoursesTree.g.cs
+E:\Ds_Project\Course Prerequsites WPF\obj\Debug\UIs\AspecificCourse.g.cs
+E:\Ds_Project\Course Prerequsites WPF\obj\Debug\UIs\CourseDetails.g.cs
+E:\Ds_Project\Course Prerequsites WPF\obj\Debug\UIs\Drop.g.cs
+E:\Ds_Project\Course Prerequsites WPF\obj\Debug\UIs\MainWindow.g.cs
+E:\Ds_Project\Course Prerequsites WPF\obj\Debug\UIs\MyCourses.g.cs
+E:\Ds_Project\Course Prerequsites WPF\obj\Debug\UIs\RegisterToNewCouse.g.cs
+E:\Ds_Project\Course Prerequsites WPF\obj\Debug\UIs\StudentLogIn.g.cs
+E:\Ds_Project\Course Prerequsites WPF\obj\Debug\UIs\ViewAllCourses.g.cs
+E:\Ds_Project\Course Prerequsites WPF\obj\Debug\UIs\ViewAllCoursesOfStudent.g.cs
+E:\Ds_Project\Course Prerequsites WPF\obj\Debug\UIs\ViewStudentOrCourse.g.cs
+E:\Ds_Project\Course Prerequsites WPF\obj\Debug\UIs\ViewStudentsInCourse.g.cs
+E:\Ds_Project\Course Prerequsites WPF\obj\Debug\UIs\WelcomePage.g.cs
+E:\Ds_Project\Course Prerequsites WPF\obj\Debug\App.g.cs
+E:\Ds_Project\Course Prerequsites WPF\obj\Debug\Course Prerequsites WPF_MarkupCompile.cache
+E:\Ds_Project\Course Prerequsites WPF\obj\Debug\Course Prerequsites WPF_MarkupCompile.lref
+E:\Ds_Project\Course Prerequsites WPF\obj\Debug\Course Prerequsites WPF.exe
+E:\Ds_Project\Course Prerequsites WPF\obj\Debug\Course Prerequsites WPF.pdb
+E:\Ds_Project\Course Prerequsites WPF\bin\Debug\Course Prerequsites WPF.exe.config
+E:\Ds_Project\Course Prerequsites WPF\bin\Debug\Course Prerequsites WPF.exe
+E:\Ds_Project\Course Prerequsites WPF\bin\Debug\Course Prerequsites WPF.pdb
+E:\Ds_Project\Course Prerequsites WPF\obj\Debug\UIs\AddCoursePrerequisites.baml
+E:\Ds_Project\Course Prerequsites WPF\obj\Debug\UIs\AddStudent.baml
+E:\Ds_Project\Course Prerequsites WPF\obj\Debug\UIs\AdminLogIn.baml
+E:\Ds_Project\Course Prerequsites WPF\obj\Debug\UIs\AllCoursesTree.baml
+E:\Ds_Project\Course Prerequsites WPF\obj\Debug\UIs\AspecificCourse.baml
+E:\Ds_Project\Course Prerequsites WPF\obj\Debug\UIs\CourseDetails.baml
+E:\Ds_Project\Course Prerequsites WPF\obj\Debug\UIs\Drop.baml
+E:\Ds_Project\Course Prerequsites WPF\obj\Debug\UIs\MainWindow.baml
+E:\Ds_Project\Course Prerequsites WPF\obj\Debug\UIs\MyCourses.baml
+E:\Ds_Project\Course Prerequsites WPF\obj\Debug\UIs\RegisterToNewCouse.baml
+E:\Ds_Project\Course Prerequsites WPF\obj\Debug\UIs\ViewStudentOrCourse.baml
+E:\Ds_Project\Course Prerequsites WPF\obj\Debug\UIs\ViewStudentsInCourse.baml
+E:\Ds_Project\Course Prerequsites WPF\obj\Debug\UIs\WelcomePage.baml
+E:\Ds_Project\Course Prerequsites WPF\obj\Debug\Course Prerequsites WPF.g.resources
+E:\Ds_Project\Course Prerequsites WPF\obj\Debug\Course_Prerequsites_WPF.Properties.Resources.resources
+E:\Ds_Project\Course Prerequsites WPF\obj\Debug\Course Prerequsites WPF.csproj.GenerateResource.Cache
+C:\Users\hazem\Source\Repos\CoursePrerequisites\Course Prerequsites WPF\bin\Debug\Course Prerequsites WPF.exe
+C:\Users\hazem\Source\Repos\CoursePrerequisites\Course Prerequsites WPF\bin\Debug\Course Prerequsites WPF.pdb
+C:\Users\hazem\Source\Repos\CoursePrerequisites\Course Prerequsites WPF\obj\Debug\UIs\ViewAllCourses.baml
+C:\Users\hazem\Source\Repos\CoursePrerequisites\Course Prerequsites WPF\obj\Debug\UIs\Drop.g.cs
+C:\Users\hazem\Source\Repos\CoursePrerequisites\Course Prerequsites WPF\obj\Debug\UIs\RegisterToNewCouse.g.cs
+C:\Users\hazem\Source\Repos\CoursePrerequisites\Course Prerequsites WPF\obj\Debug\UIs\ViewAllCourses.g.cs
+C:\Users\hazem\Source\Repos\CoursePrerequisites\Course Prerequsites WPF\obj\Debug\UIs\WelcomePage.g.cs
+C:\Users\hazem\Source\Repos\CoursePrerequisites\Course Prerequsites WPF\obj\Debug\UIs\AddCoursePrerequisites.baml
+C:\Users\hazem\Source\Repos\CoursePrerequisites\Course Prerequsites WPF\obj\Debug\UIs\AddStudent.baml
+C:\Users\hazem\Source\Repos\CoursePrerequisites\Course Prerequsites WPF\obj\Debug\UIs\AdminLogIn.baml
+C:\Users\hazem\Source\Repos\CoursePrerequisites\Course Prerequsites WPF\obj\Debug\UIs\AllCoursesTree.baml
+C:\Users\hazem\Source\Repos\CoursePrerequisites\Course Prerequsites WPF\obj\Debug\UIs\AspecificCourse.baml
+C:\Users\hazem\Source\Repos\CoursePrerequisites\Course Prerequsites WPF\obj\Debug\UIs\CourseDetails.baml
+C:\Users\hazem\Source\Repos\CoursePrerequisites\Course Prerequsites WPF\obj\Debug\UIs\Drop.baml
+C:\Users\hazem\Source\Repos\CoursePrerequisites\Course Prerequsites WPF\obj\Debug\UIs\MainWindow.baml
+C:\Users\hazem\Source\Repos\CoursePrerequisites\Course Prerequsites WPF\obj\Debug\UIs\MyCourses.baml
+C:\Users\hazem\Source\Repos\CoursePrerequisites\Course Prerequsites WPF\obj\Debug\UIs\RegisterToNewCouse.baml
+C:\Users\hazem\Source\Repos\CoursePrerequisites\Course Prerequsites WPF\obj\Debug\UIs\ViewStudentOrCourse.baml
+C:\Users\hazem\Source\Repos\CoursePrerequisites\Course Prerequsites WPF\obj\Debug\UIs\ViewStudentsInCourse.baml
+C:\Users\hazem\Source\Repos\CoursePrerequisites\Course Prerequsites WPF\obj\Debug\UIs\WelcomePage.baml
+C:\Users\hazem\Source\Repos\CoursePrerequisites\Course Prerequsites WPF\obj\Debug\Course Prerequsites WPF.g.resources
+C:\Users\hazem\Source\Repos\CoursePrerequisites\Course Prerequsites WPF\obj\Debug\Course_Prerequsites_WPF.Properties.Resources.resources
+C:\Users\hazem\Source\Repos\CoursePrerequisites\Course Prerequsites WPF\obj\Debug\Course Prerequsites WPF.csproj.GenerateResource.Cache

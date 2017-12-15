@@ -5,14 +5,14 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Course_Prerequsites_WPF.UIs"
         mc:Ignorable="d"
-        Title="AddCoursePrerequisites" Height="350" Width="400">
+        Title="AddCoursePrerequisites" Height="350" Width="400" Loaded="Window_Loaded">
     <Grid>
         <Label x:Name="TitleLabel" Content="Add Course Prerequisite" HorizontalAlignment="Left" Margin="103,10,0,0" VerticalAlignment="Top" FontSize="18" FontFamily="Goudy Old Style" FontWeight="Bold"/>
         <Label x:Name="CourseNameLabel" Content="Course Name:-" HorizontalAlignment="Left" Margin="14,67,0,0" VerticalAlignment="Top" FontSize="16" FontFamily="Goudy Old Style" FontWeight="Bold"/>
         <Label x:Name="PrerequisiteNameLabel" Content="Prereuisite you want to add:-" HorizontalAlignment="Left" Margin="14,131,0,0" VerticalAlignment="Top" FontWeight="Bold" FontSize="16" FontFamily="Goudy Old Style"/>
-        <TextBox x:Name="CourseNameTextBox" HorizontalAlignment="Left" Height="23" Margin="135,73,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="247"/>
         <TextBox x:Name="PrerequisiteNameTextBox" HorizontalAlignment="Left" Height="23" Margin="215,137,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="167"/>
         <Button x:Name="Add" Content="Add" HorizontalAlignment="Left" Margin="292,225,0,0" VerticalAlignment="Top" Width="90" Height="30" Click="Add_Click"/>
         <Button x:Name="Back" Content="Back" HorizontalAlignment="Left" Margin="292,270,0,0" VerticalAlignment="Top" Width="90" Height="30"/>
+        <ComboBox x:Name="CourseNameBox" HorizontalAlignment="Left"  VerticalAlignment="Top" Width="247" Margin="135,73,0,0"/>
     </Grid>
 </Window>

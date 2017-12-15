@@ -30,15 +30,12 @@ namespace Course_Prerequsites_WPF.UIs
             bool check = true;
 
             Admin ad = new Admin();
-
-            string coursename = CourseNameTextBox.Text;
+           
+            string coursename = CourseNameBox.SelectedItem.ToString();
             string prerequisitename = PrerequisiteNameTextBox.Text;
              
-            if (coursename.Length == 0)
-            {
-                MessageBox.Show("Please enter the Course name!!");
-            }
-            else if (prerequisitename.Length == 0)
+          
+             if (prerequisitename.Length == 0)
             {
                 MessageBox.Show("Please enter the Prerequisite name!!");
             }
@@ -66,5 +63,10 @@ namespace Course_Prerequsites_WPF.UIs
             }
         }
 
+        private void Window_Loaded(object sender, RoutedEventArgs e)
+        {
+            foreach (var x in WelcomePage.AllCoursesDictionary)
+            CourseNameBox.Items.Add(x.Key);
+        }
     }
 }
