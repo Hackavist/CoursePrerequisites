@@ -87,7 +87,6 @@ namespace Course_Prerequsites_WPF.Classes
                     //end of record dilimter
                     Sw.Write('#');
                 }
-
                 //closes the stream writer and the file stream 
                 Sw.Close();
                 File.Close();
