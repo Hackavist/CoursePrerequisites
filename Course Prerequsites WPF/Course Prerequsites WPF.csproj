@@ -98,6 +98,9 @@
     <Compile Include="UIs\Drop.xaml.cs">
       <DependentUpon>Drop.xaml</DependentUpon>
     </Compile>
+    <Compile Include="UIs\EnterStudentGrades.xaml.cs">
+      <DependentUpon>EnterStudentGrades.xaml</DependentUpon>
+    </Compile>
     <Compile Include="UIs\RegisterToNewCouse.xaml.cs">
       <DependentUpon>RegisterToNewCouse.xaml</DependentUpon>
     </Compile>
@@ -156,6 +159,10 @@
     </Compile>
     <Compile Include="Classes\Course.cs" />
     <Compile Include="Classes\Student.cs" />
+    <Page Include="UIs\EnterStudentGrades.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
     <Page Include="UIs\RegisterToNewCouse.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
