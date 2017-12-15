@@ -7,7 +7,9 @@
         <ComboBox x:Name="StudentsComboBox" HorizontalAlignment="Left" VerticalAlignment="Top" Width="243" Margin="83,59,0,0"/>
         <Label Content="Select student" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="83,33,0,0"/>
         <Grid x:Name="MyGrid" HorizontalAlignment="Left" Height="540" VerticalAlignment="Top" Width="582" Margin="-2,121,0,-543">
-            <TextBox HorizontalAlignment="Left" Height="23" Margin="99,51,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="120"/>
+
+
+            <Label Content="Enter the Grades of Student :" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="200,10,0,0"/>
         </Grid>
     </Grid>
 </Window>

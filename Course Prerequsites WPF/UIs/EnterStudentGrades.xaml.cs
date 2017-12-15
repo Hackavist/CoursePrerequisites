@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
+using System.Text.RegularExpressions;
 using System.Threading.Tasks;
 using System.Windows;
 using System.Windows.Controls;
@@ -22,7 +23,9 @@ namespace Course_Prerequsites_WPF.UIs
         public EnterStudentGrades()
         {
             InitializeComponent();
+
         }
+        string SelectedStudent = "";
         List<Label> CoursesNameLabels = new List<Label>();
         List<TextBox> CoursesGradeTextBox = new List<TextBox>();
 
@@ -33,7 +36,8 @@ namespace Course_Prerequsites_WPF.UIs
                 StudentsComboBox.Items.Add(x.Key);
             }
         }
-
+        Button AddGrades = new Button();
+        
         private void SelectStudentButton_Click(object sender, RoutedEventArgs e)
         {
             if (StudentsComboBox.SelectedIndex==-1)
@@ -42,39 +46,115 @@ namespace Course_Prerequsites_WPF.UIs
             }
             else
             {
-                int i = 0 ;
-                var window = new Window();
-                    var stackPanel = new StackPanel { Orientation = Orientation.Vertical };
-                string SelectedStudent = StudentsComboBox.SelectedValue.ToString();
+                 SelectedStudent = StudentsComboBox.SelectedValue.ToString();
+                //clear the grid and lists ( in case there were a student before )
                 MyGrid.Children.Clear();
-                
+                CoursesGradeTextBox.Clear();
+                CoursesNameLabels.Clear();
+
+                if (WelcomePage.AllStudentsDictionary[SelectedStudent].CoursesInProgress.Count == 0)
+                {
+                    MessageBox.Show("this student have no Current courses in progress");
+                    return;
+                }
+
+                int i = 0 ;
+                Label InfoTmp = new Label();
+                InfoTmp.Margin = new Thickness(200, 10, 0, 0);
+                InfoTmp.Content = "Enter the Grades of Student : " + SelectedStudent;
+                MyGrid.Children.Add(InfoTmp);
                 foreach (var x in WelcomePage.AllStudentsDictionary[SelectedStudent].CoursesInProgress)
                 {
                     
-                    MessageBox.Show(x.CourseName);
                     Label LabelTmp = new Label();
                     LabelTmp.Content = x.CourseName + " : ";
-                    LabelTmp.Name = "Course" + x.CourseName;
-                    LabelTmp.Margin = new Thickness(95,111+(i*50) ,0,0);
+                    LabelTmp.Margin = new Thickness(95, 111 + (i * 50), 0, 0);
+                    
                     TextBox TextBoxTmp = new TextBox();
+                    TextBoxTmp.VerticalAlignment = System.Windows.VerticalAlignment.Top;
                     TextBoxTmp.Width = 120;
                     TextBoxTmp.Height = 23;
+                    TextBoxTmp.ToolTip = "Enter the Grade of " + x.CourseName;
                     TextBoxTmp.Margin = new Thickness(371, 111 + (i * 50), 0, 0);
-                    MessageBox.Show(TextBoxTmp.Margin.Top.ToString());
-                    TextBoxTmp.Name = "GradeOf" + x.CourseName;
+                    TextBoxTmp.Name = x.CourseName;
 
-                    //stackPanel.Children.Add(LabelTmp);
-                    //stackPanel.RegisterName(LabelTmp.Name, LabelTmp);
                     MyGrid.Children.Add(LabelTmp);
-
                     MyGrid.Children.Add(TextBoxTmp);
-                    //stackPanel.RegisterName(TextBoxTmp.Name, TextBoxTmp);
 
                     i++;
                     CoursesNameLabels.Add(LabelTmp);
                     CoursesGradeTextBox.Add(TextBoxTmp);
                 }
+                AddGrades.Content = "Done";
+
+                AddGrades.Height = 30;
+                AddGrades.Width = 100;
+                AddGrades.HorizontalAlignment = System.Windows.HorizontalAlignment.Left;
+                AddGrades.VerticalAlignment = System.Windows.VerticalAlignment.Top;
+                AddGrades.Margin = new Thickness(250, 111 + (i * 50), 0, 0);
+                AddGrades.Click += Done_Click;
+                MyGrid.Children.Add(AddGrades);
             }
         }
+        
+        bool CheckAllTextBoxs()
+        {
+            // check the format entered in each text box 
+            foreach (var x in CoursesGradeTextBox)
+            {
+                if (x.Text=="")
+                {
+                    //check if the text box is empty
+                    MessageBox.Show("Some text box is empty");
+                    return false;
+                }
+                else if (!ValidMark(x.Text) )
+                {
+                    //check if the text have some text other than numbers and '.' 
+                    MessageBox.Show("each text box should contains numbers only");
+                    return false;
+                }
+            }
+            
+            return true;
+        }
+        bool ValidMark(string mark)
+        {
+            //check if the text have some text other than numbers and '.' 
+            for (int i = 0 ; i < mark.Length ; i++)
+            {
+                if ((mark[i]<'0'||mark[i]>'9')&&mark[i]!='.')
+                {
+                    return false;
+                }
+            }
+            return true;
+        }
+
+        private void Done_Click(object sender, RoutedEventArgs e)
+        {
+            if (CheckAllTextBoxs()==true)
+            {
+                EnterGrades();
+                MessageBox.Show("WOHOOO");
+            }
+        }
+        void EnterGrades()
+        {
+            int PassedCourses = 0;
+            foreach (var x in CoursesGradeTextBox)
+            {
+                if (WelcomePage.AllCoursesDictionary[x.Name].CourseGrade<= double.Parse( x.Text) )
+                {
+                    // if the student pass this course add this course to his finished courses
+                    WelcomePage.AllStudentsDictionary[SelectedStudent].FinishedCourses.Add( WelcomePage.AllCoursesDictionary[x.Name] );
+                    PassedCourses++;
+                }
+                //remove this course from his in progress courses anyway
+                WelcomePage.AllStudentsDictionary[SelectedStudent].CoursesInProgress.Remove(WelcomePage.AllCoursesDictionary[x.Name]);
+            }
+            MessageBox.Show("This student passed : " + PassedCourses.ToString() );
+        }
+       
     }
 }
