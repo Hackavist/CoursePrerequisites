@@ -24,7 +24,7 @@
          Margin="10,0,9.6,8.4"
         Height="Auto" Width="Auto" IsEnabled="True"  
         SelectedItem="{Binding Path=SelectedItem, Mode=TwoWay}"
-        MouseDoubleClick="CoursesChart_MouseDoubleClick"
+        Mouse.MouseUp="CoursesChart_Click"
         >
             <chart:PieChart.Series>
                 <chart:ChartSeries

@@ -25,7 +25,7 @@ namespace Course_Prerequsites_WPF.UIs
             InitializeComponent();
         }
 
-        private void CoursesChart_MouseDoubleClick(object sender, MouseButtonEventArgs e)
+        private void CoursesChart_Click(object sender, MouseButtonEventArgs e)
         {
             AspecificCourse asd = new AspecificCourse(ChartViewModel.SelectedText);
             asd.Show();
