@@ -87,14 +87,8 @@
     <Compile Include="UIs\AspecificCourse.xaml.cs">
       <DependentUpon>AspecificCourse.xaml</DependentUpon>
     </Compile>
-    <Compile Include="UIs\CourseDetails.xaml.cs">
-      <DependentUpon>CourseDetails.xaml</DependentUpon>
-    </Compile>
     <Compile Include="UIs\Drop.xaml.cs">
       <DependentUpon>Drop.xaml</DependentUpon>
-    </Compile>
-    <Compile Include="UIs\MyCourses.xaml.cs">
-      <DependentUpon>MyCourses.xaml</DependentUpon>
     </Compile>
     <Compile Include="UIs\RegisterToNewCouse.xaml.cs">
       <DependentUpon>RegisterToNewCouse.xaml</DependentUpon>
@@ -137,25 +131,13 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="UIs\AllCoursesTree.xaml">
-      <SubType>Designer</SubType>
-      <Generator>MSBuild:Compile</Generator>
-    </Page>
     <Page Include="UIs\AspecificCourse.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="UIs\CourseDetails.xaml">
-      <Generator>MSBuild:Compile</Generator>
-      <SubType>Designer</SubType>
-    </Page>
     <Page Include="UIs\Drop.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
-    </Page>
-    <Page Include="UIs\MainWindow.xaml">
-      <Generator>MSBuild:Compile</Generator>
-      <SubType>Designer</SubType>
     </Page>
     <Compile Include="App.xaml.cs">
       <DependentUpon>App.xaml</DependentUpon>
@@ -163,17 +145,6 @@
     </Compile>
     <Compile Include="Classes\Course.cs" />
     <Compile Include="Classes\Student.cs" />
-    <Compile Include="UIs\AllCoursesTree.xaml.cs">
-      <DependentUpon>AllCoursesTree.xaml</DependentUpon>
-    </Compile>
-    <Compile Include="UIs\MainWindow.xaml.cs">
-      <DependentUpon>MainWindow.xaml</DependentUpon>
-      <SubType>Code</SubType>
-    </Compile>
-    <Page Include="UIs\MyCourses.xaml">
-      <SubType>Designer</SubType>
-      <Generator>MSBuild:Compile</Generator>
-    </Page>
     <Page Include="UIs\RegisterToNewCouse.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>

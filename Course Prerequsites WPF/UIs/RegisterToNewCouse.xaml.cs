@@ -37,22 +37,16 @@ namespace Course_Prerequsites_WPF.UIs
             {
                 if ((s.CheckPrequired(x.Key) == true) && (x.Value.CurrentNumberOfStudents < x.Value.MaximumNumberOfStudents))
                 {
-
                     AvailableCourseBox.Items.Add(x.Key);
-
-
                 }
             }
-
-
-
         }
 
         private void button1_Click(object sender, RoutedEventArgs e)
         {
             Course c = new Course();
             WelcomePage.AllStudentsDictionary[StudentLogIn.StudentID].CoursesInProgress.Add(c);
-           WelcomePage.AllCoursesDictionary[c.CourseName].CurrentNumberOfStudents++;
+            WelcomePage.AllCoursesDictionary[c.CourseName].CurrentNumberOfStudents++;
         }
     }
 }
