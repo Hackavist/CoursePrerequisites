@@ -20,16 +20,18 @@ namespace Course_Prerequsites_WPF.UIs
     /// </summary>
     public partial class AspecificCourse : Window
     {
-        public AspecificCourse()
+        string CourseNa;
+        public AspecificCourse( string str)
         {
             InitializeComponent();
+            CourseNa = str;
         }
 
         private void Window_Loaded(object sender, RoutedEventArgs e)
         {
             Course cour = new Course();
            
-            cour = cour.ReturnObj("Math1");
+            cour = cour.ReturnObj(CourseNa);
 
             CourseName.Text = cour.CourseName;
             Code.Content = cour.Code;
