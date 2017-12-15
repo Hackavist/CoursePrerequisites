@@ -43,7 +43,7 @@ namespace Course_Prerequsites_WPF.UIs
 
                 if (WelcomePage.AllStudentsDictionary.ContainsKey(id))
                 {
-                    MessageBox.Show("Student already exist");
+                    MessageBox.Show("this ID already exist");
 
                 }
 

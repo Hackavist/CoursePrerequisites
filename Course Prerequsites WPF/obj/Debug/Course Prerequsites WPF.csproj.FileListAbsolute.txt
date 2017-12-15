@@ -242,3 +242,5 @@ C:\Users\hazem\Source\Repos\CoursePrerequisites\Course Prerequsites WPF\obj\Debu
 C:\Users\hazem\Source\Repos\CoursePrerequisites\Course Prerequsites WPF\obj\Debug\GeneratedInternalTypeHelper.g.cs
 C:\Users\hazem\Source\Repos\CoursePrerequisites\Course Prerequsites WPF\obj\Debug\App.baml
 C:\Users\hazem\Source\Repos\CoursePrerequisites\Course Prerequsites WPF\obj\Debug\UIs\AllCoursesChart.baml
+C:\Users\hazem\Source\Repos\CoursePrerequisites\Course Prerequsites WPF\obj\Debug\UIs\ViewMyCourses.g.cs
+C:\Users\hazem\Source\Repos\CoursePrerequisites\Course Prerequsites WPF\obj\Debug\UIs\ViewMyCourses.baml

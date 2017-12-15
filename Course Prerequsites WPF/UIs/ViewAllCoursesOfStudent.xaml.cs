@@ -25,6 +25,7 @@ namespace Course_Prerequsites_WPF.UIs
         }
         private void View_button_Click(object sender, RoutedEventArgs e)
         {
+            // clear the list if there were exist 
             ListOfCompletedCoursesOfStudent.Items.Clear();
             ListOfProgressCoursesOfStudent.Items.Clear();
             if (SelectStudentComboBox.SelectedItem == null)

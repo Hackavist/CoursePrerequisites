@@ -67,7 +67,7 @@ namespace Course_Prerequsites_WPF.UIs
                 {
                     
                     Label LabelTmp = new Label();
-                    LabelTmp.Content = x.CourseName + " : ";
+                    LabelTmp.Content = x.CourseName + " : " ;
                     LabelTmp.Margin = new Thickness(95, 111 + (i * 50), 0, 0);
                     
                     TextBox TextBoxTmp = new TextBox();
@@ -136,7 +136,6 @@ namespace Course_Prerequsites_WPF.UIs
             if (CheckAllTextBoxs()==true)
             {
                 EnterGrades();
-                MessageBox.Show("WOHOOO");
             }
         }
         void EnterGrades()
@@ -150,9 +149,10 @@ namespace Course_Prerequsites_WPF.UIs
                     WelcomePage.AllStudentsDictionary[SelectedStudent].FinishedCourses.Add( WelcomePage.AllCoursesDictionary[x.Name] );
                     PassedCourses++;
                 }
-                //remove this course from his in progress courses anyway
-                WelcomePage.AllStudentsDictionary[SelectedStudent].CoursesInProgress.Remove(WelcomePage.AllCoursesDictionary[x.Name]);
+                //WelcomePage.AllStudentsDictionary[SelectedStudent].CoursesInProgress.Remove(WelcomePage.AllCoursesDictionary[x.Name]);
             }
+            //remove all in progress courses of the student
+            WelcomePage.AllStudentsDictionary[SelectedStudent].CoursesInProgress = new List<Classes.Course>();
             MessageBox.Show("This student passed : " + PassedCourses.ToString() );
         }
        
