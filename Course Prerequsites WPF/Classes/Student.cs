@@ -61,15 +61,9 @@ namespace Course_Prerequsites_WPF.Classes
         public Dictionary<string, Student> GetAllStudents()
         {
             Dictionary<string, Student> AllStudents = new Dictionary<string, Student>();
-
-            
-
-
             FileStream File = new FileStream("AllStudentsFile.txt", FileMode.Open, FileAccess.Read);
             StreamReader Sr = new StreamReader(File);
-
-
-                    string[] Records;
+            string[] Records;
             while (Sr.Peek() != -1)
             {
                 Records = Sr.ReadLine().Split('#');
@@ -92,25 +86,25 @@ namespace Course_Prerequsites_WPF.Classes
 
                     foreach (var item in List1)
                     {
-                        if (item!="")
+                        if (item != "")
                         {
-                        FinishedCourses.Add(WelcomePage.Course.ReturnObj(item));
+                            FinishedCourses.Add(WelcomePage.Course.ReturnObj(item));
 
                         }
                     }
 
                     foreach (var item in List2)
                     {
-                        if (item!="")
+                        if (item != "")
                         {
-                        CoursesInProgress.Add(WelcomePage.Course.ReturnObj(item));
+                            CoursesInProgress.Add(WelcomePage.Course.ReturnObj(item));
 
                         }
                     }
 
                     Student stud = new Student(Id, Name, PassWord, AcademicYear, FinishedCourses, CoursesInProgress);
 
-                    AllStudents[Name] = stud;
+                    AllStudents[Id] = stud;
 
                     FinishedCourses.Clear();
                     CoursesInProgress.Clear();
@@ -131,13 +125,13 @@ namespace Course_Prerequsites_WPF.Classes
             Course Cs = new Course();
             Cs = Cs.ReturnObj(name);
 
-            for (int i = 0; i < FinishedCourses.Capacity; i++)
+            for (int i = 0; i < WelcomePage.AllStudentsDictionary[WelcomePage.StudentId].FinishedCourses.Count; i++)
             {
                 bool found = false;
-                for (int j = 0; j < Cs.PreRequiredCourses.Capacity; j++)
+                for (int j = 0; j < Cs.PreRequiredCourses.Count; j++)
                 {
 
-                    if (FinishedCourses[i].CourseName == Cs.PreRequiredCourses[j])
+                    if (WelcomePage.AllStudentsDictionary[WelcomePage.StudentId].FinishedCourses[i].CourseName == Cs.PreRequiredCourses[j])
                     {
                         found = true;
                         break;

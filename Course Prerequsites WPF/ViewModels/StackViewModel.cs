@@ -18,7 +18,7 @@ namespace Course_Prerequsites_WPF.ViewModels
         {
             FinishedItem = new ObservableCollection<Elements>();
 
-            foreach (var item in WelcomePage.AllStudentsDictionary["Mohsen"].FinishedCourses)
+            foreach (var item in WelcomePage.AllStudentsDictionary["98765"].FinishedCourses)
             {
                 var obj = new Elements();
                 obj.Category = item.CourseName;
@@ -27,7 +27,7 @@ namespace Course_Prerequsites_WPF.ViewModels
             }
 
             InProgressItem = new ObservableCollection<Elements>();
-            foreach (var item in WelcomePage.AllStudentsDictionary["Mohsen"].CoursesInProgress)
+            foreach (var item in WelcomePage.AllStudentsDictionary["98765"].CoursesInProgress)
             {
                 var obj = new Elements();
                 obj.Category = item.CourseName;

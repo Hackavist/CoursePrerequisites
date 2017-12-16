@@ -24,8 +24,13 @@ namespace Course_Prerequsites_WPF.UIs
         public AddStudent()
         {
             InitializeComponent();
+            StudYear.Items.Add("1st year");
+            StudYear.Items.Add("2nd year");
+            StudYear.Items.Add("3rd year");
+            StudYear.Items.Add("4th year");
+           
         }
-
+        
         private void Button_Click(object sender, RoutedEventArgs e)
         {
             if(  string.IsNullOrEmpty(StudName.Text) || string.IsNullOrEmpty(StudID.Text) || string.IsNullOrEmpty(StudPassword.Text) || string.IsNullOrEmpty(StudYear.Text) )
@@ -37,8 +42,8 @@ namespace Course_Prerequsites_WPF.UIs
                 string name = StudName.Text;
                 string id = StudID.Text;
                 string pass = StudPassword.Text;
-                int  year = int.Parse(StudYear.Text);
-
+                string year = StudYear.SelectedItem.ToString();
+                
                 Student s = new Student(id, name, pass, year);
 
                 if (WelcomePage.AllStudentsDictionary.ContainsKey(id))
@@ -48,10 +53,18 @@ namespace Course_Prerequsites_WPF.UIs
                 }
                 else
                 {
-                    WelcomePage.AllStudentsDictionary[name]=s;
+                    WelcomePage.AllStudentsDictionary[id]=s;
                     MessageBox.Show("Student Added");
+
+                    StudName.Clear();
+                    StudID.Clear();
+                    StudPassword.Clear();
+                    StudYear.SelectedIndex = -1;
+                   
                 }
             }
         }
+
+       
     }
 }

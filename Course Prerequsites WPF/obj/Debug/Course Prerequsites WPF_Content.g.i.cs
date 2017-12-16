@@ -8,6 +8,8 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("bin/debug/admindata.txt")]
+[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("bin/debug/alladminsfile.txt")]
+[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("bin/debug/allcoursesfile.txt")]
+[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("bin/debug/allstudentsfile.txt")]
 
 
