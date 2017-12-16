@@ -14,7 +14,7 @@ namespace Course_Prerequsites_WPF.Classes
         public string Name { get; set; }
         public string Password { get; set; }
         public List<Course> FinishedCourses { get; set; }
-        public int AcademicYear { get; set; }
+        public string AcademicYear { get; set; }
         public List<Course> CoursesInProgress { get; set; }
 
         public Student()
@@ -22,12 +22,12 @@ namespace Course_Prerequsites_WPF.Classes
             Name = "";
             Id = "";
             Password = "";
-            AcademicYear = 0;
+            AcademicYear = "";
             FinishedCourses = new List<Course>();
             CoursesInProgress = new List<Course>();
         }
 
-        public Student(string id, string name, string pass, int year)
+        public Student(string id, string name, string pass, string year)
         {
             Name = name;
             Id = id;
@@ -38,7 +38,7 @@ namespace Course_Prerequsites_WPF.Classes
 
         }
 
-        public Student(string id, string n, string pass, int year, List<Course> finished, List<Course> progess)
+        public Student(string id, string n, string pass, string year, List<Course> finished, List<Course> progess)
         {
             Name = n;
             Id = id;
@@ -80,7 +80,7 @@ namespace Course_Prerequsites_WPF.Classes
                     string Id = fields[0];
                     string Name = fields[1];
                     string PassWord = fields[2];
-                    int AcademicYear = Convert.ToInt32(fields[3]);
+                    string AcademicYear = fields[3];
                     List1 = fields[4].Split('*');
                     List2 = fields[5].Split('*');
 
@@ -177,7 +177,7 @@ namespace Course_Prerequsites_WPF.Classes
                     Sw.Write('%');
                     Sw.Write(stud.Password);
                     Sw.Write('%');
-                    Sw.Write(Convert.ToString(stud.AcademicYear));
+                    Sw.Write(stud.AcademicYear);
                     Sw.Write('%');
 
                     //writes the finished courses
