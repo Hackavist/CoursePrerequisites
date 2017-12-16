@@ -45,7 +45,7 @@ namespace Course_Prerequsites_WPF.UIs
         public static bool ThereIsNoDelimiter(string TextToCheck)
         {
             //check if delimiter exists in the string
-            for (int i = 0 ; i < TextToCheck.Length ; i++)
+            for ( int i = 0 ; i < TextToCheck.Length ; i++)
             {
                 if (TextToCheck[i] == '#' || TextToCheck[i] == '%' || TextToCheck[i] == '*')
                     return false;
