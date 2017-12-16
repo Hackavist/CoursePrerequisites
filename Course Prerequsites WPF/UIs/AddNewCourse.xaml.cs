@@ -37,7 +37,7 @@ namespace Course_Prerequsites_WPF.UIs
                 int MaximumNumber = int.Parse(MaximumNumberOfStudentsTextBox.Text);
                 int CurrentNumber = int.Parse(CurrentNumberOfStudentsTextBox.Text);
                 int PassingGrade = int.Parse(PassingGradeTextBox.Text);
-                int CourseGrade = int.Parse(CourseNameTextBox.Text);
+                int CourseGrade = int.Parse(CourseGradeTextBox.Text);
                 int Hours = int.Parse(HoursTextBox.Text);
                 string Instructor = InstructorTextBox.Text;
                 string Description = DescriptionTextBox.Text;
@@ -46,7 +46,7 @@ namespace Course_Prerequsites_WPF.UIs
                 if (WelcomePage.AllCoursesDictionary.ContainsKey(CourseName))
                 {
                     MessageBox.Show("This course already exists ");
-
+   
                 }
                 else
                 {
@@ -70,7 +70,7 @@ namespace Course_Prerequsites_WPF.UIs
                 int MaximumNumber = int.Parse(MaximumNumberOfStudentsTextBox.Text);
                 int CurrentNumber = int.Parse(CurrentNumberOfStudentsTextBox.Text);
                 int PassingGrade = int.Parse(PassingGradeTextBox.Text);
-                int CourseGrade = int.Parse(CourseNameTextBox.Text);
+                int CourseGrade = int.Parse(CourseGradeTextBox.Text);
                 int Hours = int.Parse(HoursTextBox.Text);
                 string Instructor = InstructorTextBox.Text;
                 string Description = DescriptionTextBox.Text;
