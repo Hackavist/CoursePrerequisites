@@ -51,7 +51,7 @@ namespace Course_Prerequsites_WPF.UIs
         }
         bool CheckNumberOfStudentsTextBoxes()
         {
-            if (WelcomePage.IsNumber(CurrentNumberOfStudentsTextBox.Text)==false)
+            if (WelcomePage.IsNumber(CurrentNumberOfStudentsTextBox.Text) == false)
             {
                 MessageBox.Show("Text Box of Current Number of Students must have only integer numbers .");
                 return false;
@@ -73,7 +73,7 @@ namespace Course_Prerequsites_WPF.UIs
             }
             return true;
         }
-    
+
         bool CheckGradesTextBoxes()
         {
             if (WelcomePage.IsNumber(CourseGradeTextBox.Text) == false)
@@ -86,12 +86,12 @@ namespace Course_Prerequsites_WPF.UIs
                 MessageBox.Show("The Text box of Passing Grade must have only integer Number ");
                 return false;
             }
-            else if (int.Parse(PassingGradeTextBox.Text)>=int.Parse(CourseGradeTextBox.Text))
+            else if (int.Parse(PassingGradeTextBox.Text) >= int.Parse(CourseGradeTextBox.Text))
             {
                 MessageBox.Show("Passing Grade of course cannot exceed the course Grade");
                 return false;
             }
-            else if (int.Parse(CourseGradeTextBox.Text) >200)
+            else if (int.Parse(CourseGradeTextBox.Text) > 200)
             {
                 MessageBox.Show("Course Grade cannot exceed 200");
                 return false;
@@ -100,12 +100,12 @@ namespace Course_Prerequsites_WPF.UIs
         }
         bool CheckHoursTextBox()
         {
-            if (WelcomePage.IsNumber(HoursTextBox.Text)==false )
+            if (WelcomePage.IsNumber(HoursTextBox.Text) == false)
             {
                 MessageBox.Show("The Text box of hours must have only integer Number ");
                 return false;
             }
-            else if (int.Parse(HoursTextBox.Text)>6)
+            else if (int.Parse(HoursTextBox.Text) > 6)
             {
                 MessageBox.Show("The Hours cannot exceed 6 hours");
                 return false;
@@ -114,9 +114,9 @@ namespace Course_Prerequsites_WPF.UIs
         }
         bool CheckAllTheRemainingTextBoxes()
         {
-            if (WelcomePage.ThereIsNoDelimiter(CodeTextBox.Text)&&WelcomePage.ThereIsNoDelimiter(CourseNameTextBox.Text)&&WelcomePage.ThereIsNoDelimiter(InstructorTextBox.Text)&&WelcomePage.ThereIsNoDelimiter(DescriptionTextBox.Text))
+            if (WelcomePage.ThereIsNoDelimiter(CodeTextBox.Text) && WelcomePage.ThereIsNoDelimiter(CourseNameTextBox.Text) && WelcomePage.ThereIsNoDelimiter(InstructorTextBox.Text) && WelcomePage.ThereIsNoDelimiter(DescriptionTextBox.Text))
             {
-            return true;
+                return true;
 
             }
             MessageBox.Show("There is some text box contains '%' or '#' or '*' ");
@@ -139,7 +139,7 @@ namespace Course_Prerequsites_WPF.UIs
                     int MaximumNumber = int.Parse(MaximumNumberOfStudentsTextBox.Text);
                     int CurrentNumber = int.Parse(CurrentNumberOfStudentsTextBox.Text);
                     int PassingGrade = int.Parse(PassingGradeTextBox.Text);
-                    int CourseGrade = int.Parse(CourseNameTextBox.Text);
+                    int CourseGrade = int.Parse(CourseGradeTextBox.Text);
                     int Hours = int.Parse(HoursTextBox.Text);
                     string Instructor = InstructorTextBox.Text;
                     string Description = DescriptionTextBox.Text;
@@ -155,6 +155,15 @@ namespace Course_Prerequsites_WPF.UIs
 
                         Course newcourse = new Course(Code, CourseName, MaximumNumber, CurrentNumber, PassingGrade, CourseGrade, Hours, Instructor, Description, tmp);
                         WelcomePage.AllCoursesDictionary[CourseName] = newcourse;
+                        CodeTextBox.Clear();
+                        CourseNameTextBox.Clear();
+                        MaximumNumberOfStudentsTextBox.Clear();
+                        CurrentNumberOfStudentsTextBox.Clear();
+                        PassingGradeTextBox.Clear();
+                        CourseGradeTextBox.Clear();
+                        HoursTextBox.Clear();
+                        InstructorTextBox.Clear();
+                        DescriptionTextBox.Clear();
                     }
                 }
             }
@@ -176,7 +185,7 @@ namespace Course_Prerequsites_WPF.UIs
                     int MaximumNumber = int.Parse(MaximumNumberOfStudentsTextBox.Text);
                     int CurrentNumber = int.Parse(CurrentNumberOfStudentsTextBox.Text);
                     int PassingGrade = int.Parse(PassingGradeTextBox.Text);
-                    int CourseGrade = int.Parse(CourseNameTextBox.Text);
+                    int CourseGrade = int.Parse(CourseGradeTextBox.Text);
                     int Hours = int.Parse(HoursTextBox.Text);
                     string Instructor = InstructorTextBox.Text;
                     string Description = DescriptionTextBox.Text;
@@ -225,7 +234,7 @@ namespace Course_Prerequsites_WPF.UIs
             }
             else
             {
-                if (CoursePrequestiesComboBox.SelectedIndex==-1)
+                if (CoursePrequestiesComboBox.SelectedIndex == -1)
                 {
                     MessageBox.Show("Please select course to be prerequstie or uncheck the check box!");
 
@@ -238,7 +247,7 @@ namespace Course_Prerequsites_WPF.UIs
                     int MaximumNumber = int.Parse(MaximumNumberOfStudentsTextBox.Text);
                     int CurrentNumber = int.Parse(CurrentNumberOfStudentsTextBox.Text);
                     int PassingGrade = int.Parse(PassingGradeTextBox.Text);
-                    int CourseGrade = int.Parse(CourseNameTextBox.Text);
+                    int CourseGrade = int.Parse(CourseGradeTextBox.Text);
                     int Hours = int.Parse(HoursTextBox.Text);
                     string Instructor = InstructorTextBox.Text;
                     string Description = DescriptionTextBox.Text;
@@ -251,9 +260,17 @@ namespace Course_Prerequsites_WPF.UIs
                     }
                     else
                     {
-
                         Course newcourse = new Course(Code, CourseName, MaximumNumber, CurrentNumber, PassingGrade, CourseGrade, Hours, Instructor, Description, tmp);
                         WelcomePage.AllCoursesDictionary[CourseName] = newcourse;
+                        CodeTextBox.Clear();
+                        CourseNameTextBox.Clear();
+                        MaximumNumberOfStudentsTextBox.Clear();
+                        CurrentNumberOfStudentsTextBox.Clear();
+                        PassingGradeTextBox.Clear();
+                        CourseGradeTextBox.Clear();
+                        HoursTextBox.Clear();
+                        InstructorTextBox.Clear();
+                        DescriptionTextBox.Clear();
                     }
                 }
             }
