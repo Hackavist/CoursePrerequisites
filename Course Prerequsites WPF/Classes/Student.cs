@@ -32,7 +32,7 @@ namespace Course_Prerequsites_WPF.Classes
             Name = name;
             Id = id;
             Password = pass;
-            AcademicYear = "";
+            AcademicYear = year;
             FinishedCourses = new List<Course>();
             CoursesInProgress = new List<Course>();
 
@@ -43,7 +43,7 @@ namespace Course_Prerequsites_WPF.Classes
             Name = n;
             Id = id;
             Password = pass;
-            AcademicYear = "";
+            AcademicYear = year;
             FinishedCourses = new List<Course>();
             foreach (Course item in finished)
             {
@@ -144,6 +144,18 @@ namespace Course_Prerequsites_WPF.Classes
             }
             return true;
         }
+
+
+
+        public void Register(Course NewCourse)
+        {
+            //To be added: NewCourse.NumberOfRegisteredStudents
+            if (CheckPrequired(NewCourse.CourseName) == true/* &&  NewCourse.MaximumNumberOfStudents - NewCourse.NumberOfRegisteredStudents*/)
+            {
+                CoursesInProgress.Add(NewCourse);
+            }
+        }
+
         //writing Format:   Id % Name % Password % AcademicYear % finishd course1 * finished course2 % Course in progress1*Course in progress2 #
 
         public void WriteFile()

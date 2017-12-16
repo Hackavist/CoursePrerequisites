@@ -183,7 +183,6 @@ C:\Users\hazem\Source\Repos\CoursePrerequisites\Course Prerequsites WPF\obj\Debu
 C:\Users\hazem\Source\Repos\CoursePrerequisites\Course Prerequsites WPF\obj\Debug\Course Prerequsites WPF.csproj.GenerateResource.Cache
 D:\Work\Course Registration System\Course Prerequsites WPF\obj\Debug\UIs\AddNewCourse.baml
 D:\Work\Course Registration System\Course Prerequsites WPF\obj\Debug\UIs\StudentLogIn.baml
-D:\Work\Course Registration System\Course Prerequsites WPF\obj\Debug\UIs\ViewAllCourses.baml
 D:\Work\Course Registration System\Course Prerequsites WPF\obj\Debug\UIs\ViewAllCoursesOfStudent.baml
 D:\Work\Course Registration System\Course Prerequsites WPF\obj\Debug\UIs\AddCoursePrerequisites.g.cs
 D:\Work\Course Registration System\Course Prerequsites WPF\obj\Debug\UIs\AddNewCourse.g.cs
@@ -194,7 +193,6 @@ D:\Work\Course Registration System\Course Prerequsites WPF\obj\Debug\UIs\Aspecif
 D:\Work\Course Registration System\Course Prerequsites WPF\obj\Debug\UIs\Drop.g.cs
 D:\Work\Course Registration System\Course Prerequsites WPF\obj\Debug\UIs\RegisterToNewCouse.g.cs
 D:\Work\Course Registration System\Course Prerequsites WPF\obj\Debug\UIs\StudentLogIn.g.cs
-D:\Work\Course Registration System\Course Prerequsites WPF\obj\Debug\UIs\ViewAllCourses.g.cs
 D:\Work\Course Registration System\Course Prerequsites WPF\obj\Debug\UIs\ViewAllCoursesOfStudent.g.cs
 D:\Work\Course Registration System\Course Prerequsites WPF\obj\Debug\UIs\ViewStudentOrCourse.g.cs
 D:\Work\Course Registration System\Course Prerequsites WPF\obj\Debug\UIs\ViewStudentsInCourse.g.cs
