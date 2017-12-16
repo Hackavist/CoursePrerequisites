@@ -25,12 +25,17 @@ namespace Course_Prerequsites_WPF.UIs
         {
             InitializeComponent();
         }
+
+
+
         private void Window_Loaded(object sender, RoutedEventArgs e)
         {
+
+
             Student s = new Student();
             foreach (var x in WelcomePage.AllCoursesDictionary)
             {
-                if ((s.CheckPrequired(x.Value.CourseName) == true) && (x.Value.CurrentNumberOfStudents < x.Value.MaximumNumberOfStudents))
+                if ((s.CheckPrequired(x.Key) == true) && (x.Value.CurrentNumberOfStudents < x.Value.MaximumNumberOfStudents))
                 {
                     AvailableCourseBox.Items.Add(x.Key);
                 }
@@ -39,10 +44,9 @@ namespace Course_Prerequsites_WPF.UIs
 
         private void button1_Click(object sender, RoutedEventArgs e)
         {
-            Course c =WelcomePage.Course.ReturnObj(AvailableCourseBox.SelectionBoxItem.ToString());
-            WelcomePage.AllStudentsDictionary[StudentLogIn.StudentID].CoursesInProgress.Add(c);
-            WelcomePage.AllCoursesDictionary[AvailableCourseBox.SelectionBoxItem.ToString()].CurrentNumberOfStudents++;
-            MessageBox.Show("You are now regist to this Course");
+            Course c = new Course();
+            WelcomePage.AllStudentsDictionary[WelcomePage.StudentId].CoursesInProgress.Add(c);
+            WelcomePage.AllCoursesDictionary[c.CourseName].CurrentNumberOfStudents++;
         }
     }
 }
