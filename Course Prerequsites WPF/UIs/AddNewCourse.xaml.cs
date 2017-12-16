@@ -39,7 +39,15 @@ namespace Course_Prerequsites_WPF.UIs
         void mytrimer()
         {
             CodeTextBox.Text = CodeTextBox.Text.Trim();
-            nam
+            CourseNameTextBox.Text = CourseNameTextBox.Text.Trim();
+            MaximumNumberOfStudentsTextBox.Text = MaximumNumberOfStudentsTextBox.Text.Trim();
+            CourseGradeTextBox.Text = CourseGradeTextBox.Text.Trim();
+            PassingGradeTextBox.Text = PassingGradeTextBox.Text.Trim();
+            CurrentNumberOfStudentsTextBox.Text = CurrentNumberOfStudentsTextBox.Text.Trim();
+            HoursTextBox.Text = HoursTextBox.Text.Trim();
+            InstructorTextBox.Text = InstructorTextBox.Text.Trim();
+            DescriptionTextBox.Text = DescriptionTextBox.Text.Trim();
+
         }
         bool CheckNumberOfStudentsTextBoxes()
         {
@@ -116,6 +124,7 @@ namespace Course_Prerequsites_WPF.UIs
         }
         private void AddCourseButton_Click(object sender, RoutedEventArgs e)
         {
+            mytrimer();
             if (CodeTextBox.Text.Length == 0 || CourseNameTextBox.Text.Length == 0 || MaximumNumberOfStudentsTextBox.Text.Length == 0 || CurrentNumberOfStudentsTextBox.Text.Length == 0 || PassingGradeTextBox.Text.Length == 0 || CourseGradeTextBox.Text.Length == 0 || HoursTextBox.Text.Length == 0 || InstructorTextBox.Text.Length == 0 || DescriptionTextBox.Text.Length == 0)
             {
                 MessageBox.Show("Some text box is missing");
@@ -153,6 +162,7 @@ namespace Course_Prerequsites_WPF.UIs
 
         private void EditCourseButton_Click(object sender, RoutedEventArgs e)
         {
+            mytrimer();
             if (CodeTextBox.Text.Length == 0 || CourseNameTextBox.Text.Length == 0 || MaximumNumberOfStudentsTextBox.Text.Length == 0 || CurrentNumberOfStudentsTextBox.Text.Length == 0 || PassingGradeTextBox.Text.Length == 0 || CourseGradeTextBox.Text.Length == 0 || HoursTextBox.Text.Length == 0 || InstructorTextBox.Text.Length == 0 || DescriptionTextBox.Text.Length == 0)
             {
                 MessageBox.Show("Some text box is missing");
@@ -208,6 +218,7 @@ namespace Course_Prerequsites_WPF.UIs
 
         private void AddCourseButton_second_Click(object sender, RoutedEventArgs e)
         {
+            mytrimer();
             if (CodeTextBox.Text.Length == 0 || CourseNameTextBox.Text.Length == 0 || MaximumNumberOfStudentsTextBox.Text.Length == 0 || CurrentNumberOfStudentsTextBox.Text.Length == 0 || PassingGradeTextBox.Text.Length == 0 || CourseGradeTextBox.Text.Length == 0 || HoursTextBox.Text.Length == 0 || InstructorTextBox.Text.Length == 0 || DescriptionTextBox.Text.Length == 0)
             {
                 MessageBox.Show("Some text box is missing");
