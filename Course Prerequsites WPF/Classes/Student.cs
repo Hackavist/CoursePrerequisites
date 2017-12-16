@@ -62,24 +62,25 @@ namespace Course_Prerequsites_WPF.Classes
         {
             Dictionary<string, Student> AllStudents = new Dictionary<string, Student>();
 
-            List<Course> FinishedCourses = new List<Course>();
-            List<Course> CoursesInProgress = new List<Course>();
-
-            string[] Records;
-            string[] fields;
-            string[] List1;
-            string[] List2;
+            
 
 
             FileStream File = new FileStream("AllStudentsFile.txt", FileMode.Open, FileAccess.Read);
             StreamReader Sr = new StreamReader(File);
 
 
+                    string[] Records;
             while (Sr.Peek() != -1)
             {
                 Records = Sr.ReadLine().Split('#');
                 for (int i = 0; i < Records.Length - 1; i++)
                 {
+                    List<Course> FinishedCourses = new List<Course>();
+                    List<Course> CoursesInProgress = new List<Course>();
+
+                    string[] fields;
+                    string[] List1;
+                    string[] List2;
                     fields = Records[i].Split('%');
 
                     string Id = fields[0];
@@ -91,12 +92,20 @@ namespace Course_Prerequsites_WPF.Classes
 
                     foreach (var item in List1)
                     {
+                        if (item!="")
+                        {
                         FinishedCourses.Add(WelcomePage.Course.ReturnObj(item));
+
+                        }
                     }
 
                     foreach (var item in List2)
                     {
+                        if (item!="")
+                        {
                         CoursesInProgress.Add(WelcomePage.Course.ReturnObj(item));
+
+                        }
                     }
 
                     Student stud = new Student(Id, Name, PassWord, AcademicYear, FinishedCourses, CoursesInProgress);
