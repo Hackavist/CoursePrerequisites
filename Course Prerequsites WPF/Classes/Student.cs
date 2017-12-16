@@ -125,13 +125,13 @@ namespace Course_Prerequsites_WPF.Classes
             Course Cs = new Course();
             Cs = Cs.ReturnObj(name);
 
-            for (int i = 0; i < FinishedCourses.Capacity; i++)
+            for (int i = 0; i < WelcomePage.AllStudentsDictionary[WelcomePage.StudentId].FinishedCourses.Count; i++)
             {
                 bool found = false;
-                for (int j = 0; j < Cs.PreRequiredCourses.Capacity; j++)
+                for (int j = 0; j < Cs.PreRequiredCourses.Count; j++)
                 {
 
-                    if (FinishedCourses[i].CourseName == Cs.PreRequiredCourses[j])
+                    if (WelcomePage.AllStudentsDictionary[WelcomePage.StudentId].FinishedCourses[i].CourseName == Cs.PreRequiredCourses[j])
                     {
                         found = true;
                         break;

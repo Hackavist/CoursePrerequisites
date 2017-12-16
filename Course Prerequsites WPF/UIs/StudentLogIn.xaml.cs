@@ -43,6 +43,9 @@ namespace Course_Prerequsites_WPF.UIs
                         WelcomePage.StudentLogedIn = true;
                         WelcomePage.StudentId = idTextBox.Text;
                         WelcomePage.StudentPassword = passwordTextBox.Text;
+                        RegisterToNewCouse reg = new RegisterToNewCouse();
+                        reg.Show();
+                        this.Close();
 
                     }
                     else
