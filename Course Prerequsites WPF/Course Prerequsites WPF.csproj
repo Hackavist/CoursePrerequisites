@@ -107,9 +107,6 @@
     <Compile Include="UIs\StudentLogIn.xaml.cs">
       <DependentUpon>StudentLogIn.xaml</DependentUpon>
     </Compile>
-    <Compile Include="UIs\ViewAllCourses.xaml.cs">
-      <DependentUpon>ViewAllCourses.xaml</DependentUpon>
-    </Compile>
     <Compile Include="UIs\ViewAllCoursesOfStudent.xaml.cs">
       <DependentUpon>ViewAllCoursesOfStudent.xaml</DependentUpon>
     </Compile>
@@ -168,10 +165,6 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="UIs\StudentLogIn.xaml">
-      <SubType>Designer</SubType>
-      <Generator>MSBuild:Compile</Generator>
-    </Page>
-    <Page Include="UIs\ViewAllCourses.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
