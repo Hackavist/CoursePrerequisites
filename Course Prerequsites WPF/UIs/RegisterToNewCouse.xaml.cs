@@ -41,13 +41,9 @@ namespace Course_Prerequsites_WPF.UIs
         {
 
             Course c =WelcomePage.Course.ReturnObj(AvailableCourseBox.SelectionBoxItem.ToString());
-            WelcomePage.AllStudentsDictionary[StudentLogIn.].CoursesInProgress.Add(c);
+            WelcomePage.AllStudentsDictionary[WelcomePage.StudentId].CoursesInProgress.Add(c);
             WelcomePage.AllCoursesDictionary[AvailableCourseBox.SelectionBoxItem.ToString()].CurrentNumberOfStudents++;
             MessageBox.Show("You are now regist to this Course");
-
-            Course c = new Course();
-            WelcomePage.AllStudentsDictionary[WelcomePage.StudentId].CoursesInProgress.Add(c);
-            WelcomePage.AllCoursesDictionary[c.CourseName].CurrentNumberOfStudents++;
         }
     }
 }
