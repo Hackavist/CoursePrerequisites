@@ -42,7 +42,7 @@ namespace Course_Prerequsites_WPF.UIs
 
             else
             {
-
+               
                string name = Username_txt.Text;
                string password = Password_txt.Password;
 
