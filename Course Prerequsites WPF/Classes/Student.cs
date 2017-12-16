@@ -27,6 +27,17 @@ namespace Course_Prerequsites_WPF.Classes
             CoursesInProgress = new List<Course>();
         }
 
+        public Student(string id, string name, string pass, int year)
+        {
+            Name = name;
+            Id = id;
+            Password = pass;
+            AcademicYear = year;
+            FinishedCourses = new List<Course>();
+            CoursesInProgress = new List<Course>();
+
+        }
+
         public Student(string id, string n, string pass, int year, List<Course> finished, List<Course> progess)
         {
             Name = n;

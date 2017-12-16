@@ -4,8 +4,9 @@
     "\\Course Prerequsites WPF",
     "\\Course Prerequsites WPF\\Classes",
     "\\Course Prerequsites WPF\\Properties",
-    "\\Course Prerequsites WPF\\UIs"
+    "\\Course Prerequsites WPF\\UIs",
+    "\\Course Prerequsites WPF\\ViewModels"
   ],
-  "SelectedNode": "\\Course Prerequsites WPF\\Course Prerequsites WPF.sln",
+  "SelectedNode": "\\Course Prerequsites WPF\\App.xaml",
   "PreviewInSolutionExplorer": false
 }
