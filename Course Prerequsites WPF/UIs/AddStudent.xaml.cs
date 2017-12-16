@@ -48,7 +48,7 @@ namespace Course_Prerequsites_WPF.UIs
                 }
                 else
                 {
-                    WelcomePage.AllStudentsDictionary[name]=s;
+                    WelcomePage.AllStudentsDictionary[id]=s;
                     MessageBox.Show("Student Added");
                 }
             }
