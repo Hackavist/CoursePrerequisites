@@ -39,13 +39,7 @@ namespace Course_Prerequsites_WPF.UIs
                 string pass = StudPassword.Text;
                 int  year = int.Parse(StudYear.Text);
 
-                Student s = new Student()
-                {
-                    Id = id,
-                    Name = name,
-                    Password=pass,
-                    AcademicYear = year,
-                };
+                Student s = new Student(id, name, pass, year);
 
                 if (WelcomePage.AllStudentsDictionary.ContainsKey(id))
                 {
