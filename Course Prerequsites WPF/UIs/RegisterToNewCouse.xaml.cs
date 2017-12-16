@@ -45,7 +45,7 @@ namespace Course_Prerequsites_WPF.UIs
         private void button1_Click(object sender, RoutedEventArgs e)
         {
             Course c = new Course();
-            WelcomePage.AllStudentsDictionary[StudentLogIn.StudentID].CoursesInProgress.Add(c);
+            WelcomePage.AllStudentsDictionary[WelcomePage.StudentId].CoursesInProgress.Add(c);
             WelcomePage.AllCoursesDictionary[c.CourseName].CurrentNumberOfStudents++;
         }
     }
