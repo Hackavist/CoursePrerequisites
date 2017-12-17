@@ -7,15 +7,15 @@
         mc:Ignorable="d"
         Title="AddStudent" Height="700" Width="600">
     <Grid Margin="0,0,3.333,11.667">
-        <TextBox x:Name="StudName" HorizontalAlignment="Left" Height="34" Margin="140,77,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="208" />
-        <TextBox x:Name="StudPassword" HorizontalAlignment="Left" Height="34" Margin="140,202,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="208"/>
-        <TextBox x:Name="StudYear" HorizontalAlignment="Left" Height="30" Margin="140,283,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="208"/>
-        <TextBox x:Name="StudID" HorizontalAlignment="Left" Height="34" Margin="140,136,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="208"/>
+        <TextBox x:Name="StudName" HorizontalAlignment="Left" Height="34" Margin="140,77,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="208" TabIndex="1" />
+        <TextBox x:Name="StudPassword" HorizontalAlignment="Left" Height="34" Margin="140,202,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="208" TabIndex="3"/>
+        <TextBox x:Name="StudID" HorizontalAlignment="Left" Height="34" Margin="140,136,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="208" TabIndex="2"/>
         <Label Content="Name" HorizontalAlignment="Left" Height="34" Margin="20,77,0,0" VerticalAlignment="Top" Width="115"/>
         <Label Content="ID" HorizontalAlignment="Left" Height="34" Margin="20,136,0,0" VerticalAlignment="Top" Width="115"/>
         <Label Content="Password" HorizontalAlignment="Left" Height="34" Margin="20,202,0,0" VerticalAlignment="Top" Width="115"/>
         <Label Content="Academic Year" HorizontalAlignment="Left" Height="34" Margin="25,279,0,0" VerticalAlignment="Top" Width="115"/>
         <Button Content="Add" HorizontalAlignment="Left" Height="28" Margin="223,394,0,0" VerticalAlignment="Top" Width="125" Click="Button_Click"/>
+        <ComboBox x:Name="StudYear"  HorizontalAlignment="Left" Height="30" Margin="145,283,0,0" VerticalAlignment="Top" Width="203" ShouldPreserveUserEnteredPrefix="True" TabIndex="4"/>
 
     </Grid>
 </Window>

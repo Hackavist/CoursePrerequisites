@@ -41,8 +41,29 @@ namespace Course_Prerequsites_WPF.UIs
         public static bool AdminLogedIn;
         public static string AdminUserName;
         public static string AdminPassword;
-
-
+        
+        public static bool ThereIsNoDelimiter(string TextToCheck)
+        {
+            //check if delimiter exists in the string
+            for ( int i = 0 ; i < TextToCheck.Length ; i++)
+            {
+                if (TextToCheck[i] == '#' || TextToCheck[i] == '%' || TextToCheck[i] == '*')
+                    return false;
+            }
+            return true;
+        }
+        public static bool IsNumber(string TextToCheck)
+        {
+            //check if the text have some text other than numbers 
+            for (int i = 0; i < TextToCheck.Length; i++)
+            {
+                if ((TextToCheck[i] < '0' || TextToCheck[i] > '9'))
+                {
+                    return false;
+                }
+            }
+            return true;
+        }
 
 
         public WelcomePage()

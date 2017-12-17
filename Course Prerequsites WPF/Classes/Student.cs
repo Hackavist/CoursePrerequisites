@@ -14,7 +14,7 @@ namespace Course_Prerequsites_WPF.Classes
         public string Name { get; set; }
         public string Password { get; set; }
         public List<Course> FinishedCourses { get; set; }
-        public int AcademicYear { get; set; }
+        public string AcademicYear { get; set; }
         public List<Course> CoursesInProgress { get; set; }
 
         public Student()
@@ -22,12 +22,12 @@ namespace Course_Prerequsites_WPF.Classes
             Name = "";
             Id = "";
             Password = "";
-            AcademicYear = 0;
+            AcademicYear = "";
             FinishedCourses = new List<Course>();
             CoursesInProgress = new List<Course>();
         }
 
-        public Student(string id, string name, string pass, int year)
+        public Student(string id, string name, string pass, string year)
         {
             Name = name;
             Id = id;
@@ -38,7 +38,7 @@ namespace Course_Prerequsites_WPF.Classes
 
         }
 
-        public Student(string id, string n, string pass, int year, List<Course> finished, List<Course> progess)
+        public Student(string id, string n, string pass, string year, List<Course> finished, List<Course> progess)
         {
             Name = n;
             Id = id;
@@ -61,14 +61,8 @@ namespace Course_Prerequsites_WPF.Classes
         public Dictionary<string, Student> GetAllStudents()
         {
             Dictionary<string, Student> AllStudents = new Dictionary<string, Student>();
-
-            
-
-
             FileStream File = new FileStream("AllStudentsFile.txt", FileMode.Open, FileAccess.Read);
             StreamReader Sr = new StreamReader(File);
-
-
             string[] Records;
             while (Sr.Peek() != -1)
             {
@@ -86,31 +80,30 @@ namespace Course_Prerequsites_WPF.Classes
                     string Id = fields[0];
                     string Name = fields[1];
                     string PassWord = fields[2];
-                    int AcademicYear = Convert.ToInt32(fields[3]);
+                    string AcademicYear = fields[3];
                     List1 = fields[4].Split('*');
                     List2 = fields[5].Split('*');
 
                     foreach (var item in List1)
                     {
-                        if (item!="")
+                        if (item != "")
                         {
-                        FinishedCourses.Add(WelcomePage.Course.ReturnObj(item));
+                            FinishedCourses.Add(WelcomePage.Course.ReturnObj(item));
 
                         }
                     }
 
                     foreach (var item in List2)
                     {
-                        if (item!="")
+                        if (item != "")
                         {
-                        CoursesInProgress.Add(WelcomePage.Course.ReturnObj(item));
+                            CoursesInProgress.Add(WelcomePage.Course.ReturnObj(item));
 
                         }
                     }
-
                     Student stud = new Student(Id, Name, PassWord, AcademicYear, FinishedCourses, CoursesInProgress);
 
-                    AllStudents[Name] = stud;
+                    AllStudents[Id] = stud;
 
                     FinishedCourses.Clear();
                     CoursesInProgress.Clear();
@@ -131,13 +124,13 @@ namespace Course_Prerequsites_WPF.Classes
             Course Cs = new Course();
             Cs = Cs.ReturnObj(name);
 
-            for (int i = 0; i < FinishedCourses.Capacity; i++)
+            for (int i = 0; i < WelcomePage.AllStudentsDictionary[WelcomePage.StudentId].FinishedCourses.Count; i++)
             {
                 bool found = false;
-                for (int j = 0; j < Cs.PreRequiredCourses.Capacity; j++)
+                for (int j = 0; j < Cs.PreRequiredCourses.Count; j++)
                 {
 
-                    if (FinishedCourses[i].CourseName == Cs.PreRequiredCourses[j])
+                    if (WelcomePage.AllStudentsDictionary[WelcomePage.StudentId].FinishedCourses[i].CourseName == Cs.PreRequiredCourses[j])
                     {
                         found = true;
                         break;
@@ -183,7 +176,7 @@ namespace Course_Prerequsites_WPF.Classes
                     Sw.Write('%');
                     Sw.Write(stud.Password);
                     Sw.Write('%');
-                    Sw.Write(Convert.ToString(stud.AcademicYear));
+                    Sw.Write(stud.AcademicYear);
                     Sw.Write('%');
 
                     //writes the finished courses
