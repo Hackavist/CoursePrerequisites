@@ -65,10 +65,11 @@ namespace Course_Prerequsites_WPF.UIs
             return true;
         }
 
-
+        
         public WelcomePage()
         {
             InitializeComponent();
+           
         }
     }
 }

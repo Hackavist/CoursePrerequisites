@@ -221,11 +221,16 @@
   <ItemGroup>
     <Resource Include="Images\Pic.jpg" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <Resource Include="Images\eye.png" />
+  </ItemGroup>
   <ItemGroup>
     <Resource Include="bin\Debug\AllAdminsFile.txt" />
     <Resource Include="bin\Debug\AllCoursesFile.txt" />
     <Resource Include="bin\Debug\AllStudentsFile.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\plus.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
