@@ -101,7 +101,6 @@ namespace Course_Prerequsites_WPF.Classes
 
                         }
                     }
-
                     Student stud = new Student(Id, Name, PassWord, AcademicYear, FinishedCourses, CoursesInProgress);
 
                     AllStudents[Id] = stud;

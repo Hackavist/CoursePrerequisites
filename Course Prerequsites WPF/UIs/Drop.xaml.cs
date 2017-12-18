@@ -19,9 +19,37 @@ namespace Course_Prerequsites_WPF.UIs
     /// </summary>
     public partial class Drop : Window
     {
+        string selected;
+        List<string> ids = new List<string>();
         public Drop()
         {
             InitializeComponent();
+            foreach (var x in WelcomePage.AllStudentsDictionary)
+            {
+                comboBoxName.Items.Add(x.Value.Name);
+                ids.Add(x.Key);
+            }
+        }
+
+        private void comboBoxCours_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        {
+
+        }
+
+        private void comboBoxName_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        {
+            comboBoxCours.Items.Clear();
+            selected = ids[comboBoxName.SelectedIndex];
+            foreach(var x in WelcomePage.AllStudentsDictionary[selected].CoursesInProgress)
+            {
+                comboBoxCours.Items.Add(x.CourseName);
+            }
+               
+        }
+
+        private void dropButton_Click(object sender, RoutedEventArgs e)
+        {
+            WelcomePage.AllStudentsDictionary[selected].CoursesInProgress.Remove(WelcomePage.AllCoursesDictionary[comboBoxCours.SelectedItem.ToString()]);
         }
     }
 }
