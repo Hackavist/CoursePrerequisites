@@ -1,0 +1,171 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{FCAB5377-3E6C-44CE-A204-4D3A40A824CE}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>Course_Prerequsites_WPF</RootNamespace>
+    <AssemblyName>Course Prerequsites WPF</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <ProjectTypeGuids>{60dc8134-eba5-43b8-bcc9-bb4bc16c2548};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <WarningLevel>4</WarningLevel>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Classes\Admin.cs" />
+    <Compile Include="Classes\Elements.cs" />
+    <Compile Include="ViewModels\ChartViewModel.cs" />
+    <Compile Include="ViewModels\StackViewModel.cs" />
+    <Compile Include="UIs\AddCoursePrerequisites.xaml.cs">
+      <DependentUpon>AddCoursePrerequisites.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="UIs\AddNewCourse.xaml.cs">
+      <DependentUpon>AddNewCourse.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="UIs\AddStudent.xaml.cs">
+      <DependentUpon>AddStudent.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="UIs\AdminLogIn.xaml.cs">
+      <DependentUpon>AdminLogIn.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="UIs\AllCoursesChart.xaml.cs">
+      <DependentUpon>AllCoursesChart.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="UIs\AspecificCourse.xaml.cs">
+      <DependentUpon>AspecificCourse.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="UIs\Drop.xaml.cs">
+      <DependentUpon>Drop.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="UIs\EnterStudentGrades.xaml.cs">
+      <DependentUpon>EnterStudentGrades.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="UIs\RegisterToNewCouse.xaml.cs">
+      <DependentUpon>RegisterToNewCouse.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="UIs\StudentLogIn.xaml.cs">
+      <DependentUpon>StudentLogIn.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="UIs\ViewAllCoursesOfStudent.xaml.cs">
+      <DependentUpon>ViewAllCoursesOfStudent.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="UIs\ViewMyCourses.xaml.cs">
+      <DependentUpon>ViewMyCourses.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="UIs\ViewStudentOrCourse.xaml.cs">
+      <DependentUpon>ViewStudentOrCourse.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="UIs\ViewStudentsInCourse.xaml.cs">
+      <DependentUpon>ViewStudentsInCourse.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="UIs\WelcomePage.xaml.cs">
+      <DependentUpon>WelcomePage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="App.xaml.cs">
+      <DependentUpon>App.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Classes\Course.cs" />
+    <Compile Include="Classes\Student.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Properties\AssemblyInfo.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config">
+      <SubType>Designer</SubType>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+  </ItemGroup>
+  <ItemGroup />
+  <ItemGroup>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <ItemGroup>
+    <ReferencePath Include="D:\Work\Courses project\Course Prerequsites WPF\packages\ModernUICharts.WPF.Beta.0.9.1\lib\De.TorstenMandelkow.MetroChart.dll" />
+    <ReferencePath Include="D:\Work\Courses project\Course Prerequsites WPF\packages\MahApps.Metro.1.5.0\lib\net45\MahApps.Metro.dll" />
+    <ReferencePath Include="D:\Work\Courses project\Course Prerequsites WPF\packages\MetroModernUI.1.4.0.0\lib\net\MetroFramework.Design.dll" />
+    <ReferencePath Include="D:\Work\Courses project\Course Prerequsites WPF\packages\MetroModernUI.1.4.0.0\lib\net\MetroFramework.dll" />
+    <ReferencePath Include="D:\Work\Courses project\Course Prerequsites WPF\packages\MetroModernUI.1.4.0.0\lib\net\MetroFramework.Fonts.dll" />
+    <ReferencePath Include="C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.5\Microsoft.CSharp.dll" />
+    <ReferencePath Include="C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.5\mscorlib.dll" />
+    <ReferencePath Include="C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.5\PresentationCore.dll" />
+    <ReferencePath Include="C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.5\PresentationFramework.dll" />
+    <ReferencePath Include="C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.5\System.Core.dll" />
+    <ReferencePath Include="C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.5\System.Data.DataSetExtensions.dll" />
+    <ReferencePath Include="C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.5\System.Data.dll" />
+    <ReferencePath Include="C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.5\System.dll" />
+    <ReferencePath Include="C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.5\System.Net.Http.dll" />
+    <ReferencePath Include="D:\Work\Courses project\Course Prerequsites WPF\packages\MahApps.Metro.1.5.0\lib\net45\System.Windows.Interactivity.dll" />
+    <ReferencePath Include="C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.5\System.Xaml.dll" />
+    <ReferencePath Include="C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.5\System.Xml.dll" />
+    <ReferencePath Include="C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.5\System.Xml.Linq.dll" />
+    <ReferencePath Include="C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.5\WindowsBase.dll" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="D:\Work\Courses project\Course Prerequsites WPF\obj\Debug\UIs\AddCoursePrerequisites.g.cs" />
+    <Compile Include="D:\Work\Courses project\Course Prerequsites WPF\obj\Debug\UIs\AddNewCourse.g.cs" />
+    <Compile Include="D:\Work\Courses project\Course Prerequsites WPF\obj\Debug\UIs\AddStudent.g.cs" />
+    <Compile Include="D:\Work\Courses project\Course Prerequsites WPF\obj\Debug\UIs\AdminLogIn.g.cs" />
+    <Compile Include="D:\Work\Courses project\Course Prerequsites WPF\obj\Debug\UIs\AllCoursesChart.g.cs" />
+    <Compile Include="D:\Work\Courses project\Course Prerequsites WPF\obj\Debug\UIs\AspecificCourse.g.cs" />
+    <Compile Include="D:\Work\Courses project\Course Prerequsites WPF\obj\Debug\UIs\Drop.g.cs" />
+    <Compile Include="D:\Work\Courses project\Course Prerequsites WPF\obj\Debug\UIs\EnterStudentGrades.g.cs" />
+    <Compile Include="D:\Work\Courses project\Course Prerequsites WPF\obj\Debug\UIs\RegisterToNewCouse.g.cs" />
+    <Compile Include="D:\Work\Courses project\Course Prerequsites WPF\obj\Debug\UIs\StudentLogIn.g.cs" />
+    <Compile Include="D:\Work\Courses project\Course Prerequsites WPF\obj\Debug\UIs\ViewAllCoursesOfStudent.g.cs" />
+    <Compile Include="D:\Work\Courses project\Course Prerequsites WPF\obj\Debug\UIs\ViewMyCourses.g.cs" />
+    <Compile Include="D:\Work\Courses project\Course Prerequsites WPF\obj\Debug\UIs\ViewStudentOrCourse.g.cs" />
+    <Compile Include="D:\Work\Courses project\Course Prerequsites WPF\obj\Debug\UIs\ViewStudentsInCourse.g.cs" />
+    <Compile Include="D:\Work\Courses project\Course Prerequsites WPF\obj\Debug\UIs\WelcomePage.g.cs" />
+    <Compile Include="D:\Work\Courses project\Course Prerequsites WPF\obj\Debug\App.g.cs" />
+    <Compile Include="D:\Work\Courses project\Course Prerequsites WPF\obj\Debug\GeneratedInternalTypeHelper.g.cs" />
+  </ItemGroup>
+</Project>
