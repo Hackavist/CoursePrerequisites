@@ -5,17 +5,34 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Course_Prerequsites_WPF.UIs"
         mc:Ignorable="d"
-        Title="AddStudent" Height="700" Width="600">
+        Title="AddStudent" Height="650" Width="600" WindowStartupLocation="CenterScreen">
     <Grid Margin="0,0,3.333,11.667">
-        <TextBox x:Name="StudName" HorizontalAlignment="Left" Height="34" Margin="140,77,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="208" TabIndex="1" />
-        <TextBox x:Name="StudPassword" HorizontalAlignment="Left" Height="34" Margin="140,202,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="208" TabIndex="3"/>
-        <TextBox x:Name="StudID" HorizontalAlignment="Left" Height="34" Margin="140,136,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="208" TabIndex="2"/>
-        <Label Content="Name" HorizontalAlignment="Left" Height="34" Margin="20,77,0,0" VerticalAlignment="Top" Width="115"/>
-        <Label Content="ID" HorizontalAlignment="Left" Height="34" Margin="20,136,0,0" VerticalAlignment="Top" Width="115"/>
-        <Label Content="Password" HorizontalAlignment="Left" Height="34" Margin="20,202,0,0" VerticalAlignment="Top" Width="115"/>
-        <Label Content="Academic Year" HorizontalAlignment="Left" Height="34" Margin="25,279,0,0" VerticalAlignment="Top" Width="115"/>
-        <Button Content="Add" HorizontalAlignment="Left" Height="28" Margin="223,394,0,0" VerticalAlignment="Top" Width="125" Click="Button_Click"/>
-        <ComboBox x:Name="StudYear"  HorizontalAlignment="Left" Height="30" Margin="145,283,0,0" VerticalAlignment="Top" Width="203" ShouldPreserveUserEnteredPrefix="True" TabIndex="4"/>
+        <TextBox x:Name="StudName" HorizontalAlignment="Left" Height="34" Margin="223,97,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="208" TabIndex="1" />
+        <TextBox x:Name="StudPassword" HorizontalAlignment="Left" Height="34" Margin="223,267,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="208" TabIndex="3"/>
+        <TextBox x:Name="StudID" HorizontalAlignment="Left" Height="34" Margin="223,180,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="208" TabIndex="2"/>
+        <Label Content="Name" HorizontalAlignment="Left" Height="34" Margin="20,97,0,0" VerticalAlignment="Top" Width="115" FontSize="18" FontFamily="Times New Roman">
+            <Label.Foreground>
+                <SolidColorBrush Color="{DynamicResource {x:Static SystemColors.HighlightColorKey}}"/>
+            </Label.Foreground>
+        </Label>
+        <Label Content="ID" HorizontalAlignment="Left" Height="34" Margin="20,180,0,0" VerticalAlignment="Top" Width="115" FontSize="18" FontFamily="Times New Roman">
+            <Label.Foreground>
+                <SolidColorBrush Color="{DynamicResource {x:Static SystemColors.HighlightColorKey}}"/>
+            </Label.Foreground>
+        </Label>
+        <Label Content="Password" HorizontalAlignment="Left" Height="34" Margin="20,267,0,0" VerticalAlignment="Top" Width="115" FontSize="18" FontFamily="Times New Roman">
+            <Label.Foreground>
+                <SolidColorBrush Color="{DynamicResource {x:Static SystemColors.HighlightColorKey}}"/>
+            </Label.Foreground>
+        </Label>
+        <Label Content="Academic Year" HorizontalAlignment="Left" Height="34" Margin="20,357,0,0" VerticalAlignment="Top" Width="132" FontSize="18" FontFamily="Times New Roman">
+            <Label.Foreground>
+                <SolidColorBrush Color="{DynamicResource {x:Static SystemColors.HighlightColorKey}}"/>
+            </Label.Foreground>
+        </Label>
+        <Button Content="Add" HorizontalAlignment="Left" Height="28" Margin="248,498,0,0" VerticalAlignment="Top" Width="125" Click="Button_Click"/>
+        <ComboBox x:Name="StudYear"  HorizontalAlignment="Left" Height="34" Margin="223,357,0,0" VerticalAlignment="Top" Width="208" ShouldPreserveUserEnteredPrefix="True" TabIndex="4" FontSize="18" FontFamily="Times New Roman"/>
+        <Image HorizontalAlignment="Left" Height="100" VerticalAlignment="Top" Width="100" Margin="480,499,0,0" Source="/Course Prerequsites WPF;component/Images/plus.png"/>
 
     </Grid>
 </Window>

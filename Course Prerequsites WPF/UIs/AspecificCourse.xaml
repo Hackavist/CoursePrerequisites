@@ -36,7 +36,7 @@
             <TextBox x:Name="CourseName" BorderBrush="Black"  TextAlignment="Center" BorderThickness="1.5" Height="43" Canvas.Left="147" TextWrapping="Wrap" Text="Course Name" Canvas.Top="32" Width="243" FontSize="24" IsReadOnly="True" />
 
         </Canvas>
-        <Button Style="{StaticResource BorderButton}" Content="Back" x:Name="ReturnBack"  Click="ReturnBack_Click" Margin="0,10,0,617.4" Height="43" Width="93" />
+        <Button Style="{StaticResource BorderButton}" Content="Back" x:Name="ReturnBack"  Click="ReturnBack_Click" Margin="470,616,0,10" Height="43" Width="93" />
 
     </Grid>
 </Window>

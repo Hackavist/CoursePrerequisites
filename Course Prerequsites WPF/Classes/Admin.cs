@@ -62,6 +62,30 @@ namespace Course_Prerequsites_WPF.Classes
             return AllAdmins;
         }
 
+        public List<string> ViewAllStudentsInACourse(string name)
+        {
+           
+                Student s = new Student();
+                List<Course> listOfCourses = s.CoursesInProgress;
+                List<string> ListOfNames = new List<string>();
+            
+                foreach (var x in WelcomePage.AllStudentsDictionary)
+                {
+                    for (int i = 0; i < x.Value.CoursesInProgress.Count; i++)
+                    {
+                        if (name == x.Value.CoursesInProgress[i].CourseName)
+                        {
+                            //add item to list
+                            ListOfNames.Add(x.Value.Name);
+                            break;
+                        }
+                    }
+                }
+
+            return ListOfNames;
+            
+        }
+
         public void AddCoursePrerquisite(string coursename, string prerequisitename)
         {
             WelcomePage.AllCoursesDictionary[coursename].PreRequiredCourses.Add(prerequisitename);
