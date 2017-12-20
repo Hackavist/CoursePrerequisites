@@ -113,8 +113,8 @@
     <Compile Include="UIs\ViewMyCourses.xaml.cs">
       <DependentUpon>ViewMyCourses.xaml</DependentUpon>
     </Compile>
-    <Compile Include="UIs\ViewStudentOrCourse.xaml.cs">
-      <DependentUpon>ViewStudentOrCourse.xaml</DependentUpon>
+    <Compile Include="UIs\AdminControls.xaml.cs">
+      <DependentUpon>AdminControls.xaml</DependentUpon>
     </Compile>
     <Compile Include="UIs\ViewStudentsInCourse.xaml.cs">
       <DependentUpon>ViewStudentsInCourse.xaml</DependentUpon>
@@ -176,7 +176,7 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="UIs\ViewStudentOrCourse.xaml">
+    <Page Include="UIs\AdminControls.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </Page>
