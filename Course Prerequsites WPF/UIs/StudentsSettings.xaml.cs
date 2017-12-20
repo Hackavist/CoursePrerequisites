@@ -15,11 +15,11 @@ using System.Windows.Shapes;
 namespace Course_Prerequsites_WPF.UIs
 {
     /// <summary>
-    /// Interaction logic for ViewStudentOrCourse.xaml
+    /// Interaction logic for StudentsSettings.xaml
     /// </summary>
-    public partial class ViewStudentOrCourse : Window
+    public partial class StudentsSettings : Window
     {
-        public ViewStudentOrCourse()
+        public StudentsSettings()
         {
             InitializeComponent();
         }
