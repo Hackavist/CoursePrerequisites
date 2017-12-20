@@ -75,6 +75,9 @@
     </ApplicationDefinition>
     <Compile Include="Classes\Admin.cs" />
     <Compile Include="Classes\Elements.cs" />
+    <Compile Include="UIs\AdminSettings.xaml.cs">
+      <DependentUpon>AdminSettings.xaml</DependentUpon>
+    </Compile>
     <Compile Include="UIs\CourseSettings.xaml.cs">
       <DependentUpon>CourseSettings.xaml</DependentUpon>
     </Compile>
@@ -143,6 +146,10 @@
     <Page Include="UIs\AdminLogIn.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
+    </Page>
+    <Page Include="UIs\AdminSettings.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="UIs\AllCoursesChart.xaml">
       <SubType>Designer</SubType>
