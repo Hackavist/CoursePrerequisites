@@ -4,11 +4,22 @@
         Title="ViewAllCoursesOfStudent" Height="700" Width="600" Loaded="Window_Loaded">
     <Grid>
         <Button x:Name="View_button" Content="View" HorizontalAlignment="Left" VerticalAlignment="Top" Width="75" Margin="426,40,0,0" Height="22" Click="View_button_Click"/>
-        <ListBox x:Name="ListOfProgressCoursesOfStudent" HorizontalAlignment="Left" Height="330" VerticalAlignment="Top" Width="147" Margin="76,152,0,0"/>
-        <ListBox x:Name="ListOfCompletedCoursesOfStudent" HorizontalAlignment="Left" Height="330" VerticalAlignment="Top" Width="147" Margin="366,152,0,0"/>
-        <Label Content="Courses in Progress" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="93,121,0,0"/>
-        <Label Content="Completed Courses" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="387,121,0,0"/>
+        <ListBox x:Name="ListOfProgressCoursesOfStudent" HorizontalAlignment="Left" Height="300" VerticalAlignment="Top" Width="225" Margin="61,152,0,0" SelectionChanged="ListOfProgressCoursesOfStudent_SelectionChanged"/>
+        <ListBox x:Name="ListOfCompletedCoursesOfStudent" HorizontalAlignment="Left" Height="300" VerticalAlignment="Top" Width="225" Margin="345,152,0,0" SelectionChanged="ListOfCompletedCoursesOfStudent_SelectionChanged"/>
+        <Label Content="Courses in Progress" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="61,126,0,0"/>
+        <Label Content="Completed Courses" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="345,121,0,0"/>
         <ComboBox x:Name="SelectStudentComboBox" HorizontalAlignment="Left" VerticalAlignment="Top" Width="288" Margin="61,40,0,0"/>
+        <Canvas HorizontalAlignment="Left" Height="210" Margin="10,457,0,0" VerticalAlignment="Top" Width="580" x:Name="InfoBlock" IsHitTestVisible="True" Visibility="Hidden">
+            <TextBlock Canvas.Left="230" TextWrapping="Wrap" Text="Course Name : " Canvas.Top="10" x:Name="NameTextBlock" />
+            <TextBlock Canvas.Left="10" TextWrapping="Wrap" Text="Course Code : " Canvas.Top="30" x:Name="CodeTextBlock"/>
+            <TextBlock Canvas.Left="10" TextWrapping="Wrap" Text="Current Number of Students : " Canvas.Top="55" x:Name="CurrentstudentTextBlock"/>
+            <TextBlock Canvas.Left="284" TextWrapping="Wrap" Text="Maximum Number of Students : " Canvas.Top="55" x:Name="MaximumStudentTextBlock"/>
+            <TextBlock Canvas.Left="10" TextWrapping="Wrap" Text="Passing Grade : " Canvas.Top="80" x:Name="PassingGradeTextBlock"/>
+            <TextBlock Canvas.Left="284" TextWrapping="Wrap" Text="Total Grade : " Canvas.Top="80" x:Name="MaxGradeTextBlock"/>
+            <TextBlock Canvas.Left="10" TextWrapping="Wrap" Text="Total Hours : " Canvas.Top="106" x:Name="HoursTextBlock" />
+            <TextBlock Canvas.Left="10" TextWrapping="Wrap" Text="Instructor Name : " Canvas.Top="130" x:Name="InstructorTextBlock" />
+            <TextBlock Canvas.Left="10" TextWrapping="Wrap" Text="Description : " Canvas.Top="155" x:Name="DescriptionTextBlock" />
+        </Canvas>
 
     </Grid>
 </Window>
