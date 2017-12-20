@@ -65,6 +65,33 @@ namespace Course_Prerequsites_WPF.UIs
             return true;
         }
 
+        public static bool IsNotAlphabet(string TextToCheck)
+        {
+            for(int i=0;i<TextToCheck.Length;i++)
+            {
+
+            if ( (TextToCheck[i] > 64|| TextToCheck[i] < 91) || (TextToCheck[i] > 96 || TextToCheck[i] <123) )
+                {
+                    return false;
+                }
+                
+            }
+            return true;
+        }
+
+
+        public static bool NoSpace(string TextToCheck)
+        {
+            //check if text contains a space
+            for(int i=0;i<TextToCheck.Length;i++)
+            {
+                if(TextToCheck[i]=='\0')
+                {
+                    return false;
+                }
+            }
+            return true;
+        }
         
         public WelcomePage()
         {

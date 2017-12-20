@@ -28,20 +28,33 @@ namespace Course_Prerequsites_WPF.UIs
             StudYear.Items.Add("2nd year");
             StudYear.Items.Add("3rd year");
             StudYear.Items.Add("4th year");
+
+            FinishedCourses.Visibility = Visibility.Hidden;
            
         }
         
         private void Button_Click(object sender, RoutedEventArgs e)
         {
-            if(  string.IsNullOrEmpty(StudName.Text.Trim()) || string.IsNullOrEmpty(StudID.Text.Trim()) || string.IsNullOrEmpty(StudPassword.Text.Trim()) || StudYear.SelectedIndex==-1) 
+
+
+
+            if (string.IsNullOrEmpty(StudName.Text.Trim()) || string.IsNullOrEmpty(StudID.Text.Trim()) || string.IsNullOrEmpty(StudPassword.Text.Trim()) || StudYear.SelectedIndex == -1)
             {
                 MessageBox.Show("Please Enter Missing Data");
             }
-            else if(WelcomePage.ThereIsNoDelimiter(StudName.Text)==false || WelcomePage.ThereIsNoDelimiter(StudID.Text)==false || WelcomePage.ThereIsNoDelimiter(StudPassword.Text)==false)
+            else if (WelcomePage.ThereIsNoDelimiter(StudName.Text) == false || WelcomePage.ThereIsNoDelimiter(StudID.Text) == false || WelcomePage.ThereIsNoDelimiter(StudPassword.Text) == false)
             {
                 MessageBox.Show("Please Don't Use special characters: (% , # , *) ");
             }
-                
+            else if (WelcomePage.IsNotAlphabet(StudName.Text) == false)
+            {
+                MessageBox.Show("Please Enter Correct Name");
+            }
+            else if(WelcomePage.NoSpace(StudPassword.Text)==true || WelcomePage.NoSpace(StudID.Text)==true)
+            {
+                MessageBox.Show("ID and Password Must Not Contain Spaces");
+            }
+
             else
             {
                 string name = StudName.Text.Trim();
@@ -58,10 +71,10 @@ namespace Course_Prerequsites_WPF.UIs
                 }
                 else
                 {
-                    // in admin class
+                   
                     WelcomePage.AllStudentsDictionary[id]=s;
                     MessageBox.Show("Student Added");
-                    //
+                 
                     StudName.Clear();
                     StudID.Clear();
                     StudPassword.Clear();
@@ -69,8 +82,16 @@ namespace Course_Prerequsites_WPF.UIs
                    
                 }
             }
+                if(StudYear.SelectedIndex!='1')
+                {
+                    FinishedCourses.Visibility = Visibility.Visible;
+                }
+
         }
 
-       
+        private void FinishedCourses_Click(object sender, RoutedEventArgs e)
+        {
+           //go to add finished courses
+        }
     }
 }

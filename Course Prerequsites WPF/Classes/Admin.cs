@@ -75,7 +75,7 @@ namespace Course_Prerequsites_WPF.Classes
                     {
                         if (name == x.Value.CoursesInProgress[i].CourseName)
                         {
-                            //add item to list
+                           
                             ListOfNames.Add(x.Value.Name);
                             break;
                         }

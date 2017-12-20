@@ -262,7 +262,6 @@ C:\Users\chantal\Source\Repos\CoursePrerequisites\Course Prerequsites WPF\obj\De
 C:\Users\chantal\Source\Repos\CoursePrerequisites\Course Prerequsites WPF\obj\Debug\UIs\StudentLogIn.g.cs
 C:\Users\chantal\Source\Repos\CoursePrerequisites\Course Prerequsites WPF\obj\Debug\UIs\ViewAllCoursesOfStudent.g.cs
 C:\Users\chantal\Source\Repos\CoursePrerequisites\Course Prerequsites WPF\obj\Debug\UIs\ViewMyCourses.g.cs
-C:\Users\chantal\Source\Repos\CoursePrerequisites\Course Prerequsites WPF\obj\Debug\UIs\ViewStudentOrCourse.g.cs
 C:\Users\chantal\Source\Repos\CoursePrerequisites\Course Prerequsites WPF\obj\Debug\UIs\ViewStudentsInCourse.g.cs
 C:\Users\chantal\Source\Repos\CoursePrerequisites\Course Prerequsites WPF\obj\Debug\UIs\WelcomePage.g.cs
 C:\Users\chantal\Source\Repos\CoursePrerequisites\Course Prerequsites WPF\obj\Debug\App.g.cs
@@ -278,7 +277,6 @@ C:\Users\chantal\Source\Repos\CoursePrerequisites\Course Prerequsites WPF\obj\De
 C:\Users\chantal\Source\Repos\CoursePrerequisites\Course Prerequsites WPF\obj\Debug\UIs\Drop.baml
 C:\Users\chantal\Source\Repos\CoursePrerequisites\Course Prerequsites WPF\obj\Debug\UIs\RegisterToNewCouse.baml
 C:\Users\chantal\Source\Repos\CoursePrerequisites\Course Prerequsites WPF\obj\Debug\UIs\ViewMyCourses.baml
-C:\Users\chantal\Source\Repos\CoursePrerequisites\Course Prerequsites WPF\obj\Debug\UIs\ViewStudentOrCourse.baml
 C:\Users\chantal\Source\Repos\CoursePrerequisites\Course Prerequsites WPF\obj\Debug\UIs\ViewStudentsInCourse.baml
 C:\Users\chantal\Source\Repos\CoursePrerequisites\Course Prerequsites WPF\obj\Debug\UIs\WelcomePage.baml
 C:\Users\chantal\Source\Repos\CoursePrerequisites\Course Prerequsites WPF\obj\Debug\Course Prerequsites WPF.g.resources
@@ -359,3 +357,13 @@ D:\Work\Courses project\Course Prerequsites WPF\obj\Debug\Course Prerequsites WP
 E:\DataStructureProject\Course Prerequsites WPF\bin\Debug\Course Prerequsites WPF.exe.config
 E:\DataStructureProject\Course Prerequsites WPF\obj\Debug\Course Prerequsites WPF.exe
 E:\DataStructureProject\Course Prerequsites WPF\obj\Debug\Course Prerequsites WPF.pdb
+C:\Users\chantal\Source\Repos\CoursePrerequisites\Course Prerequsites WPF\obj\Debug\UIs\AddFinishedCourses.g.cs
+C:\Users\chantal\Source\Repos\CoursePrerequisites\Course Prerequsites WPF\obj\Debug\UIs\AdminSettings.g.cs
+C:\Users\chantal\Source\Repos\CoursePrerequisites\Course Prerequsites WPF\obj\Debug\UIs\CourseSettings.g.cs
+C:\Users\chantal\Source\Repos\CoursePrerequisites\Course Prerequsites WPF\obj\Debug\UIs\StudentsSettings.g.cs
+C:\Users\chantal\Source\Repos\CoursePrerequisites\Course Prerequsites WPF\obj\Debug\UIs\AdminControls.g.cs
+C:\Users\chantal\Source\Repos\CoursePrerequisites\Course Prerequsites WPF\obj\Debug\UIs\AddFinishedCourses.baml
+C:\Users\chantal\Source\Repos\CoursePrerequisites\Course Prerequsites WPF\obj\Debug\UIs\AdminSettings.baml
+C:\Users\chantal\Source\Repos\CoursePrerequisites\Course Prerequsites WPF\obj\Debug\UIs\CourseSettings.baml
+C:\Users\chantal\Source\Repos\CoursePrerequisites\Course Prerequsites WPF\obj\Debug\UIs\StudentsSettings.baml
+C:\Users\chantal\Source\Repos\CoursePrerequisites\Course Prerequsites WPF\obj\Debug\UIs\AdminControls.baml
