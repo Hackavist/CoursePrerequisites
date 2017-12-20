@@ -355,3 +355,7 @@ D:\Work\Courses project\Course Prerequsites WPF\obj\Debug\Course Prerequsites WP
 D:\Work\Courses project\Course Prerequsites WPF\obj\Debug\Course Prerequsites WPF.csproj.CoreCompileInputs.cache
 D:\Work\Courses project\Course Prerequsites WPF\obj\Debug\Course Prerequsites WPF.exe
 D:\Work\Courses project\Course Prerequsites WPF\obj\Debug\Course Prerequsites WPF.pdb
+D:\Work\Courses project\Course Prerequsites WPF\obj\Debug\Course Prerequsites WPF.csprojResolveAssemblyReference.cache
+E:\DataStructureProject\Course Prerequsites WPF\bin\Debug\Course Prerequsites WPF.exe.config
+E:\DataStructureProject\Course Prerequsites WPF\obj\Debug\Course Prerequsites WPF.exe
+E:\DataStructureProject\Course Prerequsites WPF\obj\Debug\Course Prerequsites WPF.pdb
