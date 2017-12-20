@@ -27,38 +27,38 @@ namespace Course_Prerequsites_WPF.UIs
         }
         private void Window_Loaded(object sender, RoutedEventArgs e)
         {
+           
             Student s = new Student();
-            if( WelcomePage.AllStudentsDictionary[WelcomePage.StudentId].FinishedCourses.Count==0)
+          
+            //Loop on all available courses for this student in the list that is returned from this function
+            foreach (var x in s.ShowAvailableCourses())
             {
-               
-               foreach (var x in WelcomePage.AllCoursesDictionary)
-	            {
-                if(x.Value.PreRequiredCourses.Count==0)
-                    {
-                          AvailableCourseBox.Items.Add(x.Key);
-                    }
-                }
-            }  
-            else
-           {
-            foreach (var x in WelcomePage.AllCoursesDictionary)
-            {
-                if ((s.CheckPrequired(x.Value.CourseName) == true) && (x.Value.CurrentNumberOfStudents < x.Value.MaximumNumberOfStudents))
-                {
-                    AvailableCourseBox.Items.Add(x.Key);
-                }
+                //Add this courses to the combo box
+                AvailableCourseBox.Items.Add(x);
             }
-           }
-        }
-            
+            //If no avilable courses this message will appear
+            if (AvailableCourseBox.Items.Count == 0)
+            {
+                MessageBox.Show("You have no available Courses right now " + '\n' + "Please Click on Back Button.");
+               
+            }
 
+          
+        }
+
+        //What will happened when click on register
         private void button1_Click(object sender, RoutedEventArgs e)
         {
-
-            Course c =WelcomePage.Course.ReturnObj(AvailableCourseBox.SelectionBoxItem.ToString());
+            //Object that contain the selected item in combo box
+            Course c = WelcomePage.Course.ReturnObj(AvailableCourseBox.SelectionBoxItem.ToString());
+            //Add this course to the courses in progress for this student
             WelcomePage.AllStudentsDictionary[WelcomePage.StudentId].CoursesInProgress.Add(c);
+            //When this student regist to aspecific course the number of students in this course will be incremented
             WelcomePage.AllCoursesDictionary[AvailableCourseBox.SelectionBoxItem.ToString()].CurrentNumberOfStudents++;
+            //The Message that appears
             MessageBox.Show("You are now regist to this Course");
+            //When you regist to this course it will be removed from combo box
+            AvailableCourseBox.Items.Remove(AvailableCourseBox.SelectionBoxItem.ToString());
         }
     }
 }

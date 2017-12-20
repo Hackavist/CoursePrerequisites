@@ -355,3 +355,55 @@ D:\Work\Courses project\Course Prerequsites WPF\obj\Debug\Course Prerequsites WP
 D:\Work\Courses project\Course Prerequsites WPF\obj\Debug\Course Prerequsites WPF.csproj.CoreCompileInputs.cache
 D:\Work\Courses project\Course Prerequsites WPF\obj\Debug\Course Prerequsites WPF.exe
 D:\Work\Courses project\Course Prerequsites WPF\obj\Debug\Course Prerequsites WPF.pdb
+E:\DataStructureProject\Course Prerequsites WPF\bin\Debug\Course Prerequsites WPF.exe.config
+E:\DataStructureProject\Course Prerequsites WPF\obj\Debug\Course Prerequsites WPF.exe
+E:\DataStructureProject\Course Prerequsites WPF\obj\Debug\Course Prerequsites WPF.pdb
+E:\DataStructureProject\Course Prerequsites WPF\bin\Debug\Course Prerequsites WPF.exe
+E:\DataStructureProject\Course Prerequsites WPF\bin\Debug\Course Prerequsites WPF.pdb
+E:\DataStructureProject\Course Prerequsites WPF\bin\Debug\De.TorstenMandelkow.MetroChart.dll
+E:\DataStructureProject\Course Prerequsites WPF\bin\Debug\MahApps.Metro.dll
+E:\DataStructureProject\Course Prerequsites WPF\bin\Debug\MetroFramework.Design.dll
+E:\DataStructureProject\Course Prerequsites WPF\bin\Debug\MetroFramework.dll
+E:\DataStructureProject\Course Prerequsites WPF\bin\Debug\MetroFramework.Fonts.dll
+E:\DataStructureProject\Course Prerequsites WPF\bin\Debug\System.Windows.Interactivity.dll
+E:\DataStructureProject\Course Prerequsites WPF\bin\Debug\MahApps.Metro.pdb
+E:\DataStructureProject\Course Prerequsites WPF\bin\Debug\MahApps.Metro.xml
+E:\DataStructureProject\Course Prerequsites WPF\obj\Debug\Course Prerequsites WPF.csprojResolveAssemblyReference.cache
+E:\DataStructureProject\Course Prerequsites WPF\obj\Debug\UIs\AddNewCourse.baml
+E:\DataStructureProject\Course Prerequsites WPF\obj\Debug\UIs\EnterStudentGrades.baml
+E:\DataStructureProject\Course Prerequsites WPF\obj\Debug\UIs\StudentLogIn.baml
+E:\DataStructureProject\Course Prerequsites WPF\obj\Debug\UIs\ViewAllCoursesOfStudent.baml
+E:\DataStructureProject\Course Prerequsites WPF\obj\Debug\UIs\AddCoursePrerequisites.g.cs
+E:\DataStructureProject\Course Prerequsites WPF\obj\Debug\UIs\AddNewCourse.g.cs
+E:\DataStructureProject\Course Prerequsites WPF\obj\Debug\UIs\AddStudent.g.cs
+E:\DataStructureProject\Course Prerequsites WPF\obj\Debug\UIs\AdminLogIn.g.cs
+E:\DataStructureProject\Course Prerequsites WPF\obj\Debug\UIs\AllCoursesChart.g.cs
+E:\DataStructureProject\Course Prerequsites WPF\obj\Debug\UIs\AspecificCourse.g.cs
+E:\DataStructureProject\Course Prerequsites WPF\obj\Debug\UIs\Drop.g.cs
+E:\DataStructureProject\Course Prerequsites WPF\obj\Debug\UIs\EnterStudentGrades.g.cs
+E:\DataStructureProject\Course Prerequsites WPF\obj\Debug\UIs\RegisterToNewCouse.g.cs
+E:\DataStructureProject\Course Prerequsites WPF\obj\Debug\UIs\StudentLogIn.g.cs
+E:\DataStructureProject\Course Prerequsites WPF\obj\Debug\UIs\ViewAllCoursesOfStudent.g.cs
+E:\DataStructureProject\Course Prerequsites WPF\obj\Debug\UIs\ViewMyCourses.g.cs
+E:\DataStructureProject\Course Prerequsites WPF\obj\Debug\UIs\ViewStudentOrCourse.g.cs
+E:\DataStructureProject\Course Prerequsites WPF\obj\Debug\UIs\ViewStudentsInCourse.g.cs
+E:\DataStructureProject\Course Prerequsites WPF\obj\Debug\UIs\WelcomePage.g.cs
+E:\DataStructureProject\Course Prerequsites WPF\obj\Debug\App.g.cs
+E:\DataStructureProject\Course Prerequsites WPF\obj\Debug\GeneratedInternalTypeHelper.g.cs
+E:\DataStructureProject\Course Prerequsites WPF\obj\Debug\Course Prerequsites WPF_MarkupCompile.cache
+E:\DataStructureProject\Course Prerequsites WPF\obj\Debug\Course Prerequsites WPF_MarkupCompile.lref
+E:\DataStructureProject\Course Prerequsites WPF\obj\Debug\App.baml
+E:\DataStructureProject\Course Prerequsites WPF\obj\Debug\UIs\AddCoursePrerequisites.baml
+E:\DataStructureProject\Course Prerequsites WPF\obj\Debug\UIs\AddStudent.baml
+E:\DataStructureProject\Course Prerequsites WPF\obj\Debug\UIs\AdminLogIn.baml
+E:\DataStructureProject\Course Prerequsites WPF\obj\Debug\UIs\AllCoursesChart.baml
+E:\DataStructureProject\Course Prerequsites WPF\obj\Debug\UIs\AspecificCourse.baml
+E:\DataStructureProject\Course Prerequsites WPF\obj\Debug\UIs\Drop.baml
+E:\DataStructureProject\Course Prerequsites WPF\obj\Debug\UIs\RegisterToNewCouse.baml
+E:\DataStructureProject\Course Prerequsites WPF\obj\Debug\UIs\ViewMyCourses.baml
+E:\DataStructureProject\Course Prerequsites WPF\obj\Debug\UIs\ViewStudentOrCourse.baml
+E:\DataStructureProject\Course Prerequsites WPF\obj\Debug\UIs\ViewStudentsInCourse.baml
+E:\DataStructureProject\Course Prerequsites WPF\obj\Debug\UIs\WelcomePage.baml
+E:\DataStructureProject\Course Prerequsites WPF\obj\Debug\Course Prerequsites WPF.g.resources
+E:\DataStructureProject\Course Prerequsites WPF\obj\Debug\Course_Prerequsites_WPF.Properties.Resources.resources
+E:\DataStructureProject\Course Prerequsites WPF\obj\Debug\Course Prerequsites WPF.csproj.GenerateResource.Cache
