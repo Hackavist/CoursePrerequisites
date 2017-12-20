@@ -75,6 +75,9 @@
     </ApplicationDefinition>
     <Compile Include="Classes\Admin.cs" />
     <Compile Include="Classes\Elements.cs" />
+    <Compile Include="UIs\StudentsSettings.xaml.cs">
+      <DependentUpon>StudentsSettings.xaml</DependentUpon>
+    </Compile>
     <Compile Include="ViewModels\ChartViewModel.cs" />
     <Compile Include="ViewModels\StackViewModel.cs" />
     <Compile Include="UIs\AddCoursePrerequisites.xaml.cs">
@@ -165,6 +168,10 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="UIs\StudentLogIn.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="UIs\StudentsSettings.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
