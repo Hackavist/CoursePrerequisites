@@ -141,7 +141,7 @@ namespace Course_Prerequsites_WPF.Classes
             }
             else return null;
         }
-
+       
         public void WriteFile()
         {
             if (WelcomePage.AllCoursesDictionary != null)

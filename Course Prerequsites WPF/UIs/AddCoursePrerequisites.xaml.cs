@@ -65,6 +65,7 @@ namespace Course_Prerequsites_WPF.UIs
 
         private void Window_Loaded(object sender, RoutedEventArgs e)
         {
+            //Add All Courses that exist on combo box
             foreach (var x in WelcomePage.AllCoursesDictionary)
             CourseNameBox.Items.Add(x.Key);
         }

@@ -75,6 +75,15 @@
     </ApplicationDefinition>
     <Compile Include="Classes\Admin.cs" />
     <Compile Include="Classes\Elements.cs" />
+    <Compile Include="UIs\AdminSettings.xaml.cs">
+      <DependentUpon>AdminSettings.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="UIs\CourseSettings.xaml.cs">
+      <DependentUpon>CourseSettings.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="UIs\StudentsSettings.xaml.cs">
+      <DependentUpon>StudentsSettings.xaml</DependentUpon>
+    </Compile>
     <Compile Include="ViewModels\ChartViewModel.cs" />
     <Compile Include="ViewModels\StackViewModel.cs" />
     <Compile Include="UIs\AddCoursePrerequisites.xaml.cs">
@@ -113,8 +122,8 @@
     <Compile Include="UIs\ViewMyCourses.xaml.cs">
       <DependentUpon>ViewMyCourses.xaml</DependentUpon>
     </Compile>
-    <Compile Include="UIs\ViewStudentOrCourse.xaml.cs">
-      <DependentUpon>ViewStudentOrCourse.xaml</DependentUpon>
+    <Compile Include="UIs\AdminControls.xaml.cs">
+      <DependentUpon>AdminControls.xaml</DependentUpon>
     </Compile>
     <Compile Include="UIs\ViewStudentsInCourse.xaml.cs">
       <DependentUpon>ViewStudentsInCourse.xaml</DependentUpon>
@@ -138,11 +147,19 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </Page>
+    <Page Include="UIs\AdminSettings.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="UIs\AllCoursesChart.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="UIs\AspecificCourse.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="UIs\CourseSettings.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -168,6 +185,10 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
+    <Page Include="UIs\StudentsSettings.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="UIs\ViewAllCoursesOfStudent.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
@@ -176,7 +197,7 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="UIs\ViewStudentOrCourse.xaml">
+    <Page Include="UIs\AdminControls.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </Page>

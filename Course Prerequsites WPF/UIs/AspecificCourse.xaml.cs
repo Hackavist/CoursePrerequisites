@@ -29,10 +29,9 @@ namespace Course_Prerequsites_WPF.UIs
 
         private void Window_Loaded(object sender, RoutedEventArgs e)
         {
-            Course cour = new Course();
+             Course cour = new Course();
            
             cour = cour.ReturnObj(CourseNa);
-
             CourseName.Text = cour.CourseName;
             Code.Content = cour.Code;
             MaximumNumberOfStudents.Content = Convert.ToString(cour.MaximumNumberOfStudents);

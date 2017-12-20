@@ -1,0 +1,19 @@
+﻿<Window x:Class="Course_Prerequsites_WPF.UIs.ViewStudentOrCourse"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Course_Prerequsites_WPF.UIs"
+        mc:Ignorable="d"
+        Title="ViewStudentOrCourse" Height="650" Width="600" Background="#FFFFFFFF" WindowStartupLocation="CenterScreen">
+    <Grid>
+        <Button x:Name="StudentSettings" Content="Student Settings" VerticalAlignment="Top" Margin="154,99,154.333,0" Height="57" TabIndex="1" FontSize="18" FontFamily="Times New Roman" Foreground="White" Background="#FFF6A10C"/>
+        <Button x:Name="CourseSettings" Content="Course Settings" VerticalAlignment="Top" Margin="154,252,154.333,0" Height="57" Background="#FFF6A10C" FontSize="18" FontFamily="Times New Roman" Foreground="White" Click="Button_Click"/>
+        <Button x:Name="AdmibSettings" Content="Admin Settings" VerticalAlignment="Top" Margin="154,418,154.333,0" Height="57" FontSize="18" FontFamily="Times New Roman" Foreground="White">
+            <Button.Background>
+                <SolidColorBrush Color="{DynamicResource {x:Static SystemColors.HighlightColorKey}}"/>
+            </Button.Background>
+        </Button>
+
+    </Grid>
+</Window>
