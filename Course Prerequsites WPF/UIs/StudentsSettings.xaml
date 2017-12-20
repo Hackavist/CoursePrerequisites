@@ -8,7 +8,7 @@
         Title="StudentsSettings" Height="650" Width="600" Background="White">
     <Grid>
         <Button x:Name="AddStudent" Content="Add Student" VerticalAlignment="Top" Margin="109,147,105.333,0" Height="88" TabIndex="1" FontSize="20" FontFamily="Times New Roman" Foreground="White" Background="#FFF6A10C"/>
-        <Button x:Name="ViewAllCoursesOfStudent" Content="View Student's Courses" VerticalAlignment="Top" Margin="109,363,105.333,0" Height="88" TabIndex="2" FontSize="20" FontFamily="Times New Roman" Foreground="White" Background="#FFF6A10C"/>
+        <Button x:Name="ViewAllCoursesOfStudent" Content="View All Courses Of a Student&#xD;&#xA;" VerticalAlignment="Top" Margin="109,363,105.333,0" Height="88" TabIndex="2" FontSize="20" FontFamily="Times New Roman" Foreground="White" Background="#FFF6A10C"/>
 
     </Grid>
 </Window>
