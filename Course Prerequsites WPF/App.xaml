@@ -3,7 +3,7 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
              xmlns:local="clr-namespace:Course_Prerequsites_WPF"
              xmlns:chart="clr-namespace:De.TorstenMandelkow.MetroChart;assembly=De.TorstenMandelkow.MetroChart"
-             StartupUri="UIs/ViewMyCourses.xaml"
+             StartupUri="UIs/AllCoursesChart.xaml"
              Exit="Application_Exit">
     <Application.Resources>
         <ResourceDictionary    
@@ -37,9 +37,12 @@
             </Style>
 
             <Style x:Key="PageHeaderTextStyle" TargetType="TextBlock" BasedOn="{StaticResource HeaderTextStyle}">
-                <Setter Property="Margin" Value="0,5,10,0"/>
+                <Setter Property="Padding" Value="5,5,5,5"/>
                 <Setter Property="FontSize" Value="40" />
                 <Setter Property="LineHeight" Value="40" />
+                <Setter Property="VerticalAlignment" Value="Center"/>
+                <Setter Property="HorizontalAlignment" Value="Center"/>
+
             </Style>
 
             <Style x:Key="SectionHeaderTextStyle" TargetType="TextBlock" BasedOn="{StaticResource HeaderTextStyle}">
@@ -159,7 +162,7 @@
 
             <chart:ResourceDictionaryCollection x:Key="colortest">
                 <ResourceDictionary>
-                    <SolidColorBrush x:Key="Brush1" Color="#FF007C9C" />
+                    <SolidColorBrush x:Key="Brush1" Color="#20dfb9" />
                 </ResourceDictionary>
                 <ResourceDictionary>
                     <SolidColorBrush x:Key="Brush2" Color="#FF019FCC" />
