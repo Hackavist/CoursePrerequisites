@@ -25,45 +25,56 @@ namespace Course_Prerequsites_WPF.UIs
         public ViewStudentsInCourse()
         {
             InitializeComponent();
+            foreach (var x in WelcomePage.AllCoursesDictionary)
+            {
+                CourseNames.Items.Add(x.Value.CourseName);
+            }
         }
 
         private void Button_Click(object sender, RoutedEventArgs e)
         {
-            if(string.IsNullOrEmpty(SearchCourseName.Text) )
+            StudNames.Items.Clear();
+
+            
+            if(CourseNames.SelectedIndex==-1)
             {
-                MessageBox.Show("Please Enter Course Name");
+                MessageBox.Show("Please Select Course Name");
             }
             else
             {
-                string name = SearchCourseName.Text;
-                Student s = new Student();
-                List<Course> listOfCourses = s.CoursesInProgress;
+               
 
-                if(WelcomePage.AllCoursesDictionary.ContainsKey(name))
+                string name = CourseNames.SelectedItem.ToString();
+                Admin ad = new Admin();
+
+                List<string> displayNames = ad.ViewAllStudentsInACourse(name);
+
+                if (WelcomePage.AllCoursesDictionary.ContainsKey(name))
                 {
-                    for(int i=0 ; i<WelcomePage.AllStudentsDictionary.Count ; i++)
+                    if(displayNames.Count==0)
                     {
-                        for(int j=0 ; j<listOfCourses.Count ; j++)
-                        {
-                            if(listOfCourses[i].CourseName==name)
-                            {
-                                DisplayID.Content += s.Id + '\n';
-                                DisplayName.Content += s.Name + '\n';
-                            }
-                            break;
-
-                        }
+                        MessageBox.Show("No Students Registered");
+                    }
+                    else
+                    {
+                    foreach (var x in displayNames)
+                    StudNames.Items.Add(x);
                     }
 
-
-                    
                 }
+
                 else
                 {
-                    MessageBox.Show("Course Does Not Exist");
+                    MessageBox.Show("Course Doesn't Exist");
                 }
 
             }
+            CourseNames.SelectedIndex = -1;
+            // StudNames.SelectedIndex = -1;
+
+
         }
+
     }
-}
+    }
+

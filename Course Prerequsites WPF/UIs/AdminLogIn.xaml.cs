@@ -20,12 +20,19 @@ namespace Course_Prerequsites_WPF.UIs
     /// <summary>
     /// Interaction logic for AdminLogIn.xaml
     /// </summary>
+    /// 
+
     public partial class AdminLogIn : Window
     {
+       // string appPath = Directory.GetCurrentDirectory();
+
         public AdminLogIn()
         {
             InitializeComponent();
+          //  EyeImage.Source = new BitmapImage(new Uri(uriString: $"{appPath}\\Images\\eye.png"));
         }
+
+       
 
         private void Username_txt_TextChanged(object sender, TextChangedEventArgs e)
         {
@@ -42,7 +49,7 @@ namespace Course_Prerequsites_WPF.UIs
 
             else
             {
-
+               
                string name = Username_txt.Text;
                string password = Password_txt.Password;
 
@@ -66,10 +73,6 @@ namespace Course_Prerequsites_WPF.UIs
                     MessageBox.Show("Admin Does Not Exist");
                 }
                 
-                  
-                
-
-
             }
 
         }
@@ -78,5 +81,51 @@ namespace Course_Prerequsites_WPF.UIs
         {
 
         }
+
+        
+
+        private void Password_txt_PasswordChanged(object sender, RoutedEventArgs e)
+        {
+            if(Password_txt.Password.Length>0)
+            {
+                EyeImage.Visibility = Visibility.Visible;
+            }
+            else
+            {
+                EyeImage.Visibility = Visibility.Hidden;
+            }
+        }
+
+        private void EyeImage_PreviewMouseDown(object sender, MouseButtonEventArgs e)
+        {
+            ShowPassword();
+        }
+
+        private void EyeImage_PreviewMouseUp(object sender, MouseButtonEventArgs e)
+        {
+            HidePassword();
+        }
+
+        private void EyeImage_MouseLeave(object sender, MouseEventArgs e)
+        {
+            HidePassword();
+        }
+
+        private void ShowPassword()
+        {
+            Password_txt.Visibility = Visibility.Hidden;
+            VisiblePass_txt.Visibility = Visibility.Visible;
+            VisiblePass_txt.Text = Password_txt.Password;
+        }
+
+        private void HidePassword()
+        {
+            Password_txt.Visibility = Visibility.Visible;
+            VisiblePass_txt.Visibility = Visibility.Hidden;
+            Password_txt.Focus();
+
+        }
+      
+
     }
 }

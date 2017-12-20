@@ -58,9 +58,10 @@ namespace Course_Prerequsites_WPF.UIs
                 }
                 else
                 {
+                    // in admin class
                     WelcomePage.AllStudentsDictionary[id]=s;
                     MessageBox.Show("Student Added");
-
+                    //
                     StudName.Clear();
                     StudID.Clear();
                     StudPassword.Clear();
