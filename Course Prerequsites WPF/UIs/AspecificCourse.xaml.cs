@@ -33,13 +33,13 @@ namespace Course_Prerequsites_WPF.UIs
            
             cour = cour.ReturnObj(CourseNa);
             CourseName.Text = cour.CourseName;
-            Code.Content = cour.Code;
-            MaximumNumberOfStudents.Content = Convert.ToString(cour.MaximumNumberOfStudents);
-            CurrentNumberOfStudents.Content = Convert.ToString(cour.CurrentNumberOfStudents);
-            PassingGrade.Content = Convert.ToString(cour.PassingGrade);
-            CourseGrade.Content = Convert.ToString(cour.CourseGrade);
-            Hours.Content = Convert.ToString(cour.Hours);
-            Instructor.Content = cour.Instructor;
+            Code.Text = cour.Code;
+            MaximumNumberOfStudents.Text = Convert.ToString(cour.MaximumNumberOfStudents);
+            CurrentNumberOfStudents.Text = Convert.ToString(cour.CurrentNumberOfStudents);
+            PassingGrade.Text = Convert.ToString(cour.PassingGrade);
+            CourseGrade.Text = Convert.ToString(cour.CourseGrade);
+            Hours.Text = Convert.ToString(cour.Hours);
+            Instructor.Text = cour.Instructor;
             Description.Text = cour.Description;
         }
 

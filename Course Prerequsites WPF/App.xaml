@@ -3,11 +3,13 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
              xmlns:local="clr-namespace:Course_Prerequsites_WPF"
              xmlns:chart="clr-namespace:De.TorstenMandelkow.MetroChart;assembly=De.TorstenMandelkow.MetroChart"
-             StartupUri="UIs/AllCoursesChart.xaml"
+             StartupUri="UIs/AddStudent.xaml"
              Exit="Application_Exit">
     <Application.Resources>
+
         <ResourceDictionary    
-                xmlns:chart="clr-namespace:De.TorstenMandelkow.MetroChart;assembly=De.TorstenMandelkow.MetroChart" >
+           
+            xmlns:chart="clr-namespace:De.TorstenMandelkow.MetroChart;assembly=De.TorstenMandelkow.MetroChart" >
             <Style x:Key="BasicTextStyle" TargetType="TextBlock">
                 <Setter Property="FontSize" Value="20"/>
                 <Setter Property="FontFamily" Value="Segoe UI"/>
@@ -201,6 +203,17 @@
                     <SolidColorBrush x:Key="Brush13" Color="#FFD88BC7" />
                 </ResourceDictionary>
             </chart:ResourceDictionaryCollection>
+
+            <ResourceDictionary.MergedDictionaries>
+                <!-- MahApps.Metro resource dictionaries. Make sure that all file names are Case Sensitive! -->
+                <ResourceDictionary Source="pack://application:,,,/MahApps.Metro;component/Styles/Controls.xaml" />
+                <ResourceDictionary Source="pack://application:,,,/MahApps.Metro;component/Styles/Fonts.xaml" />
+                <ResourceDictionary Source="pack://application:,,,/MahApps.Metro;component/Styles/Colors.xaml" />
+                <!-- Accent and AppTheme setting -->
+                <ResourceDictionary Source="pack://application:,,,/MahApps.Metro;component/Styles/Accents/Blue.xaml" />
+                <ResourceDictionary Source="pack://application:,,,/MahApps.Metro;component/Styles/Accents/BaseLight.xaml" />
+            </ResourceDictionary.MergedDictionaries>
+
         </ResourceDictionary>
     </Application.Resources>
 </Application>

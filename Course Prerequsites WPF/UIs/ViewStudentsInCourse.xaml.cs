@@ -48,6 +48,7 @@ namespace Course_Prerequsites_WPF.UIs
                 Admin ad = new Admin();
 
                 List<string> displayNames = ad.ViewAllStudentsInACourse(name);
+                displayNames.Sort();
 
                 if (WelcomePage.AllCoursesDictionary.ContainsKey(name))
                 {

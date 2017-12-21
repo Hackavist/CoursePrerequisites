@@ -4,17 +4,17 @@
 winexe
 C#
 .cs
-C:\Users\hazem\Source\Repos\CoursePrerequisites\Course Prerequsites WPF\obj\Debug\
+C:\Users\DELL\Source\Repos\CoursePrerequisites2\Course Prerequsites WPF\obj\Debug\
 Course_Prerequsites_WPF
 none
 false
 DEBUG;TRACE
-C:\Users\hazem\Source\Repos\CoursePrerequisites\Course Prerequsites WPF\App.xaml
-18-252222809
+C:\Users\DELL\Source\Repos\CoursePrerequisites2\Course Prerequsites WPF\App.xaml
+19-359760439
 
-32-286946954
-191241094598
-UIs\AddCoursePrerequisites.xaml;UIs\AddNewCourse.xaml;UIs\AddStudent.xaml;UIs\AdminLogIn.xaml;UIs\AdminSettings.xaml;UIs\AllCoursesChart.xaml;UIs\AspecificCourse.xaml;UIs\CourseSettings.xaml;UIs\Drop.xaml;UIs\EnterStudentGrades.xaml;UIs\RegisterToNewCouse.xaml;UIs\StudentLogIn.xaml;UIs\StudentsSettings.xaml;UIs\ViewAllCoursesOfStudent.xaml;UIs\ViewMyCourses.xaml;UIs\AdminControls.xaml;UIs\ViewStudentsInCourse.xaml;UIs\WelcomePage.xaml;
+33-2078442534
+191275089461
+UIs\AddCoursePrerequisites.xaml;UIs\AddFinishedCourses.xaml;UIs\AddNewCourse.xaml;UIs\AddStudent.xaml;UIs\AdminLogIn.xaml;UIs\AdminSettings.xaml;UIs\AllCoursesChart.xaml;UIs\AspecificCourse.xaml;UIs\CourseSettings.xaml;UIs\Drop.xaml;UIs\EnterStudentGrades.xaml;UIs\RegisterToNewCouse.xaml;UIs\StudentLogIn.xaml;UIs\StudentsSettings.xaml;UIs\ViewAllCoursesOfStudent.xaml;UIs\ViewMyCourses.xaml;UIs\AdminControls.xaml;UIs\ViewStudentsInCourse.xaml;UIs\WelcomePage.xaml;
 
 True
 
