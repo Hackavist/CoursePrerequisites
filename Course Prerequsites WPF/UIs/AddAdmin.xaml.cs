@@ -40,27 +40,36 @@ namespace Course_Prerequsites_WPF.UIs
         private void Add_MouseUp(object sender, MouseButtonEventArgs e)
         {
             int IsGeneralManager = 0;
-            if (PasswordLengthChecker(Password.Text))
-            {
-                if ((WelcomePage.ThereIsNoDelimiter(Username.Text)) && (WelcomePage.ThereIsNoDelimiter(Password.Text)))
-                {
-                    if (GeneralManagerCheck.IsChecked == true)
-                    {
-                        IsGeneralManager = 1;
-                    }
-                    Admin admin = new Admin(Username.Text, Password.Text, IsGeneralManager);
 
-                    WelcomePage.AllAdminsDictionary[Username.Text] = admin;
-                    MessageBox.Show("Admin Has Been Added");
-                }
-                else
-                {
-                    MessageBox.Show("The Provided text Can't contain any of the following Character");
-                }
+            if (string.IsNullOrEmpty(Username.Text) || string.IsNullOrEmpty(Password.Text))
+            {
+                MessageBox.Show("Please enter missing data");
             }
             else
             {
-                return;
+
+                if (PasswordLengthChecker(Password.Text))
+                {
+                    if ((WelcomePage.ThereIsNoDelimiter(Username.Text)) && (WelcomePage.ThereIsNoDelimiter(Password.Text)))
+                    {
+                        if (GeneralManagerCheck.IsChecked == true)
+                        {
+                            IsGeneralManager = 1;
+                        }
+                        Admin admin = new Admin(Username.Text, Password.Text, IsGeneralManager);
+
+                        WelcomePage.AllAdminsDictionary[Username.Text] = admin;
+                        MessageBox.Show("Admin Has Been Added");
+                    }
+                    else
+                    {
+                        MessageBox.Show("The Provided text Can't contain any of the following Character");
+                    }
+                }
+                else
+                {
+                    return;
+                }
             }
         }
     }

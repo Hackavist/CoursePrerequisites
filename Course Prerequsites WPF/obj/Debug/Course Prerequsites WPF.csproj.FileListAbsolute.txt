@@ -488,3 +488,7 @@ D:\Work\DS Project Course Prerequisits\Course Prerequsites WPF\obj\Debug\UIs\Add
 D:\Work\DS Project Course Prerequisits\Course Prerequsites WPF\obj\Debug\UIs\EditMyData.g.cs
 D:\Work\DS Project Course Prerequisits\Course Prerequsites WPF\obj\Debug\UIs\Add Admin.baml
 D:\Work\DS Project Course Prerequisits\Course Prerequsites WPF\obj\Debug\UIs\EditMyData.baml
+C:\Users\chantal\Source\Repos\CoursePrerequisites\Course Prerequsites WPF\obj\Debug\UIs\AddAdmin.g.cs
+C:\Users\chantal\Source\Repos\CoursePrerequisites\Course Prerequsites WPF\obj\Debug\UIs\EditMyData.g.cs
+C:\Users\chantal\Source\Repos\CoursePrerequisites\Course Prerequsites WPF\obj\Debug\UIs\AddAdmin.baml
+C:\Users\chantal\Source\Repos\CoursePrerequisites\Course Prerequsites WPF\obj\Debug\UIs\EditMyData.baml
