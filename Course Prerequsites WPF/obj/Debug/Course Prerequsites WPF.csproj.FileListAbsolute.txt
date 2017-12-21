@@ -425,3 +425,5 @@ C:\Users\DELL\Source\Repos\CoursePrerequisites2\Course Prerequsites WPF\obj\Debu
 C:\Users\DELL\Source\Repos\CoursePrerequisites2\Course Prerequsites WPF\obj\Debug\Course Prerequsites WPF.g.resources
 C:\Users\DELL\Source\Repos\CoursePrerequisites2\Course Prerequsites WPF\obj\Debug\Course_Prerequsites_WPF.Properties.Resources.resources
 C:\Users\DELL\Source\Repos\CoursePrerequisites2\Course Prerequsites WPF\obj\Debug\Course Prerequsites WPF.csproj.GenerateResource.Cache
+C:\Users\chantal\Source\Repos\CoursePrerequisites\Course Prerequsites WPF\obj\Debug\UIs\AddFinishedCourses.g.cs
+C:\Users\chantal\Source\Repos\CoursePrerequisites\Course Prerequsites WPF\obj\Debug\UIs\AddFinishedCourses.baml
