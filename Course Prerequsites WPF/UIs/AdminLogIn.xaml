@@ -10,8 +10,8 @@
         <SolidColorBrush Color="White"  />
     </Window.Background>
     <Grid>
-        <TextBox x:Name="VisiblePass_txt"  HorizontalAlignment="Left" Height="35" Margin="135,369,0,0" VerticalAlignment="Top" Width="316"/>
-        <TextBox x:Name="Username_txt" Height="35" Margin="135,211,142.333,0" TextWrapping="Wrap" VerticalAlignment="Top" TabIndex="1"/>
+        <TextBox x:Name="VisiblePass_txt"  HorizontalAlignment="Left" Height="35" Margin="135,369,0,0" VerticalAlignment="Top" Width="316" FontSize="18"/>
+        <TextBox x:Name="Username_txt" Height="35" Margin="135,211,142.333,0" TextWrapping="Wrap" VerticalAlignment="Top" TabIndex="1" FontFamily="Times New Roman" FontSize="18"/>
         <Button x:Name="LogIn_txt" Content="Log In" Height="42" Margin="226,510,227.333,0" VerticalAlignment="Top" Click="LogIn_txt_Click" FontFamily="Times New Roman" FontSize="18" Background="#FFF6A10C" Foreground="White"/>
         <PasswordBox x:Name="Password_txt" HorizontalAlignment="Left" Height="35" Margin="135,369,0,0" VerticalAlignment="Top" Width="316" PasswordChar="●" TabIndex="2" PasswordChanged="Password_txt_PasswordChanged"/>
         <Label Content="Username&#xA;" Height="29" Margin="135,177,66.333,0" VerticalAlignment="Top" FontFamily="Times New Roman" FontSize="18" FontWeight="Bold">

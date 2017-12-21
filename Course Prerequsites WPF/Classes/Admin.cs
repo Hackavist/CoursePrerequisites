@@ -29,6 +29,33 @@ namespace Course_Prerequsites_WPF.Classes
             GeneralManager = Flag; // changed into int 
         }
 
+        public static List < string > GetInProgressCoursesOfSpecificStudent(string ID)
+        {
+            List<string> ret = new List<string>();
+            if (WelcomePage.AllStudentsDictionary[ID].CoursesInProgress.Count!=0)
+            {
+                foreach (var x in WelcomePage.AllStudentsDictionary[ID].CoursesInProgress)
+                {
+                    ret.Add(x.CourseName);
+                }
+            }
+            
+            return ret;
+        }
+        public static List<string> GetAllFinsishedCoursesOfSpecificStudent(string ID)
+        {
+            List<string> ret = new List<string>();
+            if (WelcomePage.AllStudentsDictionary[ID].FinishedCourses.Count != 0)
+            {
+                foreach (var x in WelcomePage.AllStudentsDictionary[ID].FinishedCourses)
+                {
+                    ret.Add(x.CourseName);
+                }
+            }
+           
+            return ret;
+        }
+
 
         //writing Format:   Name*Password*General Manager (1 or 0)#
         public Dictionary<string, Admin> GetAllAdmins()
@@ -75,7 +102,7 @@ namespace Course_Prerequsites_WPF.Classes
                     {
                         if (name == x.Value.CoursesInProgress[i].CourseName)
                         {
-                            //add item to list
+                           
                             ListOfNames.Add(x.Value.Name);
                             break;
                         }
