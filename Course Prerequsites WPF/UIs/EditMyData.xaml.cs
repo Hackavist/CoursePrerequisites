@@ -54,16 +54,16 @@ namespace Course_Prerequsites_WPF.UIs
 
         private void Window_Loaded(object sender, RoutedEventArgs e)
         {
-            idTextBox.Text = StudentLogIn.StudentID;
-            nameTextBox.Text = MainWindow.AllStudentsDictionary[StudentLogIn.StudentID].Name;
-            passwordBox.Password = MainWindow.AllStudentsDictionary[StudentLogIn.StudentID].Password;
-            ayTextBox.Text = MainWindow.AllStudentsDictionary[StudentLogIn.StudentID].AcademicYear.ToString();
+            idTextBox.Text = WelcomePage.StudentId;
+            nameTextBox.Text = WelcomePage.AllStudentsDictionary[WelcomePage.StudentId].Name;
+            passwordBox.Password = WelcomePage.AllStudentsDictionary[WelcomePage.StudentId].Password;
+            ayTextBox.Text = WelcomePage.AllStudentsDictionary[WelcomePage.StudentId].AcademicYear.ToString();
         }
 
         private void Button_Click(object sender, RoutedEventArgs e)
         {
-            MainWindow.AllStudentsDictionary[StudentLogIn.StudentID].Name = nameTextBox.Text;
-            MainWindow.AllStudentsDictionary[StudentLogIn.StudentID].Password = passwordBox.Password;
+            WelcomePage.AllStudentsDictionary[WelcomePage.StudentId].Name = nameTextBox.Text;
+            WelcomePage.AllStudentsDictionary[WelcomePage.StudentId].Password = passwordBox.Password;
         }
     }
 }

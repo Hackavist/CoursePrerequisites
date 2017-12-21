@@ -1,18 +1,19 @@
 ﻿
-FC:\Users\chantal\Source\Repos\CoursePrerequisites\Course Prerequsites WPF\App.xaml;;
-FC:\Users\chantal\Source\Repos\CoursePrerequisites\Course Prerequsites WPF\UIs\AddCoursePrerequisites.xaml;;
-FC:\Users\chantal\Source\Repos\CoursePrerequisites\Course Prerequsites WPF\UIs\AddFinishedCourses.xaml;;
-FC:\Users\chantal\Source\Repos\CoursePrerequisites\Course Prerequsites WPF\UIs\AddStudent.xaml;;
-FC:\Users\chantal\Source\Repos\CoursePrerequisites\Course Prerequsites WPF\UIs\AdminLogIn.xaml;;
-FC:\Users\chantal\Source\Repos\CoursePrerequisites\Course Prerequsites WPF\UIs\AdminSettings.xaml;;
-FC:\Users\chantal\Source\Repos\CoursePrerequisites\Course Prerequsites WPF\UIs\AllCoursesChart.xaml;;
-FC:\Users\chantal\Source\Repos\CoursePrerequisites\Course Prerequsites WPF\UIs\AspecificCourse.xaml;;
-FC:\Users\chantal\Source\Repos\CoursePrerequisites\Course Prerequsites WPF\UIs\CourseSettings.xaml;;
-FC:\Users\chantal\Source\Repos\CoursePrerequisites\Course Prerequsites WPF\UIs\Drop.xaml;;
-FC:\Users\chantal\Source\Repos\CoursePrerequisites\Course Prerequsites WPF\UIs\RegisterToNewCouse.xaml;;
-FC:\Users\chantal\Source\Repos\CoursePrerequisites\Course Prerequsites WPF\UIs\StudentsSettings.xaml;;
-FC:\Users\chantal\Source\Repos\CoursePrerequisites\Course Prerequsites WPF\UIs\ViewMyCourses.xaml;;
-FC:\Users\chantal\Source\Repos\CoursePrerequisites\Course Prerequsites WPF\UIs\AdminControls.xaml;;
-FC:\Users\chantal\Source\Repos\CoursePrerequisites\Course Prerequsites WPF\UIs\ViewStudentsInCourse.xaml;;
-FC:\Users\chantal\Source\Repos\CoursePrerequisites\Course Prerequsites WPF\UIs\WelcomePage.xaml;;
+FD:\Work\DS Project Course Prerequisits\Course Prerequsites WPF\App.xaml;;
+FD:\Work\DS Project Course Prerequisits\Course Prerequsites WPF\UIs\Add Admin.xaml;;
+FD:\Work\DS Project Course Prerequisits\Course Prerequsites WPF\UIs\AddCoursePrerequisites.xaml;;
+FD:\Work\DS Project Course Prerequisits\Course Prerequsites WPF\UIs\AddStudent.xaml;;
+FD:\Work\DS Project Course Prerequisits\Course Prerequsites WPF\UIs\AdminLogIn.xaml;;
+FD:\Work\DS Project Course Prerequisits\Course Prerequsites WPF\UIs\AdminSettings.xaml;;
+FD:\Work\DS Project Course Prerequisits\Course Prerequsites WPF\UIs\AllCoursesChart.xaml;;
+FD:\Work\DS Project Course Prerequisits\Course Prerequsites WPF\UIs\AspecificCourse.xaml;;
+FD:\Work\DS Project Course Prerequisits\Course Prerequsites WPF\UIs\CourseSettings.xaml;;
+FD:\Work\DS Project Course Prerequisits\Course Prerequsites WPF\UIs\Drop.xaml;;
+FD:\Work\DS Project Course Prerequisits\Course Prerequsites WPF\UIs\EditMyData.xaml;;
+FD:\Work\DS Project Course Prerequisits\Course Prerequsites WPF\UIs\RegisterToNewCouse.xaml;;
+FD:\Work\DS Project Course Prerequisits\Course Prerequsites WPF\UIs\StudentsSettings.xaml;;
+FD:\Work\DS Project Course Prerequisits\Course Prerequsites WPF\UIs\ViewMyCourses.xaml;;
+FD:\Work\DS Project Course Prerequisits\Course Prerequsites WPF\UIs\AdminControls.xaml;;
+FD:\Work\DS Project Course Prerequisits\Course Prerequsites WPF\UIs\ViewStudentsInCourse.xaml;;
+FD:\Work\DS Project Course Prerequisits\Course Prerequsites WPF\UIs\WelcomePage.xaml;;
 

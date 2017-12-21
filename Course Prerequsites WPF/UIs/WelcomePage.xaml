@@ -1,12 +1,16 @@
-﻿<Window x:Class="Course_Prerequsites_WPF.UIs.WelcomePage"
+﻿<Controls:MetroWindow x:Class="Course_Prerequsites_WPF.UIs.WelcomePage"
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Course_Prerequsites_WPF.UIs"
+        xmlns:Controls="clr-namespace:MahApps.Metro.Controls;assembly=MahApps.Metro"
+        xmlns:i="http://schemas.microsoft.com/expression/2010/interactivity"
+    	xmlns:Behaviours="clr-namespace:MahApps.Metro.Behaviours;assembly=MahApps.Metro"
         mc:Ignorable="d"
-        Title="WelcomePage" Height="386.4" Width="445.6">
-    <Grid>
-        
+        Title="WelcomePage" Height="700" Width="800">
+    <Grid Margin="10,5,10,5">
+        <TextBlock Text="Welcome to Our Course Prequisit system" Style="{StaticResource HeaderTextStyle}"/>
+
     </Grid>
-</Window>
+</Controls:MetroWindow>
