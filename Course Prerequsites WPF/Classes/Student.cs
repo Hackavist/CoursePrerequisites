@@ -217,7 +217,7 @@ namespace Course_Prerequsites_WPF.Classes
 
 
             }
-            //If this syudent have courses in both finished and in progress
+            //If this student have courses in both finished and in progress
             else
             {
                 //Loop on all existing couses in the dicionary
