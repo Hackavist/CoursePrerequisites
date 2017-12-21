@@ -30,6 +30,8 @@ namespace Course_Prerequsites_WPF.UIs
             StudYear.Items.Add("4th year");
 
             FinishedCourses.Visibility = Visibility.Hidden;
+            CheckBox.Visibility = Visibility.Hidden;
+
            
         }
         
@@ -42,15 +44,15 @@ namespace Course_Prerequsites_WPF.UIs
             {
                 MessageBox.Show("Please Enter Missing Data");
             }
-            else if (WelcomePage.ThereIsNoDelimiter(StudName.Text) == false || WelcomePage.ThereIsNoDelimiter(StudID.Text) == false || WelcomePage.ThereIsNoDelimiter(StudPassword.Text) == false)
+            else if (WelcomePage.ThereIsNoDelimiter(StudName.Text.Trim()) == false || WelcomePage.ThereIsNoDelimiter(StudID.Text.Trim()) == false || WelcomePage.ThereIsNoDelimiter(StudPassword.Text.Trim()) == false)
             {
                 MessageBox.Show("Please Don't Use special characters: (% , # , *) ");
             }
-            else if (WelcomePage.IsNotAlphabet(StudName.Text) == false)
+            else if (WelcomePage.IsNotAlphabet(StudName.Text.Trim()) == true)
             {
                 MessageBox.Show("Please Enter Correct Name");
             }
-            else if(WelcomePage.NoSpace(StudPassword.Text)==true || WelcomePage.NoSpace(StudID.Text)==true)
+            else if(WelcomePage.NoSpace(StudPassword.Text.Trim())==false || WelcomePage.NoSpace(StudID.Text.Trim())==false)
             {
                 MessageBox.Show("ID and Password Must Not Contain Spaces");
             }
@@ -79,19 +81,30 @@ namespace Course_Prerequsites_WPF.UIs
                     StudID.Clear();
                     StudPassword.Clear();
                     StudYear.SelectedIndex = -1;
-                   
+
+                    /* if(StudYear.SelectedValue.ToString()!= "1st year")
+                    {
+                        FinishedCourses.Visibility = Visibility.Visible;
+                    }
+                    */
+
+                    CheckBox.Visibility = Visibility.Visible;
+
+
                 }
             }
-                if(StudYear.SelectedIndex!='1')
-                {
-                    FinishedCourses.Visibility = Visibility.Visible;
-                }
 
+        }
+
+        private void CheckBox_Checked(object sender, RoutedEventArgs e)
+        {
+            FinishedCourses.Visibility = Visibility.Visible;
         }
 
         private void FinishedCourses_Click(object sender, RoutedEventArgs e)
         {
            //go to add finished courses
         }
+
     }
 }

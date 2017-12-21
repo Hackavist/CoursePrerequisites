@@ -75,9 +75,6 @@
     </ApplicationDefinition>
     <Compile Include="Classes\Admin.cs" />
     <Compile Include="Classes\Elements.cs" />
-    <Compile Include="UIs\AddFinishedCourses.xaml.cs">
-      <DependentUpon>AddFinishedCourses.xaml</DependentUpon>
-    </Compile>
     <Compile Include="UIs\AdminSettings.xaml.cs">
       <DependentUpon>AdminSettings.xaml</DependentUpon>
     </Compile>
@@ -135,10 +132,6 @@
       <DependentUpon>WelcomePage.xaml</DependentUpon>
     </Compile>
     <Page Include="UIs\AddCoursePrerequisites.xaml">
-      <SubType>Designer</SubType>
-      <Generator>MSBuild:Compile</Generator>
-    </Page>
-    <Page Include="UIs\AddFinishedCourses.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
