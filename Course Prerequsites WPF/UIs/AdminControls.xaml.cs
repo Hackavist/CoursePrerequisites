@@ -28,5 +28,10 @@ namespace Course_Prerequsites_WPF.UIs
         {
 
         }
+
+        private void AdmibSettings_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
     }
 }
