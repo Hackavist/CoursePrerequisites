@@ -33,5 +33,10 @@ namespace Course_Prerequsites_WPF.UIs
         {
 
         }
+
+        private void StudentSettings_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
     }
 }

@@ -27,10 +27,6 @@
         </Canvas>
         <Button Content="Add Course" HorizontalAlignment="Left" Height="32" Margin="27,348,0,0" VerticalAlignment="Top" Width="133" x:Name="AddCourseButton" Click="AddCourseButton_Click"/>
         <Button Content="Edit Course" HorizontalAlignment="Left" Height="32" Margin="242,348,0,0" VerticalAlignment="Top" Width="133" x:Name="EditCourseButton" Click="EditCourseButton_Click"/>
-        <ComboBox x:Name="CoursePrequestiesComboBox" HorizontalAlignment="Left" VerticalAlignment="Top" Width="348" Margin="27,408,0,0" ToolTip="Choose one Course"/>
-        <CheckBox x:Name="EnterCoursePrequesties" Content="Enter Course Prequestes now" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="27,305,0,0" Width="254" Unchecked="CheckBox_Unchecked" Checked="EnterCoursePrequesties_Checked" ToolTip="You Can add Prerequsites now or later"/>
-        <Button Content="Add Course" HorizontalAlignment="Left" Height="32" Margin="26,457,0,0" VerticalAlignment="Top" Width="133" x:Name="AddCourseButton_second" Click="AddCourseButton_second_Click"/>
-        <Label x:Name="TmpLabel" Content="Choose Coure Prerequsites" HorizontalAlignment="Left" Margin="26,382,0,0" VerticalAlignment="Top"/>
 
     </Grid>
 </Window>
