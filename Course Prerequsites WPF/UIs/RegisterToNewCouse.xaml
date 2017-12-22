@@ -5,13 +5,21 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Course_Prerequsites_WPF.UIs"
         mc:Ignorable="d"
-        Title="RegisterToNewCouse" Height="650" Width="600" Loaded="Window_Loaded">
+        Title="RegisterToNewCouse" Height="650" Width="600" Loaded="Window_Loaded" WindowStartupLocation="CenterScreen">
     <Grid>
         <ComboBox x:Name="AvailableCourseBox" HorizontalAlignment="Left" Margin="300,245,0,0" VerticalAlignment="Top" Width="270" FontFamily="Times New Roman" FontSize="16" Height="35"/>
-        <Label x:Name="label" Content="All Available Courses:-" HorizontalAlignment="Left" Margin="10,240,0,0" VerticalAlignment="Top" Width="265" FontFamily="Times New Roman" Foreground="{DynamicResource {x:Static SystemColors.HighlightBrushKey}}" FontSize="26" FontWeight="Bold"/>
+        <Label x:Name="label" Content="All Available Courses:-" HorizontalAlignment="Left" Margin="10,240,0,0" VerticalAlignment="Top" Width="265" FontFamily="Times New Roman" FontSize="26" FontWeight="Bold">
+            <Label.Foreground>
+                <SolidColorBrush Color="{DynamicResource {x:Static SystemColors.HighlightColorKey}}"/>
+            </Label.Foreground>
+        </Label>
         <Button x:Name="button" Content="Back" HorizontalAlignment="Left" Margin="441,515,0,0" VerticalAlignment="Top" Width="129" Height="55" Foreground="{DynamicResource {x:Static SystemColors.InfoBrushKey}}" FontSize="20" FontWeight="Bold" Background="#FFF6A10C" FontFamily="Times New Roman"/>
-        <Button x:Name="button1" Content="Regist" HorizontalAlignment="Left" Margin="441,435,0,0" VerticalAlignment="Top" Width="129" Click="button1_Click" Height="55" Background="#FFF6A10C" Foreground="{DynamicResource {x:Static SystemColors.HighlightTextBrushKey}}" FontSize="20" FontFamily="Times New Roman" FontWeight="Bold" OpacityMask="{DynamicResource {x:Static SystemColors.ActiveCaptionTextBrushKey}}"/>
-        <Label x:Name="label1" Content="Registertion Form" HorizontalAlignment="Left" Margin="130,50,0,0" VerticalAlignment="Top" Width="335" Height="65" Foreground="{DynamicResource {x:Static SystemColors.HighlightBrushKey}}" FontSize="36" FontWeight="Bold" FontFamily="Times New Roman"/>
+        <Button x:Name="button1" Content="Register" HorizontalAlignment="Left" Margin="441,435,0,0" VerticalAlignment="Top" Width="129" Click="button1_Click" Height="55" Background="#FFF6A10C" Foreground="{DynamicResource {x:Static SystemColors.HighlightTextBrushKey}}" FontSize="20" FontFamily="Times New Roman" FontWeight="Bold" OpacityMask="{DynamicResource {x:Static SystemColors.ActiveCaptionTextBrushKey}}"/>
+        <Label x:Name="label1" Content="Registertion Form" HorizontalAlignment="Left" Margin="130,50,0,0" VerticalAlignment="Top" Width="335" Height="65" FontSize="36" FontWeight="Bold" FontFamily="Times New Roman">
+            <Label.Foreground>
+                <SolidColorBrush Color="{DynamicResource {x:Static SystemColors.HighlightColorKey}}"/>
+            </Label.Foreground>
+        </Label>
 
     </Grid>
 </Window>
