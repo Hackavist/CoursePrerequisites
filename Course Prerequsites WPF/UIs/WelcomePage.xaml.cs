@@ -11,6 +11,7 @@ using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
+using MahApps.Metro.Controls;
 using Course_Prerequsites_WPF.Classes;
 
 namespace Course_Prerequsites_WPF.UIs
@@ -18,7 +19,7 @@ namespace Course_Prerequsites_WPF.UIs
     /// <summary>
     /// Interaction logic for WelcomePage.xaml
     /// </summary>
-    public partial class WelcomePage : Window
+    public partial class WelcomePage : MetroWindow
     {
         // Get All Courses Dictionary
         public static Course Course = new Course();

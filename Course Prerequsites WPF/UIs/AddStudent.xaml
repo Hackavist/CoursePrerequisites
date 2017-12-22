@@ -32,8 +32,9 @@
         </Label>
         <Button Content="Add" HorizontalAlignment="Left" Height="28" Margin="330,556,0,0" VerticalAlignment="Top" Width="125" Click="Button_Click"/>
         <ComboBox x:Name="StudYear"  HorizontalAlignment="Left" Height="34" Margin="223,357,0,0" VerticalAlignment="Top" Width="208" ShouldPreserveUserEnteredPrefix="True" TabIndex="4" FontSize="18" FontFamily="Times New Roman"/>
-        <Image HorizontalAlignment="Left" Height="100" VerticalAlignment="Top" Width="100" Margin="480,499,0,0" Source="/Course Prerequsites WPF;component/Images/plus.png"/>
+        <Image HorizontalAlignment="Left" Height="100" VerticalAlignment="Top" Width="100" Margin="480,499,0,0" Source="/Course Prerequsites WPF;component/Images/plus.png" Mouse.MouseUp="Image_MouseUp"/>
         <Button x:Name="FinishedCourses" Content="Finished Courses" HorizontalAlignment="Left" Height="28" Margin="78,556,0,0" VerticalAlignment="Top" Width="128" Click="FinishedCourses_Click"/>
+        <CheckBox x:Name="CheckBox" Content="Add Finished Courses" HorizontalAlignment="Left" Height="23" Margin="78,528,0,0" VerticalAlignment="Top" Width="128" Checked="CheckBox_Checked"/>
 
     </Grid>
 </Window>

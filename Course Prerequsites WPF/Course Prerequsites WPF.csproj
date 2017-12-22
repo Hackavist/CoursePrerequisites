@@ -75,14 +75,17 @@
     </ApplicationDefinition>
     <Compile Include="Classes\Admin.cs" />
     <Compile Include="Classes\Elements.cs" />
-    <Compile Include="UIs\AddFinishedCourses.xaml.cs">
-      <DependentUpon>AddFinishedCourses.xaml</DependentUpon>
+    <Compile Include="UIs\AddAdmin.xaml.cs">
+      <DependentUpon>AddAdmin.xaml</DependentUpon>
     </Compile>
     <Compile Include="UIs\AdminSettings.xaml.cs">
       <DependentUpon>AdminSettings.xaml</DependentUpon>
     </Compile>
     <Compile Include="UIs\CourseSettings.xaml.cs">
       <DependentUpon>CourseSettings.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="UIs\EditMyData.xaml.cs">
+      <DependentUpon>EditMyData.xaml</DependentUpon>
     </Compile>
     <Compile Include="UIs\StudentsSettings.xaml.cs">
       <DependentUpon>StudentsSettings.xaml</DependentUpon>
@@ -134,11 +137,11 @@
     <Compile Include="UIs\WelcomePage.xaml.cs">
       <DependentUpon>WelcomePage.xaml</DependentUpon>
     </Compile>
-    <Page Include="UIs\AddCoursePrerequisites.xaml">
+    <Page Include="UIs\AddAdmin.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="UIs\AddFinishedCourses.xaml">
+    <Page Include="UIs\AddCoursePrerequisites.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -180,6 +183,10 @@
     </Compile>
     <Compile Include="Classes\Course.cs" />
     <Compile Include="Classes\Student.cs" />
+    <Page Include="UIs\EditMyData.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
     <Page Include="UIs\EnterStudentGrades.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>

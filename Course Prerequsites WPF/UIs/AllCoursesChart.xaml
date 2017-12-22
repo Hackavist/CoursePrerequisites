@@ -6,6 +6,7 @@
         xmlns:local="clr-namespace:Course_Prerequsites_WPF.UIs"
         xmlns:l ="clr-namespace:Course_Prerequsites_WPF.ViewModels"
         mc:Ignorable="d"
+        ResizeMode="CanResizeWithGrip"
         Title="AllCoursesChart" Height="700" Width="700">
 
     <Window.DataContext>
