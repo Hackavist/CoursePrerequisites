@@ -384,7 +384,6 @@ C:\Users\DELL\Source\Repos\CoursePrerequisites2\Course Prerequsites WPF\obj\Debu
 C:\Users\DELL\Source\Repos\CoursePrerequisites2\Course Prerequsites WPF\obj\Debug\UIs\StudentLogIn.baml
 C:\Users\DELL\Source\Repos\CoursePrerequisites2\Course Prerequsites WPF\obj\Debug\UIs\ViewAllCoursesOfStudent.baml
 C:\Users\DELL\Source\Repos\CoursePrerequisites2\Course Prerequsites WPF\obj\Debug\UIs\AddCoursePrerequisites.g.cs
-C:\Users\DELL\Source\Repos\CoursePrerequisites2\Course Prerequsites WPF\obj\Debug\UIs\AddFinishedCourses.g.cs
 C:\Users\DELL\Source\Repos\CoursePrerequisites2\Course Prerequsites WPF\obj\Debug\UIs\AddNewCourse.g.cs
 C:\Users\DELL\Source\Repos\CoursePrerequisites2\Course Prerequsites WPF\obj\Debug\UIs\AddStudent.g.cs
 C:\Users\DELL\Source\Repos\CoursePrerequisites2\Course Prerequsites WPF\obj\Debug\UIs\AdminLogIn.g.cs
@@ -408,7 +407,6 @@ C:\Users\DELL\Source\Repos\CoursePrerequisites2\Course Prerequsites WPF\obj\Debu
 C:\Users\DELL\Source\Repos\CoursePrerequisites2\Course Prerequsites WPF\obj\Debug\Course Prerequsites WPF_MarkupCompile.lref
 C:\Users\DELL\Source\Repos\CoursePrerequisites2\Course Prerequsites WPF\obj\Debug\App.baml
 C:\Users\DELL\Source\Repos\CoursePrerequisites2\Course Prerequsites WPF\obj\Debug\UIs\AddCoursePrerequisites.baml
-C:\Users\DELL\Source\Repos\CoursePrerequisites2\Course Prerequsites WPF\obj\Debug\UIs\AddFinishedCourses.baml
 C:\Users\DELL\Source\Repos\CoursePrerequisites2\Course Prerequsites WPF\obj\Debug\UIs\AddStudent.baml
 C:\Users\DELL\Source\Repos\CoursePrerequisites2\Course Prerequsites WPF\obj\Debug\UIs\AdminLogIn.baml
 C:\Users\DELL\Source\Repos\CoursePrerequisites2\Course Prerequsites WPF\obj\Debug\UIs\AdminSettings.baml
@@ -492,3 +490,7 @@ C:\Users\chantal\Source\Repos\CoursePrerequisites\Course Prerequsites WPF\obj\De
 C:\Users\chantal\Source\Repos\CoursePrerequisites\Course Prerequsites WPF\obj\Debug\UIs\EditMyData.g.cs
 C:\Users\chantal\Source\Repos\CoursePrerequisites\Course Prerequsites WPF\obj\Debug\UIs\AddAdmin.baml
 C:\Users\chantal\Source\Repos\CoursePrerequisites\Course Prerequsites WPF\obj\Debug\UIs\EditMyData.baml
+C:\Users\DELL\Source\Repos\CoursePrerequisites2\Course Prerequsites WPF\obj\Debug\UIs\AddAdmin.g.cs
+C:\Users\DELL\Source\Repos\CoursePrerequisites2\Course Prerequsites WPF\obj\Debug\UIs\EditMyData.g.cs
+C:\Users\DELL\Source\Repos\CoursePrerequisites2\Course Prerequsites WPF\obj\Debug\UIs\AddAdmin.baml
+C:\Users\DELL\Source\Repos\CoursePrerequisites2\Course Prerequsites WPF\obj\Debug\UIs\EditMyData.baml
