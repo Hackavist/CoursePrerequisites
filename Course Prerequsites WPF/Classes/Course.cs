@@ -52,6 +52,20 @@ namespace Course_Prerequsites_WPF.Classes
             }
         }
 
+        public string PutInfoInToolTip()
+        {
+            string ret="";
+            ret = "Course Name : " +CourseName+"\n";
+            ret += "Course Code : " + Code + "\n";
+            ret += "Current Number of Students at Course : " + CurrentNumberOfStudents+ "\n";
+            ret += "Maximum Number of Students at Course : " + MaximumNumberOfStudents + "\n";
+            ret += "Passing Grade for Course : " + PassingGrade + "\n";
+            ret += "Course Grade for Course : " + CourseGrade+ "\n";
+            ret += "Credit Hours of Course : " + Hours + "\n";
+            ret += "Instuctor Name : " + Instructor + "\n";
+            ret += "description : " + Description + "\n"; 
+            return ret;
+        }
 
         //returns a Dictionary that Contains all existing couses indexed by course name and Course object
         public Dictionary<string, Course> GetAllCourses()

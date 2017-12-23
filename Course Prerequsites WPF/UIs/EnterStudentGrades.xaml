@@ -4,7 +4,7 @@
         Title="EnterStudentGrades" Height="700" Width="600" Loaded="Window_Loaded">
     <Grid x:Name="maingrid" HorizontalAlignment="Left" Height="118" Margin="10,10,0,0" VerticalAlignment="Top" Width="580">
         <Button x:Name="SelectStudentButton" Content="Select Student" HorizontalAlignment="Left" VerticalAlignment="Top" Width="134" Margin="373,59,0,0" Height="22" Click="SelectStudentButton_Click"/>
-        <ComboBox x:Name="StudentsComboBox" HorizontalAlignment="Left" VerticalAlignment="Top" Width="243" Margin="83,59,0,0"/>
+        <ComboBox x:Name="StudentsComboBox" HorizontalAlignment="Left" VerticalAlignment="Top" Width="243" Margin="83,59,0,0" SelectionChanged="StudentsComboBox_SelectionChanged"/>
         <Label Content="Select student" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="83,33,0,0"/>
         <Grid x:Name="MyGrid" HorizontalAlignment="Left" Height="540" VerticalAlignment="Top" Width="582" Margin="-2,121,0,-543">
 

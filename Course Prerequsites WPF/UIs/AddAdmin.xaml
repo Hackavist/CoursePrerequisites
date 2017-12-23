@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Course_Prerequsites_WPF.UIs"
         mc:Ignorable="d"
-        Title="Add_Admin" Height="650" Width="600">
+        Title="Add_Admin" Height="650" Width="600" WindowStartupLocation="CenterScreen">
     <Grid Margin="10,10,10,10">
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="0.7*"></ColumnDefinition>

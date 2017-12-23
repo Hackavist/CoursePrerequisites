@@ -117,8 +117,29 @@ namespace Course_Prerequsites_WPF.Classes
             return AllStudents;
 
         }
+        //Function that check if this student have 16 hr or more in one semster 
+        public bool IsAvailableCreditHours(Student s)
+        {
 
-       //Function that Check if this student take all the prerequisites of the course to make it available for him
+            int TotalHours = 0;
+
+            
+            foreach (var x in s.CoursesInProgress)
+            {
+
+                TotalHours += x.Hours;
+            }
+
+            if (TotalHours >= 16)
+
+                return false;
+
+            else
+
+                return true;
+
+        }
+        //Function that Check if this student take all the prerequisites of the course to make it available for him
         public bool CheckPrequired(string name)
         {
             //Make object of type Course
@@ -126,10 +147,10 @@ namespace Course_Prerequsites_WPF.Classes
             //Call the function of ReturnObj to get all the details related to it
             Cs = Cs.ReturnObj(name);
 
-           
-                //loop till the number of prequisite of this course
-                for (int j = 0; j < Cs.PreRequiredCourses.Count; j++)
-                {
+
+            //loop till the number of prequisite of this course
+            for (int j = 0; j < Cs.PreRequiredCourses.Count; j++)
+            {
 
                 bool found = false;
                 //loop till the number of finished courses 
@@ -139,7 +160,7 @@ namespace Course_Prerequsites_WPF.Classes
                     if (WelcomePage.AllStudentsDictionary[WelcomePage.StudentId].FinishedCourses[i].CourseName == Cs.PreRequiredCourses[j])
                     {
                         found = true;
-                       
+
                     }
                 }
 
@@ -151,10 +172,10 @@ namespace Course_Prerequsites_WPF.Classes
             return true;
         }
         //Function that check if aspecific Course for aspecific student is in the courses in progress or not
-        public bool CheckIfCourseInProgress(Student s,string coursenam)
+        public bool CheckIfCourseInProgress(Student s, string coursenam)
         {
-           //Loop that loop in every item in the courses in progress
-           foreach (var x in s.CoursesInProgress)
+            //Loop that loop in every item in the courses in progress
+            foreach (var x in s.CoursesInProgress)
             {
                 //if the course we sent in the paramter is in the courses in progress it return true 
                 if (x.CourseName == coursenam)
@@ -179,66 +200,69 @@ namespace Course_Prerequsites_WPF.Classes
         {
             List<string> l = new List<string>();
             Student s = new Student();
-            //If this sudent doesn't take any courses yet(no courses in progress or in finished)
-            if (WelcomePage.AllStudentsDictionary[WelcomePage.StudentId].FinishedCourses.Count == 0 && WelcomePage.AllStudentsDictionary[WelcomePage.StudentId].CoursesInProgress.Count == 0)
-            {
-                //Loop on all existing couses in the dicionary
-                foreach (var x in WelcomePage.AllCoursesDictionary)
-                {    
-                    //Only the courses that is'nt full and has no preuisites courses will be added to the list 
-                    if ((x.Value.CurrentNumberOfStudents < x.Value.MaximumNumberOfStudents) && (x.Value.PreRequiredCourses.Count == 0))
-                        
-                    {
-                        
-                        l.Add(x.Key);
-                    }
-                    
-                }
-            }
-            //If this Student take courses in progress and no finished courses
-            else if (WelcomePage.AllStudentsDictionary[WelcomePage.StudentId].FinishedCourses.Count == 0 && WelcomePage.AllStudentsDictionary[WelcomePage.StudentId].CoursesInProgress.Count != 0)
-            {
-
-                //Loop on all existing couses in the dicionary
-                foreach (var x in WelcomePage.AllCoursesDictionary)
+           
+                //If this sudent doesn't take any courses yet(no courses in progress or in finished)
+                if (WelcomePage.AllStudentsDictionary[WelcomePage.StudentId].FinishedCourses.Count == 0 && WelcomePage.AllStudentsDictionary[WelcomePage.StudentId].CoursesInProgress.Count == 0)
                 {
-                   
+                    //Loop on all existing couses in the dicionary
+                    foreach (var x in WelcomePage.AllCoursesDictionary)
                     {
-                        //Only the courses that is'nt full and has no preuisites courses will be added to the list  and not exist in the courses in progess will be added to the list 
-                        if ((x.Value.CurrentNumberOfStudents < x.Value.MaximumNumberOfStudents) && (x.Value.PreRequiredCourses.Count == 0) && (s.CheckIfCourseInProgress(WelcomePage.AllStudentsDictionary[WelcomePage.StudentId], x.Value.CourseName) == false))
+                        //Only the courses that is'nt full and has no preuisites courses will be added to the list 
+                        if ((x.Value.CurrentNumberOfStudents < x.Value.MaximumNumberOfStudents) && (x.Value.PreRequiredCourses.Count == 0))
 
                         {
 
                             l.Add(x.Key);
                         }
+
                     }
-
                 }
-
-
-            }
-            //If this student have courses in both finished and in progress
-            else
-            {
-                //Loop on all existing couses in the dicionary
-                foreach (var x in WelcomePage.AllCoursesDictionary)
+                //If this Student take courses in progress and no finished courses
+                else if (WelcomePage.AllStudentsDictionary[WelcomePage.StudentId].FinishedCourses.Count == 0 && WelcomePage.AllStudentsDictionary[WelcomePage.StudentId].CoursesInProgress.Count != 0)
                 {
 
-                    //Only the courses that is'nt full and not exist in the courses in progress and not exist in the finished courses and its prequired courses are already taken will be added to the list
-                    if ((x.Value.CurrentNumberOfStudents < x.Value.MaximumNumberOfStudents) && (s.CheckIfCourseInProgress(WelcomePage.AllStudentsDictionary[WelcomePage.StudentId], x.Value.CourseName) == false)&&(s.FinishedCoursesCheck(WelcomePage.AllStudentsDictionary[WelcomePage.StudentId], x.Value.CourseName) == false)&& (s.CheckPrequired(x.Value.CourseName) == true) )
-                                                           
+                    //Loop on all existing couses in the dicionary
+                    foreach (var x in WelcomePage.AllCoursesDictionary)
+                    {
 
                         {
-                        
+                            //Only the courses that is'nt full and has no preuisites courses will be added to the list  and not exist in the courses in progess will be added to the list 
+                            if ((x.Value.CurrentNumberOfStudents < x.Value.MaximumNumberOfStudents) && (x.Value.PreRequiredCourses.Count == 0) && (s.CheckIfCourseInProgress(WelcomePage.AllStudentsDictionary[WelcomePage.StudentId], x.Value.CourseName) == false))
+
+                            {
+
+                                l.Add(x.Key);
+                            }
+                        }
+
+                    }
+
+
+                }
+                //If this student have courses in both finished and in progress
+                else
+                {
+                    //Loop on all existing couses in the dicionary
+                    foreach (var x in WelcomePage.AllCoursesDictionary)
+                    {
+
+                        //Only the courses that is'nt full and not exist in the courses in progress and not exist in the finished courses and its prequired courses are already taken will be added to the list
+                        if ((x.Value.CurrentNumberOfStudents < x.Value.MaximumNumberOfStudents) && (s.CheckIfCourseInProgress(WelcomePage.AllStudentsDictionary[WelcomePage.StudentId], x.Value.CourseName) == false) && (s.FinishedCoursesCheck(WelcomePage.AllStudentsDictionary[WelcomePage.StudentId], x.Value.CourseName) == false) && (s.CheckPrequired(x.Value.CourseName) == true))
+
+
+                        {
+
                             l.Add(x.Key);
 
                         }
-                       
-                    
+
+
+                    }
                 }
-            }
-            //return the list of all available courses for this student and appear in combo box
-            return l;
+
+                //return the list of all available courses for this student and appear in combo box
+                return l;
+           
         }
 
         //writing Format:   Id % Name % Password % AcademicYear % finishd course1 * finished course2 % Course in progress1*Course in progress2 #

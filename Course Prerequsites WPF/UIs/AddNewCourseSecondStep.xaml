@@ -1,0 +1,16 @@
+﻿<Window x:Class="Course_Prerequsites_WPF.UIs.AddNewCourseSecondStep"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="AddNewCourseSecondStep" Height="650" Width="600">
+    <Grid>
+        <ScrollViewer HorizontalAlignment="Left" Height="500" Margin="10,50,0,0" VerticalAlignment="Top" Width="574" Background="{DynamicResource {x:Static SystemColors.InactiveCaptionBrushKey}}">
+            <ScrollViewer.Effect>
+                <DropShadowEffect/>
+            </ScrollViewer.Effect>
+            <StackPanel  Width="560" x:Name="mylist"/>
+        </ScrollViewer>
+        <TextBlock HorizontalAlignment="Left" Margin="10,10,0,0" TextWrapping="Wrap" Text="mark the Courses you want to be prerequsites of the new Course : " VerticalAlignment="Top" Height="35" Width="574" FontWeight="Bold" FontSize="18"/>
+        <Button Content="Done" HorizontalAlignment="Left" Margin="233,577,0,0" VerticalAlignment="Top" Width="102" Height="33" Click="Button_Click"/>
+
+    </Grid>
+</Window>
