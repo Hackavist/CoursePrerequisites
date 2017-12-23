@@ -24,38 +24,31 @@ namespace Course_Prerequsites_WPF.UIs
 
     public partial class AdminLogIn : Window
     {
-       // string appPath = Directory.GetCurrentDirectory();
+        // string appPath = Directory.GetCurrentDirectory();
 
         public AdminLogIn()
         {
             InitializeComponent();
-          //  EyeImage.Source = new BitmapImage(new Uri(uriString: $"{appPath}\\Images\\eye.png"));
+            //  EyeImage.Source = new BitmapImage(new Uri(uriString: $"{appPath}\\Images\\eye.png"));
         }
 
-       
-
-        private void Username_txt_TextChanged(object sender, TextChangedEventArgs e)
-        {
-
-        }
-       
         private void LogIn_txt_Click(object sender, RoutedEventArgs e)
         {
-            
-            if(string.IsNullOrEmpty(Username_txt.Text) || string.IsNullOrEmpty(Password_txt.Password))
+
+            if (string.IsNullOrEmpty(Username_txt.Text) || string.IsNullOrEmpty(Password_txt.Password))
             {
                 MessageBox.Show("Missing data");
             }
 
             else
             {
-               
-               string name = Username_txt.Text;
-               string password = Password_txt.Password;
 
-               if(WelcomePage.AllAdminsDictionary.ContainsKey(name))
+                string name = Username_txt.Text;
+                string password = Password_txt.Password;
+
+                if (WelcomePage.AllAdminsDictionary.ContainsKey(name))
                 {
-                    if(WelcomePage.AllAdminsDictionary[name].Password==password)
+                    if (WelcomePage.AllAdminsDictionary[name].Password == password)
                     {
                         MessageBox.Show("Logging In");
                         WelcomePage.AdminLogedIn = true;
@@ -68,34 +61,27 @@ namespace Course_Prerequsites_WPF.UIs
                         AdminControls.Show();
                         this.Hide();
                         this.Close();
-                        
 
-                    
+
+
                     }
                     else
                     {
                         MessageBox.Show("Wrong Password");
                     }
                 }
-               else
+                else
                 {
                     MessageBox.Show("Admin Does Not Exist");
                 }
-                
+
             }
 
         }
 
-        private void Username_txt_TextChanged_1(object sender, TextChangedEventArgs e)
-        {
-
-        }
-
-        
-
         private void Password_txt_PasswordChanged(object sender, RoutedEventArgs e)
         {
-            if(Password_txt.Password.Length>0)
+            if (Password_txt.Password.Length > 0)
             {
                 EyeImage.Visibility = Visibility.Visible;
             }
@@ -134,7 +120,7 @@ namespace Course_Prerequsites_WPF.UIs
             Password_txt.Focus();
 
         }
-      
+
 
     }
 }

@@ -802,3 +802,6 @@ D:\Work\Course ds\Course Prerequsites WPF\obj\Debug\Course Prerequsites WPF.exe
 D:\Work\Course ds\Course Prerequsites WPF\obj\Debug\Course Prerequsites WPF.pdb
 D:\Work\Course ds\Course Prerequsites WPF\obj\Debug\Resources\Icons.baml
 D:\Work\Course ds\Course Prerequsites WPF\obj\Debug\Resources\IconsNonShared.baml
+D:\Work\Course ds\Course Prerequsites WPF\obj\Debug\Course Prerequsites WPF.csprojResolveAssemblyReference.cache
+D:\Work\Course ds\Course Prerequsites WPF\obj\Debug\UIs\EditCourse.baml
+D:\Work\Course ds\Course Prerequsites WPF\obj\Debug\UIs\EditCourse.g.cs

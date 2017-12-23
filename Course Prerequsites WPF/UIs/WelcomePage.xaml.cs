@@ -98,5 +98,19 @@ namespace Course_Prerequsites_WPF.UIs
             InitializeComponent();
            
         }
+
+        private void Student_MouseUp(object sender, MouseButtonEventArgs e)
+        {
+            StudentLogIn stud = new StudentLogIn();
+            stud.Show();
+            this.Close();
+        }
+
+        private void Admin_MouseUp(object sender, MouseButtonEventArgs e)
+        {
+            AdminLogIn ad = new AdminLogIn();
+            ad.Show();
+            this.Close();
+        }
     }
 }

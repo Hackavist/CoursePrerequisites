@@ -329,5 +329,11 @@
     <Resource Include="Resources\Entypo-license.txt" />
     <Resource Include="Resources\WindowsIcons-license.txt" />
   </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\student.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\man-with-tie.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

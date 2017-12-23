@@ -10,25 +10,32 @@
         <SolidColorBrush Color="White"  />
     </Window.Background>
     <Grid>
+
+        <TextBlock Text=" Admin Log In" Margin="50" VerticalAlignment="Top" HorizontalAlignment="Center" Style="{StaticResource PageHeaderTextStyle}">
+            <TextBlock.Foreground>
+                <SolidColorBrush Color="{DynamicResource {x:Static SystemColors.HighlightColorKey}}"/>
+            </TextBlock.Foreground>
+        </TextBlock>
+
+        <TextBlock Text="Username" Margin="135,177,-135.4,0" Style="{StaticResource SectionHeaderTextStyle}">
+            <TextBlock.Foreground>
+                <SolidColorBrush Color="{DynamicResource {x:Static SystemColors.HighlightColorKey}}"/>
+            </TextBlock.Foreground>
+        </TextBlock>
+
+        <TextBlock Text="Password" Margin="135,334,-135.4,0" Style="{StaticResource SectionHeaderTextStyle}">
+            <TextBlock.Foreground>
+                <SolidColorBrush Color="{DynamicResource {x:Static SystemColors.HighlightColorKey}}"/>
+            </TextBlock.Foreground>
+        </TextBlock>
+
+        <TextBox x:Name="Username_txt" Height="35" Margin="135,211,142.333,0" TextWrapping="Wrap" VerticalAlignment="Top" TabIndex="1" FontFamily="Segoe UI" FontSize="18"/>
         <TextBox x:Name="VisiblePass_txt"  HorizontalAlignment="Left" Height="35" Margin="135,369,0,0" VerticalAlignment="Top" Width="316" FontSize="18"/>
-        <TextBox x:Name="Username_txt" Height="35" Margin="135,211,142.333,0" TextWrapping="Wrap" VerticalAlignment="Top" TabIndex="1" FontFamily="Times New Roman" FontSize="18"/>
+       
         <Button x:Name="LogIn_txt" Content="Log In" Height="42" Margin="226,510,227.333,0" VerticalAlignment="Top" Click="LogIn_txt_Click" FontFamily="Times New Roman" FontSize="18" Background="#FFF6A10C" Foreground="White"/>
         <PasswordBox x:Name="Password_txt" HorizontalAlignment="Left" Height="35" Margin="135,369,0,0" VerticalAlignment="Top" Width="316" PasswordChar="●" TabIndex="2" PasswordChanged="Password_txt_PasswordChanged"/>
-        <Label Content="Username&#xA;" Height="29" Margin="135,177,66.333,0" VerticalAlignment="Top" FontFamily="Times New Roman" FontSize="18" FontWeight="Bold">
-            <Label.Foreground>
-                <SolidColorBrush Color="{DynamicResource {x:Static SystemColors.HighlightColorKey}}"/>
-            </Label.Foreground>
-        </Label>
-        <Label Content="Password&#xA;&#xA;" HorizontalAlignment="Left" Height="29" Margin="135,335,0,0" VerticalAlignment="Top" Width="192" FontFamily="Times New Roman" FontSize="18" FontWeight="Bold">
-            <Label.Foreground>
-                <SolidColorBrush Color="{DynamicResource {x:Static SystemColors.HighlightColorKey}}"/>
-            </Label.Foreground>
-        </Label>
-        <Label Content="Log In" Height="60" Margin="202,53,203.333,0" VerticalAlignment="Top" HorizontalContentAlignment="Center" FontWeight="Bold" FontFamily="Times New Roman" FontSize="36">
-            <Label.Foreground>
-                <SolidColorBrush Color="{DynamicResource {x:Static SystemColors.HighlightColorKey}}"/>
-            </Label.Foreground>
-        </Label>
+       
         <Image x:Name="EyeImage" HorizontalAlignment="Left" Height="35" Margin="410,369,0,0" VerticalAlignment="Top" Width="41" RenderTransformOrigin="3.706,-0.589" MouseLeave="EyeImage_MouseLeave" PreviewMouseDown="EyeImage_PreviewMouseDown" PreviewMouseUp="EyeImage_PreviewMouseUp" Source="/Course Prerequsites WPF;component/Images/eye.png" Visibility="Hidden"/>
+        
     </Grid>
 </Window>
