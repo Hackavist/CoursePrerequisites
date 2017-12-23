@@ -7,22 +7,22 @@
 
             <TextBox HorizontalAlignment="Left" Height="26" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120" x:Name="CodeTextBox" Canvas.Left="228" SpellCheck.IsEnabled="True" ToolTip="Text Box can't contain '#' or '*' or '%'"/>
             <TextBox HorizontalAlignment="Left" Height="23" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120" x:Name="CourseNameTextBox" Canvas.Left="228" Canvas.Top="28" ToolTip="Text Box can't contain '#' or '*' or '%'"/>
-            <Label Content="Course Name" HorizontalAlignment="Left" VerticalAlignment="Top" Height="28" Canvas.Top="28"/>
+            <TextBlock Text="Course Name" HorizontalAlignment="Left" VerticalAlignment="Top" Height="28" Canvas.Top="28"/>
             <TextBox HorizontalAlignment="Left" Height="26" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120" x:Name="MaximumNumberOfStudentsTextBox" Canvas.Left="228" Canvas.Top="56"/>
-            <Label Content="Hours" HorizontalAlignment="Left" VerticalAlignment="Top" Canvas.Top="178"/>
+            <TextBlock Text="Hours" HorizontalAlignment="Left" VerticalAlignment="Top" Canvas.Top="178"/>
             <TextBox HorizontalAlignment="Left" Height="26" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120" x:Name="CurrentNumberOfStudentsTextBox" Canvas.Left="228" Canvas.Top="87"/>
-            <Label Content="Course Grade " HorizontalAlignment="Left" VerticalAlignment="Top" Canvas.Top="146"/>
+            <TextBlock Text="Course Grade " HorizontalAlignment="Left" VerticalAlignment="Top" Canvas.Top="146"/>
             <TextBox HorizontalAlignment="Left" Height="26" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120" x:Name="PassingGradeTextBox" Canvas.Left="228" Canvas.Top="112"/>
-            <Label Content="Passing Grade " HorizontalAlignment="Left" VerticalAlignment="Top" Canvas.Top="112"/>
+            <TextBlock Text="Passing Grade " HorizontalAlignment="Left" VerticalAlignment="Top" Canvas.Top="112"/>
             <TextBox HorizontalAlignment="Left" Height="26" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120" x:Name="CourseGradeTextBox" Canvas.Left="228" Canvas.Top="143"/>
-            <Label Content="Current Number Of Students " HorizontalAlignment="Left" VerticalAlignment="Top" Canvas.Top="84"/>
+            <TextBlock Text="Current Number Of Students " HorizontalAlignment="Left" VerticalAlignment="Top" Canvas.Top="84"/>
             <TextBox HorizontalAlignment="Left" Height="27" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120" x:Name="HoursTextBox" Canvas.Left="228" Canvas.Top="176" ToolTip=""/>
             <TextBox HorizontalAlignment="Left" Height="26" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120" x:Name="InstructorTextBox" Canvas.Left="228" Canvas.Top="206" ToolTip="Text Box can't contain '#' or '*' or '%'"/>
-            <Label Content="Instructor" HorizontalAlignment="Left" VerticalAlignment="Top" Canvas.Top="209"/>
-            <Label Content="Code" HorizontalAlignment="Left" VerticalAlignment="Top"/>
-            <Label Content="Maximum Number Of Students" HorizontalAlignment="Left" VerticalAlignment="Top" Canvas.Top="56"/>
+            <TextBlock Text ="Instructor" HorizontalAlignment="Left" VerticalAlignment="Top" Canvas.Top="209"/>
+            <TextBlock Text="Code" HorizontalAlignment="Left" VerticalAlignment="Top"/>
+            <TextBlock Text="Maximum Number Of Students" HorizontalAlignment="Left" VerticalAlignment="Top" Canvas.Top="56"/>
             <TextBox HorizontalAlignment="Left" Height="25" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120" x:Name="DescriptionTextBox" Canvas.Left="228" Canvas.Top="237" ToolTip="Text Box can't contain '#' or '*' or '%'"/>
-            <Label Content="Description" HorizontalAlignment="Left" VerticalAlignment="Top" Canvas.Top="237"/>
+            <TextBlock Text="Description" HorizontalAlignment="Left" VerticalAlignment="Top" Canvas.Top="237"/>
 
         </Canvas>
         <Button Content="Add Course" HorizontalAlignment="Left" Height="32" Margin="27,348,0,0" VerticalAlignment="Top" Width="133" x:Name="AddCourseButton" Click="AddCourseButton_Click"/>

@@ -26,7 +26,7 @@ namespace Course_Prerequsites_WPF.UIs
 
         }
         string SelectedStudent = "";
-        List<Label> CoursesNameLabels = new List<Label>();
+        List<TextBlock> CoursesNameLabels = new List<TextBlock>();
         List<TextBox> CoursesGradeTextBox = new List<TextBox>();
 
         private void Window_Loaded(object sender, RoutedEventArgs e)
@@ -38,10 +38,7 @@ namespace Course_Prerequsites_WPF.UIs
         }
         Button AddGrades = new Button();
         
-        private void SelectStudentButton_Click(object sender, RoutedEventArgs e)
-        {
-            
-        }
+        
         
         bool CheckAllTextBoxs()
         {
@@ -124,15 +121,15 @@ namespace Course_Prerequsites_WPF.UIs
                 }
 
                 int i = 0;
-                Label InfoTmp = new Label();
+                TextBlock InfoTmp = new TextBlock();
                 InfoTmp.Margin = new Thickness(200, 10, 0, 0);
-                InfoTmp.Content = "Enter the Grades of Student : " + WelcomePage.AllStudentsDictionary[SelectedStudent].Name;
+                InfoTmp.Text = "Enter the Grades of Student : " + WelcomePage.AllStudentsDictionary[SelectedStudent].Name;
                 MyGrid.Children.Add(InfoTmp);
                 foreach (var x in WelcomePage.AllStudentsDictionary[SelectedStudent].CoursesInProgress)
                 {
 
-                    Label LabelTmp = new Label();
-                    LabelTmp.Content = x.CourseName + " : ";
+                    TextBlock LabelTmp = new TextBlock();
+                    LabelTmp.Text = x.CourseName + " : ";
                     LabelTmp.Margin = new Thickness(95, 111 + (i * 50), 0, 0);
 
                     TextBox TextBoxTmp = new TextBox();

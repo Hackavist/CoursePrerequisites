@@ -13,8 +13,8 @@
                 <DropShadowEffect ShadowDepth="8" RenderingBias="Quality"/>
             </ListBox.Effect>
         </ListBox>
-        <Label Content="Courses in Progress" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="61,121,0,0" FontSize="14" FontWeight="Bold"/>
-        <Label Content="Completed Courses" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="345,121,0,0" FontSize="14" FontWeight="Bold"/>
+        <TextBlock Text="Courses in Progress" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="61,121,0,0" FontSize="14" FontWeight="Bold"/>
+        <TextBlock Text="Completed Courses" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="345,121,0,0" FontSize="14" FontWeight="Bold"/>
         <ComboBox x:Name="SelectStudentComboBox" HorizontalAlignment="Left" VerticalAlignment="Top" Width="509" Margin="61,40,0,0" SelectionChanged="SelectStudentComboBox_SelectionChanged"/>
         <Canvas HorizontalAlignment="Left" Height="210" Margin="10,457,0,0" VerticalAlignment="Top" Width="580" x:Name="InfoBlock" IsHitTestVisible="True" >
             <TextBlock Canvas.Left="230" TextWrapping="Wrap" Text="Course Name : " Canvas.Top="10" x:Name="NameTextBlock" />
