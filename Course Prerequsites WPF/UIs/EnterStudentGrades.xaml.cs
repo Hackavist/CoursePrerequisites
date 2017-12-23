@@ -33,68 +33,14 @@ namespace Course_Prerequsites_WPF.UIs
         {
             foreach (var x in WelcomePage.AllStudentsDictionary)
             {
-                StudentsComboBox.Items.Add(x.Key);
+                StudentsComboBox.Items.Add(x.Key+' ' +x.Value.Name);
             }
         }
         Button AddGrades = new Button();
         
         private void SelectStudentButton_Click(object sender, RoutedEventArgs e)
         {
-            if (StudentsComboBox.SelectedIndex==-1)
-            {
-                MessageBox.Show("Please select some student");
-            }
-            else
-            {
-                 SelectedStudent = StudentsComboBox.SelectedValue.ToString();
-                //clear the grid and lists ( in case there were a student before )
-                MyGrid.Children.Clear();
-                CoursesGradeTextBox.Clear();
-                CoursesNameLabels.Clear();
-
-                if (WelcomePage.AllStudentsDictionary[SelectedStudent].CoursesInProgress.Count == 0)
-                {
-                    MessageBox.Show("this student have no Current courses in progress");
-                    return;
-                }
-
-                int i = 0 ;
-                Label InfoTmp = new Label();
-                InfoTmp.Margin = new Thickness(200, 10, 0, 0);
-                InfoTmp.Content = "Enter the Grades of Student : " + SelectedStudent;
-                MyGrid.Children.Add(InfoTmp);
-                foreach (var x in WelcomePage.AllStudentsDictionary[SelectedStudent].CoursesInProgress)
-                {
-                    
-                    Label LabelTmp = new Label();
-                    LabelTmp.Content = x.CourseName + " : " ;
-                    LabelTmp.Margin = new Thickness(95, 111 + (i * 50), 0, 0);
-                    
-                    TextBox TextBoxTmp = new TextBox();
-                    TextBoxTmp.VerticalAlignment = System.Windows.VerticalAlignment.Top;
-                    TextBoxTmp.Width = 120;
-                    TextBoxTmp.Height = 23;
-                    TextBoxTmp.ToolTip = "Enter the Grade of " + x.CourseName;
-                    TextBoxTmp.Margin = new Thickness(371, 111 + (i * 50), 0, 0);
-                    TextBoxTmp.Name = x.CourseName;
-
-                    MyGrid.Children.Add(LabelTmp);
-                    MyGrid.Children.Add(TextBoxTmp);
-
-                    i++;
-                    CoursesNameLabels.Add(LabelTmp);
-                    CoursesGradeTextBox.Add(TextBoxTmp);
-                }
-                AddGrades.Content = "Done";
-
-                AddGrades.Height = 30;
-                AddGrades.Width = 100;
-                AddGrades.HorizontalAlignment = System.Windows.HorizontalAlignment.Left;
-                AddGrades.VerticalAlignment = System.Windows.VerticalAlignment.Top;
-                AddGrades.Margin = new Thickness(250, 111 + (i * 50), 0, 0);
-                AddGrades.Click += Done_Click;
-                MyGrid.Children.Add(AddGrades);
-            }
+            
         }
         
         bool CheckAllTextBoxs()
@@ -143,10 +89,10 @@ namespace Course_Prerequsites_WPF.UIs
             int PassedCourses = 0;
             foreach (var x in CoursesGradeTextBox)
             {
-                if (WelcomePage.AllCoursesDictionary[x.Name].CourseGrade<= double.Parse( x.Text) )
+                if (WelcomePage.AllCoursesDictionary[x.Tag.ToString()].CourseGrade<= double.Parse( x.Text) )
                 {
                     // if the student pass this course add this course to his finished courses
-                    WelcomePage.AllStudentsDictionary[SelectedStudent].FinishedCourses.Add( WelcomePage.AllCoursesDictionary[x.Name] );
+                    WelcomePage.AllStudentsDictionary[SelectedStudent].FinishedCourses.Add( WelcomePage.AllCoursesDictionary[x.Tag.ToString()] );
                     PassedCourses++;
                 }
                 //WelcomePage.AllStudentsDictionary[SelectedStudent].CoursesInProgress.Remove(WelcomePage.AllCoursesDictionary[x.Name]);
@@ -154,6 +100,66 @@ namespace Course_Prerequsites_WPF.UIs
             //remove all in progress courses of the student
             WelcomePage.AllStudentsDictionary[SelectedStudent].CoursesInProgress = new List<Classes.Course>();
             MessageBox.Show("This student passed : " + PassedCourses.ToString() );
+        }
+
+        private void StudentsComboBox_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        {
+            if (StudentsComboBox.SelectedIndex == -1)
+            {
+                MessageBox.Show("Please select some student");
+            }
+            else
+            {
+                string[] tosplit = StudentsComboBox.SelectedValue.ToString().Split(' ');
+                SelectedStudent = tosplit[0];
+                //clear the grid and lists ( in case there were a student before )
+                MyGrid.Children.Clear();
+                CoursesGradeTextBox.Clear();
+                CoursesNameLabels.Clear();
+
+                if (WelcomePage.AllStudentsDictionary[SelectedStudent].CoursesInProgress.Count == 0)
+                {
+                    MessageBox.Show("this student have no Current courses in progress");
+                    return;
+                }
+
+                int i = 0;
+                Label InfoTmp = new Label();
+                InfoTmp.Margin = new Thickness(200, 10, 0, 0);
+                InfoTmp.Content = "Enter the Grades of Student : " + WelcomePage.AllStudentsDictionary[SelectedStudent].Name;
+                MyGrid.Children.Add(InfoTmp);
+                foreach (var x in WelcomePage.AllStudentsDictionary[SelectedStudent].CoursesInProgress)
+                {
+
+                    Label LabelTmp = new Label();
+                    LabelTmp.Content = x.CourseName + " : ";
+                    LabelTmp.Margin = new Thickness(95, 111 + (i * 50), 0, 0);
+
+                    TextBox TextBoxTmp = new TextBox();
+                    TextBoxTmp.VerticalAlignment = System.Windows.VerticalAlignment.Top;
+                    TextBoxTmp.Width = 120;
+                    TextBoxTmp.Height = 23;
+                    TextBoxTmp.ToolTip = "Enter the Grade of " + x.CourseName;
+                    TextBoxTmp.Margin = new Thickness(371, 111 + (i * 50), 0, 0);
+                    TextBoxTmp.Tag = x.CourseName.ToString();
+
+                    MyGrid.Children.Add(LabelTmp);
+                    MyGrid.Children.Add(TextBoxTmp);
+
+                    i++;
+                    CoursesNameLabels.Add(LabelTmp);
+                    CoursesGradeTextBox.Add(TextBoxTmp);
+                }
+                AddGrades.Content = "Done";
+
+                AddGrades.Height = 30;
+                AddGrades.Width = 100;
+                AddGrades.HorizontalAlignment = System.Windows.HorizontalAlignment.Left;
+                AddGrades.VerticalAlignment = System.Windows.VerticalAlignment.Top;
+                AddGrades.Margin = new Thickness(250, 111 + (i * 50), 0, 0);
+                AddGrades.Click += Done_Click;
+                MyGrid.Children.Add(AddGrades);
+            }
         }
        
     }
