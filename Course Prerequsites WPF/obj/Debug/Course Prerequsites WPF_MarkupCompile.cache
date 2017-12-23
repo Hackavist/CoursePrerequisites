@@ -1,0 +1,20 @@
+﻿Course Prerequsites WPF
+
+
+winexe
+C#
+.cs
+D:\Work\Ds Project Final\Course Prerequsites WPF\obj\Debug\
+Course_Prerequsites_WPF
+none
+false
+DEBUG;TRACE
+D:\Work\Ds Project Final\Course Prerequsites WPF\App.xaml
+25-1084482915
+
+35-128101434
+17-1380869174
+UIs\AddAdmin.xaml;UIs\AddFinishedCourses.xaml;UIs\AddNewCourse.xaml;UIs\AddNewCourseSecondStep.xaml;UIs\AddStudent.xaml;UIs\AdminLogIn.xaml;UIs\AdminSettings.xaml;UIs\AllCoursesChart.xaml;UIs\AllCoursesTree.xaml;UIs\AspecificCourse.xaml;UIs\CourseSettings.xaml;UIs\Drop.xaml;UIs\EditMyData.xaml;UIs\EnterStudentGrades.xaml;UIs\RegisterToNewCouse.xaml;UIs\RemoveAdmin.xaml;UIs\RemoveStudent.xaml;UIs\StudentControls.xaml;UIs\StudentLogIn.xaml;UIs\StudentsSettings.xaml;UIs\ViewAllCoursesOfStudent.xaml;UIs\ViewMyCourses.xaml;UIs\AdminControls.xaml;UIs\ViewStudentsInCourse.xaml;UIs\WelcomePage.xaml;
+
+True
+

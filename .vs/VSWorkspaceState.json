@@ -2,9 +2,11 @@
   "ExpandedNodes": [
     "",
     "\\Course Prerequsites WPF",
+    "\\Course Prerequsites WPF\\bin",
+    "\\Course Prerequsites WPF\\bin\\Debug",
+    "\\Course Prerequsites WPF\\bin\\Release",
     "\\Course Prerequsites WPF\\Properties",
-    "\\Course Prerequsites WPF\\UIs",
-    "\\Course Prerequsites WPF\\ViewModels"
+    "\\Course Prerequsites WPF\\UIs"
   ],
   "SelectedNode": "\\Course Prerequsites WPF\\Course Prerequsites WPF.sln",
   "PreviewInSolutionExplorer": false
