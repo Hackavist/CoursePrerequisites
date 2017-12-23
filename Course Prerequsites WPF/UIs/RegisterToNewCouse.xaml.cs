@@ -58,7 +58,12 @@ namespace Course_Prerequsites_WPF.UIs
         //What will happened when click on register
         private void button1_Click(object sender, RoutedEventArgs e)
         {
-          
+            if (AvailableCourseBox.SelectedIndex == -1)
+            {
+                MessageBox.Show("There is no selected item..Please select an item or click on Back button.");
+            }
+            else
+            {
                 //Object that contain the selected item in combo box
                 Course c = WelcomePage.Course.ReturnObj(AvailableCourseBox.SelectionBoxItem.ToString());
                 //Add this course to the courses in progress for this student
@@ -70,6 +75,7 @@ namespace Course_Prerequsites_WPF.UIs
                 //When you regist to this course it will be removed from combo box
                 AvailableCourseBox.Items.Remove(AvailableCourseBox.SelectionBoxItem.ToString());
             }
+        }
         }
     }
 
