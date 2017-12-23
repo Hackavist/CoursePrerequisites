@@ -24,6 +24,7 @@ namespace Course_Prerequsites_WPF.UIs
     {
         public AllCoursesChart()
         {
+            WindowStartupLocation = System.Windows.WindowStartupLocation.CenterScreen;
             InitializeComponent();
         }
 

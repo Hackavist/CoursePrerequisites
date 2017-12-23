@@ -23,7 +23,7 @@ namespace Course_Prerequsites_WPF.UIs
             Dictionary<string, Course> AllCoursesObj = new Dictionary<string, Course>();
 
             //dictionary of all courses
-            AllCoursesObj = WelcomePage.AllCoursesDictionary ;
+            AllCoursesObj = WelcomePage.AllCoursesDictionary;
 
             //for each course in the dictionary create and  add a tree view item 
             foreach (var course in AllCoursesObj)
@@ -34,16 +34,16 @@ namespace Course_Prerequsites_WPF.UIs
 
                 branch.HeaderStringFormat = course.Value.CourseName;
 
-               branch.Items.Add(null); // addes a node to the tree 
+                branch.Items.Add(null); // addes a node to the tree 
 
-               branch.Expanded += Branch_Expanded; // what happens when the tree is expanded 
+                branch.Expanded += Branch_Expanded; // what happens when the tree is expanded 
 
-               AllCourses.Items.Add(branch); // addes the branch to the parent 
+                AllCourses.Items.Add(branch); // addes the branch to the parent 
 
             }
         }
 
-        public void Branch_Expanded(object sender, RoutedEventArgs e )
+        public void Branch_Expanded(object sender, RoutedEventArgs e)
         {
             //parces the sender object into a mai
             var x = (TreeViewItem)sender;
@@ -62,7 +62,7 @@ namespace Course_Prerequsites_WPF.UIs
 
             // creates an object of the given name 
             Course cour = new Course();
-            cour= cour.ReturnObj(name);
+            cour = cour.ReturnObj(name);
 
             //Reveses the list to out the prequisists in the correct order 
             cour.PreRequiredCourses.Reverse();
@@ -83,7 +83,7 @@ namespace Course_Prerequsites_WPF.UIs
         {
             //if (Branch_Expanded==true)
             //{
-                
+
             //}
             //MessageBox.Show("Test suc");
         }

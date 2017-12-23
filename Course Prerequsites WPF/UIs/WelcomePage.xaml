@@ -8,9 +8,9 @@
         xmlns:i="http://schemas.microsoft.com/expression/2010/interactivity"
     	xmlns:Behaviours="clr-namespace:MahApps.Metro.Behaviours;assembly=MahApps.Metro"
         mc:Ignorable="d"
-        Title="WelcomePage" Height="700" Width="800">
+        Title="WelcomePage" Height="650" Width="600">
     <Grid Margin="10,5,10,5">
-        <TextBlock Text="Welcome to Our Course Prequisit system" Style="{StaticResource HeaderTextStyle}"/>
+        <TextBlock Text="Welcome " Style="{StaticResource HeaderTextStyle}"/>
 
     </Grid>
 </Controls:MetroWindow>

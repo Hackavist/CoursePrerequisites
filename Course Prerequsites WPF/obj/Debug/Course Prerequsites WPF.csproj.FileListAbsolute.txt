@@ -484,7 +484,9 @@ D:\Work\DS Project Course Prerequisits\Course Prerequsites WPF\obj\Debug\Course 
 D:\Work\DS Project Course Prerequisits\Course Prerequsites WPF\obj\Debug\Course Prerequsites WPF.exe
 D:\Work\DS Project Course Prerequisits\Course Prerequsites WPF\obj\Debug\Course Prerequsites WPF.pdb
 D:\Work\DS Project Course Prerequisits\Course Prerequsites WPF\obj\Debug\Course Prerequsites WPF.csprojResolveAssemblyReference.cache
-D:\Work\DS Project Course Prerequisits\Course Prerequsites WPF\obj\Debug\UIs\Add Admin.g.cs
 D:\Work\DS Project Course Prerequisits\Course Prerequsites WPF\obj\Debug\UIs\EditMyData.g.cs
-D:\Work\DS Project Course Prerequisits\Course Prerequsites WPF\obj\Debug\UIs\Add Admin.baml
 D:\Work\DS Project Course Prerequisits\Course Prerequsites WPF\obj\Debug\UIs\EditMyData.baml
+D:\Work\DS Project Course Prerequisits\Course Prerequsites WPF\obj\Debug\UIs\AddAdmin.g.cs
+D:\Work\DS Project Course Prerequisits\Course Prerequsites WPF\obj\Debug\UIs\AllCoursesTree.g.cs
+D:\Work\DS Project Course Prerequisits\Course Prerequsites WPF\obj\Debug\UIs\AddAdmin.baml
+D:\Work\DS Project Course Prerequisits\Course Prerequsites WPF\obj\Debug\UIs\AllCoursesTree.baml
