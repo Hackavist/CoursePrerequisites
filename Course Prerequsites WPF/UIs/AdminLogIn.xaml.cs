@@ -61,7 +61,16 @@ namespace Course_Prerequsites_WPF.UIs
                         WelcomePage.AdminLogedIn = true;
                         WelcomePage.AdminUserName = name;
                         WelcomePage.AdminPassword = password;
+
+
                         //opens next window : admin controls
+                        ViewStudentOrCourse AdminControls = new ViewStudentOrCourse();
+                        AdminControls.Show();
+                        this.Hide();
+                        this.Close();
+                        
+
+                    
                     }
                     else
                     {
