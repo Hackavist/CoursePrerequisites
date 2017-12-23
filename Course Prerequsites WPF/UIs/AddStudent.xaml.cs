@@ -25,13 +25,6 @@ namespace Course_Prerequsites_WPF.UIs
         {
             InitializeComponent();
             StudYear.Items.Add("1st year");
-            StudYear.Items.Add("2nd year");
-            StudYear.Items.Add("3rd year");
-            StudYear.Items.Add("4th year");
-
-            FinishedCourses.Visibility = Visibility.Hidden;
-            CheckBox.Visibility = Visibility.Hidden;
-
            
         }
         
@@ -95,16 +88,7 @@ namespace Course_Prerequsites_WPF.UIs
             //}
 
         }
-
-        private void CheckBox_Checked(object sender, RoutedEventArgs e)
-        {
-            FinishedCourses.Visibility = Visibility.Visible;
-        }
-
-        private void FinishedCourses_Click(object sender, RoutedEventArgs e)
-        {
-           //go to add finished courses
-        }
+       
 
         private void Image_MouseUp(object sender, MouseButtonEventArgs e)
         {
@@ -150,14 +134,7 @@ namespace Course_Prerequsites_WPF.UIs
                     StudPassword.Clear();
                     StudYear.SelectedIndex = -1;
 
-                    /* if(StudYear.SelectedValue.ToString()!= "1st year")
-                    {
-                        FinishedCourses.Visibility = Visibility.Visible;
-                    }
-                    */
-
-                    CheckBox.Visibility = Visibility.Visible;
-
+                   
 
                 }
             }
