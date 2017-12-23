@@ -7,7 +7,7 @@
         mc:Ignorable="d"
         Title="AdminSettings" Height="650" Width="600" Background="White">
     <Grid>
-        <Button x:Name="AddAdmin" Content="Add Admin" VerticalAlignment="Top" Margin="109,147,105.333,0" Height="88" TabIndex="1" FontSize="20" FontFamily="Times New Roman" Foreground="White" Background="#FFF6A10C"/>
+        <Button x:Name="AddAdmin" Content="Add Admin" VerticalAlignment="Top" Margin="109,147,105.333,0" Height="88" TabIndex="1" FontSize="20" FontFamily="Times New Roman" Foreground="White" Background="#FFF6A10C" Click="AddAdmin_Click"/>
         <Button x:Name="RemoveAdmin" Content="Remove Admin&#xA;" VerticalAlignment="Top" Margin="109,363,105.333,0" Height="88" TabIndex="1" FontSize="20" FontFamily="Times New Roman" Foreground="White" Background="#FFF6A10C"/>
 
     </Grid>
