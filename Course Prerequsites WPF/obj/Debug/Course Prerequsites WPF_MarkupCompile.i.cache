@@ -10,11 +10,11 @@ none
 false
 DEBUG;TRACE
 C:\Users\chantal\Source\Repos\CoursePrerequisites\Course Prerequsites WPF\App.xaml
-21-132190341
+231381317878
 
-35-652728146
+37734829801
 191543213504
-UIs\AddAdmin.xaml;UIs\AddCoursePrerequisites.xaml;UIs\AddNewCourse.xaml;UIs\AddNewCourseSecondStep.xaml;UIs\AddStudent.xaml;UIs\AdminLogIn.xaml;UIs\AdminSettings.xaml;UIs\AllCoursesChart.xaml;UIs\AspecificCourse.xaml;UIs\CourseSettings.xaml;UIs\Drop.xaml;UIs\EditMyData.xaml;UIs\EnterStudentGrades.xaml;UIs\RegisterToNewCouse.xaml;UIs\StudentLogIn.xaml;UIs\StudentsSettings.xaml;UIs\ViewAllCoursesOfStudent.xaml;UIs\ViewMyCourses.xaml;UIs\AdminControls.xaml;UIs\ViewStudentsInCourse.xaml;UIs\WelcomePage.xaml;
+UIs\AddAdmin.xaml;UIs\AddCoursePrerequisites.xaml;UIs\AddNewCourse.xaml;UIs\AddNewCourseSecondStep.xaml;UIs\AddStudent.xaml;UIs\AdminLogIn.xaml;UIs\AdminSettings.xaml;UIs\AllCoursesChart.xaml;UIs\AllCoursesTree.xaml;UIs\AspecificCourse.xaml;UIs\CourseSettings.xaml;UIs\Drop.xaml;UIs\EditMyData.xaml;UIs\EnterStudentGrades.xaml;UIs\RegisterToNewCouse.xaml;UIs\StudentControls.xaml;UIs\StudentLogIn.xaml;UIs\StudentsSettings.xaml;UIs\ViewAllCoursesOfStudent.xaml;UIs\ViewMyCourses.xaml;UIs\AdminControls.xaml;UIs\ViewStudentsInCourse.xaml;UIs\WelcomePage.xaml;
 
 True
 

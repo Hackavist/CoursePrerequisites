@@ -1,17 +1,41 @@
 ﻿<Window x:Class="Course_Prerequsites_WPF.UIs.StudentLogIn"
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-        Title="StudentLogIn" Height="313.861" Width="510.891">
-    <Grid Margin="0,0,-6.4,8.4" RenderTransformOrigin="0.493,0.418">
+        Title="StudentLogIn" Height="650" Width="600" WindowStartupLocation="CenterScreen" >
+    <Grid  Margin="50,10,80,1">
         <Grid.ColumnDefinitions>
-            <ColumnDefinition Width="19*"/>
-            <ColumnDefinition Width="56*"/>
+            <ColumnDefinition Width="0.5*"/>
+            <ColumnDefinition Width="*"/>
         </Grid.ColumnDefinitions>
-        <Label Content="ID" HorizontalAlignment="Left" Margin="57,55,0,0" VerticalAlignment="Top"/>
-        <Label Content="Password" HorizontalAlignment="Left" Margin="57,112,0,0" VerticalAlignment="Top"/>
-        <TextBox x:Name="idTextBox" HorizontalAlignment="Left" Height="23" Margin="66.24,55,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Grid.Column="1"/>
-        <TextBox x:Name="passwordTextBox" HorizontalAlignment="Left" Height="23" Margin="66.24,112,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Grid.Column="1"/>
-        <Button x:Name="loginButton" Content="Login" Grid.Column="1" HorizontalAlignment="Left" Margin="215.4,174,0,0" VerticalAlignment="Top" Width="75" Click="loginButton_Click"/>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+
+        <TextBox x:Name="VisiblePass_txt"  HorizontalAlignment="Left" Height="38" Margin="0.333,6.333,0,0" VerticalAlignment="Top" Width="298" FontSize="18" Grid.Row="2" Grid.Column="1" FontFamily="Segoe UI"/>
+
+        <TextBlock Text="Student Log In" Style="{StaticResource PageHeaderTextStyle}" Grid.ColumnSpan="2" Foreground="{DynamicResource {x:Static SystemColors.HighlightBrushKey}}" />
+        <TextBlock Text="ID" Style="{StaticResource SectionHeaderTextStyle}" Grid.Column="0" Grid.Row="1" FontSize="30" Margin="0,66,14.667,0">
+            <TextBlock.Foreground>
+                <SolidColorBrush Color="{DynamicResource {x:Static SystemColors.HighlightColorKey}}"/>
+            </TextBlock.Foreground>
+        </TextBlock>
+        <TextBlock Text="Password" Style="{StaticResource SectionHeaderTextStyle}" Grid.Column="0" Grid.Row="2" FontSize="30">
+            <TextBlock.Foreground>
+                <SolidColorBrush Color="{DynamicResource {x:Static SystemColors.HighlightColorKey}}"/>
+            </TextBlock.Foreground>
+        </TextBlock>
+        <TextBox x:Name="idTextBox" HorizontalAlignment="Stretch" VerticalAlignment="Top" Grid.Column="1" Grid.Row="1" Height="40" Margin="0.333,66,10.333,0" FontFamily="Segoe UI" FontSize="18" TabIndex="1"/>
+        <Button x:Name="loginButton" Content="Log In" Grid.Row="3" Grid.Column="1" HorizontalAlignment="Center" VerticalAlignment="Center" Click="loginButton_Click" Height="42" Margin="0.333,33.667,135.333,76.333" Width="173" Background="#FFF6A10C" FontFamily="Segoe UI" Foreground="White" FontSize="18" FontWeight="Normal" TabIndex="3"/>
+        <PasswordBox x:Name="Password_txt" HorizontalAlignment="Left" Height="40" Margin="0.333,4.333,0,0" VerticalAlignment="Top" Width="298" PasswordChar="●" TabIndex="2" PasswordChanged="Password_txt_PasswordChanged" Grid.Row="2" Grid.Column="1" FontFamily="Segoe UI" FontSize="18"/>
+        <Image x:Name="EyeImage" HorizontalAlignment="Left" Height="35" Margin="257.333,9.333,0,0" VerticalAlignment="Top" Width="41" RenderTransformOrigin="3.706,-0.589" MouseLeave="EyeImage_MouseLeave" PreviewMouseDown="EyeImage_PreviewMouseDown" PreviewMouseUp="EyeImage_PreviewMouseUp" Source="/Course Prerequsites WPF;component/Images/eye.png" Visibility="Hidden" Grid.Column="1" Grid.Row="2"/>
+        <!--<Label Content="ID" HorizontalAlignment="Left" Margin="57,145,0,0" VerticalAlignment="Top"/>
+        <Label Content="Password" HorizontalAlignment="Left" Margin="57,274,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.875,5.673"/>
+        <TextBox x:Name="idTextBox" HorizontalAlignment="Left" Height="23" Margin="66,145,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Grid.Column="1"/>
+        <TextBox x:Name="passwordTextBox" HorizontalAlignment="Left" Height="23" Margin="66,274,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Grid.Column="1"/>
+        <Button x:Name="loginButton" Content="Login" Grid.Column="1" HorizontalAlignment="Left" Margin="293,450,0,0" VerticalAlignment="Top" Width="75" Click="loginButton_Click"/>-->
 
     </Grid>
 </Window>

@@ -56,14 +56,14 @@ namespace Course_Prerequsites_WPF.UIs
         {
             idTextBox.Text = WelcomePage.StudentId;
             nameTextBox.Text = WelcomePage.AllStudentsDictionary[WelcomePage.StudentId].Name;
-            passwordBox.Password = WelcomePage.AllStudentsDictionary[WelcomePage.StudentId].Password;
+            passwordTextBox.Text = WelcomePage.AllStudentsDictionary[WelcomePage.StudentId].Password;
             ayTextBox.Text = WelcomePage.AllStudentsDictionary[WelcomePage.StudentId].AcademicYear.ToString();
         }
 
         private void Button_Click(object sender, RoutedEventArgs e)
         {
             WelcomePage.AllStudentsDictionary[WelcomePage.StudentId].Name = nameTextBox.Text;
-            WelcomePage.AllStudentsDictionary[WelcomePage.StudentId].Password = passwordBox.Password;
+            WelcomePage.AllStudentsDictionary[WelcomePage.StudentId].Password = passwordTextBox.Text;
         }
     }
 }
