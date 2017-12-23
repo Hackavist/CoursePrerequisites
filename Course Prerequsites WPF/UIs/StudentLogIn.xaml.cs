@@ -27,7 +27,7 @@ namespace Course_Prerequsites_WPF.UIs
         private void loginButton_Click(object sender, RoutedEventArgs e)
         {
           
-            if (WelcomePage.StudentId =="" || WelcomePage.StudentPassword =="")
+            if (string.IsNullOrEmpty(idTextBox.Text) || string.IsNullOrEmpty(Password_txt.Password))
             {
                 MessageBox.Show("Please enter valid username and password.");
             }
@@ -35,14 +35,16 @@ namespace Course_Prerequsites_WPF.UIs
             {
                 if (WelcomePage.AllStudentsDictionary.ContainsKey(idTextBox.Text))
                 {
-                    if (WelcomePage.AllStudentsDictionary[idTextBox.Text].Password== passwordTextBox.Text)
+                    if (WelcomePage.AllStudentsDictionary[idTextBox.Text].Password== Password_txt.Password)
                     {
-                        MessageBox.Show("WE ARE DONE!!!");
+                        MessageBox.Show("Logging in...");
                         WelcomePage.StudentLogedIn = true;
                         WelcomePage.StudentId = idTextBox.Text;
-                        WelcomePage.StudentPassword = passwordTextBox.Text;
-                        RegisterToNewCouse reg = new RegisterToNewCouse();
-                        reg.Show();
+                        WelcomePage.StudentPassword = Password_txt.Password;
+
+                        StudentControls StudControls = new StudentControls();
+                        StudControls.Show();
+                        this.Hide();
                         this.Close();
 
                     }
@@ -60,6 +62,48 @@ namespace Course_Prerequsites_WPF.UIs
 
         private void idTextBox_TextChanged(object sender, TextChangedEventArgs e)
         {
+
+        }
+
+        private void Password_txt_PasswordChanged(object sender, RoutedEventArgs e)
+        {
+            if(Password_txt.Password.Length>0)
+            {
+                EyeImage.Visibility = Visibility.Visible;
+            }
+            else
+            {
+                EyeImage.Visibility = Visibility.Hidden;
+            }
+        }
+
+        private void EyeImage_PreviewMouseDown(object sender, MouseButtonEventArgs e)
+        {
+            ShowPassword();
+        }
+
+        private void EyeImage_PreviewMouseUp(object sender, MouseButtonEventArgs e)
+        {
+            HidePassword();
+        }
+
+        private void EyeImage_MouseLeave(object sender, MouseEventArgs e)
+        {
+            HidePassword();
+        }
+
+        private void ShowPassword()
+        {
+            Password_txt.Visibility = Visibility.Hidden;
+            VisiblePass_txt.Visibility = Visibility.Visible;
+            VisiblePass_txt.Text = Password_txt.Password;
+        }
+
+        private void HidePassword()
+        {
+            Password_txt.Visibility = Visibility.Visible;
+            VisiblePass_txt.Visibility = Visibility.Hidden;
+            Password_txt.Focus();
 
         }
     }
