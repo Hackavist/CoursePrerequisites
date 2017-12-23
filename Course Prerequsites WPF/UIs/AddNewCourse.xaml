@@ -3,30 +3,26 @@
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         Title="AddNewCourse" Height="600" Width="700">
     <Grid>
-        <Canvas Margin="26,26,19.6,81.4">
+        <TextBox HorizontalAlignment="Left" Height="27" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="236" x:Name="CodeTextBox" SpellCheck.IsEnabled="True" ToolTip="Text Box can't contain '#' or '*' or '%'" Margin="372,19,0,0"/>
+        <TextBox HorizontalAlignment="Left" Height="27" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="236" x:Name="CourseNameTextBox" ToolTip="Text Box can't contain '#' or '*' or '%'" Margin="372,60,0,0"/>
+        <TextBlock Text="Course Name" HorizontalAlignment="Left" VerticalAlignment="Top" Height="29" Margin="111,60,0,0" FontSize="16" Width="102"/>
+        <TextBox HorizontalAlignment="Left" Height="27" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="236" x:Name="MaximumNumberOfStudentsTextBox" Margin="372,109,0,0"/>
+        <TextBlock Text="Hours" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="111,305,0,0" FontSize="16" Height="22" Width="45"/>
+        <TextBox HorizontalAlignment="Left" Height="26" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="236" x:Name="CurrentNumberOfStudentsTextBox" Margin="372,159,0,0"/>
+        <TextBlock Text="Course Grade " HorizontalAlignment="Left" VerticalAlignment="Top" Margin="111,260,0,0" FontSize="16" Height="22" Width="107"/>
+        <TextBox HorizontalAlignment="Left" Height="27" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="236" x:Name="PassingGradeTextBox" Margin="372,209,0,0"/>
+        <TextBlock Text="Passing Grade " HorizontalAlignment="Left" VerticalAlignment="Top" Margin="111,214,0,0" FontSize="16" Height="22" Width="111"/>
+        <TextBox HorizontalAlignment="Left" Height="27" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="236" x:Name="CourseGradeTextBox" Margin="372,260,0,0"/>
+        <TextBlock Text="Current Number Of Students " HorizontalAlignment="Left" VerticalAlignment="Top" Margin="111,159,0,0" FontSize="16" Height="21" Width="221"/>
+        <TextBox HorizontalAlignment="Left" Height="28" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="236" x:Name="HoursTextBox" ToolTip="" Margin="372,305,0,0"/>
+        <TextBox HorizontalAlignment="Left" Height="27" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="236" x:Name="InstructorTextBox" ToolTip="Text Box can't contain '#' or '*' or '%'" Margin="372,358,0,0"/>
+        <TextBlock Text ="Instructor" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="111,358,0,0" FontSize="16" Height="22" Width="73"/>
+        <TextBlock Text="Code" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="111,19,0,0" FontSize="16" Height="22" Width="40"/>
+        <TextBlock Text="Maximum Number Of Students" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="111,109,0,0" FontSize="16" Height="22" Width="235"/>
+        <TextBox HorizontalAlignment="Left" Height="54" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="236" x:Name="DescriptionTextBox" ToolTip="Text Box can't contain '#' or '*' or '%'" Margin="372,412,0,0"/>
+        <TextBlock Text="Description" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="111,412,0,0" FontSize="16" Height="22" Width="86"/>
 
-            <TextBox HorizontalAlignment="Left" Height="26" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120" x:Name="CodeTextBox" Canvas.Left="228" SpellCheck.IsEnabled="True" ToolTip="Text Box can't contain '#' or '*' or '%'"/>
-            <TextBox HorizontalAlignment="Left" Height="23" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120" x:Name="CourseNameTextBox" Canvas.Left="228" Canvas.Top="28" ToolTip="Text Box can't contain '#' or '*' or '%'"/>
-            <TextBlock Text="Course Name" HorizontalAlignment="Left" VerticalAlignment="Top" Height="28" Canvas.Top="28"/>
-            <TextBox HorizontalAlignment="Left" Height="26" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120" x:Name="MaximumNumberOfStudentsTextBox" Canvas.Left="228" Canvas.Top="56"/>
-            <TextBlock Text="Hours" HorizontalAlignment="Left" VerticalAlignment="Top" Canvas.Top="178"/>
-            <TextBox HorizontalAlignment="Left" Height="26" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120" x:Name="CurrentNumberOfStudentsTextBox" Canvas.Left="228" Canvas.Top="87"/>
-            <TextBlock Text="Course Grade " HorizontalAlignment="Left" VerticalAlignment="Top" Canvas.Top="146"/>
-            <TextBox HorizontalAlignment="Left" Height="26" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120" x:Name="PassingGradeTextBox" Canvas.Left="228" Canvas.Top="112"/>
-            <TextBlock Text="Passing Grade " HorizontalAlignment="Left" VerticalAlignment="Top" Canvas.Top="112"/>
-            <TextBox HorizontalAlignment="Left" Height="26" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120" x:Name="CourseGradeTextBox" Canvas.Left="228" Canvas.Top="143"/>
-            <TextBlock Text="Current Number Of Students " HorizontalAlignment="Left" VerticalAlignment="Top" Canvas.Top="84"/>
-            <TextBox HorizontalAlignment="Left" Height="27" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120" x:Name="HoursTextBox" Canvas.Left="228" Canvas.Top="176" ToolTip=""/>
-            <TextBox HorizontalAlignment="Left" Height="26" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120" x:Name="InstructorTextBox" Canvas.Left="228" Canvas.Top="206" ToolTip="Text Box can't contain '#' or '*' or '%'"/>
-            <TextBlock Text ="Instructor" HorizontalAlignment="Left" VerticalAlignment="Top" Canvas.Top="209"/>
-            <TextBlock Text="Code" HorizontalAlignment="Left" VerticalAlignment="Top"/>
-            <TextBlock Text="Maximum Number Of Students" HorizontalAlignment="Left" VerticalAlignment="Top" Canvas.Top="56"/>
-            <TextBox HorizontalAlignment="Left" Height="25" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120" x:Name="DescriptionTextBox" Canvas.Left="228" Canvas.Top="237" ToolTip="Text Box can't contain '#' or '*' or '%'"/>
-            <TextBlock Text="Description" HorizontalAlignment="Left" VerticalAlignment="Top" Canvas.Top="237"/>
-
-        </Canvas>
-        <Button Content="Add Course" HorizontalAlignment="Left" Height="32" Margin="27,348,0,0" VerticalAlignment="Top" Width="133" x:Name="AddCourseButton" Click="AddCourseButton_Click"/>
-        <Button Content="Edit Course" HorizontalAlignment="Left" Height="32" Margin="242,348,0,0" VerticalAlignment="Top" Width="133" x:Name="EditCourseButton" Click="EditCourseButton_Click"/>
+        <Button Content="Next Step" HorizontalAlignment="Left" Height="48" Margin="238,497,0,0" VerticalAlignment="Top" Width="171" x:Name="AddCourseButton" Click="AddCourseButton_Click" FontSize="18"/>
 
     </Grid>
 </Window>

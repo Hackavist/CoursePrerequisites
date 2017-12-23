@@ -18,6 +18,7 @@ namespace Course_Prerequsites_WPF.UIs
     /// <summary>
     /// Interaction logic for EnterStudentGrades.xaml
     /// </summary>
+    /// Made By : Hazem Khairy ^_^ 
     public partial class EnterStudentGrades : Window
     {
         public EnterStudentGrades()

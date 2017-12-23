@@ -12,37 +12,48 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
 using Course_Prerequsites_WPF.Classes;
+using Course_Prerequsites_WPF.UIs;
 namespace Course_Prerequsites_WPF.UIs
 {
     /// <summary>
-    /// Interaction logic for AddNewCourse.xaml
+    /// Interaction logic for EditCourse.xaml
     /// </summary>
-    /// Made By : Hazem Khairy ^_^
-    public partial class AddNewCourse : Window
+    /// Made By Hazem Khairy ^_^
+    public partial class EditCourse : Window
     {
-        public AddNewCourse()
+        public EditCourse()
         {
             InitializeComponent();
-
-            
+            InnerCanvas.Visibility = System.Windows.Visibility.Hidden;
+            //put all courses in the combo box
+            foreach (var x in WelcomePage.AllCoursesDictionary)
+            {
+                CourseSelection.Items.Add(x.Value.CourseName);
+            }
+            // add tooltip for each textbox
             HoursTextBox.ToolTip = "-Text Box can only contain numbers \n -Number of hours Must not exceed 6";
             MaximumNumberOfStudentsTextBox.ToolTip = "-Text Box can only contain numbers \n -Number of students Must not exceed 500";
             CurrentNumberOfStudentsTextBox.ToolTip = "-Text Box can only contain numbers \n -Number of Current students Must not the maximum";
             CourseGradeTextBox.ToolTip = "-Text Box can only contain numbers \n -Course Grade Must not exceed 200";
             PassingGradeTextBox.ToolTip = "-Text Box can only contain numbers \n -Course Grades Must no exceed Course Grades ";
-            
         }
-        void mytrimer()
+ 
+        Course SelectedCourse;
+
+        private void CourseSelection_SelectionChanged(object sender, SelectionChangedEventArgs e)
         {
-            CodeTextBox.Text = CodeTextBox.Text.Trim(' ' ,'\0');
-            CourseNameTextBox.Text = CourseNameTextBox.Text.Trim(' ' ,'\0');
-            MaximumNumberOfStudentsTextBox.Text = MaximumNumberOfStudentsTextBox.Text.Trim(' ' ,'\0');
-            CourseGradeTextBox.Text = CourseGradeTextBox.Text.Trim(' ' ,'\0');
-            PassingGradeTextBox.Text = PassingGradeTextBox.Text.Trim(' ' ,'\0');
-            CurrentNumberOfStudentsTextBox.Text = CurrentNumberOfStudentsTextBox.Text.Trim(' ' ,'\0');
-            HoursTextBox.Text = HoursTextBox.Text.Trim(' ' ,'\0');
-            InstructorTextBox.Text = InstructorTextBox.Text.Trim(' ' ,'\0');
-            DescriptionTextBox.Text = DescriptionTextBox.Text.Trim(' ' ,'\0');
+            //makes the info box visible
+            InnerCanvas.Visibility = System.Windows.Visibility.Visible;
+            // get the selected Course
+            SelectedCourse = WelcomePage.AllCoursesDictionary[CourseSelection.SelectedValue.ToString()];
+            //puts the old selected student info in the text boxes
+            MaximumNumberOfStudentsTextBox.Text = SelectedCourse.MaximumNumberOfStudents.ToString();
+            CurrentNumberOfStudentsTextBox.Text = SelectedCourse.CurrentNumberOfStudents.ToString();
+            HoursTextBox.Text = SelectedCourse.Hours.ToString();
+            PassingGradeTextBox.Text = SelectedCourse.PassingGrade.ToString();
+            CourseGradeTextBox.Text = SelectedCourse.CourseGrade.ToString();
+            InstructorTextBox.Text = SelectedCourse.Instructor;
+            DescriptionTextBox.Text = SelectedCourse.Description;
 
         }
         bool CheckNumberOfStudentsTextBoxes()
@@ -69,7 +80,15 @@ namespace Course_Prerequsites_WPF.UIs
             }
             return true;
         }
+        bool CheckIfThereIsEmptyTextBox()
+        {
+        // check if there is empty text box 
+            if ( MaximumNumberOfStudentsTextBox.Text.Length == 0 || CurrentNumberOfStudentsTextBox.Text.Length == 0 || PassingGradeTextBox.Text.Length == 0 || CourseGradeTextBox.Text.Length == 0 || HoursTextBox.Text.Length == 0 || InstructorTextBox.Text.Length == 0 || DescriptionTextBox.Text.Length == 0)
+                return true;
+            return false;
+        }
 
+        
         bool CheckGradesTextBoxes()
         {
             if (WelcomePage.IsNumber(CourseGradeTextBox.Text) == false)
@@ -110,7 +129,8 @@ namespace Course_Prerequsites_WPF.UIs
         }
         bool CheckAllTheRemainingTextBoxes()
         {
-            if (WelcomePage.ThereIsNoDelimiter(CodeTextBox.Text) && WelcomePage.ThereIsNoDelimiter(CourseNameTextBox.Text) && WelcomePage.ThereIsNoDelimiter(InstructorTextBox.Text) && WelcomePage.ThereIsNoDelimiter(DescriptionTextBox.Text))
+            //check if there is delimiter in Instructor text box or Description text box
+            if (WelcomePage.ThereIsNoDelimiter(InstructorTextBox.Text) && WelcomePage.ThereIsNoDelimiter(DescriptionTextBox.Text))
             {
                 return true;
 
@@ -118,57 +138,36 @@ namespace Course_Prerequsites_WPF.UIs
             MessageBox.Show("There is some text box contains '%' or '#' or '*' ");
             return false;
         }
-        public static List<string> CoursePrerequstiesTmp;
-        bool CheckIfThereIsEmptyTextBox()
+        void mytrimer()
         {
-            if (CodeTextBox.Text.Length == 0 || CourseNameTextBox.Text.Length == 0 || MaximumNumberOfStudentsTextBox.Text.Length == 0 || CurrentNumberOfStudentsTextBox.Text.Length == 0 || PassingGradeTextBox.Text.Length == 0 || CourseGradeTextBox.Text.Length == 0 || HoursTextBox.Text.Length == 0 || InstructorTextBox.Text.Length == 0 || DescriptionTextBox.Text.Length == 0)
-                return true;
-            return false;
+            MaximumNumberOfStudentsTextBox.Text = MaximumNumberOfStudentsTextBox.Text.Trim(' ' ,'\0');
+            CourseGradeTextBox.Text = CourseGradeTextBox.Text.Trim(' ', '\0');
+            PassingGradeTextBox.Text = PassingGradeTextBox.Text.Trim(' ', '\0');
+            CurrentNumberOfStudentsTextBox.Text = CurrentNumberOfStudentsTextBox.Text.Trim(' ', '\0');
+            HoursTextBox.Text = HoursTextBox.Text.Trim(' ', '\0');
+            InstructorTextBox.Text = InstructorTextBox.Text.Trim(' ', '\0');
+            DescriptionTextBox.Text = DescriptionTextBox.Text.Trim(' ', '\0');
+
         }
-        private void AddCourseButton_Click(object sender, RoutedEventArgs e)
+        private void Button_Click(object sender, RoutedEventArgs e)
         {
             mytrimer();
-            if (CheckIfThereIsEmptyTextBox())
+            if (CheckIfThereIsEmptyTextBox()==true)
             {
-                MessageBox.Show("Some text box is missing");
+                MessageBox.Show("You cannot leave empty text box");
+                return;
             }
             else
             {
-                if (CheckNumberOfStudentsTextBoxes() && CheckGradesTextBoxes() && CheckHoursTextBox() && CheckAllTheRemainingTextBoxes())
+                if ( CheckNumberOfStudentsTextBoxes() && CheckGradesTextBoxes() && CheckHoursTextBox() && CheckAllTheRemainingTextBoxes())
                 {
-
-                    string Code = CodeTextBox.Text;
-                    string CourseName = CourseNameTextBox.Text;
-                    int MaximumNumber = int.Parse(MaximumNumberOfStudentsTextBox.Text);
-                    int CurrentNumber = int.Parse(CurrentNumberOfStudentsTextBox.Text);
-                    int PassingGrade = int.Parse(PassingGradeTextBox.Text);
-                    int CourseGrade = int.Parse(CourseGradeTextBox.Text);
-                    int Hours = int.Parse(HoursTextBox.Text);
-                    string Instructor = InstructorTextBox.Text;
-                    string Description = DescriptionTextBox.Text;
-                    CoursePrerequstiesTmp = new List<string>();
-
-                    if (WelcomePage.AllCoursesDictionary.ContainsKey(CourseName))
-                    {
-                        MessageBox.Show("This course already exists ");
-
-                    }
-                    else
-                    {
-                        AddNewCourseSecondStep nw = new AddNewCourseSecondStep();
-                        nw.ShowDialog();
-                        Course newcourse = new Course(Code, CourseName, MaximumNumber, CurrentNumber, PassingGrade, CourseGrade, Hours, Instructor, Description, CoursePrerequstiesTmp);
-                        WelcomePage.AllCoursesDictionary[CourseName] = newcourse;
-                        CodeTextBox.Clear();
-                        CourseNameTextBox.Clear();
-                        MaximumNumberOfStudentsTextBox.Clear();
-                        CurrentNumberOfStudentsTextBox.Clear();
-                        PassingGradeTextBox.Clear();
-                        CourseGradeTextBox.Clear();
-                        HoursTextBox.Clear();
-                        InstructorTextBox.Clear();
-                        DescriptionTextBox.Clear();
-                    }
+                    SelectedCourse.MaximumNumberOfStudents = int.Parse(MaximumNumberOfStudentsTextBox.Text);
+                    SelectedCourse.CurrentNumberOfStudents = int.Parse(CurrentNumberOfStudentsTextBox.Text);
+                    SelectedCourse.CourseGrade = int.Parse( CourseGradeTextBox.Text );
+                    SelectedCourse.PassingGrade = int.Parse( PassingGradeTextBox.Text );
+                    SelectedCourse.Description = DescriptionTextBox.Text.ToString();
+                    WelcomePage.AllCoursesDictionary[SelectedCourse.CourseName] = SelectedCourse;
+                    MessageBox.Show("Done Editting ^_^");
                 }
             }
         }

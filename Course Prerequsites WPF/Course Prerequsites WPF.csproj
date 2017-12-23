@@ -100,6 +100,9 @@
     <Compile Include="UIs\CourseSettings.xaml.cs">
       <DependentUpon>CourseSettings.xaml</DependentUpon>
     </Compile>
+    <Compile Include="UIs\EditCourse.xaml.cs">
+      <DependentUpon>EditCourse.xaml</DependentUpon>
+    </Compile>
     <Compile Include="UIs\EditMyData.xaml.cs">
       <DependentUpon>EditMyData.xaml</DependentUpon>
     </Compile>
@@ -221,6 +224,10 @@
     </Compile>
     <Compile Include="Classes\Course.cs" />
     <Compile Include="Classes\Student.cs" />
+    <Page Include="UIs\EditCourse.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
     <Page Include="UIs\EditMyData.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
