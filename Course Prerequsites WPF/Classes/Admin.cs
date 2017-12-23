@@ -148,6 +148,24 @@ namespace Course_Prerequsites_WPF.Classes
                 throw new NotImplementedException();
             }
         }
+        public void RemoveStudent(string id)
+        {
+
+            foreach (var x in WelcomePage.AllCoursesDictionary.Keys)
+            {
+                for (int i = 0; i < WelcomePage.AllStudentsDictionary[id].CoursesInProgress.Count; i++)
+                {
+                    if (WelcomePage.AllStudentsDictionary[id].CoursesInProgress[i].CourseName == x)
+                    {
+                        WelcomePage.AllCoursesDictionary[x].CurrentNumberOfStudents--;
+
+                    }
+                }
+            }
+
+
+            WelcomePage.AllStudentsDictionary.Remove(id);
+        }
 
         public void FileClear()
         {

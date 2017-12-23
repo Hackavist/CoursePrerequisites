@@ -41,9 +41,6 @@
     <Reference Include="MahApps.Metro, Version=1.5.0.23, Culture=neutral, PublicKeyToken=f4fb5a3c4d1e5b4f, processorArchitecture=MSIL">
       <HintPath>packages\MahApps.Metro.1.5.0\lib\net45\MahApps.Metro.dll</HintPath>
     </Reference>
-    <Reference Include="MahApps.Metro.IconPacks, Version=1.9.1.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>packages\MahApps.Metro.IconPacks.1.9.1\lib\net45\MahApps.Metro.IconPacks.dll</HintPath>
-    </Reference>
     <Reference Include="MetroFramework, Version=1.4.0.0, Culture=neutral, PublicKeyToken=5f91a84759bf584a, processorArchitecture=MSIL">
       <HintPath>packages\MetroModernUI.1.4.0.0\lib\net\MetroFramework.dll</HintPath>
     </Reference>
@@ -81,9 +78,6 @@
     <Compile Include="UIs\AddAdmin.xaml.cs">
       <DependentUpon>AddAdmin.xaml</DependentUpon>
     </Compile>
-    <Compile Include="UIs\AddFinishedCourses.xaml.cs">
-      <DependentUpon>AddFinishedCourses.xaml</DependentUpon>
-    </Compile>
     <Compile Include="UIs\AddNewCourseSecondStep.xaml.cs">
       <DependentUpon>AddNewCourseSecondStep.xaml</DependentUpon>
     </Compile>
@@ -99,15 +93,20 @@
     <Compile Include="UIs\EditMyData.xaml.cs">
       <DependentUpon>EditMyData.xaml</DependentUpon>
     </Compile>
-    <Compile Include="UIs\RemoveAdmin.xaml.cs">
-      <DependentUpon>RemoveAdmin.xaml</DependentUpon>
+    <Compile Include="UIs\RemoveStudent.xaml.cs">
+      <DependentUpon>RemoveStudent.xaml</DependentUpon>
     </Compile>
-    <Compile Include="UIs\StudentControls.xaml.cs" />
+    <Compile Include="UIs\StudentControls.xaml.cs">
+      <DependentUpon>StudentControls.xaml</DependentUpon>
+    </Compile>
     <Compile Include="UIs\StudentsSettings.xaml.cs">
       <DependentUpon>StudentsSettings.xaml</DependentUpon>
     </Compile>
     <Compile Include="ViewModels\ChartViewModel.cs" />
     <Compile Include="ViewModels\StackViewModel.cs" />
+    <Compile Include="UIs\AddCoursePrerequisites.xaml.cs">
+      <DependentUpon>AddCoursePrerequisites.xaml</DependentUpon>
+    </Compile>
     <Compile Include="UIs\AddNewCourse.xaml.cs">
       <DependentUpon>AddNewCourse.xaml</DependentUpon>
     </Compile>
@@ -150,21 +149,13 @@
     <Compile Include="UIs\WelcomePage.xaml.cs">
       <DependentUpon>WelcomePage.xaml</DependentUpon>
     </Compile>
-    <Page Include="Resources\Icons.xaml">
-      <Generator>MSBuild:Compile</Generator>
-      <SubType>Designer</SubType>
-    </Page>
-    <Page Include="Resources\IconsNonShared.xaml">
-      <Generator>MSBuild:Compile</Generator>
-      <SubType>Designer</SubType>
-    </Page>
     <Page Include="UIs\AddAdmin.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="UIs\AddFinishedCourses.xaml">
-      <Generator>MSBuild:Compile</Generator>
+    <Page Include="UIs\AddCoursePrerequisites.xaml">
       <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="UIs\AddNewCourse.xaml">
       <SubType>Designer</SubType>
@@ -224,13 +215,13 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="UIs\RemoveAdmin.xaml">
+    <Page Include="UIs\RemoveStudent.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="UIs\StudentControls.xaml">
-      <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="UIs\StudentLogIn.xaml">
       <SubType>Designer</SubType>
@@ -284,7 +275,6 @@
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
     </None>
-    <Resource Include="Resources\Entypo.ttf" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config">
@@ -304,18 +294,6 @@
   </ItemGroup>
   <ItemGroup>
     <Resource Include="Images\plus.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <Resource Include="Images\Gery Back Button.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <Resource Include="Images\Big Grey button .png" />
-  </ItemGroup>
-  <ItemGroup>
-    <Resource Include="Resources\WindowsIcons-license.txt" />
-  </ItemGroup>
-  <ItemGroup>
-    <Resource Include="Resources\Entypo-license.txt" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

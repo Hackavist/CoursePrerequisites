@@ -1,0 +1,18 @@
+﻿<Window x:Class="Course_Prerequsites_WPF.UIs.RemoveStudent"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Course_Prerequsites_WPF.UIs"
+        mc:Ignorable="d"
+        Loaded="Window_Loaded"
+         WindowStartupLocation="CenterScreen" 
+        Title="RemoveStudent" Height="650" Width="600">
+    <Grid>
+        <TextBlock x:Name="Title" HorizontalAlignment="Left" Margin="160,29,0,0" TextWrapping="Wrap" Text="Remove Student" VerticalAlignment="Top" Width="360" Height="76" Style="{StaticResource PageHeaderTextStyle}" Foreground="{DynamicResource {x:Static SystemColors.HighlightBrushKey}}"/>
+        <TextBlock x:Name="textBlock1" HorizontalAlignment="Left" Margin="10,222,0,0" TextWrapping="Wrap" Text="Student ID :" VerticalAlignment="Top" Height="38" Width="200" Style="{StaticResource SectionHeaderTextStyle}" Foreground="{DynamicResource {x:Static SystemColors.HighlightBrushKey}}" FontSize="24"/>
+        <ComboBox x:Name="comboBox" HorizontalAlignment="Left" Margin="175,222,0,0" VerticalAlignment="Top" Width="390" Height="38" FontSize="20"/>
+        <Button x:Name="button" Content="Remove" HorizontalAlignment="Left" Margin="420,460,0,0" VerticalAlignment="Top" Width="145" Height="50" Foreground="{DynamicResource {x:Static SystemColors.ControlLightLightBrushKey}}" Background="#FFF6A10C" FontFamily="Segoe UI" FontSize="22" FontWeight="Normal" Click="button_Click"/>
+        <Button x:Name="button1" Content="Back" HorizontalAlignment="Left" Margin="420,540,0,0" VerticalAlignment="Top" Width="145" Height="55" Foreground="{DynamicResource {x:Static SystemColors.InactiveBorderBrushKey}}" Background="#FFF6A10C" FontWeight="Normal" FontFamily="Segoe UI" FontSize="22"/>
+    </Grid>
+</Window>
