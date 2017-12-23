@@ -23,18 +23,13 @@ namespace Course_Prerequsites_WPF.UIs
         {
             InitializeComponent();
 
-            AddCourseButton_second.Visibility = System.Windows.Visibility.Hidden;
-            CoursePrequestiesComboBox.Visibility = System.Windows.Visibility.Hidden;
-            TmpLabel.Visibility = System.Windows.Visibility.Hidden;
+            
             HoursTextBox.ToolTip = "-Text Box can only contain numbers \n -Number of hours Must not exceed 6";
             MaximumNumberOfStudentsTextBox.ToolTip = "-Text Box can only contain numbers \n -Number of students Must not exceed 500";
             CurrentNumberOfStudentsTextBox.ToolTip = "-Text Box can only contain numbers \n -Number of Current students Must not the maximum";
             CourseGradeTextBox.ToolTip = "-Text Box can only contain numbers \n -Course Grade Must not exceed 200";
             PassingGradeTextBox.ToolTip = "-Text Box can only contain numbers \n -Course Grades Must no exceed Course Grades ";
-            foreach (var x in WelcomePage.AllCoursesDictionary)
-            {
-                CoursePrequestiesComboBox.Items.Add(x.Key);
-            }
+            
         }
         void mytrimer()
         {
@@ -122,6 +117,7 @@ namespace Course_Prerequsites_WPF.UIs
             MessageBox.Show("There is some text box contains '%' or '#' or '*' ");
             return false;
         }
+        public static List<string> CoursePrerequstiesTmp;
         private void AddCourseButton_Click(object sender, RoutedEventArgs e)
         {
             mytrimer();
@@ -143,7 +139,7 @@ namespace Course_Prerequsites_WPF.UIs
                     int Hours = int.Parse(HoursTextBox.Text);
                     string Instructor = InstructorTextBox.Text;
                     string Description = DescriptionTextBox.Text;
-                    List<string> tmp = new List<string>();
+                    CoursePrerequstiesTmp = new List<string>();
 
                     if (WelcomePage.AllCoursesDictionary.ContainsKey(CourseName))
                     {
@@ -152,8 +148,9 @@ namespace Course_Prerequsites_WPF.UIs
                     }
                     else
                     {
-
-                        Course newcourse = new Course(Code, CourseName, MaximumNumber, CurrentNumber, PassingGrade, CourseGrade, Hours, Instructor, Description, tmp);
+                        AddNewCourseSecondStep nw = new AddNewCourseSecondStep();
+                        nw.ShowDialog();
+                        Course newcourse = new Course(Code, CourseName, MaximumNumber, CurrentNumber, PassingGrade, CourseGrade, Hours, Instructor, Description, CoursePrerequstiesTmp);
                         WelcomePage.AllCoursesDictionary[CourseName] = newcourse;
                         CodeTextBox.Clear();
                         CourseNameTextBox.Clear();
@@ -206,75 +203,5 @@ namespace Course_Prerequsites_WPF.UIs
                 }
             }
         }
-
-        private void CheckBox_Unchecked(object sender, RoutedEventArgs e)
-        {
-            AddCourseButton.Visibility = System.Windows.Visibility.Visible;
-            EditCourseButton.Visibility = System.Windows.Visibility.Visible;
-            AddCourseButton_second.Visibility = System.Windows.Visibility.Hidden;
-            CoursePrequestiesComboBox.Visibility = System.Windows.Visibility.Hidden;
-            TmpLabel.Visibility = System.Windows.Visibility.Hidden;
-        }
-
-        private void EnterCoursePrequesties_Checked(object sender, RoutedEventArgs e)
-        {
-            AddCourseButton.Visibility = System.Windows.Visibility.Hidden;
-            EditCourseButton.Visibility = System.Windows.Visibility.Hidden;
-            AddCourseButton_second.Visibility = System.Windows.Visibility.Visible;
-            CoursePrequestiesComboBox.Visibility = System.Windows.Visibility.Visible;
-            TmpLabel.Visibility = System.Windows.Visibility.Visible;
-        }
-
-        private void AddCourseButton_second_Click(object sender, RoutedEventArgs e)
-        {
-            mytrimer();
-            if (CodeTextBox.Text.Length == 0 || CourseNameTextBox.Text.Length == 0 || MaximumNumberOfStudentsTextBox.Text.Length == 0 || CurrentNumberOfStudentsTextBox.Text.Length == 0 || PassingGradeTextBox.Text.Length == 0 || CourseGradeTextBox.Text.Length == 0 || HoursTextBox.Text.Length == 0 || InstructorTextBox.Text.Length == 0 || DescriptionTextBox.Text.Length == 0)
-            {
-                MessageBox.Show("Some text box is missing");
-            }
-            else
-            {
-                if (CoursePrequestiesComboBox.SelectedIndex == -1)
-                {
-                    MessageBox.Show("Please select course to be prerequstie or uncheck the check box!");
-
-                }
-                else if (CheckNumberOfStudentsTextBoxes() && CheckGradesTextBoxes() && CheckHoursTextBox() && CheckAllTheRemainingTextBoxes())
-                {
-
-                    string Code = CodeTextBox.Text;
-                    string CourseName = CourseNameTextBox.Text;
-                    int MaximumNumber = int.Parse(MaximumNumberOfStudentsTextBox.Text);
-                    int CurrentNumber = int.Parse(CurrentNumberOfStudentsTextBox.Text);
-                    int PassingGrade = int.Parse(PassingGradeTextBox.Text);
-                    int CourseGrade = int.Parse(CourseGradeTextBox.Text);
-                    int Hours = int.Parse(HoursTextBox.Text);
-                    string Instructor = InstructorTextBox.Text;
-                    string Description = DescriptionTextBox.Text;
-                    List<string> tmp = new List<string>();
-                    tmp.Add(CoursePrequestiesComboBox.SelectedItem.ToString());
-                    if (WelcomePage.AllCoursesDictionary.ContainsKey(CourseName))
-                    {
-                        MessageBox.Show("This course already exists ");
-
-                    }
-                    else
-                    {
-                        Course newcourse = new Course(Code, CourseName, MaximumNumber, CurrentNumber, PassingGrade, CourseGrade, Hours, Instructor, Description, tmp);
-                        WelcomePage.AllCoursesDictionary[CourseName] = newcourse;
-                        CodeTextBox.Clear();
-                        CourseNameTextBox.Clear();
-                        MaximumNumberOfStudentsTextBox.Clear();
-                        CurrentNumberOfStudentsTextBox.Clear();
-                        PassingGradeTextBox.Clear();
-                        CourseGradeTextBox.Clear();
-                        HoursTextBox.Clear();
-                        InstructorTextBox.Clear();
-                        DescriptionTextBox.Clear();
-                    }
-                }
-            }
-        }
-
     }
 }

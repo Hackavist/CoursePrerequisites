@@ -78,6 +78,9 @@
     <Compile Include="UIs\AddAdmin.xaml.cs">
       <DependentUpon>AddAdmin.xaml</DependentUpon>
     </Compile>
+    <Compile Include="UIs\AddNewCourseSecondStep.xaml.cs">
+      <DependentUpon>AddNewCourseSecondStep.xaml</DependentUpon>
+    </Compile>
     <Compile Include="UIs\AdminSettings.xaml.cs">
       <DependentUpon>AdminSettings.xaml</DependentUpon>
     </Compile>
@@ -146,6 +149,10 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="UIs\AddNewCourse.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="UIs\AddNewCourseSecondStep.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

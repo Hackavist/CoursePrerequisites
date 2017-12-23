@@ -22,35 +22,11 @@ namespace Course_Prerequsites_WPF.UIs
         public ViewAllCoursesOfStudent()
         {
             InitializeComponent();
+            InfoBlock.Visibility = System.Windows.Visibility.Hidden;
         }
         List<string> InProgress;
         List<string> Finished;
-        private void View_button_Click(object sender, RoutedEventArgs e)
-        {
-                // clear the list if there were exist 
-            ListOfCompletedCoursesOfStudent.Items.Clear();
-            ListOfProgressCoursesOfStudent.Items.Clear();
-
-            if (SelectStudentComboBox.SelectedIndex != -1)
-            {
-
-                string[] tosperate = SelectStudentComboBox.SelectedItem.ToString().Split(' ');
-                string SelectedId= tosperate[0];
-                InProgress = Admin.GetInProgressCoursesOfSpecificStudent(SelectedId);
-                Finished = Admin.GetAllFinsishedCoursesOfSpecificStudent(SelectedId);
-                foreach(var x in InProgress)
-                {
-                    ListOfProgressCoursesOfStudent.Items.Add(x);
-                }
-                foreach(var x in Finished)
-                {
-                    ListOfCompletedCoursesOfStudent.Items.Add(x);
-                }
-            }
-            else
-                MessageBox.Show("Please select student to view his courses ");
-            
-        }
+       
         private void Window_Loaded(object sender, RoutedEventArgs e)
         {
             foreach (var x in WelcomePage.AllStudentsDictionary)
@@ -97,6 +73,32 @@ namespace Course_Prerequsites_WPF.UIs
                 InfoBlock.Visibility = System.Windows.Visibility.Hidden;
             }
         }
+
+        private void SelectStudentComboBox_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        {
+            ListOfCompletedCoursesOfStudent.Items.Clear();
+            ListOfProgressCoursesOfStudent.Items.Clear();
+            if (SelectStudentComboBox.SelectedIndex != -1)
+            {
+
+                string[] tosperate = SelectStudentComboBox.SelectedItem.ToString().Split(' ');
+                string SelectedId = tosperate[0];
+                InProgress = Admin.GetInProgressCoursesOfSpecificStudent(SelectedId);
+                Finished = Admin.GetAllFinsishedCoursesOfSpecificStudent(SelectedId);
+                foreach (var x in InProgress)
+                {
+                    ListOfProgressCoursesOfStudent.Items.Add(x);
+                }
+                foreach (var x in Finished)
+                {
+                    ListOfCompletedCoursesOfStudent.Items.Add(x);
+                }
+            }
+            else
+                MessageBox.Show("Please select student to view his courses ");
+        }
+
+        
 
        
 
