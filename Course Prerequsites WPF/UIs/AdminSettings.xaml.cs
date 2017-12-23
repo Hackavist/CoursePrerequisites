@@ -23,5 +23,13 @@ namespace Course_Prerequsites_WPF.UIs
         {
             InitializeComponent();
         }
+
+        private void AddAdmin_Click(object sender, RoutedEventArgs e)
+        {
+            Add_Admin addAdmin = new Add_Admin();
+            addAdmin.Show();
+            this.Hide();
+            this.Close();
+        }
     }
 }

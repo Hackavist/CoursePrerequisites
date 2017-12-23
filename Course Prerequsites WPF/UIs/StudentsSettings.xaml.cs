@@ -12,6 +12,9 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
 
+
+using Course_Prerequsites_WPF.UIs;
+
 namespace Course_Prerequsites_WPF.UIs
 {
     /// <summary>
@@ -22,6 +25,24 @@ namespace Course_Prerequsites_WPF.UIs
         public StudentsSettings()
         {
             InitializeComponent();
+        }
+
+        private void AddStudent_Click(object sender, RoutedEventArgs e)
+        {
+            AddStudent addStud = new AddStudent();
+            addStud.Show();
+            this.Hide();
+            this.Close();
+        }
+
+        private void ViewAllCoursesOfStudentbtn_Click(object sender, RoutedEventArgs e)
+        {
+            ViewAllCoursesOfStudent viewCourses = new ViewAllCoursesOfStudent();
+            viewCourses.Show();
+            this.Hide();
+            this.Close();
+
+            
         }
     }
 }

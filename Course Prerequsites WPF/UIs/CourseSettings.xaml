@@ -7,8 +7,12 @@
         mc:Ignorable="d"
         Title="CourseSettings" Height="650" Width="600" Background="White">
     <Grid>
-        <Button x:Name="AddCourse" Content="Add/Edit Course" VerticalAlignment="Top" Margin="109,147,105.333,0" Height="88" TabIndex="1" FontSize="20" FontFamily="Times New Roman" Foreground="White" Background="#FFF6A10C"/>
-        <Button x:Name="ViewStudentsInCourse" Content="View All Students In a Course&#xD;&#xA;" VerticalAlignment="Top" Margin="109,363,105.333,0" Height="88" TabIndex="1" FontSize="20" FontFamily="Times New Roman" Foreground="White" Background="#FFF6A10C"/>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="104*"/>
+            <ColumnDefinition Width="489*"/>
+        </Grid.ColumnDefinitions>
+        <Button x:Name="AddCourse" Content="Add/Edit Course" VerticalAlignment="Top" Margin="5,147,105.333,0" Height="88" TabIndex="1" FontSize="20" FontFamily="Times New Roman" Foreground="White" Background="#FFF6A10C" Grid.Column="1" Click="AddCourse_Click"/>
+        <Button x:Name="ViewStudentsInCoursebtn" Content="View All Students In a Course&#xD;&#xA;" VerticalAlignment="Top" Margin="5,363,105.333,0" Height="88" TabIndex="1" FontSize="20" FontFamily="Times New Roman" Foreground="White" Background="#FFF6A10C" Grid.Column="1" Click="ViewStudentsInCourse_Click"/>
 
     </Grid>
 </Window>

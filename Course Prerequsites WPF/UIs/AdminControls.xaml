@@ -8,8 +8,8 @@
         Title="ViewStudentOrCourse" Height="650" Width="600" Background="#FFFFFFFF" WindowStartupLocation="CenterScreen">
     <Grid>
         <Button x:Name="StudentSettings" Content="Student Settings" VerticalAlignment="Top" Margin="154,99,154.333,0" Height="57" TabIndex="1" FontSize="18" FontFamily="Times New Roman" Foreground="White" Background="#FFF6A10C" Click="StudentSettings_Click"/>
-        <Button x:Name="CourseSettings" Content="Course Settings" VerticalAlignment="Top" Margin="154,252,154.333,0" Height="57" Background="#FFF6A10C" FontSize="18" FontFamily="Times New Roman" Foreground="White" Click="Button_Click"/>
-        <Button x:Name="AdmibSettings" Content="Admin Settings" VerticalAlignment="Top" Margin="154,418,154.333,0" Height="57" FontSize="18" FontFamily="Times New Roman" Foreground="White">
+        <Button x:Name="CourseSettingsbtn" Content="Course Settings" VerticalAlignment="Top" Margin="154,252,154.333,0" Height="57" Background="#FFF6A10C" FontSize="18" FontFamily="Times New Roman" Foreground="White" Click="CourseSettings_Click"/>
+        <Button x:Name="AdminSettings" Content="Admin Settings" VerticalAlignment="Top" Margin="154,418,154.333,0" Height="57" FontSize="18" FontFamily="Times New Roman" Foreground="White" Click="AdminSettings_Click_1">
             <Button.Background>
                 <SolidColorBrush Color="{DynamicResource {x:Static SystemColors.HighlightColorKey}}"/>
             </Button.Background>
