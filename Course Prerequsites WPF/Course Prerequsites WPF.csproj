@@ -38,9 +38,6 @@
     <Reference Include="De.TorstenMandelkow.MetroChart, Version=0.9.5818.20693, Culture=neutral, processorArchitecture=MSIL">
       <HintPath>packages\ModernUICharts.WPF.Beta.0.9.1\lib\De.TorstenMandelkow.MetroChart.dll</HintPath>
     </Reference>
-    <Reference Include="MahApps.Metro, Version=1.5.0.23, Culture=neutral, PublicKeyToken=f4fb5a3c4d1e5b4f, processorArchitecture=MSIL">
-      <HintPath>packages\MahApps.Metro.1.5.0\lib\net45\MahApps.Metro.dll</HintPath>
-    </Reference>
     <Reference Include="MetroFramework, Version=1.4.0.0, Culture=neutral, PublicKeyToken=5f91a84759bf584a, processorArchitecture=MSIL">
       <HintPath>packages\MetroModernUI.1.4.0.0\lib\net\MetroFramework.dll</HintPath>
     </Reference>
@@ -52,9 +49,6 @@
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Data" />
-    <Reference Include="System.Windows.Interactivity, Version=4.5.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
-      <HintPath>packages\MahApps.Metro.1.5.0\lib\net45\System.Windows.Interactivity.dll</HintPath>
-    </Reference>
     <Reference Include="System.Xml" />
     <Reference Include="Microsoft.CSharp" />
     <Reference Include="System.Core" />
@@ -78,6 +72,9 @@
     <Compile Include="UIs\AddAdmin.xaml.cs">
       <DependentUpon>AddAdmin.xaml</DependentUpon>
     </Compile>
+    <Compile Include="UIs\AddFinishedCourses.xaml.cs">
+      <DependentUpon>AddFinishedCourses.xaml</DependentUpon>
+    </Compile>
     <Compile Include="UIs\AddNewCourseSecondStep.xaml.cs">
       <DependentUpon>AddNewCourseSecondStep.xaml</DependentUpon>
     </Compile>
@@ -93,6 +90,9 @@
     <Compile Include="UIs\EditMyData.xaml.cs">
       <DependentUpon>EditMyData.xaml</DependentUpon>
     </Compile>
+    <Compile Include="UIs\RemoveAdmin.xaml.cs">
+      <DependentUpon>RemoveAdmin.xaml</DependentUpon>
+    </Compile>
     <Compile Include="UIs\RemoveStudent.xaml.cs">
       <DependentUpon>RemoveStudent.xaml</DependentUpon>
     </Compile>
@@ -104,9 +104,6 @@
     </Compile>
     <Compile Include="ViewModels\ChartViewModel.cs" />
     <Compile Include="ViewModels\StackViewModel.cs" />
-    <Compile Include="UIs\AddCoursePrerequisites.xaml.cs">
-      <DependentUpon>AddCoursePrerequisites.xaml</DependentUpon>
-    </Compile>
     <Compile Include="UIs\AddNewCourse.xaml.cs">
       <DependentUpon>AddNewCourse.xaml</DependentUpon>
     </Compile>
@@ -153,9 +150,9 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="UIs\AddCoursePrerequisites.xaml">
-      <SubType>Designer</SubType>
+    <Page Include="UIs\AddFinishedCourses.xaml">
       <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
     </Page>
     <Page Include="UIs\AddNewCourse.xaml">
       <SubType>Designer</SubType>
@@ -214,6 +211,10 @@
     <Page Include="UIs\RegisterToNewCouse.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="UIs\RemoveAdmin.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
     </Page>
     <Page Include="UIs\RemoveStudent.xaml">
       <SubType>Designer</SubType>
