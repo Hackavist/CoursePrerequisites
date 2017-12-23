@@ -8,6 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("images/big%20grey%20button%20.png")]
+[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("resources/entypo-license.txt")]
+[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("resources/windowsicons-license.txt")]
 
 

@@ -739,7 +739,6 @@ D:\Work\Course ds\Course Prerequsites WPF\bin\Debug\MahApps.Metro.IconPacks.pdb
 D:\Work\Course ds\Course Prerequsites WPF\bin\Debug\MahApps.Metro.IconPacks.xml
 D:\Work\Course ds\Course Prerequsites WPF\bin\Debug\MahApps.Metro.IconPacks.Entypo.pdb
 D:\Work\Course ds\Course Prerequsites WPF\bin\Debug\MahApps.Metro.IconPacks.Entypo.xml
-D:\Work\Course ds\Course Prerequsites WPF\obj\Debug\Course Prerequsites WPF.csprojResolveAssemblyReference.cache
 D:\Work\Course ds\Course Prerequsites WPF\obj\Debug\UIs\AddNewCourse.baml
 D:\Work\Course ds\Course Prerequsites WPF\obj\Debug\UIs\AddNewCourseSecondStep.baml
 D:\Work\Course ds\Course Prerequsites WPF\obj\Debug\UIs\EnterStudentGrades.baml
@@ -801,3 +800,5 @@ D:\Work\Course ds\Course Prerequsites WPF\obj\Debug\Course Prerequsites WPF.cspr
 D:\Work\Course ds\Course Prerequsites WPF\obj\Debug\Course Prerequsites WPF.csproj.CoreCompileInputs.cache
 D:\Work\Course ds\Course Prerequsites WPF\obj\Debug\Course Prerequsites WPF.exe
 D:\Work\Course ds\Course Prerequsites WPF\obj\Debug\Course Prerequsites WPF.pdb
+D:\Work\Course ds\Course Prerequsites WPF\obj\Debug\Resources\Icons.baml
+D:\Work\Course ds\Course Prerequsites WPF\obj\Debug\Resources\IconsNonShared.baml
