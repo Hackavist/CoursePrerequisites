@@ -677,3 +677,48 @@ D:\Work\Ds Project Final\Course Prerequsites WPF\obj\Debug\App.g.cs
 D:\Work\Ds Project Final\Course Prerequsites WPF\obj\Debug\GeneratedInternalTypeHelper.g.cs
 D:\Work\Ds Project Final\Course Prerequsites WPF\obj\Debug\Course Prerequsites WPF_MarkupCompile.cache
 D:\Work\Ds Project Final\Course Prerequsites WPF\obj\Debug\Course Prerequsites WPF_MarkupCompile.lref
+D:\Work\Ds Project Final\Course Prerequsites WPF\obj\Debug\Course Prerequsites WPF.csprojResolveAssemblyReference.cache
+D:\Work\Ds Project Final\Course Prerequsites WPF\bin\Debug\Course Prerequsites WPF.exe.config
+D:\Work\Ds Project Final\Course Prerequsites WPF\bin\Debug\Course Prerequsites WPF.exe
+D:\Work\Ds Project Final\Course Prerequsites WPF\bin\Debug\Course Prerequsites WPF.pdb
+D:\Work\Ds Project Final\Course Prerequsites WPF\bin\Debug\De.TorstenMandelkow.MetroChart.dll
+D:\Work\Ds Project Final\Course Prerequsites WPF\bin\Debug\MahApps.Metro.dll
+D:\Work\Ds Project Final\Course Prerequsites WPF\bin\Debug\MahApps.Metro.IconPacks.dll
+D:\Work\Ds Project Final\Course Prerequsites WPF\bin\Debug\MahApps.Metro.IconPacks.Entypo.dll
+D:\Work\Ds Project Final\Course Prerequsites WPF\bin\Debug\MetroFramework.Design.dll
+D:\Work\Ds Project Final\Course Prerequsites WPF\bin\Debug\MetroFramework.dll
+D:\Work\Ds Project Final\Course Prerequsites WPF\bin\Debug\MetroFramework.Fonts.dll
+D:\Work\Ds Project Final\Course Prerequsites WPF\bin\Debug\System.Windows.Interactivity.dll
+D:\Work\Ds Project Final\Course Prerequsites WPF\bin\Debug\MahApps.Metro.pdb
+D:\Work\Ds Project Final\Course Prerequsites WPF\bin\Debug\MahApps.Metro.xml
+D:\Work\Ds Project Final\Course Prerequsites WPF\bin\Debug\MahApps.Metro.IconPacks.pdb
+D:\Work\Ds Project Final\Course Prerequsites WPF\bin\Debug\MahApps.Metro.IconPacks.xml
+D:\Work\Ds Project Final\Course Prerequsites WPF\bin\Debug\MahApps.Metro.IconPacks.Entypo.pdb
+D:\Work\Ds Project Final\Course Prerequsites WPF\bin\Debug\MahApps.Metro.IconPacks.Entypo.xml
+D:\Work\Ds Project Final\Course Prerequsites WPF\obj\Debug\App.baml
+D:\Work\Ds Project Final\Course Prerequsites WPF\obj\Debug\UIs\AddAdmin.baml
+D:\Work\Ds Project Final\Course Prerequsites WPF\obj\Debug\UIs\AddFinishedCourses.baml
+D:\Work\Ds Project Final\Course Prerequsites WPF\obj\Debug\UIs\AddStudent.baml
+D:\Work\Ds Project Final\Course Prerequsites WPF\obj\Debug\UIs\AdminLogIn.baml
+D:\Work\Ds Project Final\Course Prerequsites WPF\obj\Debug\UIs\AdminSettings.baml
+D:\Work\Ds Project Final\Course Prerequsites WPF\obj\Debug\UIs\AllCoursesChart.baml
+D:\Work\Ds Project Final\Course Prerequsites WPF\obj\Debug\UIs\AllCoursesTree.baml
+D:\Work\Ds Project Final\Course Prerequsites WPF\obj\Debug\UIs\AspecificCourse.baml
+D:\Work\Ds Project Final\Course Prerequsites WPF\obj\Debug\UIs\CourseSettings.baml
+D:\Work\Ds Project Final\Course Prerequsites WPF\obj\Debug\UIs\Drop.baml
+D:\Work\Ds Project Final\Course Prerequsites WPF\obj\Debug\UIs\EditMyData.baml
+D:\Work\Ds Project Final\Course Prerequsites WPF\obj\Debug\UIs\RegisterToNewCouse.baml
+D:\Work\Ds Project Final\Course Prerequsites WPF\obj\Debug\UIs\RemoveAdmin.baml
+D:\Work\Ds Project Final\Course Prerequsites WPF\obj\Debug\UIs\RemoveStudent.baml
+D:\Work\Ds Project Final\Course Prerequsites WPF\obj\Debug\UIs\StudentControls.baml
+D:\Work\Ds Project Final\Course Prerequsites WPF\obj\Debug\UIs\StudentsSettings.baml
+D:\Work\Ds Project Final\Course Prerequsites WPF\obj\Debug\UIs\ViewMyCourses.baml
+D:\Work\Ds Project Final\Course Prerequsites WPF\obj\Debug\UIs\AdminControls.baml
+D:\Work\Ds Project Final\Course Prerequsites WPF\obj\Debug\UIs\ViewStudentsInCourse.baml
+D:\Work\Ds Project Final\Course Prerequsites WPF\obj\Debug\UIs\WelcomePage.baml
+D:\Work\Ds Project Final\Course Prerequsites WPF\obj\Debug\Course Prerequsites WPF.g.resources
+D:\Work\Ds Project Final\Course Prerequsites WPF\obj\Debug\Course_Prerequsites_WPF.Properties.Resources.resources
+D:\Work\Ds Project Final\Course Prerequsites WPF\obj\Debug\Course Prerequsites WPF.csproj.GenerateResource.Cache
+D:\Work\Ds Project Final\Course Prerequsites WPF\obj\Debug\Course Prerequsites WPF.csproj.CoreCompileInputs.cache
+D:\Work\Ds Project Final\Course Prerequsites WPF\obj\Debug\Course Prerequsites WPF.exe
+D:\Work\Ds Project Final\Course Prerequsites WPF\obj\Debug\Course Prerequsites WPF.pdb
