@@ -26,9 +26,9 @@ namespace Course_Prerequsites_WPF.UIs
 
             foreach (var x in WelcomePage.AllStudentsDictionary)
             {
-                if(x.Value.AcademicYear != "1st year")
+                if (x.Value.AcademicYear != "1st year")
                 {
-                    if(x.Value.FinishedCourses.Count == 0)
+                    if (x.Value.FinishedCourses.Count == 0)
                     {
 
                         Students.Items.Add(x.Value.Name);
@@ -58,7 +58,7 @@ namespace Course_Prerequsites_WPF.UIs
             {
                 Courses.Items.Add(x.Value.CourseName);
             }
-           
+
         }
 
         private void Courses_SelectionChanged(object sender, SelectionChangedEventArgs e)
