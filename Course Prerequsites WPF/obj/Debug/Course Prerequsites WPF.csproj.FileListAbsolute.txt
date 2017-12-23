@@ -506,3 +506,5 @@ C:\Users\hazem\Source\Repos\CoursePrerequisites\Course Prerequsites WPF\obj\Debu
 C:\Users\hazem\Source\Repos\CoursePrerequisites\Course Prerequsites WPF\obj\Debug\UIs\AdminControls.baml
 C:\Users\hazem\Source\Repos\CoursePrerequisites\Course Prerequsites WPF\obj\Debug\UIs\AddNewCourseSecondStep.baml
 C:\Users\hazem\Source\Repos\CoursePrerequisites\Course Prerequsites WPF\obj\Debug\UIs\AddNewCourseSecondStep.g.cs
+C:\Users\chantal\Source\Repos\CoursePrerequisites\Course Prerequsites WPF\obj\Debug\UIs\AddNewCourseSecondStep.baml
+C:\Users\chantal\Source\Repos\CoursePrerequisites\Course Prerequsites WPF\obj\Debug\UIs\AddNewCourseSecondStep.g.cs
