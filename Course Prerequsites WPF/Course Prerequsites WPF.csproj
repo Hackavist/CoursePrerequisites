@@ -81,6 +81,9 @@
     <Compile Include="UIs\AddAdmin.xaml.cs">
       <DependentUpon>AddAdmin.xaml</DependentUpon>
     </Compile>
+    <Compile Include="UIs\AddFinishedCourses.xaml.cs">
+      <DependentUpon>AddFinishedCourses.xaml</DependentUpon>
+    </Compile>
     <Compile Include="UIs\AddNewCourseSecondStep.xaml.cs">
       <DependentUpon>AddNewCourseSecondStep.xaml</DependentUpon>
     </Compile>
@@ -99,14 +102,12 @@
     <Compile Include="UIs\RemoveAdmin.xaml.cs">
       <DependentUpon>RemoveAdmin.xaml</DependentUpon>
     </Compile>
+    <Compile Include="UIs\StudentControls.xaml.cs" />
     <Compile Include="UIs\StudentsSettings.xaml.cs">
       <DependentUpon>StudentsSettings.xaml</DependentUpon>
     </Compile>
     <Compile Include="ViewModels\ChartViewModel.cs" />
     <Compile Include="ViewModels\StackViewModel.cs" />
-    <Compile Include="UIs\AddCoursePrerequisites.xaml.cs">
-      <DependentUpon>AddCoursePrerequisites.xaml</DependentUpon>
-    </Compile>
     <Compile Include="UIs\AddNewCourse.xaml.cs">
       <DependentUpon>AddNewCourse.xaml</DependentUpon>
     </Compile>
@@ -161,9 +162,9 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="UIs\AddCoursePrerequisites.xaml">
-      <SubType>Designer</SubType>
+    <Page Include="UIs\AddFinishedCourses.xaml">
       <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
     </Page>
     <Page Include="UIs\AddNewCourse.xaml">
       <SubType>Designer</SubType>
@@ -226,6 +227,10 @@
     <Page Include="UIs\RemoveAdmin.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="UIs\StudentControls.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
     </Page>
     <Page Include="UIs\StudentLogIn.xaml">
       <SubType>Designer</SubType>
