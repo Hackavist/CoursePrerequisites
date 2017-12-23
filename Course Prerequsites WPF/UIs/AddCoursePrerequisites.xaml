@@ -5,14 +5,14 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Course_Prerequsites_WPF.UIs"
         mc:Ignorable="d"
-        Title="AddCoursePrerequisites" Height="350" Width="400" Loaded="Window_Loaded">
+        Title="AddCoursePrerequisites" Height="650" Width="600" Loaded="Window_Loaded">
     <Grid>
-        <Label x:Name="TitleLabel" Content="Add Course Prerequisite" HorizontalAlignment="Left" Margin="103,10,0,0" VerticalAlignment="Top" FontSize="18" FontFamily="Goudy Old Style" FontWeight="Bold"/>
-        <Label x:Name="CourseNameLabel" Content="Course Name:-" HorizontalAlignment="Left" Margin="14,67,0,0" VerticalAlignment="Top" FontSize="16" FontFamily="Goudy Old Style" FontWeight="Bold"/>
-        <Label x:Name="PrerequisiteNameLabel" Content="Prereuisite you want to add:-" HorizontalAlignment="Left" Margin="14,131,0,0" VerticalAlignment="Top" FontWeight="Bold" FontSize="16" FontFamily="Goudy Old Style"/>
-        <TextBox x:Name="PrerequisiteNameTextBox" HorizontalAlignment="Left" Height="23" Margin="215,137,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="167"/>
-        <Button x:Name="Add" Content="Add" HorizontalAlignment="Left" Margin="292,225,0,0" VerticalAlignment="Top" Width="90" Height="30" Click="Add_Click"/>
-        <Button x:Name="Back" Content="Back" HorizontalAlignment="Left" Margin="292,270,0,0" VerticalAlignment="Top" Width="90" Height="30"/>
-        <ComboBox x:Name="CourseNameBox" HorizontalAlignment="Left"  VerticalAlignment="Top" Width="247" Margin="135,73,0,0"/>
+        <TextBlock x:Name="TitleLabel" Margin="78,17,99,0" Text="Add Course Prerequisite" HorizontalAlignment="Center" VerticalAlignment="Top" Style="{StaticResource PageHeaderTextStyle}" Foreground="{DynamicResource {x:Static SystemColors.HighlightBrushKey}}"/>
+        <TextBlock x:Name="CourseNameLabel" Text="Course Name:" HorizontalAlignment="Left" Margin="10,190,0,0" VerticalAlignment="Top"  FontWeight="Bold" Foreground="{DynamicResource {x:Static SystemColors.HighlightBrushKey}}" Style="{StaticResource SectionHeaderTextStyle}" FontSize="26"/>
+        <TextBlock x:Name="PrerequisiteNameLabel" Text="Prerequisite you want to add:" HorizontalAlignment="Left" Margin="0,200,0,147" VerticalAlignment="Center"  FontSize="26" Style="{StaticResource SectionHeaderTextStyle}" Foreground="{DynamicResource {x:Static SystemColors.HighlightBrushKey}}" Width="328" RenderTransformOrigin="0.476,-2.522"/>
+        <TextBox x:Name="PrerequisiteNameTextBox" HorizontalAlignment="Left" Height="50" Margin="320,200,0,140" TextWrapping="Wrap" Text="" VerticalAlignment="Center" Width="262" FontSize="26"/>
+        <Button x:Name="Add" Content="Add" HorizontalAlignment="Left" Margin="440,465,0,0" VerticalAlignment="Top" Width="120" Height="50" Click="Add_Click" Foreground="{DynamicResource {x:Static SystemColors.ControlLightLightBrushKey}}" Background="#FFF6A10C" FontSize="18" FontWeight="Normal"/>
+        <Button x:Name="Back" Content="Back" HorizontalAlignment="Left" Margin="440,530,0,0" VerticalAlignment="Top" Width="120" Height="50" Foreground="{DynamicResource {x:Static SystemColors.ControlLightLightBrushKey}}" Background="#FFF6A10C" FontSize="18" FontWeight="Normal"/>
+        <ComboBox x:Name="CourseNameBox" HorizontalAlignment="Left"  VerticalAlignment="Top" Width="382" Margin="210,190,0,0" Height="46" FontSize="26"/>
     </Grid>
 </Window>
