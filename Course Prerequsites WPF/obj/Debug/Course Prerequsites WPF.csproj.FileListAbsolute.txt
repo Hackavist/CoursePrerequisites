@@ -572,3 +572,5 @@ E:\DsFinalProject\Course Prerequsites WPF\obj\Debug\UIs\WelcomePage.baml
 E:\DsFinalProject\Course Prerequsites WPF\obj\Debug\Course Prerequsites WPF.g.resources
 E:\DsFinalProject\Course Prerequsites WPF\obj\Debug\Course_Prerequsites_WPF.Properties.Resources.resources
 E:\DsFinalProject\Course Prerequsites WPF\obj\Debug\Course Prerequsites WPF.csproj.GenerateResource.Cache
+C:\Users\hazem\Source\Repos\CoursePrerequisites\Course Prerequsites WPF\obj\Debug\UIs\AllCoursesTree.g.cs
+C:\Users\hazem\Source\Repos\CoursePrerequisites\Course Prerequsites WPF\obj\Debug\UIs\AllCoursesTree.baml
