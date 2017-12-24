@@ -25,8 +25,8 @@
         <Button x:Name="viewallavailablecoursesbutton" Content="View all available courses" VerticalAlignment="Top" Margin="102,123,47,0" Height="57" TabIndex="1" FontSize="18" FontFamily="Segoe UI"  FontWeight="Light" Foreground="White" Background="#FFF6A10C" Click="viewallavailablecoursesbutton_Click" Grid.Column="1" />
         <Button x:Name="viewmycoursesbutton" Content="View my courses" VerticalAlignment="Top" Margin="102,223,47,0"  Height="57"  TabIndex="2"  FontSize="22" FontFamily="Segoe UI"  FontWeight="Light" Foreground="White" Background="#FFF6A10C" Click="viewmycoursesbutton_Click" Grid.Column="1" />
         <Button x:Name="viewallavailablecoursesbutton_Copy" Content="Register for a course" VerticalAlignment="Top" Margin="102,323,47,0" Height="57" TabIndex="3" FontSize="23" FontFamily="Segoe UI" FontWeight="Light" Foreground="White" Background="#FFF6A10C" Click="registerbutton_Click" Grid.Column="1"/>
-        <Button x:Name="dropacoursebutton" Content="Drop a course" VerticalAlignment="Top" Margin="100,423,49,0" Height="57" TabIndex="4" FontSize="20" FontFamily="Segoe UI" FontWeight="Light" Foreground="White" Background="#FFF6A10C" Click="dropacoursebutton_Click" Grid.Column="1"/>
-        <Button x:Name="editmydatabutton" Content="Edit my data" VerticalAlignment="Top" Margin="102,523,47,0" Height="57" TabIndex="5"  FontSize="20" FontFamily="Segoe UI" FontWeight="Light" Foreground="White" Background="#FFF6A10C" Click="editmydatabutton_Click" Grid.Column="1"/>
+
+        <Button x:Name="editmydatabutton" Content="Edit my data" VerticalAlignment="Top" Margin="102,426,47,0" Height="57" TabIndex="4"  FontSize="20" FontFamily="Segoe UI" FontWeight="Light" Foreground="White" Background="#FFF6A10C" Click="editmydatabutton_Click" Grid.Column="1"/>
 
         <TextBlock Text="Student Controls" VerticalAlignment="Top" HorizontalAlignment="Center" Margin="90,30,48,0" Style="{StaticResource PageHeaderTextStyle}" Grid.Column="1" />
     </Grid>

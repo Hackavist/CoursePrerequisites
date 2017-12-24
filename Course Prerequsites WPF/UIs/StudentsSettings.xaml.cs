@@ -54,5 +54,12 @@ namespace Course_Prerequsites_WPF.UIs
             stud.Show();
             this.Close();
         }
+
+        private void dropacoursebutton_Click(object sender, RoutedEventArgs e)
+        {
+            Drop drp = new Drop();
+            drp.Show();
+            this.Close();
+        }
     }
 }
