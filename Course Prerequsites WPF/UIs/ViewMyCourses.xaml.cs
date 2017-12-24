@@ -33,8 +33,6 @@ namespace Course_Prerequsites_WPF.UIs
             CourseCode.Text = cour.Code;
             PassingGrade.Text = Convert.ToString(cour.PassingGrade);
             Instuctor.Text = cour.Instructor;
-            Description.Text = cour.Description;
-            
         }
 
         private void BackBTN_Click(object sender, RoutedEventArgs e)

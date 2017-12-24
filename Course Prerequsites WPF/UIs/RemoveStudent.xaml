@@ -6,7 +6,7 @@
         xmlns:local="clr-namespace:Course_Prerequsites_WPF.UIs"
         mc:Ignorable="d"
         Loaded="Window_Loaded"
-         WindowStartupLocation="CenterScreen" 
+        WindowStartupLocation="CenterScreen" 
         Title="RemoveStudent" Height="650" Width="600">
     <Grid>
         <Button ToolTip="Back to Admin Settings" x:Name="BackBTN" Style="{DynamicResource MetroCircleButtonStyle}" Height="55" Width="55" Click="BackBTN_Click" Margin="10,10,524.6,551">

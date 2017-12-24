@@ -1,6 +1,7 @@
 ﻿<Window x:Class="Course_Prerequsites_WPF.UIs.AddNewCourseSecondStep"
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        WindowStartupLocation="CenterScreen"
         Title="AddNewCourseSecondStep" Height="650" Width="600">
     <Grid>
         <ScrollViewer HorizontalAlignment="Left" Height="500" Margin="10,50,0,0" VerticalAlignment="Top" Width="574" Background="{DynamicResource {x:Static SystemColors.InactiveCaptionBrushKey}}">

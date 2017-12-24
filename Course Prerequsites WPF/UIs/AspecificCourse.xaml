@@ -7,8 +7,8 @@
         xmlns:pre  ="clr-namespace:Course_Prerequsites_WPF.UIs"
         mc:Ignorable="d"
         Loaded="Window_Loaded"
-        WindowStyle="ToolWindow"
         ResizeMode="CanResizeWithGrip"
+        WindowStartupLocation="CenterScreen"
         Title="AspecificCourse" Height="650" Width="600">
 
     <Window.Resources>

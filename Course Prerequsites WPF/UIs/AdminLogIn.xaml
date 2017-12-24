@@ -5,7 +5,8 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Course_Prerequsites_WPF.UIs"
         mc:Ignorable="d"
-        Title="AdminLogIn" Height="650" Width="600" WindowStartupLocation="CenterScreen">
+        WindowStartupLocation="CenterScreen"
+        Title="AdminLogIn" Height="650" Width="600" >
     <Window.Background>
         <SolidColorBrush Color="White"  />
     </Window.Background>

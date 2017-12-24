@@ -5,6 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Course_Prerequsites_WPF.UIs"
         mc:Ignorable="d"
+        WindowStartupLocation="CenterScreen" 
         Title="StudentsSettings" Height="650" Width="600" Background="White">
     <Grid Margin="10">
 

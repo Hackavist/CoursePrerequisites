@@ -1,7 +1,8 @@
 ﻿<Window x:Name="mywindow" x:Class="Course_Prerequsites_WPF.UIs.EnterStudentGrades"
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-        Title="EnterStudentGrades" Height="700" Width="600" Loaded="Window_Loaded">
+        Loaded="Window_Loaded"
+        Title="EnterStudentGrades" Height="700" Width="600" >
     <Grid x:Name="maingrid" HorizontalAlignment="Left" Height="118" Margin="10,10,0,0" VerticalAlignment="Top" Width="580">
         <ComboBox x:Name="StudentsComboBox" HorizontalAlignment="Left" VerticalAlignment="Top" Width="400" Margin="83,59,0,0" SelectionChanged="StudentsComboBox_SelectionChanged"/>
         <TextBlock Text="Select student" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="83,33,0,0"/>

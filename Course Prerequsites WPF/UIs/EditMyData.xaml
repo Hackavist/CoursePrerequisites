@@ -5,7 +5,9 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Course_Prerequsites_WPF.UIs"
         mc:Ignorable="d"
-        Title="Edit My Data" Height="650" Width="600" Loaded="Window_Loaded" WindowStartupLocation="CenterScreen">
+        Loaded="Window_Loaded" 
+        WindowStartupLocation="CenterScreen"
+        Title="Edit My Data" Height="650" Width="600">
     <Grid Margin="0,0,0.333,0">
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="*"/>
