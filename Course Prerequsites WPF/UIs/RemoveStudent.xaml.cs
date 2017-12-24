@@ -42,8 +42,10 @@ namespace Course_Prerequsites_WPF.UIs
             {
                 Admin ad = new Admin();
                 ad.RemoveStudent(comboBox.SelectedItem.ToString());
+                comboBox.Items.Remove(comboBox.SelectionBoxItem.ToString());
                 MessageBox.Show("Student is removed.");
                 comboBox.SelectedIndex = -1;
+              
             }
 
         }

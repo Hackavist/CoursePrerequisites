@@ -162,7 +162,11 @@ namespace Course_Prerequsites_WPF.Classes
                     }
                 }
             }
+
+
+            WelcomePage.AllStudentsDictionary.Remove(id);
         }
+
         public void FileClear()
         {
             File.WriteAllText(@"AllAdminsFile.txt", string.Empty);
