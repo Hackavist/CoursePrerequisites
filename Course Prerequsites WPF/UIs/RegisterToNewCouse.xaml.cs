@@ -69,7 +69,7 @@ namespace Course_Prerequsites_WPF.UIs
                 //When this student regist to aspecific course the number of students in this course will be incremented
                 WelcomePage.AllCoursesDictionary[AvailableCourseBox.SelectionBoxItem.ToString()].CurrentNumberOfStudents++;
                 //The Message that appears
-                MessageBox.Show("You are now regist to this Course");
+                MessageBox.Show("You Registerd successfully to " + AvailableCourseBox.SelectionBoxItem.ToString());
                 //When you regist to this course it will be removed from combo box
                 AvailableCourseBox.Items.Remove(AvailableCourseBox.SelectionBoxItem.ToString());
             }
