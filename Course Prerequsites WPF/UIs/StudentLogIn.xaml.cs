@@ -26,7 +26,7 @@ namespace Course_Prerequsites_WPF.UIs
 
         private void loginButton_Click(object sender, RoutedEventArgs e)
         {
-          
+
             if (string.IsNullOrEmpty(idTextBox.Text) || string.IsNullOrEmpty(Password_txt.Password))
             {
                 MessageBox.Show("Please enter valid username and password.");
@@ -35,7 +35,7 @@ namespace Course_Prerequsites_WPF.UIs
             {
                 if (WelcomePage.AllStudentsDictionary.ContainsKey(idTextBox.Text))
                 {
-                    if (WelcomePage.AllStudentsDictionary[idTextBox.Text].Password== Password_txt.Password)
+                    if (WelcomePage.AllStudentsDictionary[idTextBox.Text].Password == Password_txt.Password)
                     {
                         MessageBox.Show("Logging in...");
                         WelcomePage.StudentLogedIn = true;
@@ -46,7 +46,6 @@ namespace Course_Prerequsites_WPF.UIs
                         StudControls.Show();
                         this.Hide();
                         this.Close();
-
                     }
                     else
                     {
@@ -60,14 +59,9 @@ namespace Course_Prerequsites_WPF.UIs
             }
         }
 
-        private void idTextBox_TextChanged(object sender, TextChangedEventArgs e)
-        {
-
-        }
-
         private void Password_txt_PasswordChanged(object sender, RoutedEventArgs e)
         {
-            if(Password_txt.Password.Length>0)
+            if (Password_txt.Password.Length > 0)
             {
                 EyeImage.Visibility = Visibility.Visible;
             }

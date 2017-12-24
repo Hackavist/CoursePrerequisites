@@ -34,7 +34,7 @@ namespace Course_Prerequsites_WPF.UIs
             if (s.IsAvailableCreditHours(WelcomePage.AllStudentsDictionary[WelcomePage.StudentId]) == false)
             {
                 MessageBox.Show("You Can't take more than 16 Credit Hours in one semster" + '\n' + "You are not allowed to register now");
-                
+
             }
             else
             {
@@ -50,9 +50,7 @@ namespace Course_Prerequsites_WPF.UIs
                     MessageBox.Show("You have no available Courses right now " + '\n' + "Please Click on Back Button.");
 
                 }
-
             }
-
         }
 
         //What will happened when click on register
@@ -76,6 +74,13 @@ namespace Course_Prerequsites_WPF.UIs
                 AvailableCourseBox.Items.Remove(AvailableCourseBox.SelectionBoxItem.ToString());
             }
         }
+
+        private void BackBTN_Click(object sender, RoutedEventArgs e)
+        {
+            StudentControls stud = new StudentControls();
+            stud.Show();
+            this.Close();
         }
     }
+}
 

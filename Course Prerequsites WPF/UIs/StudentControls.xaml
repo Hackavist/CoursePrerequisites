@@ -6,21 +6,26 @@
         xmlns:local="clr-namespace:Course_Prerequsites_WPF.UIs"
         mc:Ignorable="d"
         Title="StudentControls" Height="650" Width="600" WindowStartupLocation="CenterScreen">
-    <Grid>
+    <Grid Margin="10">
         <Grid.ColumnDefinitions>
-            <ColumnDefinition Width="247*"/>
-            <ColumnDefinition Width="346*"/>
+            <ColumnDefinition Width="0.1*"/>
+            <ColumnDefinition Width="*"/>
         </Grid.ColumnDefinitions>
-        <Button x:Name="viewallavailablecoursesbutton" Content="View all available courses" VerticalAlignment="Top" Margin="154,123,140.333,0" Height="57" TabIndex="1" FontSize="20" FontFamily="Segoe UI" Foreground="White" Background="#FFF6A10C" FontWeight="Normal" Grid.ColumnSpan="2"/>
-        <Button x:Name="viewmycoursesbutton" Content="View my courses" VerticalAlignment="Top" Margin="154,223,140.333,0" Height="57" Background="#FFF6A10C" FontSize="20" FontFamily="Segoe UI" Foreground="White" FontWeight="Normal" Grid.ColumnSpan="2" TabIndex="2"/>
-        <Button x:Name="editmydatabutton" Content="Edit my data" VerticalAlignment="Top" Margin="154,523,140.333,0" Height="57" FontSize="20" FontFamily="Segoe UI" Foreground="White" FontWeight="Normal" Grid.ColumnSpan="2" Click="editmydatabutton_Click" TabIndex="4">
-            <Button.Background>
-                <SolidColorBrush Color="#FFF6A10C"/>
-            </Button.Background>
+        
+        <Button ToolTip="Back to Admin Settings" x:Name="BackBTN" Style="{DynamicResource MetroCircleButtonStyle}" HorizontalAlignment="Left" VerticalAlignment="Top" Height="55" Width="55" Grid.Row="0" Grid.Column="0" Click="BackBTN_Click">
+            <Rectangle Width="30" Height="20" Fill="{Binding Foreground, RelativeSource={RelativeSource FindAncestor, AncestorType={x:Type Button}}}">
+                <Rectangle.OpacityMask>
+                    <VisualBrush Stretch="Fill" Visual="{StaticResource appbar_arrow_left}" />
+                </Rectangle.OpacityMask>
+            </Rectangle>
         </Button>
-        <Button x:Name="viewallavailablecoursesbutton_Copy" Content="Register for a course" VerticalAlignment="Top" Margin="154,323,140.333,0" Height="57" TabIndex="3" FontSize="20" FontFamily="Segoe UI" Foreground="White" Background="#FFF6A10C" FontWeight="Normal" Grid.ColumnSpan="2" Click="registerbutton_Click"/>
-        <TextBlock Text="Student Controls" Style="{StaticResource PageHeaderTextStyle}" Grid.ColumnSpan="2" Foreground="{DynamicResource {x:Static SystemColors.HighlightBrushKey}}" Margin="152,29,144.333,541.667" Width="297" />
-        <Button x:Name="dropacoursebutton" Content="Drop a course" VerticalAlignment="Top" Margin="152,423,142.333,0" Height="57" TabIndex="3" FontSize="20" FontFamily="Segoe UI" Foreground="White" Background="#FFF6A10C" FontWeight="Normal" Grid.ColumnSpan="2" Click="dropacoursebutton_Click"/>
+        
+        <Button x:Name="viewallavailablecoursesbutton" Content="View all available courses" VerticalAlignment="Top" Margin="154,123,140.333,0" Grid.ColumnSpan="2" Height="57" TabIndex="1" FontSize="20" FontFamily="Segoe UI"  FontWeight="Light" Foreground="White" Background="#FFF6A10C" Click="viewallavailablecoursesbutton_Click" />
+        <Button x:Name="viewmycoursesbutton" Content="View my courses" VerticalAlignment="Top" Margin="154,223,140.333,0" Grid.ColumnSpan="2"  Height="57"  TabIndex="2"  FontSize="22" FontFamily="Segoe UI"  FontWeight="Light" Foreground="White" Background="#FFF6A10C" Click="viewmycoursesbutton_Click" />
+        <Button x:Name="viewallavailablecoursesbutton_Copy" Content="Register for a course" VerticalAlignment="Top" Margin="154,323,140.333,0" Grid.ColumnSpan="2" Height="57" TabIndex="3" FontSize="23" FontFamily="Segoe UI" FontWeight="Light" Foreground="White" Background="#FFF6A10C" Click="registerbutton_Click"/>
+        <Button x:Name="dropacoursebutton" Content="Drop a course" VerticalAlignment="Top" Margin="152,423,142.333,0" Height="57" TabIndex="4" FontSize="20" FontFamily="Segoe UI" FontWeight="Light" Foreground="White" Background="#FFF6A10C" Grid.ColumnSpan="2" Click="dropacoursebutton_Click"/>
+        <Button x:Name="editmydatabutton" Content="Edit my data" VerticalAlignment="Top" Margin="154,523,140.333,0" Grid.ColumnSpan="2" Height="57" TabIndex="5"  FontSize="20" FontFamily="Segoe UI" FontWeight="Light" Foreground="White" Background="#FFF6A10C" Click="editmydatabutton_Click"/>
 
+        <TextBlock Text="Student Controls" Grid.ColumnSpan="2" VerticalAlignment="Top" HorizontalAlignment="Center" Margin="30" Style="{StaticResource PageHeaderTextStyle}" />
     </Grid>
 </Window>

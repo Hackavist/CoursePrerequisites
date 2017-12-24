@@ -13,7 +13,20 @@
         <l:ChartViewModel/>
     </Window.DataContext>
     <Grid
-    xmlns:chart="clr-namespace:De.TorstenMandelkow.MetroChart;assembly=De.TorstenMandelkow.MetroChart" >
+        xmlns:chart="clr-namespace:De.TorstenMandelkow.MetroChart;assembly=De.TorstenMandelkow.MetroChart" >
+
+        <Grid.RowDefinitions>
+        <RowDefinition Height="0.3*"></RowDefinition>
+        <RowDefinition Height="3.5*"></RowDefinition>
+        </Grid.RowDefinitions>
+        
+        <Button ToolTip="Back to Admin Settings" x:Name="BackBTN" Style="{DynamicResource MetroCircleButtonStyle}" HorizontalAlignment="Left" Width="55" Grid.Column="0" Click="BackBTN_Click" Margin="0,0,0,0.2">
+            <Rectangle Width="30" Height="20" Fill="{Binding Foreground, RelativeSource={RelativeSource FindAncestor, AncestorType={x:Type Button}}}">
+                <Rectangle.OpacityMask>
+                    <VisualBrush Stretch="Fill" Visual="{StaticResource appbar_arrow_left}" />
+                </Rectangle.OpacityMask>
+            </Rectangle>
+        </Button>
 
         <chart:DoughnutChart
         x:Name="CoursesChart"
@@ -23,6 +36,7 @@
         ToolTip="All Available Courses "
         InnerRadiusRatio="0.77" 
         Margin="10,0,9.6,8.4"
+            Grid.Row="1"
         Height="Auto" Width="Auto" IsEnabled="True"  
         SelectedItem="{Binding Path=SelectedItem, Mode=TwoWay}"
         Mouse.MouseUp="CoursesChart_Click">

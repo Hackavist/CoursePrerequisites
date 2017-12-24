@@ -25,7 +25,7 @@ namespace Course_Prerequsites_WPF.UIs
         DropShadowEffect shadoweffect;
         public AddNewCourseSecondStep()
         {
-            InitializeComponent(); 
+            InitializeComponent();
             shadoweffect = new DropShadowEffect
             {
                 Direction = 300,
@@ -42,14 +42,14 @@ namespace Course_Prerequsites_WPF.UIs
             Canvas canvastmp = new Canvas();
             canvastmp.VerticalAlignment = System.Windows.VerticalAlignment.Top;
             canvastmp.HorizontalAlignment = System.Windows.HorizontalAlignment.Left;
-            canvastmp.Margin = new Thickness(5, (15), 0,10);
+            canvastmp.Margin = new Thickness(5, (15), 0, 10);
             canvastmp.Height = (50);
             canvastmp.Effect = shadoweffect;
             canvastmp.Width = 545;
             canvastmp.Background = System.Windows.SystemColors.ControlBrush;
 
             TextBlock textblocktmp = new TextBlock();
-            textblocktmp.Text = "Course Name : " + CourseTmp.CourseName ;
+            textblocktmp.Text = "Course Name : " + CourseTmp.CourseName;
             textblocktmp.FontSize = 20;
             textblocktmp.FontWeight = FontWeights.Bold;
             textblocktmp.Margin = new Thickness(10, 10, 0, 0);
@@ -80,15 +80,15 @@ namespace Course_Prerequsites_WPF.UIs
         {
             int counter = 0;
             List<string> tmp = new List<string>();
-            foreach (var x in CheckBoxList )
+            foreach (var x in CheckBoxList)
             {
-                if (x.IsChecked==true)
+                if (x.IsChecked == true)
                 {
                     counter++;
                     tmp.Add(x.Tag.ToString());
                 }
             }
-            MessageBoxResult result =  MessageBox.Show("Are you sure you want to add " + counter + " courses as prerequsites of the new course !","Confirm", MessageBoxButton.YesNo);
+            MessageBoxResult result = MessageBox.Show("Are you sure you want to add " + counter + " courses as prerequsites of the new course !", "Confirm", MessageBoxButton.YesNo);
             if (result == MessageBoxResult.Yes)
             {
                 foreach (var x in tmp)
@@ -97,7 +97,7 @@ namespace Course_Prerequsites_WPF.UIs
             }
             else
             {
-                MessageBox.Show("Reselect the courses you to be the prerequsites or go back"); 
+                MessageBox.Show("Reselect the courses you to be the prerequsites or go back");
             }
         }
     }

@@ -9,7 +9,14 @@
          WindowStartupLocation="CenterScreen" 
         Title="RemoveStudent" Height="650" Width="600">
     <Grid>
-        <TextBlock x:Name="Title" HorizontalAlignment="Left" Margin="160,29,0,0" TextWrapping="Wrap" Text="Remove Student" VerticalAlignment="Top" Width="360" Height="76" Style="{StaticResource PageHeaderTextStyle}" Foreground="{DynamicResource {x:Static SystemColors.HighlightBrushKey}}"/>
+        <Button ToolTip="Back to Admin Settings" x:Name="BackBTN" Style="{DynamicResource MetroCircleButtonStyle}" Height="55" Width="55" Click="BackBTN_Click" Margin="10,10,524.6,551">
+                <Rectangle Width="30" Height="20" Fill="{Binding Foreground, RelativeSource={RelativeSource FindAncestor, AncestorType={x:Type Button}}}">
+                    <Rectangle.OpacityMask>
+                        <VisualBrush Stretch="Fill" Visual="{StaticResource appbar_arrow_left}" />
+                    </Rectangle.OpacityMask>
+                </Rectangle>
+            </Button>
+            <TextBlock x:Name="Title" HorizontalAlignment="Left" Margin="160,29,0,0" TextWrapping="Wrap" Text="Remove Student" VerticalAlignment="Top" Width="360" Height="76" Style="{StaticResource PageHeaderTextStyle}" Foreground="{DynamicResource {x:Static SystemColors.HighlightBrushKey}}"/>
         <TextBlock x:Name="textBlock1" HorizontalAlignment="Left" Margin="10,222,0,0" TextWrapping="Wrap" Text="Student ID :" VerticalAlignment="Top" Height="38" Width="200" Style="{StaticResource SectionHeaderTextStyle}" Foreground="{DynamicResource {x:Static SystemColors.HighlightBrushKey}}" FontSize="24"/>
         <ComboBox x:Name="comboBox" HorizontalAlignment="Left" Margin="175,222,0,0" VerticalAlignment="Top" Width="390" Height="38" FontSize="20"/>
         <Button x:Name="button" Content="Remove" HorizontalAlignment="Left" Margin="420,460,0,0" VerticalAlignment="Top" Width="145" Height="50" Foreground="{DynamicResource {x:Static SystemColors.ControlLightLightBrushKey}}" Background="#FFF6A10C" FontFamily="Segoe UI" FontSize="22" FontWeight="Normal" Click="button_Click"/>

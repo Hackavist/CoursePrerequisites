@@ -31,25 +31,27 @@ namespace Course_Prerequsites_WPF.UIs
             }
         }
 
-        private void comboBoxCours_SelectionChanged(object sender, SelectionChangedEventArgs e)
-        {
-
-        }
-
         private void comboBoxName_SelectionChanged(object sender, SelectionChangedEventArgs e)
         {
             comboBoxCours.Items.Clear();
             selected = ids[comboBoxName.SelectedIndex];
-            foreach(var x in WelcomePage.AllStudentsDictionary[selected].CoursesInProgress)
+            foreach (var x in WelcomePage.AllStudentsDictionary[selected].CoursesInProgress)
             {
                 comboBoxCours.Items.Add(x.CourseName);
             }
-               
+
         }
 
         private void dropButton_Click(object sender, RoutedEventArgs e)
         {
             WelcomePage.AllStudentsDictionary[selected].CoursesInProgress.Remove(WelcomePage.AllCoursesDictionary[comboBoxCours.SelectedItem.ToString()]);
+        }
+
+        private void BackBTN_Click(object sender, RoutedEventArgs e)
+        {
+            StudentControls stud = new StudentControls();
+            stud.Show();
+            this.Close();
         }
     }
 }

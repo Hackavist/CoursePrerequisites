@@ -9,8 +9,9 @@
             </ScrollViewer.Effect>
             <StackPanel  Width="560" x:Name="mylist"/>
         </ScrollViewer>
-        <TextBlock HorizontalAlignment="Left" Margin="10,10,0,0" TextWrapping="Wrap" Text="mark the Courses you want to be prerequsites of the new Course : " VerticalAlignment="Top" Height="35" Width="574" FontWeight="Bold" FontSize="18"/>
-        <Button Content="Done" HorizontalAlignment="Left" Margin="233,577,0,0" VerticalAlignment="Top" Width="102" Height="33" Click="Button_Click"/>
+
+        <TextBlock HorizontalAlignment="Left" Margin="10,10,0,0" TextWrapping="Wrap" Text="Mark The Prereqsites Of The New Course" VerticalAlignment="Top" Height="35" Width="574" Style="{StaticResource SectionHeaderTextStyle}"/>
+        <Button Content="Done" HorizontalAlignment="Left" Margin="233,568,0,0" VerticalAlignment="Top" Width="102" Height="42" Click="Button_Click" FontSize="23" FontFamily="Segoe UI" FontWeight="Light"  Foreground="White" Background="#FFF6A10C" />
 
     </Grid>
 </Window>

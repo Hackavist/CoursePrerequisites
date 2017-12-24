@@ -25,11 +25,6 @@ namespace Course_Prerequsites_WPF.UIs
             InitializeComponent();
         }
 
-        private void StudentSettings_Click(object sender, RoutedEventArgs e)
-        {
-            
-        }
-
         private void editmydatabutton_Click(object sender, RoutedEventArgs e)
         {
             EditMyData myData = new EditMyData();
@@ -52,6 +47,31 @@ namespace Course_Prerequsites_WPF.UIs
             drp.Show();
             this.Hide();
             this.Close();
+        }
+
+        private void BackBTN_Click(object sender, RoutedEventArgs e)
+        {
+            WelcomePage.StudentLogedIn = false;
+            WelcomePage.StudentId = "";
+            WelcomePage.StudentPassword = "";
+            WelcomePage wel = new WelcomePage();
+            wel.Show();
+            this.Close();
+        }
+
+        private void viewallavailablecoursesbutton_Click(object sender, RoutedEventArgs e)
+        {
+            AllCoursesChart chart = new AllCoursesChart();
+            chart.Show();
+            this.Close();
+        }
+
+        private void viewmycoursesbutton_Click(object sender, RoutedEventArgs e)
+        {
+            ViewMyCourses viewmy = new ViewMyCourses();
+            viewmy.Show();
+            this.Hide();
+
         }
     }
 }

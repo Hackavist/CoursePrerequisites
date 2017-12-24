@@ -6,12 +6,37 @@
         xmlns:local="clr-namespace:Course_Prerequsites_WPF.UIs"
         mc:Ignorable="d"
         Title="Drop" Height="650" Width="600" WindowStartupLocation="CenterScreen">
-    <Grid>
-        <Label Content="Course name:" HorizontalAlignment="Left" Margin="58,131,0,0" VerticalAlignment="Top"/>
-        <Button x:Name="dropButton" Content="Drop course" HorizontalAlignment="Left" Margin="170,240,0,0" VerticalAlignment="Top" Width="125" Click="dropButton_Click"/>
-        <ComboBox x:Name="comboBoxCours" HorizontalAlignment="Left" Margin="175,131,0,0" VerticalAlignment="Top" Width="120" SelectionChanged="comboBoxCours_SelectionChanged"/>
-        <ComboBox x:Name="comboBoxName" HorizontalAlignment="Left" Margin="175,53,0,0" VerticalAlignment="Top" Width="120" SelectionChanged="comboBoxName_SelectionChanged"/>
-        <Label x:Name="label" Content="Student Name:&#xD;&#xA;" HorizontalAlignment="Left" Margin="58,48,0,0" VerticalAlignment="Top" Width="102" Height="27"/>
+    <Grid Margin="10">
+
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
+
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*" />
+            <RowDefinition Height="*" />
+            <RowDefinition Height="*" />
+        </Grid.RowDefinitions>
+
+        <Button ToolTip="Back to Admin Settings" x:Name="BackBTN" Style="{DynamicResource MetroCircleButtonStyle}" HorizontalAlignment="Left" VerticalAlignment="Top" Width="55" Height="55" Grid.Column="0" Click="BackBTN_Click" Margin="0,0,0,0.2">
+            <Rectangle Width="30" Height="20" Fill="{Binding Foreground, RelativeSource={RelativeSource FindAncestor, AncestorType={x:Type Button}}}">
+                <Rectangle.OpacityMask>
+                    <VisualBrush Stretch="Fill" Visual="{StaticResource appbar_arrow_left}" />
+                </Rectangle.OpacityMask>
+            </Rectangle>
+        </Button>
+
+        <TextBlock Text="Student Name:" Style="{StaticResource HeaderTextStyle}" Grid.Column="0" Grid.Row="0"  HorizontalAlignment="Center" VerticalAlignment="Center" Foreground="{DynamicResource {x:Static SystemColors.HighlightBrushKey}}"/>
+        <TextBlock Style="{StaticResource HeaderTextStyle}" Grid.Column="0" Grid.Row="1" Text="Course name:"  HorizontalAlignment="Center" VerticalAlignment="Center" Foreground="{DynamicResource {x:Static SystemColors.HighlightBrushKey}}"/>
+
+
+        <ComboBox x:Name="comboBoxName" Grid.Column="1" Grid.Row="1"  HorizontalAlignment="Stretch" VerticalAlignment="Center" Margin="30"  FontSize="20" FontFamily="Segoe UI" FontWeight="Light"/>
+        <ComboBox x:Name="comboBoxCours" Grid.Column="1" Grid.Row="0"  HorizontalAlignment="Stretch" VerticalAlignment="Center" Margin="30"  FontSize="20" FontFamily="Segoe UI" FontWeight="Light"/>
+        <Button x:Name="dropButton"  Content="Drop Course" Grid.Column="0" Grid.ColumnSpan="2" Grid.Row="2"  HorizontalAlignment="Center" VerticalAlignment="Center"  FontSize="27" FontFamily="Segoe UI" FontWeight="Light" Foreground="White" Background="#FFF6A10C" Click="dropButton_Click"/>
 
     </Grid>
 </Window>
+<!--<TextBlock Text="Student Name:" Style="{StaticResource HeaderTextStyle}" Grid.Column="0" Grid.Row="0"  HorizontalAlignment="Center" VerticalAlignment="Center" Foreground="{DynamicResource {x:Static SystemColors.HighlightBrushKey}}"/>
+    <TextBlock Style="{StaticResource HeaderTextStyle}" Grid.Column="0" Grid.Row="1" Text="Course name:"  HorizontalAlignment="Center" VerticalAlignment="Center" Foreground="{DynamicResource {x:Static SystemColors.HighlightBrushKey}}"/>
+    -->

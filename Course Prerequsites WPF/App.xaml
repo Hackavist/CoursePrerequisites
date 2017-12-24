@@ -4,7 +4,8 @@
              xmlns:local="clr-namespace:Course_Prerequsites_WPF"
              xmlns:chart="clr-namespace:De.TorstenMandelkow.MetroChart;assembly=De.TorstenMandelkow.MetroChart"
              StartupUri="UIs/WelcomePage.xaml"
-             Exit="Application_Exit">
+             Exit="Application_Exit"
+             ShutdownMode="OnExplicitShutdown">
     <Application.Resources>
 
         <ResourceDictionary    

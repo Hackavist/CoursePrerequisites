@@ -27,7 +27,7 @@
 
         <Button x:Name="AddCourse" Content="Add Course" VerticalAlignment="Center" Height="88" TabIndex="1" FontSize="26" FontFamily="Segoe UI" FontWeight="Light" Foreground="White" Background="#FFF6A10C" Margin="110,10,110,10" Grid.Column="0" Grid.ColumnSpan="2"  Grid.Row="0" Click="AddCourse_Click"/>
         <Button x:Name="EditCourse" Content="Edit Course" VerticalAlignment="Center" Height="88" TabIndex="1" FontSize="26" FontFamily="Segoe UI" FontWeight="Light" Foreground="White" Background="#FFF6A10C" Margin="110,10,110,10" Grid.Column="0" Grid.ColumnSpan="2" Grid.Row="1" Click="EditCourse_Click"/>
-        <Button x:Name="ViewStudentsInCoursebtn" Content="View All Students In a Course" Height="88"   VerticalAlignment="Center" Margin="110,10,110,10" TabIndex="1" FontSize="23" FontFamily="Segoe UI" FontWeight="Light" Foreground="White" Background="#FFF6A10C" Grid.Column="0" Grid.ColumnSpan="2" Grid.Row="2" Click="ViewStudentsInCourse_Click"  />
+        <Button x:Name="ViewStudentsInCoursebtn" Content="View All Students In a Course" Height="88"   VerticalAlignment="Center" Margin="110,10,110,10" TabIndex="1" FontSize="21" FontFamily="Segoe UI" FontWeight="Light" Foreground="White" Background="#FFF6A10C" Grid.Column="0" Grid.ColumnSpan="2" Grid.Row="2" Click="ViewStudentsInCourse_Click"  />
 
     </Grid>
 </Window>

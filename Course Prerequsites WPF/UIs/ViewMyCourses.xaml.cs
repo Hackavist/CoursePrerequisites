@@ -36,5 +36,12 @@ namespace Course_Prerequsites_WPF.UIs
             Description.Text = cour.Description;
             
         }
+
+        private void BackBTN_Click(object sender, RoutedEventArgs e)
+        {
+            StudentControls stud = new StudentControls();
+            stud.Show();
+            this.Hide();
+        }
     }
 }

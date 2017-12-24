@@ -33,5 +33,12 @@ namespace Course_Prerequsites_WPF.UIs
             AspecificCourse asd = new AspecificCourse(ChartViewModel.SelectedText);
             asd.Show();
         }
+
+        private void BackBTN_Click(object sender, RoutedEventArgs e)
+        {
+            StudentControls stud = new StudentControls();
+            stud.Show();
+            this.Close();
+        }
     }
 }
