@@ -63,7 +63,6 @@ C:\Users\hazem\Source\Repos\CoursePrerequisites\Course Prerequsites WPF\obj\Debu
 C:\Users\hazem\Source\Repos\CoursePrerequisites\Course Prerequsites WPF\obj\Debug\UIs\AddNewCourse.baml
 C:\Users\hazem\Source\Repos\CoursePrerequisites\Course Prerequsites WPF\obj\Debug\UIs\StudentLogIn.baml
 C:\Users\hazem\Source\Repos\CoursePrerequisites\Course Prerequsites WPF\obj\Debug\UIs\ViewAllCoursesOfStudent.baml
-C:\Users\hazem\Source\Repos\CoursePrerequisites\Course Prerequsites WPF\obj\Debug\UIs\AddCoursePrerequisites.g.cs
 C:\Users\hazem\Source\Repos\CoursePrerequisites\Course Prerequsites WPF\obj\Debug\UIs\AddNewCourse.g.cs
 C:\Users\hazem\Source\Repos\CoursePrerequisites\Course Prerequsites WPF\obj\Debug\UIs\AddStudent.g.cs
 C:\Users\hazem\Source\Repos\CoursePrerequisites\Course Prerequsites WPF\obj\Debug\UIs\AdminLogIn.g.cs
@@ -168,7 +167,6 @@ C:\Users\hazem\Source\Repos\CoursePrerequisites\Course Prerequsites WPF\bin\Debu
 C:\Users\hazem\Source\Repos\CoursePrerequisites\Course Prerequsites WPF\obj\Debug\UIs\Drop.g.cs
 C:\Users\hazem\Source\Repos\CoursePrerequisites\Course Prerequsites WPF\obj\Debug\UIs\RegisterToNewCouse.g.cs
 C:\Users\hazem\Source\Repos\CoursePrerequisites\Course Prerequsites WPF\obj\Debug\UIs\WelcomePage.g.cs
-C:\Users\hazem\Source\Repos\CoursePrerequisites\Course Prerequsites WPF\obj\Debug\UIs\AddCoursePrerequisites.baml
 C:\Users\hazem\Source\Repos\CoursePrerequisites\Course Prerequsites WPF\obj\Debug\UIs\AddStudent.baml
 C:\Users\hazem\Source\Repos\CoursePrerequisites\Course Prerequsites WPF\obj\Debug\UIs\AdminLogIn.baml
 C:\Users\hazem\Source\Repos\CoursePrerequisites\Course Prerequsites WPF\obj\Debug\UIs\AspecificCourse.baml
@@ -572,8 +570,6 @@ E:\DsFinalProject\Course Prerequsites WPF\obj\Debug\UIs\WelcomePage.baml
 E:\DsFinalProject\Course Prerequsites WPF\obj\Debug\Course Prerequsites WPF.g.resources
 E:\DsFinalProject\Course Prerequsites WPF\obj\Debug\Course_Prerequsites_WPF.Properties.Resources.resources
 E:\DsFinalProject\Course Prerequsites WPF\obj\Debug\Course Prerequsites WPF.csproj.GenerateResource.Cache
-C:\Users\hazem\Source\Repos\CoursePrerequisites\Course Prerequsites WPF\obj\Debug\UIs\AllCoursesTree.g.cs
-C:\Users\hazem\Source\Repos\CoursePrerequisites\Course Prerequsites WPF\obj\Debug\UIs\AllCoursesTree.baml
 E:\Ds_zefttttt\Course Prerequsites WPF\bin\Debug\Course Prerequsites WPF.exe.config
 E:\Ds_zefttttt\Course Prerequsites WPF\bin\Debug\Course Prerequsites WPF.exe
 E:\Ds_zefttttt\Course Prerequsites WPF\bin\Debug\Course Prerequsites WPF.pdb
@@ -803,3 +799,23 @@ D:\Work\Course ds\Course Prerequsites WPF\obj\Debug\Course Prerequsites WPF.cspr
 D:\Work\Course ds\Course Prerequsites WPF\obj\Debug\Course Prerequsites WPF.exe
 D:\Work\Course ds\Course Prerequsites WPF\obj\Debug\Course Prerequsites WPF.pdb
 D:\Work\Course ds\Course Prerequsites WPF\obj\Debug\Course Prerequsites WPF.csprojResolveAssemblyReference.cache
+C:\Users\hazem\Source\Repos\CoursePrerequisites\Course Prerequsites WPF\bin\Debug\MahApps.Metro.IconPacks.dll
+C:\Users\hazem\Source\Repos\CoursePrerequisites\Course Prerequsites WPF\bin\Debug\MahApps.Metro.IconPacks.Entypo.dll
+C:\Users\hazem\Source\Repos\CoursePrerequisites\Course Prerequsites WPF\bin\Debug\MahApps.Metro.IconPacks.pdb
+C:\Users\hazem\Source\Repos\CoursePrerequisites\Course Prerequsites WPF\bin\Debug\MahApps.Metro.IconPacks.xml
+C:\Users\hazem\Source\Repos\CoursePrerequisites\Course Prerequsites WPF\bin\Debug\MahApps.Metro.IconPacks.Entypo.pdb
+C:\Users\hazem\Source\Repos\CoursePrerequisites\Course Prerequsites WPF\bin\Debug\MahApps.Metro.IconPacks.Entypo.xml
+C:\Users\hazem\Source\Repos\CoursePrerequisites\Course Prerequsites WPF\obj\Debug\Resources\Icons.baml
+C:\Users\hazem\Source\Repos\CoursePrerequisites\Course Prerequsites WPF\obj\Debug\Resources\IconsNonShared.baml
+C:\Users\hazem\Source\Repos\CoursePrerequisites\Course Prerequsites WPF\obj\Debug\UIs\EditCourse.baml
+C:\Users\hazem\Source\Repos\CoursePrerequisites\Course Prerequsites WPF\obj\Debug\UIs\AddFinishedCourses.g.cs
+C:\Users\hazem\Source\Repos\CoursePrerequisites\Course Prerequsites WPF\obj\Debug\UIs\EditCourse.g.cs
+C:\Users\hazem\Source\Repos\CoursePrerequisites\Course Prerequsites WPF\obj\Debug\UIs\RemoveAdmin.g.cs
+C:\Users\hazem\Source\Repos\CoursePrerequisites\Course Prerequsites WPF\obj\Debug\UIs\RemoveStudent.g.cs
+C:\Users\hazem\Source\Repos\CoursePrerequisites\Course Prerequsites WPF\obj\Debug\UIs\StudentControls.g.cs
+C:\Users\hazem\Source\Repos\CoursePrerequisites\Course Prerequsites WPF\obj\Debug\UIs\AddFinishedCourses.baml
+C:\Users\hazem\Source\Repos\CoursePrerequisites\Course Prerequsites WPF\obj\Debug\UIs\RemoveAdmin.baml
+C:\Users\hazem\Source\Repos\CoursePrerequisites\Course Prerequsites WPF\obj\Debug\UIs\RemoveStudent.baml
+C:\Users\hazem\Source\Repos\CoursePrerequisites\Course Prerequsites WPF\obj\Debug\UIs\StudentControls.baml
+C:\Users\hazem\Source\Repos\CoursePrerequisites\Course Prerequsites WPF\obj\Debug\UIs\EditCoursePrerequsites.baml
+C:\Users\hazem\Source\Repos\CoursePrerequisites\Course Prerequsites WPF\obj\Debug\UIs\EditCoursePrerequsites.g.cs
