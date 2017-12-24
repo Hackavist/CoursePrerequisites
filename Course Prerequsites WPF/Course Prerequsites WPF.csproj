@@ -93,6 +93,9 @@
     <Compile Include="UIs\EditMyData.xaml.cs">
       <DependentUpon>EditMyData.xaml</DependentUpon>
     </Compile>
+    <Compile Include="UIs\RemoveStudent.xaml.cs">
+      <DependentUpon>RemoveStudent.xaml</DependentUpon>
+    </Compile>
     <Compile Include="UIs\StudentControls.xaml.cs">
       <DependentUpon>StudentControls.xaml</DependentUpon>
     </Compile>
@@ -209,6 +212,10 @@
       <SubType>Designer</SubType>
     </Page>
     <Page Include="UIs\RegisterToNewCouse.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="UIs\RemoveStudent.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
