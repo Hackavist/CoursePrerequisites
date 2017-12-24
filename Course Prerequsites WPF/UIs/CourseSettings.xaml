@@ -6,13 +6,28 @@
         xmlns:local="clr-namespace:Course_Prerequsites_WPF.UIs"
         mc:Ignorable="d"
         Title="CourseSettings" Height="650" Width="600" Background="White">
-    <Grid>
+    <Grid Margin="10" >
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="104*"/>
             <ColumnDefinition Width="489*"/>
         </Grid.ColumnDefinitions>
-        <Button x:Name="AddCourse" Content="Add/Edit Course" VerticalAlignment="Top" Margin="5,147,105.333,0" Height="88" TabIndex="1" FontSize="20" FontFamily="Times New Roman" Foreground="White" Background="#FFF6A10C" Grid.Column="1" Click="AddCourse_Click"/>
-        <Button x:Name="ViewStudentsInCoursebtn" Content="View All Students In a Course&#xD;&#xA;" VerticalAlignment="Top" Margin="5,363,105.333,0" Height="88" TabIndex="1" FontSize="20" FontFamily="Times New Roman" Foreground="White" Background="#FFF6A10C" Grid.Column="1" Click="ViewStudentsInCourse_Click"/>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*" />
+            <RowDefinition Height="*" />
+            <RowDefinition Height="*" />
+        </Grid.RowDefinitions>
+
+        <Button ToolTip="Back to Admin Settings" x:Name="BackBTN" Style="{DynamicResource MetroCircleButtonStyle}" VerticalAlignment="Top" HorizontalAlignment="Left" Height="55" Width="55" Grid.Column="0" Click="BackBTN_Click" Margin="0,0,0,0.2">
+            <Rectangle Width="30" Height="20" Fill="{Binding Foreground, RelativeSource={RelativeSource FindAncestor, AncestorType={x:Type Button}}}">
+                <Rectangle.OpacityMask>
+                    <VisualBrush Stretch="Fill" Visual="{StaticResource appbar_arrow_left}" />
+                </Rectangle.OpacityMask>
+            </Rectangle>
+        </Button>
+
+        <Button x:Name="AddCourse" Content="Add Course" VerticalAlignment="Center" Height="88" TabIndex="1" FontSize="26" FontFamily="Segoe UI" FontWeight="Light" Foreground="White" Background="#FFF6A10C" Margin="110,10,110,10" Grid.Column="0" Grid.ColumnSpan="2"  Grid.Row="0" Click="AddCourse_Click"/>
+        <Button x:Name="EditCourse" Content="Edit Course" VerticalAlignment="Center" Height="88" TabIndex="1" FontSize="26" FontFamily="Segoe UI" FontWeight="Light" Foreground="White" Background="#FFF6A10C" Margin="110,10,110,10" Grid.Column="0" Grid.ColumnSpan="2" Grid.Row="1" Click="EditCourse_Click"/>
+        <Button x:Name="ViewStudentsInCoursebtn" Content="View All Students In a Course" Height="88"   VerticalAlignment="Center" Margin="110,10,110,10" TabIndex="1" FontSize="23" FontFamily="Segoe UI" FontWeight="Light" Foreground="White" Background="#FFF6A10C" Grid.Column="0" Grid.ColumnSpan="2" Grid.Row="2" Click="ViewStudentsInCourse_Click"  />
 
     </Grid>
 </Window>

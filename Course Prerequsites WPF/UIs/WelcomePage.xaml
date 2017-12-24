@@ -8,12 +8,11 @@
     	xmlns:Behaviours="clr-namespace:MahApps.Metro.Behaviours;assembly=MahApps.Metro"
         mc:Ignorable="d"
         Title="WelcomePage" Height="650" Width="600">
-    <Grid Margin="10,6,9.6,4">
+    <Grid Margin="15">
         <Grid.RowDefinitions>
             <RowDefinition Height="*"></RowDefinition>
             <RowDefinition Height="*"></RowDefinition>
             <RowDefinition Height="*"></RowDefinition>
-
         </Grid.RowDefinitions>
 
         <Grid.ColumnDefinitions>
@@ -21,12 +20,12 @@
             <ColumnDefinition Width="*"></ColumnDefinition>
         </Grid.ColumnDefinitions>
 
-        <TextBlock Text="Sign In As ...." Grid.Column="0"  Margin="30" Style="{StaticResource HeaderTextStyle}" Foreground="{DynamicResource {x:Static SystemColors.HighlightBrushKey}}" />
-        
-        <Image Name="Student" Grid.Row="1" Source="/Images/student.png" Mouse.MouseUp="Student_MouseUp"/>
-        <Image Name="Admin" Grid.Row="1" Grid.Column="1" Source="/Images/man-with-tie.png" Mouse.MouseUp="Admin_MouseUp"/>
+        <TextBlock Text="Sign In As ...." Grid.Column="0" Grid.ColumnSpan="2"  Margin="30" Style="{StaticResource HeaderTextStyle}" Foreground="{DynamicResource {x:Static SystemColors.HighlightBrushKey}}" />
 
-        <TextBlock VerticalAlignment="Center" HorizontalAlignment="Center" Text="Student" Grid.Column="0" Grid.Row="2" Style="{StaticResource PageHeaderTextStyle}" Foreground="{DynamicResource {x:Static SystemColors.HighlightBrushKey}}" Mouse.MouseUp="Student_MouseUp"/>
-        <TextBlock VerticalAlignment="Center" HorizontalAlignment="Center" Text="Admin" Grid.Column="1" Grid.Row="2" Style="{StaticResource PageHeaderTextStyle}" Foreground="{DynamicResource {x:Static SystemColors.HighlightBrushKey}}"  Mouse.MouseUp="Admin_MouseUp"/>
+        <Image Name="Student1" Grid.Row="1" Source="/Images/student.png" Mouse.MouseUp="Student1_MouseUp"/>
+        <Image Name="Admin1" Grid.Row="1" Grid.Column="1" Source="/Images/man-with-tie.png" Mouse.MouseUp="Admin1_MouseUp"/>
+
+        <TextBlock VerticalAlignment="Center" HorizontalAlignment="Center" Text="Student" Grid.Column="0" Grid.Row="2" Style="{StaticResource PageHeaderTextStyle}" Foreground="{DynamicResource {x:Static SystemColors.HighlightBrushKey}}" Mouse.MouseUp="Student1_MouseUp"/>
+        <TextBlock VerticalAlignment="Center" HorizontalAlignment="Center" Text="Admin" Grid.Column="1" Grid.Row="2" Style="{StaticResource PageHeaderTextStyle}" Foreground="{DynamicResource {x:Static SystemColors.HighlightBrushKey}}"  Mouse.MouseUp="Admin1_MouseUp"/>
     </Grid>
 </Window>

@@ -6,9 +6,18 @@
         xmlns:local="clr-namespace:Course_Prerequsites_WPF.UIs"
         mc:Ignorable="d"
         Title="StudentsSettings" Height="650" Width="600" Background="White">
-    <Grid>
-        <Button x:Name="AddStudentbtn" Content="Add Student" VerticalAlignment="Top" Margin="109,147,105.333,0" Height="88" TabIndex="1" FontSize="20" FontFamily="Times New Roman" Foreground="White" Background="#FFF6A10C" Click="AddStudent_Click"/>
-        <Button x:Name="ViewAllCoursesOfStudentbtn" Content="View All Courses Of a Student&#xD;&#xA;" VerticalAlignment="Top" Margin="109,363,105.333,0" Height="88" TabIndex="2" FontSize="20" FontFamily="Times New Roman" Foreground="White" Background="#FFF6A10C" Click="ViewAllCoursesOfStudentbtn_Click"/>
+    <Grid Margin="10">
+
+        <Button ToolTip="Back to Admin Settings" x:Name="BackBTN" Style="{DynamicResource MetroCircleButtonStyle}" Width="55" Height="55" Grid.Column="0" Click="BackBTN_Click" Margin="10,10,505.6,532" >
+            <Rectangle Width="30" Height="20" Fill="{Binding Foreground, RelativeSource={RelativeSource FindAncestor, AncestorType={x:Type Button}}}">
+                <Rectangle.OpacityMask>
+                    <VisualBrush Stretch="Fill" Visual="{StaticResource appbar_arrow_left}" />
+                </Rectangle.OpacityMask>
+            </Rectangle>
+        </Button>
+
+        <Button x:Name="AddStudentbtn" Content="Add Student" VerticalAlignment="Top" Margin="109,147,105.333,0" Height="88" TabIndex="1" FontSize="25" FontFamily="Segoe UI" FontWeight="Light" Foreground="White" Background="#FFF6A10C" Click="AddStudent_Click"/>
+        <Button x:Name="ViewAllCoursesOfStudentbtn" Content="View All Courses Of a Student" VerticalAlignment="Top" Margin="109,363,105.333,0" Height="88" TabIndex="2" FontSize="23" FontFamily="Segoe UI" FontWeight="Light"  Foreground="White" Background="#FFF6A10C" Click="ViewAllCoursesOfStudentbtn_Click"/>
 
     </Grid>
 </Window>

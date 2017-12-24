@@ -29,11 +29,15 @@ namespace Course_Prerequsites_WPF.UIs
 
         private void AddCourse_Click(object sender, RoutedEventArgs e)
         {
-            // to add/edit a new course
-
             AddNewCourse AddCourse = new AddNewCourse();
             AddCourse.Show();
-            this.Hide();
+            this.Close();
+        }
+
+        private void EditCourse_Click(object sender, RoutedEventArgs e)
+        {
+            EditCourse ad = new UIs.EditCourse();
+            ad.Show();
             this.Close();
         }
 
@@ -42,8 +46,17 @@ namespace Course_Prerequsites_WPF.UIs
             // view all students in a course
             ViewStudentsInCourse viewStud = new ViewStudentsInCourse();
             viewStud.Show();
-            this.Hide();
             this.Close();
         }
+
+        private void BackBTN_Click(object sender, RoutedEventArgs e)
+        {
+            //opens next window : admin controls
+            ViewStudentOrCourse AdminControls = new ViewStudentOrCourse();
+            AdminControls.Show();
+            this.Close();
+        }
+
+
     }
 }

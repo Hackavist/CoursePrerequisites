@@ -3,24 +3,37 @@
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         Title="EditCourse" Height="650" Width="600">
     <Canvas>
+        <Button ToolTip="Back to Admin Settings" x:Name="BackBTN" Style="{DynamicResource MetroCircleButtonStyle}" Height="60" Width="55" Click="BackBTN_Click" Margin="10,10,624.6,496.4" >
+            <Rectangle Width="30" Height="20" Fill="{Binding Foreground, RelativeSource={RelativeSource FindAncestor, AncestorType={x:Type Button}}}">
+                <Rectangle.OpacityMask>
+                    <VisualBrush Stretch="Fill" Visual="{StaticResource appbar_arrow_left}" />
+                </Rectangle.OpacityMask>
+            </Rectangle>
+        </Button>
+
+        <TextBlock Style="{StaticResource SectionHeaderTextStyle}" Canvas.Left="114" TextWrapping="Wrap" Text="Choose The Course you want to edit" Canvas.Top="50" Margin="0"/>
+
         <Canvas x:Name="InnerCanvas" Height="417" Canvas.Left="38" Canvas.Top="139" Width="540">
-            <TextBox HorizontalAlignment="Left" Height="29" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="246" x:Name="MaximumNumberOfStudentsTextBox" Canvas.Left="272" Canvas.Top="56"/>
-            <TextBlock Text="Hours" HorizontalAlignment="Left" VerticalAlignment="Top" FontSize="16" Height="24" Width="47" Canvas.Top="207"/>
+
+            <TextBlock Style="{ StaticResource SectionHeaderTextStyle}" Text="Current Number Of Students " HorizontalAlignment="Left" VerticalAlignment="Top" FontSize="16" Height="22" Width="230" Canvas.Top="10"/>
+            <TextBlock Style="{ StaticResource SectionHeaderTextStyle}" Text="Maximum Number Of Students" HorizontalAlignment="Left" VerticalAlignment="Top" FontSize="16" Height="23" Width="245" Canvas.Top="56"/>
+            <TextBlock Style="{ StaticResource SectionHeaderTextStyle}" Text="Passing Grade " HorizontalAlignment="Left" VerticalAlignment="Top" FontSize="16" Height="23" Width="116" Canvas.Top="106"/>
+            <TextBlock Style="{ StaticResource SectionHeaderTextStyle}" Text="Course Grade " HorizontalAlignment="Left" VerticalAlignment="Top" FontSize="16" Height="23" Width="111" Canvas.Top="161"/>
+            <TextBlock Style="{ StaticResource SectionHeaderTextStyle}" Text="Hours" HorizontalAlignment="Left" VerticalAlignment="Top" FontSize="16" Height="24" Width="47" Canvas.Top="207"/>
+            <TextBlock Style="{ StaticResource SectionHeaderTextStyle}" Text ="Instructor" HorizontalAlignment="Left" VerticalAlignment="Top" FontSize="16" Height="23" Width="76" Canvas.Top="265"/>
+            <TextBlock Style="{ StaticResource SectionHeaderTextStyle}" Text="Description" HorizontalAlignment="Left" VerticalAlignment="Bottom" FontSize="16" Height="23" Width="90" Canvas.Top="353" Margin="0"/>
+
             <TextBox HorizontalAlignment="Left" Height="27" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="246" x:Name="CurrentNumberOfStudentsTextBox" Canvas.Left="272" Canvas.Top="10"/>
-            <TextBlock Text="Course Grade " HorizontalAlignment="Left" VerticalAlignment="Top" FontSize="16" Height="23" Width="111" Canvas.Top="161"/>
+            <TextBox HorizontalAlignment="Left" Height="29" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="246" x:Name="MaximumNumberOfStudentsTextBox" Canvas.Left="272" Canvas.Top="56"/>
             <TextBox HorizontalAlignment="Left" Height="28" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="246" x:Name="PassingGradeTextBox" Canvas.Left="272" Canvas.Top="106"/>
-            <TextBlock Text="Passing Grade " HorizontalAlignment="Left" VerticalAlignment="Top" FontSize="16" Height="23" Width="116" Canvas.Top="106"/>
             <TextBox HorizontalAlignment="Left" Height="28" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="246" x:Name="CourseGradeTextBox" Canvas.Left="272" Canvas.Top="161"/>
-            <TextBlock Text="Current Number Of Students " HorizontalAlignment="Left" VerticalAlignment="Top" FontSize="16" Height="22" Width="230" Canvas.Top="10"/>
             <TextBox HorizontalAlignment="Left" Height="30" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="246" x:Name="HoursTextBox" ToolTip="" Canvas.Left="272" Canvas.Top="207"/>
             <TextBox HorizontalAlignment="Left" Height="28" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="246" x:Name="InstructorTextBox" ToolTip="Text Box can't contain '#' or '*' or '%'" Canvas.Left="272" Canvas.Top="265"/>
-            <TextBlock Text ="Instructor" HorizontalAlignment="Left" VerticalAlignment="Top" FontSize="16" Height="23" Width="76" Canvas.Top="265"/>
-            <TextBlock Text="Maximum Number Of Students" HorizontalAlignment="Left" VerticalAlignment="Top" FontSize="16" Height="23" Width="245" Canvas.Top="56"/>
-            <TextBox HorizontalAlignment="Left" Height="85" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="246" x:Name="DescriptionTextBox" ToolTip="Text Box can't contain '#' or '*' or '%'" Canvas.Left="272" Canvas.Top="322"/>
-            <TextBlock Text="Description" HorizontalAlignment="Left" VerticalAlignment="Top" FontSize="16" Height="23" Width="90" Canvas.Top="322"/>
+            <TextBox HorizontalAlignment="Left" Height="85" TextWrapping="Wrap" Text="" VerticalAlignment="Bottom" Width="246" x:Name="DescriptionTextBox" ToolTip="Text Box can't contain '#' or '*' or '%'" Canvas.Left="272" Canvas.Top="322"/>
+
         </Canvas>
         <ComboBox x:Name="CourseSelection" Width="376" Canvas.Left="114" Canvas.Top="85" SelectionChanged="CourseSelection_SelectionChanged"/>
-        <TextBlock Canvas.Left="114" TextWrapping="Wrap" Text="Choose The Course you want to edit" Canvas.Top="64"/>
-        <Button Content="Done Editting" Width="138" Canvas.Left="231" Canvas.Top="577" Click="Button_Click"/>
+
+        <Button Content="Done Editting" Width="160" Canvas.Left="202" Canvas.Top="561" Click="Button_Click" FontFamily="Segoe UI" FontWeight="Light" FontSize="20" Foreground="White" Background="#FFF6A10C" Height="46"/>
     </Canvas>
 </Window>

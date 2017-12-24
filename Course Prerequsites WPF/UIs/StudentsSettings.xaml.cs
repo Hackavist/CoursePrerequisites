@@ -31,7 +31,6 @@ namespace Course_Prerequsites_WPF.UIs
         {
             AddStudent addStud = new AddStudent();
             addStud.Show();
-            this.Hide();
             this.Close();
         }
 
@@ -39,10 +38,14 @@ namespace Course_Prerequsites_WPF.UIs
         {
             ViewAllCoursesOfStudent viewCourses = new ViewAllCoursesOfStudent();
             viewCourses.Show();
-            this.Hide();
             this.Close();
+        }
 
-            
+        private void BackBTN_Click(object sender, RoutedEventArgs e)
+        {
+            ViewStudentOrCourse ad = new ViewStudentOrCourse();
+            ad.Show();
+            this.Close();
         }
     }
 }

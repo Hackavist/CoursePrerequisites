@@ -27,12 +27,12 @@ namespace Course_Prerequsites_WPF.UIs
         }
         List<string> InProgress;
         List<string> Finished;
-       
+
         private void Window_Loaded(object sender, RoutedEventArgs e)
         {
             foreach (var x in WelcomePage.AllStudentsDictionary)
             {
-                SelectStudentComboBox.Items.Add(x.Key+' ' + x.Value.Name);
+                SelectStudentComboBox.Items.Add(x.Key + ' ' + x.Value.Name);
             }
         }
         void DisplayCourseDetails(string coursename)
@@ -43,7 +43,7 @@ namespace Course_Prerequsites_WPF.UIs
             CodeTextBlock.Text = "Course Code : " + tmp.Code;
             CurrentstudentTextBlock.Text = "Current Number of Students : " + tmp.CurrentNumberOfStudents;
             MaximumStudentTextBlock.Text = "Maximum Number of Students : " + tmp.MaximumNumberOfStudents;
-            PassingGradeTextBlock.Text = "Passing Grade : " + tmp.PassingGrade.ToString() ;
+            PassingGradeTextBlock.Text = "Passing Grade : " + tmp.PassingGrade.ToString();
             MaxGradeTextBlock.Text = "Total Grade : " + tmp.CourseGrade.ToString();
             HoursTextBlock.Text = "Total Hours : " + tmp.Hours.ToString();
             InstructorTextBlock.Text = "Instructor Name : " + tmp.Instructor;
@@ -64,8 +64,8 @@ namespace Course_Prerequsites_WPF.UIs
 
         private void ListOfCompletedCoursesOfStudent_SelectionChanged(object sender, SelectionChangedEventArgs e)
         {
-            
-            if (ListOfCompletedCoursesOfStudent.SelectedIndex!=-1)
+
+            if (ListOfCompletedCoursesOfStudent.SelectedIndex != -1)
             {
                 DisplayCourseDetails(ListOfCompletedCoursesOfStudent.SelectedValue.ToString());
             }
@@ -99,9 +99,11 @@ namespace Course_Prerequsites_WPF.UIs
                 MessageBox.Show("Please select student to view his courses ");
         }
 
-        
-
-       
-
+        private void BackBTN_Click(object sender, RoutedEventArgs e)
+        {
+            StudentsSettings st = new StudentsSettings();
+            st.Show();
+            this.Close();
+        }
     }
 }

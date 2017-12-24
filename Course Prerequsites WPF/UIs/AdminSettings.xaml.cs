@@ -28,7 +28,20 @@ namespace Course_Prerequsites_WPF.UIs
         {
             Add_Admin addAdmin = new Add_Admin();
             addAdmin.Show();
-            this.Hide();
+            this.Close();
+        }
+
+        private void RemoveAdmin_Click(object sender, RoutedEventArgs e)
+        {
+            RemoveAdmin ad = new UIs.RemoveAdmin();
+            ad.Show();
+            this.Close();
+        }
+
+        private void BackBTN_Click(object sender, RoutedEventArgs e)
+        {
+            ViewStudentOrCourse ad = new ViewStudentOrCourse();
+            ad.Show();
             this.Close();
         }
     }

@@ -24,15 +24,21 @@ namespace Course_Prerequsites_WPF.UIs
         public ViewStudentOrCourse()
         {
             InitializeComponent();
-        }
 
-      
+            if (WelcomePage.AllAdminsDictionary[WelcomePage.AdminUserName].GeneralManager != 1)
+            {
+                AdminSettings.Visibility = Visibility.Hidden;
+            }
+            else
+            {
+                AdminSettings.Visibility = Visibility.Visible;
+            }
+        }
 
         private void StudentSettings_Click(object sender, RoutedEventArgs e)
         {
             StudentsSettings StudSettings = new StudentsSettings();
             StudSettings.Show();
-            this.Hide();
             this.Close();
         }
 
@@ -40,7 +46,6 @@ namespace Course_Prerequsites_WPF.UIs
         {
             AdminSettings AdSettings = new AdminSettings();
             AdSettings.Show();
-            this.Hide();
             this.Close();
         }
 
@@ -48,7 +53,17 @@ namespace Course_Prerequsites_WPF.UIs
         {
             //course settings
             CourseSettings CourSettings = new CourseSettings();
-            this.Hide();
+            CourSettings.Show();
+            this.Close();
+        }
+
+        private void SignOut_Click(object sender, RoutedEventArgs e)
+        {
+            WelcomePage.AdminLogedIn = false;
+            WelcomePage.AdminUserName = "";
+            WelcomePage.AdminPassword = "";
+            WelcomePage wel = new WelcomePage();
+            wel.Show();
             this.Close();
         }
     }

@@ -9,7 +9,16 @@
     <Window.Background>
         <SolidColorBrush Color="White"  />
     </Window.Background>
-    <Grid>
+
+    <Grid Margin="10">
+        <Button ToolTip="Back to Admin Settings" x:Name="BackBTN" Style="{DynamicResource MetroCircleButtonStyle}" Height="55" Width="55" Click="BackBTN_Click" Margin="0,0,514.6,542.5">
+            <Rectangle Width="30" Height="20" Fill="{Binding Foreground, RelativeSource={RelativeSource FindAncestor, AncestorType={x:Type Button}}}">
+                <Rectangle.OpacityMask>
+                    <VisualBrush Stretch="Fill" Visual="{StaticResource appbar_arrow_left}" />
+                </Rectangle.OpacityMask>
+            </Rectangle>
+        </Button>
+
 
         <TextBlock Text=" Admin Log In" Margin="50" VerticalAlignment="Top" HorizontalAlignment="Center" Style="{StaticResource PageHeaderTextStyle}">
             <TextBlock.Foreground>
@@ -29,13 +38,13 @@
             </TextBlock.Foreground>
         </TextBlock>
 
-        <TextBox x:Name="Username_txt" Height="35" Margin="135,211,142.333,0" TextWrapping="Wrap" VerticalAlignment="Top" TabIndex="1" FontFamily="Segoe UI" FontSize="18"/>
+        <TextBox x:Name="Username_txt" Height="35" Margin="135,211,123,0" TextWrapping="Wrap" VerticalAlignment="Top" TabIndex="1" FontFamily="Segoe UI" FontSize="18"/>
         <TextBox x:Name="VisiblePass_txt"  HorizontalAlignment="Left" Height="35" Margin="135,369,0,0" VerticalAlignment="Top" Width="316" FontSize="18"/>
-       
-        <Button x:Name="LogIn_txt" Content="Log In" Height="42" Margin="226,510,227.333,0" VerticalAlignment="Top" Click="LogIn_txt_Click" FontFamily="Times New Roman" FontSize="18" Background="#FFF6A10C" Foreground="White"/>
+
+        <Button x:Name="LogIn_txt" Content="Log In" Height="42" Margin="226,510,227.333,0" VerticalAlignment="Top" Click="LogIn_txt_Click" FontFamily="Segoe UI" FontSize="22" FontWeight="Light" Background="#FFF6A10C" Foreground="White"/>
         <PasswordBox x:Name="Password_txt" HorizontalAlignment="Left" Height="35" Margin="135,369,0,0" VerticalAlignment="Top" Width="316" PasswordChar="●" TabIndex="2" PasswordChanged="Password_txt_PasswordChanged"/>
-       
+
         <Image x:Name="EyeImage" HorizontalAlignment="Left" Height="35" Margin="410,369,0,0" VerticalAlignment="Top" Width="41" RenderTransformOrigin="3.706,-0.589" MouseLeave="EyeImage_MouseLeave" PreviewMouseDown="EyeImage_PreviewMouseDown" PreviewMouseUp="EyeImage_PreviewMouseUp" Source="/Course Prerequsites WPF;component/Images/eye.png" Visibility="Hidden"/>
-        
+
     </Grid>
 </Window>

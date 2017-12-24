@@ -37,7 +37,7 @@ namespace Course_Prerequsites_WPF.UIs
             CourseGradeTextBox.ToolTip = "-Text Box can only contain numbers \n -Course Grade Must not exceed 200";
             PassingGradeTextBox.ToolTip = "-Text Box can only contain numbers \n -Course Grades Must no exceed Course Grades ";
         }
- 
+
         Course SelectedCourse;
 
         private void CourseSelection_SelectionChanged(object sender, SelectionChangedEventArgs e)
@@ -82,13 +82,13 @@ namespace Course_Prerequsites_WPF.UIs
         }
         bool CheckIfThereIsEmptyTextBox()
         {
-        // check if there is empty text box 
-            if ( MaximumNumberOfStudentsTextBox.Text.Length == 0 || CurrentNumberOfStudentsTextBox.Text.Length == 0 || PassingGradeTextBox.Text.Length == 0 || CourseGradeTextBox.Text.Length == 0 || HoursTextBox.Text.Length == 0 || InstructorTextBox.Text.Length == 0 || DescriptionTextBox.Text.Length == 0)
+            // check if there is empty text box 
+            if (MaximumNumberOfStudentsTextBox.Text.Length == 0 || CurrentNumberOfStudentsTextBox.Text.Length == 0 || PassingGradeTextBox.Text.Length == 0 || CourseGradeTextBox.Text.Length == 0 || HoursTextBox.Text.Length == 0 || InstructorTextBox.Text.Length == 0 || DescriptionTextBox.Text.Length == 0)
                 return true;
             return false;
         }
 
-        
+
         bool CheckGradesTextBoxes()
         {
             if (WelcomePage.IsNumber(CourseGradeTextBox.Text) == false)
@@ -140,7 +140,7 @@ namespace Course_Prerequsites_WPF.UIs
         }
         void mytrimer()
         {
-            MaximumNumberOfStudentsTextBox.Text = MaximumNumberOfStudentsTextBox.Text.Trim(' ' ,'\0');
+            MaximumNumberOfStudentsTextBox.Text = MaximumNumberOfStudentsTextBox.Text.Trim(' ', '\0');
             CourseGradeTextBox.Text = CourseGradeTextBox.Text.Trim(' ', '\0');
             PassingGradeTextBox.Text = PassingGradeTextBox.Text.Trim(' ', '\0');
             CurrentNumberOfStudentsTextBox.Text = CurrentNumberOfStudentsTextBox.Text.Trim(' ', '\0');
@@ -152,24 +152,31 @@ namespace Course_Prerequsites_WPF.UIs
         private void Button_Click(object sender, RoutedEventArgs e)
         {
             mytrimer();
-            if (CheckIfThereIsEmptyTextBox()==true)
+            if (CheckIfThereIsEmptyTextBox() == true)
             {
                 MessageBox.Show("You cannot leave empty text box");
                 return;
             }
             else
             {
-                if ( CheckNumberOfStudentsTextBoxes() && CheckGradesTextBoxes() && CheckHoursTextBox() && CheckAllTheRemainingTextBoxes())
+                if (CheckNumberOfStudentsTextBoxes() && CheckGradesTextBoxes() && CheckHoursTextBox() && CheckAllTheRemainingTextBoxes())
                 {
                     SelectedCourse.MaximumNumberOfStudents = int.Parse(MaximumNumberOfStudentsTextBox.Text);
                     SelectedCourse.CurrentNumberOfStudents = int.Parse(CurrentNumberOfStudentsTextBox.Text);
-                    SelectedCourse.CourseGrade = int.Parse( CourseGradeTextBox.Text );
-                    SelectedCourse.PassingGrade = int.Parse( PassingGradeTextBox.Text );
+                    SelectedCourse.CourseGrade = int.Parse(CourseGradeTextBox.Text);
+                    SelectedCourse.PassingGrade = int.Parse(PassingGradeTextBox.Text);
                     SelectedCourse.Description = DescriptionTextBox.Text.ToString();
                     WelcomePage.AllCoursesDictionary[SelectedCourse.CourseName] = SelectedCourse;
                     MessageBox.Show("Done Editting ^_^");
                 }
             }
+        }
+
+        private void BackBTN_Click(object sender, RoutedEventArgs e)
+        {
+            CourseSettings cour = new CourseSettings();
+            cour.Show();
+            this.Close();
         }
     }
 }

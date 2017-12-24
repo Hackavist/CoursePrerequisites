@@ -24,25 +24,24 @@ namespace Course_Prerequsites_WPF.UIs
         {
             InitializeComponent();
 
-            
             HoursTextBox.ToolTip = "-Text Box can only contain numbers \n -Number of hours Must not exceed 6";
             MaximumNumberOfStudentsTextBox.ToolTip = "-Text Box can only contain numbers \n -Number of students Must not exceed 500";
             CurrentNumberOfStudentsTextBox.ToolTip = "-Text Box can only contain numbers \n -Number of Current students Must not the maximum";
             CourseGradeTextBox.ToolTip = "-Text Box can only contain numbers \n -Course Grade Must not exceed 200";
             PassingGradeTextBox.ToolTip = "-Text Box can only contain numbers \n -Course Grades Must no exceed Course Grades ";
-            
+
         }
         void mytrimer()
         {
-            CodeTextBox.Text = CodeTextBox.Text.Trim(' ' ,'\0');
-            CourseNameTextBox.Text = CourseNameTextBox.Text.Trim(' ' ,'\0');
-            MaximumNumberOfStudentsTextBox.Text = MaximumNumberOfStudentsTextBox.Text.Trim(' ' ,'\0');
-            CourseGradeTextBox.Text = CourseGradeTextBox.Text.Trim(' ' ,'\0');
-            PassingGradeTextBox.Text = PassingGradeTextBox.Text.Trim(' ' ,'\0');
-            CurrentNumberOfStudentsTextBox.Text = CurrentNumberOfStudentsTextBox.Text.Trim(' ' ,'\0');
-            HoursTextBox.Text = HoursTextBox.Text.Trim(' ' ,'\0');
-            InstructorTextBox.Text = InstructorTextBox.Text.Trim(' ' ,'\0');
-            DescriptionTextBox.Text = DescriptionTextBox.Text.Trim(' ' ,'\0');
+            CodeTextBox.Text = CodeTextBox.Text.Trim(' ', '\0');
+            CourseNameTextBox.Text = CourseNameTextBox.Text.Trim(' ', '\0');
+            MaximumNumberOfStudentsTextBox.Text = MaximumNumberOfStudentsTextBox.Text.Trim(' ', '\0');
+            CourseGradeTextBox.Text = CourseGradeTextBox.Text.Trim(' ', '\0');
+            PassingGradeTextBox.Text = PassingGradeTextBox.Text.Trim(' ', '\0');
+            CurrentNumberOfStudentsTextBox.Text = CurrentNumberOfStudentsTextBox.Text.Trim(' ', '\0');
+            HoursTextBox.Text = HoursTextBox.Text.Trim(' ', '\0');
+            InstructorTextBox.Text = InstructorTextBox.Text.Trim(' ', '\0');
+            DescriptionTextBox.Text = DescriptionTextBox.Text.Trim(' ', '\0');
 
         }
         bool CheckNumberOfStudentsTextBoxes()
@@ -113,7 +112,6 @@ namespace Course_Prerequsites_WPF.UIs
             if (WelcomePage.ThereIsNoDelimiter(CodeTextBox.Text) && WelcomePage.ThereIsNoDelimiter(CourseNameTextBox.Text) && WelcomePage.ThereIsNoDelimiter(InstructorTextBox.Text) && WelcomePage.ThereIsNoDelimiter(DescriptionTextBox.Text))
             {
                 return true;
-
             }
             MessageBox.Show("There is some text box contains '%' or '#' or '*' ");
             return false;
@@ -136,7 +134,6 @@ namespace Course_Prerequsites_WPF.UIs
             {
                 if (CheckNumberOfStudentsTextBoxes() && CheckGradesTextBoxes() && CheckHoursTextBox() && CheckAllTheRemainingTextBoxes())
                 {
-
                     string Code = CodeTextBox.Text;
                     string CourseName = CourseNameTextBox.Text;
                     int MaximumNumber = int.Parse(MaximumNumberOfStudentsTextBox.Text);
@@ -151,7 +148,6 @@ namespace Course_Prerequsites_WPF.UIs
                     if (WelcomePage.AllCoursesDictionary.ContainsKey(CourseName))
                     {
                         MessageBox.Show("This course already exists ");
-
                     }
                     else
                     {
@@ -171,6 +167,13 @@ namespace Course_Prerequsites_WPF.UIs
                     }
                 }
             }
+        }
+
+        private void BackBTN_Click(object sender, RoutedEventArgs e)
+        {
+            CourseSettings cour = new CourseSettings();
+            cour.Show();
+            this.Close();
         }
     }
 }

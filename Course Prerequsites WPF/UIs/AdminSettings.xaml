@@ -7,8 +7,16 @@
         mc:Ignorable="d"
         Title="AdminSettings" Height="650" Width="600" Background="White">
     <Grid>
-        <Button x:Name="AddAdmin" Content="Add Admin" VerticalAlignment="Top" Margin="109,147,105.333,0" Height="88" TabIndex="1" FontSize="20" FontFamily="Times New Roman" Foreground="White" Background="#FFF6A10C" Click="AddAdmin_Click"/>
-        <Button x:Name="RemoveAdmin" Content="Remove Admin&#xA;" VerticalAlignment="Top" Margin="109,363,105.333,0" Height="88" TabIndex="1" FontSize="20" FontFamily="Times New Roman" Foreground="White" Background="#FFF6A10C"/>
+        <Button ToolTip="Back to Admin Settings" x:Name="BackBTN" Style="{DynamicResource MetroCircleButtonStyle}" Width="55" Height="55" Grid.Column="0" Click="BackBTN_Click" Margin="10,10,528.6,555">
+            <Rectangle Width="30" Height="20" Fill="{Binding Foreground, RelativeSource={RelativeSource FindAncestor, AncestorType={x:Type Button}}}">
+                <Rectangle.OpacityMask>
+                    <VisualBrush Stretch="Fill" Visual="{StaticResource appbar_arrow_left}" />
+                </Rectangle.OpacityMask>
+            </Rectangle>
+        </Button>
+
+        <Button x:Name="AddAdmin" Content="Add Admin" VerticalAlignment="Top" Margin="109,147,105.333,0" Height="88" TabIndex="1" FontSize="25" FontFamily="Segoe UI" FontWeight="Light" Foreground="White" Background="#FFF6A10C" Click="AddAdmin_Click"/>
+        <Button x:Name="RemoveAdmin" Content="Remove Admin" VerticalAlignment="Top" Margin="109,363,105.333,0" Height="88" TabIndex="1" FontSize="25" FontFamily="Segoe UI" FontWeight="Light"  Foreground="White" Background="#FFF6A10C" Click="RemoveAdmin_Click"/>
 
     </Grid>
 </Window>

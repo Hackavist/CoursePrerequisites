@@ -72,5 +72,12 @@ namespace Course_Prerequsites_WPF.UIs
                 }
             }
         }
+
+        private void BackBTN_Click(object sender, RoutedEventArgs e)
+        {
+            AdminSettings ad = new AdminSettings();
+            ad.Show();
+            this.Close();
+        }
     }
 }

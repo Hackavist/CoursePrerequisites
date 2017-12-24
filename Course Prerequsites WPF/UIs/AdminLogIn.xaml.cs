@@ -51,19 +51,15 @@ namespace Course_Prerequsites_WPF.UIs
                     if (WelcomePage.AllAdminsDictionary[name].Password == password)
                     {
                         MessageBox.Show("Logging In");
+
                         WelcomePage.AdminLogedIn = true;
                         WelcomePage.AdminUserName = name;
                         WelcomePage.AdminPassword = password;
 
-
                         //opens next window : admin controls
                         ViewStudentOrCourse AdminControls = new ViewStudentOrCourse();
                         AdminControls.Show();
-                        this.Hide();
                         this.Close();
-
-
-
                     }
                     else
                     {
@@ -121,6 +117,11 @@ namespace Course_Prerequsites_WPF.UIs
 
         }
 
-
+        private void BackBTN_Click(object sender, RoutedEventArgs e)
+        {
+            WelcomePage wel = new WelcomePage();
+            wel.Show();
+            this.Close();
+        }
     }
 }

@@ -6,14 +6,25 @@
         xmlns:local="clr-namespace:Course_Prerequsites_WPF.UIs"
         mc:Ignorable="d"
         Title="ViewStudentsInCourse" Height="650" Width="600" Background="#FFFFFFFF" WindowStartupLocation="CenterScreen">
-    <Grid Margin="0,14,0,-14">
-        <Label Content="Choose Course : " Height="29" Margin="59,94,142.333,0" VerticalAlignment="Top" FontFamily="Times New Roman" FontSize="18">
-            <Label.Foreground>
+    <Grid Margin="10">
+
+        <Button ToolTip="Back to Admin Settings" x:Name="BackBTN" Style="{DynamicResource MetroCircleButtonStyle}" Height="60" Width="55" Click="BackBTN_Click" Margin="0,0,514.6,535">
+            <Rectangle Width="30" Height="20" Fill="{Binding Foreground, RelativeSource={RelativeSource FindAncestor, AncestorType={x:Type Button}}}">
+                <Rectangle.OpacityMask>
+                    <VisualBrush Stretch="Fill" Visual="{StaticResource appbar_arrow_left}" />
+                </Rectangle.OpacityMask>
+            </Rectangle>
+        </Button>
+
+        <TextBlock Text="Choose Course :" Margin="10,94,190.6,0" VerticalAlignment="Top" Style="{StaticResource SectionHeaderTextStyle}" FontSize="28
+                   ">
+            <TextBlock.Foreground>
                 <SolidColorBrush Color="{DynamicResource {x:Static SystemColors.HighlightColorKey}}"/>
-            </Label.Foreground>
-        </Label>
-        <Button Content="Display" HorizontalAlignment="Left" Height="35" Margin="397,164,0,0" VerticalAlignment="Top" Width="136" Click="Button_Click" FontSize="18" FontFamily="Times New Roman" Foreground="White" Background="#FFF6A10C"/>
-        <Label Content="Name" HorizontalAlignment="Left" Height="25" Margin="216,387,0,0" VerticalAlignment="Top" Width="106" Foreground="#FFF9F5F5" FontFamily="Times New Roman" FontSize="18"/>
+            </TextBlock.Foreground>
+        </TextBlock>
+        
+        <Button Content="Display" HorizontalAlignment="Left" Height="46" Margin="397,164,0,0" VerticalAlignment="Top" Width="136" Click="Button_Click"  FontFamily="Segoe UI" FontWeight="Light" FontSize="26" Foreground="White" Background="#FFF6A10C"/>
+        <TextBlock Text="Name" HorizontalAlignment="Left" Height="25" Margin="216,387,0,0" VerticalAlignment="Top" Width="106" Foreground="#FFF9F5F5" Style="{StaticResource SectionHeaderTextStyle}"/>
         <ListBox x:Name="StudNames" HorizontalAlignment="Left" Height="259" VerticalAlignment="Top" Width="531" RenderTransformOrigin="2.547,4.793" Margin="30,317,0,0"/>
         <ComboBox x:Name="CourseNames" HorizontalAlignment="Left" Height="34" Margin="216,94,0,0" VerticalAlignment="Top" Width="317"/>
 

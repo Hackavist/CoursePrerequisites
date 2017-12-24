@@ -6,31 +6,44 @@
         xmlns:local="clr-namespace:Course_Prerequsites_WPF.UIs"
         mc:Ignorable="d"
         Title="AddStudent" Height="650" Width="600" WindowStartupLocation="CenterScreen">
-    <Grid Margin="0,0,3.333,11.667">
-        <TextBox x:Name="StudName" HorizontalAlignment="Left" Height="34" Margin="223,97,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="208" TabIndex="1" FontFamily="Times New Roman" FontSize="18" />
-        <TextBox x:Name="StudPassword" HorizontalAlignment="Left" Height="34" Margin="223,267,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="208" TabIndex="3" FontFamily="Times New Roman" FontSize="18"/>
-        <TextBox x:Name="StudID" HorizontalAlignment="Left" Height="34" Margin="223,180,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="208" TabIndex="2" FontFamily="Times New Roman" FontSize="18"/>
-        <Label Content="Name" HorizontalAlignment="Left" Height="34" Margin="20,97,0,0" VerticalAlignment="Top" Width="115" FontSize="18" FontFamily="Times New Roman">
-            <Label.Foreground>
+    <Grid>
+        <Button ToolTip="Back to Admin Settings" x:Name="BackBTN" Style="{DynamicResource MetroCircleButtonStyle}" Height="60" Width="55" Click="BackBTN_Click" Margin="10,10,522.6,547">
+            <Rectangle Width="30" Height="20" Fill="{Binding Foreground, RelativeSource={RelativeSource FindAncestor, AncestorType={x:Type Button}}}">
+                <Rectangle.OpacityMask>
+                    <VisualBrush Stretch="Fill" Visual="{StaticResource appbar_arrow_left}" />
+                </Rectangle.OpacityMask>
+            </Rectangle>
+        </Button>
+
+        <TextBox x:Name="StudName" HorizontalAlignment="Left" Height="34" Margin="223,97,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="208" TabIndex="1" FontFamily="Segoe UI" FontWeight="Light" FontSize="18" />
+        <TextBox x:Name="StudID" HorizontalAlignment="Left" Height="34" Margin="223,180,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="208" TabIndex="2" FontFamily="Segoe UI" FontWeight="Light" FontSize="18"/>
+        <TextBox x:Name="StudPassword" HorizontalAlignment="Left" Height="34" Margin="223,267,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="208" TabIndex="3" FontFamily="Segoe UI" FontWeight="Light" FontSize="18"/>
+        <ComboBox x:Name="StudYear"  HorizontalAlignment="Left" Height="34" Margin="223,357,0,0" VerticalAlignment="Top" Width="208" ShouldPreserveUserEnteredPrefix="True" TabIndex="4" FontSize="18" FontFamily="Segoe UI" FontWeight="Light"/>
+
+        <TextBlock Text="Name" HorizontalAlignment="Left" Height="34" Margin="20,97,0,0" VerticalAlignment="Top" Style="{StaticResource SectionHeaderTextStyle}">
+            <TextBlock.Foreground>
                 <SolidColorBrush Color="{DynamicResource {x:Static SystemColors.HighlightColorKey}}"/>
-            </Label.Foreground>
-        </Label>
-        <Label Content="ID" HorizontalAlignment="Left" Height="34" Margin="20,180,0,0" VerticalAlignment="Top" Width="115" FontSize="18" FontFamily="Times New Roman">
-            <Label.Foreground>
+            </TextBlock.Foreground>
+        </TextBlock>
+        
+        <TextBlock Text="ID" HorizontalAlignment="Left" Height="34" Margin="20,180,0,0" VerticalAlignment="Top" Style="{StaticResource SectionHeaderTextStyle}">
+            <TextBlock.Foreground>
                 <SolidColorBrush Color="{DynamicResource {x:Static SystemColors.HighlightColorKey}}"/>
-            </Label.Foreground>
-        </Label>
-        <Label Content="Password" HorizontalAlignment="Left" Height="34" Margin="20,267,0,0" VerticalAlignment="Top" Width="115" FontSize="18" FontFamily="Times New Roman">
-            <Label.Foreground>
+            </TextBlock.Foreground>
+        </TextBlock>
+
+        <TextBlock Text="Password" HorizontalAlignment="Left" Height="34" Margin="20,267,0,0" VerticalAlignment="Top" Style="{StaticResource SectionHeaderTextStyle}">
+            <TextBlock.Foreground>
                 <SolidColorBrush Color="{DynamicResource {x:Static SystemColors.HighlightColorKey}}"/>
-            </Label.Foreground>
-        </Label>
-        <Label Content="Academic Year" HorizontalAlignment="Left" Height="34" Margin="20,357,0,0" VerticalAlignment="Top" Width="132" FontSize="18" FontFamily="Times New Roman">
-            <Label.Foreground>
+            </TextBlock.Foreground>
+        </TextBlock>
+
+        <TextBlock Text="Academic Year" HorizontalAlignment="Left" Height="34" Margin="20,357,0,0" VerticalAlignment="Top" Style="{StaticResource SectionHeaderTextStyle}">
+            <TextBlock.Foreground>
                 <SolidColorBrush Color="{DynamicResource {x:Static SystemColors.HighlightColorKey}}"/>
-            </Label.Foreground>
-        </Label>
-        <ComboBox x:Name="StudYear"  HorizontalAlignment="Left" Height="34" Margin="223,357,0,0" VerticalAlignment="Top" Width="208" ShouldPreserveUserEnteredPrefix="True" TabIndex="4" FontSize="18" FontFamily="Times New Roman"/>
+            </TextBlock.Foreground>
+        </TextBlock>
+        
         <Image HorizontalAlignment="Left" Height="100" VerticalAlignment="Top" Width="100" Margin="480,499,0,0" Source="/Course Prerequsites WPF;component/Images/plus.png" Mouse.MouseUp="Image_MouseUp"/>
 
     </Grid>

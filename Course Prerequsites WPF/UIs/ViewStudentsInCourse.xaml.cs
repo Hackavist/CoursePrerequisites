@@ -35,15 +35,13 @@ namespace Course_Prerequsites_WPF.UIs
         {
             StudNames.Items.Clear();
 
-            
-            if(CourseNames.SelectedIndex==-1)
+
+            if (CourseNames.SelectedIndex == -1)
             {
                 MessageBox.Show("Please Select Course Name");
             }
             else
             {
-               
-
                 string name = CourseNames.SelectedItem.ToString();
                 Admin ad = new Admin();
 
@@ -52,30 +50,31 @@ namespace Course_Prerequsites_WPF.UIs
 
                 if (WelcomePage.AllCoursesDictionary.ContainsKey(name))
                 {
-                    if(displayNames.Count==0)
+                    if (displayNames.Count == 0)
                     {
                         MessageBox.Show("No Students Registered");
                     }
                     else
                     {
-                    foreach (var x in displayNames)
-                    StudNames.Items.Add(x);
+                        foreach (var x in displayNames)
+                            StudNames.Items.Add(x);
                     }
-
                 }
-
                 else
                 {
                     MessageBox.Show("Course Doesn't Exist");
                 }
-
             }
             CourseNames.SelectedIndex = -1;
             // StudNames.SelectedIndex = -1;
-
-
         }
 
+        private void BackBTN_Click(object sender, RoutedEventArgs e)
+        {
+            CourseSettings cour = new CourseSettings();
+            cour.Show();
+            this.Close();
+        }
     }
-    }
+}
 
