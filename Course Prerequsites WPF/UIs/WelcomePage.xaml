@@ -7,7 +7,9 @@
         xmlns:i="http://schemas.microsoft.com/expression/2010/interactivity"
     	xmlns:Behaviours="clr-namespace:MahApps.Metro.Behaviours;assembly=MahApps.Metro"
         mc:Ignorable="d"
+        WindowStartupLocation="CenterScreen" 
         Title="WelcomePage" Height="650" Width="600">
+    
     <Grid Margin="15">
         <Grid.RowDefinitions>
             <RowDefinition Height="*"></RowDefinition>

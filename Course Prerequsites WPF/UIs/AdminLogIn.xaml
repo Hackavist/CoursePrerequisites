@@ -5,13 +5,14 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Course_Prerequsites_WPF.UIs"
         mc:Ignorable="d"
-        Title="AdminLogIn" Height="650" Width="600" WindowStartupLocation="CenterScreen">
+        WindowStartupLocation="CenterScreen"
+        Title="Admin LogIn" Height="650" Width="600" >
     <Window.Background>
         <SolidColorBrush Color="White"  />
     </Window.Background>
 
     <Grid Margin="10">
-        <Button ToolTip="Back to Admin Settings" x:Name="BackBTN" Style="{DynamicResource MetroCircleButtonStyle}" Height="55" Width="55" Click="BackBTN_Click" Margin="0,0,514.6,542.5">
+        <Button ToolTip="Back to Main Page" x:Name="BackBTN" Style="{DynamicResource MetroCircleButtonStyle}" Height="55" Width="55" Click="BackBTN_Click" Margin="0,0,514.6,542.5">
             <Rectangle Width="30" Height="20" Fill="{Binding Foreground, RelativeSource={RelativeSource FindAncestor, AncestorType={x:Type Button}}}">
                 <Rectangle.OpacityMask>
                     <VisualBrush Stretch="Fill" Visual="{StaticResource appbar_arrow_left}" />

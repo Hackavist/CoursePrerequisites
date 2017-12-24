@@ -5,7 +5,8 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Course_Prerequsites_WPF.UIs"
         mc:Ignorable="d"
-        Title="AddFinishedCourses" Height="650" Width="600" WindowStartupLocation="CenterScreen">
+        WindowStartupLocation="CenterScreen"
+        Title="AddFinishedCourses" Height="650" Width="600" >
     <Grid>
         <Label Content="Choose Student" HorizontalAlignment="Left" VerticalAlignment="Bottom" Margin="72,0,0,514.667" Height="46" Width="131"/>
         <ComboBox x:Name="Students" HorizontalAlignment="Left" VerticalAlignment="Top" Width="246" Margin="208,60,0,0" Height="27" SelectionChanged="Students_SelectionChanged"/>

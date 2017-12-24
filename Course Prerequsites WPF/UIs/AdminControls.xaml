@@ -5,7 +5,8 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Course_Prerequsites_WPF.UIs"
         mc:Ignorable="d"
-        Title="Admin Controls" Height="650" Width="600" Background="#FFFFFFFF" WindowStartupLocation="CenterScreen">
+        WindowStartupLocation="CenterScreen"
+        Title="Admin Controls" Height="650" Width="600" Background="#FFFFFFFF">
     <Grid>
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="104*"/>
@@ -17,13 +18,14 @@
             <RowDefinition Height="*" />
         </Grid.RowDefinitions>
 
-        <Button ToolTip="Back to Admin Settings" x:Name="BackBTN" Style="{DynamicResource MetroCircleButtonStyle}" VerticalAlignment="Top" HorizontalAlignment="Left" Height="55" Width="55" Grid.Column="0" Click="SignOut_Click" Margin="0,0,0,0.2">
+        <Button ToolTip="Log Out" x:Name="BackBTN" Style="{DynamicResource MetroCircleButtonStyle}" VerticalAlignment="Top" HorizontalAlignment="Left" Height="55" Width="55" Grid.Column="0" Click="SignOut_Click" Margin="0,0,0,0.2">
             <Rectangle Width="30" Height="20" Fill="{Binding Foreground, RelativeSource={RelativeSource FindAncestor, AncestorType={x:Type Button}}}">
                 <Rectangle.OpacityMask>
                     <VisualBrush Stretch="Fill" Visual="{StaticResource appbar_arrow_left}" />
                 </Rectangle.OpacityMask>
             </Rectangle>
         </Button>
+        
         <Button x:Name="StudentSettings" Content="Student Settings" VerticalAlignment="Center" Height="88" TabIndex="1" FontSize="20" FontFamily="Segoe UI" FontWeight="Light" Foreground="White" Background="#FFF6A10C" Margin="110,10,110,10" Grid.Column="0" Grid.ColumnSpan="2"  Grid.Row="0" Click="StudentSettings_Click"/>
         <Button x:Name="CourseSettingsbtn" Content="Course Settings" VerticalAlignment="Center" Height="88" TabIndex="1" FontSize="20" FontFamily="Segoe UI" FontWeight="Light" Foreground="White" Background="#FFF6A10C" Margin="110,10,110,10" Grid.Column="0" Grid.ColumnSpan="2" Grid.Row="1" Click="CourseSettings_Click"/>
         <Button x:Name="AdminSettings" Content="Admin Settings" Height="88"   VerticalAlignment="Center" Margin="110,10,110,10" TabIndex="1" FontSize="20" FontFamily="Segoe UI" FontWeight="Light" Foreground="White" Background="#FFF6A10C" Grid.Column="0" Grid.ColumnSpan="2" Grid.Row="2" Click="AdminSettings_Click_1"/>
