@@ -47,5 +47,12 @@ namespace Course_Prerequsites_WPF.UIs
             ad.Show();
             this.Close();
         }
+
+        private void RemoveStudent_Click(object sender, RoutedEventArgs e)
+        {
+            Course_Prerequsites_WPF.UIs.RemoveStudent stud = new UIs.RemoveStudent();
+            stud.Show();
+            this.Close();
+        }
     }
 }

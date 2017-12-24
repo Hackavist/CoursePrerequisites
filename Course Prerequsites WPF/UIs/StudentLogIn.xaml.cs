@@ -44,7 +44,6 @@ namespace Course_Prerequsites_WPF.UIs
 
                         StudentControls StudControls = new StudentControls();
                         StudControls.Show();
-                        this.Hide();
                         this.Close();
                     }
                     else

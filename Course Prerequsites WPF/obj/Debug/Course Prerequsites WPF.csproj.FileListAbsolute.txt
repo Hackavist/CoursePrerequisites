@@ -802,3 +802,4 @@ D:\Work\Course ds\Course Prerequsites WPF\obj\Debug\Course Prerequsites WPF.cspr
 D:\Work\Course ds\Course Prerequsites WPF\obj\Debug\Course Prerequsites WPF.csproj.CoreCompileInputs.cache
 D:\Work\Course ds\Course Prerequsites WPF\obj\Debug\Course Prerequsites WPF.exe
 D:\Work\Course ds\Course Prerequsites WPF\obj\Debug\Course Prerequsites WPF.pdb
+D:\Work\Course ds\Course Prerequsites WPF\obj\Debug\Course Prerequsites WPF.csprojResolveAssemblyReference.cache

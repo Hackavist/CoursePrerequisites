@@ -16,8 +16,10 @@
             </Rectangle>
         </Button>
 
-        <Button x:Name="AddStudentbtn" Content="Add Student" VerticalAlignment="Top" Margin="109,147,105.333,0" Height="88" TabIndex="1" FontSize="25" FontFamily="Segoe UI" FontWeight="Light" Foreground="White" Background="#FFF6A10C" Click="AddStudent_Click"/>
-        <Button x:Name="ViewAllCoursesOfStudentbtn" Content="View All Courses Of a Student" VerticalAlignment="Top" Margin="109,363,105.333,0" Height="88" TabIndex="2" FontSize="21" FontFamily="Segoe UI" FontWeight="Light"  Foreground="White" Background="#FFF6A10C" Click="ViewAllCoursesOfStudentbtn_Click"/>
+        <Button x:Name="AddStudentbtn" Content="Add Student" VerticalAlignment="Top" Margin="109,120,105.333,0" Height="88" TabIndex="1" FontSize="25" FontFamily="Segoe UI" FontWeight="Light" Foreground="White" Background="#FFF6A10C" Click="AddStudent_Click"/>
+        <Button x:Name="RemoveStudent" Content="Remove Student" VerticalAlignment="Top" Margin="109,254,105.6,0" Height="88" TabIndex="2" FontSize="21" FontFamily="Segoe UI" FontWeight="Light"  Foreground="White" Background="#FFF6A10C" Click="RemoveStudent_Click"/>
+        <Button x:Name="ViewAllCoursesOfStudentbtn" Content="View All Courses Of a Student" VerticalAlignment="Top" Margin="109,390,105.333,0" Height="88" TabIndex="2" FontSize="21" FontFamily="Segoe UI" FontWeight="Light"  Foreground="White" Background="#FFF6A10C" Click="ViewAllCoursesOfStudentbtn_Click"/>
+        
 
     </Grid>
 </Window>

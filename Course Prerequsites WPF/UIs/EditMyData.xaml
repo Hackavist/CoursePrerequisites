@@ -8,18 +8,40 @@
         Title="Edit My Data" Height="650" Width="600" Loaded="Window_Loaded" WindowStartupLocation="CenterScreen">
     <Grid Margin="0,0,0.333,0">
         <Grid.ColumnDefinitions>
-            <ColumnDefinition Width="424*"/>
-            <ColumnDefinition Width="149*"/>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
         </Grid.ColumnDefinitions>
-        <Label Content="Name" HorizontalAlignment="Left" Margin="38,36,0,0" VerticalAlignment="Top"/>
-        <Label Content="ID" HorizontalAlignment="Left" Margin="38,86,0,0" VerticalAlignment="Top"/>
-        <Label Content="Password" HorizontalAlignment="Left" Margin="38,137,0,0" VerticalAlignment="Top"/>
-        <Label Content="Academic Year" HorizontalAlignment="Left" Margin="38,180,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.5,0.5"/>
-        <TextBox x:Name="nameTextBox" HorizontalAlignment="Left" Height="23" Margin="182,40,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" RenderTransformOrigin="0.5,0.5" TextChanged="nameTextBox_TextChanged"/>
-        <TextBox x:Name="idTextBox" HorizontalAlignment="Left" Height="23" Margin="182,98,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" TextChanged="idTextBox_TextChanged" IsReadOnly="True" IsUndoEnabled="False"/>
-        <TextBox x:Name="ayTextBox" HorizontalAlignment="Left" Height="23" Margin="182,184,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" TextChanged="ayTextBox_TextChanged" IsReadOnly="True" IsUndoEnabled="False"/>
-        <Button Content="Edit" HorizontalAlignment="Left" Margin="268,304,0,0" VerticalAlignment="Top" Width="75" Click="Button_Click"/>
-        <TextBox x:Name="passwordTextBox" HorizontalAlignment="Left" Height="23" Margin="182,137,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" RenderTransformOrigin="0.5,0.5" TextChanged="nameTextBox_TextChanged"/>
+
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*"></RowDefinition>
+            <RowDefinition Height="*"></RowDefinition>
+            <RowDefinition Height="*"></RowDefinition>
+            <RowDefinition Height="*"></RowDefinition>
+            <RowDefinition Height="*"></RowDefinition>
+            <RowDefinition Height="*"></RowDefinition>
+        </Grid.RowDefinitions>
+
+        <Button ToolTip="Back to Admin Settings" x:Name="BackBTN" Style="{DynamicResource MetroCircleButtonStyle}" HorizontalAlignment="Left" Width="55" Height="55" Grid.Column="0" Click="BackBTN_Click" Margin="0,0,0,0.2">
+            <Rectangle Width="30" Height="20" Fill="{Binding Foreground, RelativeSource={RelativeSource FindAncestor, AncestorType={x:Type Button}}}">
+                <Rectangle.OpacityMask>
+                    <VisualBrush Stretch="Fill" Visual="{StaticResource appbar_arrow_left}" />
+                </Rectangle.OpacityMask>
+            </Rectangle>
+        </Button>
+
+        <TextBlock Text="Edit Your Data" Grid.Column="0" Grid.Row="0" Grid.ColumnSpan="2" Style="{StaticResource PageHeaderTextStyle}" Foreground="{DynamicResource {x:Static SystemColors.HighlightBrushKey}}"/>
+
+        <TextBlock Grid.Column="0" Grid.Row="1" HorizontalAlignment="Center" VerticalAlignment="Center" Style="{ StaticResource HeaderTextStyle}" Text="Name" Foreground="{DynamicResource {x:Static SystemColors.HighlightBrushKey}}" />
+        <TextBlock Grid.Column="0" Grid.Row="2" HorizontalAlignment="Center" VerticalAlignment="Center" Style="{ StaticResource HeaderTextStyle}" Text="ID" Foreground="{DynamicResource {x:Static SystemColors.HighlightBrushKey}}" />
+        <TextBlock Grid.Column="0" Grid.Row="3" HorizontalAlignment="Center" VerticalAlignment="Center" Style="{ StaticResource HeaderTextStyle}" Text="Password" Foreground="{DynamicResource {x:Static SystemColors.HighlightBrushKey}}"/>
+        <TextBlock Grid.Column="0" Grid.Row="4" HorizontalAlignment="Center" VerticalAlignment="Center" Style="{ StaticResource HeaderTextStyle}" Text="Academic Year" Foreground="{DynamicResource {x:Static SystemColors.HighlightBrushKey}}"/>
+
+        <TextBox x:Name="nameTextBox" Grid.Column="1" Grid.Row="1" HorizontalAlignment="Stretch" Margin="30,30,30,30" VerticalAlignment="Stretch" FontFamily="Segoe UI" FontWeight="Light" TextWrapping="Wrap" />
+        <TextBox x:Name="idTextBox" Grid.Column="1" Grid.Row="2" HorizontalAlignment="Stretch" Margin="30,30,30,30" VerticalAlignment="Stretch" FontFamily="Segoe UI" FontWeight="Light" TextWrapping="Wrap" IsReadOnly="True" IsUndoEnabled="False"/>
+        <TextBox x:Name="passwordTextBox"  Grid.Column="1" Grid.Row="4" HorizontalAlignment="Stretch" Margin="30,30,30,30" VerticalAlignment="Stretch" FontFamily="Segoe UI" FontWeight="Light" TextWrapping="Wrap" />
+        <TextBox x:Name="ayTextBox"  Grid.Column="1" Grid.Row="3" HorizontalAlignment="Stretch" Margin="30,30,30,30" VerticalAlignment="Stretch" FontFamily="Segoe UI" FontWeight="Light" TextWrapping="Wrap"  IsReadOnly="True" IsUndoEnabled="False"/>
+
+        <Button Content="Edit Data" Grid.Column="0" Grid.ColumnSpan="2" Grid.Row="5" VerticalAlignment="Center" HorizontalAlignment="Stretch" Margin="140,10,140,10" FontSize="25" FontFamily="Segoe UI"  FontWeight="Light" Foreground="White" Background="#FFF6A10C" Click="Button_Click"/>
 
     </Grid>
 </Window>
