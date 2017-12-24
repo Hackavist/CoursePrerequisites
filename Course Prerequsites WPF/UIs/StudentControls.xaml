@@ -14,7 +14,7 @@
             <ColumnDefinition Width="47*"/>
         </Grid.ColumnDefinitions>
 
-        <Button ToolTip="Back to Admin Settings" x:Name="BackBTN" Style="{DynamicResource MetroCircleButtonStyle}" HorizontalAlignment="Left" VerticalAlignment="Top" Height="55" Width="55" Grid.Row="0" Grid.Column="0" Click="BackBTN_Click" Grid.ColumnSpan="2">
+        <Button ToolTip="Log Out" x:Name="BackBTN" Style="{DynamicResource MetroCircleButtonStyle}" HorizontalAlignment="Left" VerticalAlignment="Top" Height="55" Width="55" Grid.Row="0" Grid.Column="0" Click="BackBTN_Click" Grid.ColumnSpan="2">
             <Rectangle Width="30" Height="20" Fill="{Binding Foreground, RelativeSource={RelativeSource FindAncestor, AncestorType={x:Type Button}}}">
                 <Rectangle.OpacityMask>
                     <VisualBrush Stretch="Fill" Visual="{StaticResource appbar_arrow_left}" />

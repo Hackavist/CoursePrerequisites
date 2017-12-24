@@ -6,7 +6,7 @@
         xmlns:local="clr-namespace:Course_Prerequsites_WPF.UIs"
         mc:Ignorable="d"
         WindowStartupLocation="CenterScreen"
-        Title="Add_Admin" Height="650" Width="600" >
+        Title="Add Admin" Height="650" Width="600" >
     <Grid Margin="7">
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="0.7*"></ColumnDefinition>

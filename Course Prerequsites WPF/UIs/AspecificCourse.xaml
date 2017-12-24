@@ -9,7 +9,7 @@
         Loaded="Window_Loaded"
         ResizeMode="CanResizeWithGrip"
         WindowStartupLocation="CenterScreen"
-        Title="AspecificCourse" Height="650" Width="600">
+        Title="Course Details" Height="650" Width="600">
 
     <Window.Resources>
 
