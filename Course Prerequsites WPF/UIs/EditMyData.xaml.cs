@@ -21,7 +21,6 @@ namespace Course_Prerequsites_WPF.UIs
     /// </summary>
     public partial class EditMyData : Window
     {
-
         public EditMyData()
         {
             InitializeComponent();

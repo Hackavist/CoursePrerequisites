@@ -52,7 +52,7 @@ namespace Course_Prerequsites_WPF.UIs
 
         private void BackBTN_Click(object sender, RoutedEventArgs e)
         {
-            AdminSettings ad = new AdminSettings();
+            StudentsSettings ad = new StudentsSettings();
             ad.Show();
             this.Close();
         }
