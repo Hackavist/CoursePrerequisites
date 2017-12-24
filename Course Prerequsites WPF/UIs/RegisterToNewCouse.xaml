@@ -5,17 +5,19 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Course_Prerequsites_WPF.UIs"
         mc:Ignorable="d"
+        WindowStartupLocation="CenterScreen"
         Title="RegisterToNewCouse" Height="650" Width="600" Loaded="Window_Loaded">
+    
     <Grid>
         <Grid.RowDefinitions>
             <RowDefinition Height="85*"/>
             <RowDefinition Height="534*"/>
         </Grid.RowDefinitions>
-        <ComboBox x:Name="AvailableCourseBox" HorizontalAlignment="Left" Margin="297,127,0,0" VerticalAlignment="Top" Width="295" FontFamily="Times New Roman" FontSize="26" Height="55" FontWeight="Bold" Grid.Row="1"/>
+        <ComboBox x:Name="AvailableCourseBox" HorizontalAlignment="Left" Margin="275,127,0,0" VerticalAlignment="Top" Width="295" FontFamily="Times New Roman" FontSize="26" Height="55" FontWeight="Bold" Grid.Row="1"/>
         <TextBlock x:Name="label" Text="All Available Courses:" HorizontalAlignment="Left" Margin="10,127,0,0" VerticalAlignment="Top" Width="265"  Foreground="{DynamicResource {x:Static SystemColors.HighlightBrushKey}}" FontSize="26" Style="{StaticResource SectionHeaderTextStyle}" Grid.Row="1" Height="55"/>
         <Button x:Name="button" Content="Back" HorizontalAlignment="Left" Margin="425,430,0,0" VerticalAlignment="Top" Width="145" Height="55" Foreground="{DynamicResource {x:Static SystemColors.InfoBrushKey}}" FontSize="20" FontWeight="Normal" Background="#FFF6A10C" FontFamily="Segoe UI" Grid.Row="1"/>
         <Button x:Name="button1" Content="Register" HorizontalAlignment="Left" Margin="425,340,0,0" VerticalAlignment="Top" Width="145" Click="button1_Click" Height="65" Background="#FFF6A10C" Foreground="{DynamicResource {x:Static SystemColors.HighlightTextBrushKey}}" FontSize="20" FontFamily="Segoe UI" OpacityMask="{DynamicResource {x:Static SystemColors.ActiveCaptionTextBrushKey}}" Grid.Row="1" FontWeight="Normal"/>
-        <TextBlock x:Name="label1" Text="Registertion Form" Margin="160,0,157,0" VerticalAlignment="Bottom" Height="65" Foreground="{DynamicResource {x:Static SystemColors.HighlightBrushKey}}" FontSize="36"  Style="{StaticResource HeaderTextStyle}" />
+        <TextBlock x:Name="label1" Text="Registertion Form" Margin="160,0,77,0" VerticalAlignment="Bottom" Height="65" Foreground="{DynamicResource {x:Static SystemColors.HighlightBrushKey}}" FontSize="36"  Style="{StaticResource HeaderTextStyle}" />
 
     </Grid>
 </Window>
