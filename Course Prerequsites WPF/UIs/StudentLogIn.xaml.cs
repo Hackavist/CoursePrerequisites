@@ -99,5 +99,12 @@ namespace Course_Prerequsites_WPF.UIs
             Password_txt.Focus();
 
         }
+
+        private void BackBTN_Click(object sender, RoutedEventArgs e)
+        {
+            WelcomePage wel = new WelcomePage();
+            wel.Show();
+            this.Close();
+        }
     }
 }
