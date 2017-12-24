@@ -29,7 +29,6 @@ namespace Course_Prerequsites_WPF.UIs
         {
             EditMyData myData = new EditMyData();
             myData.Show();
-            this.Hide();
             this.Close();
         }
 
@@ -37,7 +36,6 @@ namespace Course_Prerequsites_WPF.UIs
         {
             RegisterToNewCouse registerTo = new RegisterToNewCouse();
             registerTo.Show();
-            this.Hide();
             this.Close();
         }
 
@@ -45,7 +43,6 @@ namespace Course_Prerequsites_WPF.UIs
         {
             Drop drp = new Drop();
             drp.Show();
-            this.Hide();
             this.Close();
         }
 
@@ -70,7 +67,7 @@ namespace Course_Prerequsites_WPF.UIs
         {
             ViewMyCourses viewmy = new ViewMyCourses();
             viewmy.Show();
-            this.Hide();
+            this.Close();
 
         }
     }

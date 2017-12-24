@@ -44,7 +44,6 @@ namespace Course_Prerequsites_WPF.UIs
 
                         StudentControls StudControls = new StudentControls();
                         StudControls.Show();
-                        this.Hide();
                         this.Close();
                     }
                     else
@@ -99,6 +98,13 @@ namespace Course_Prerequsites_WPF.UIs
             VisiblePass_txt.Visibility = Visibility.Hidden;
             Password_txt.Focus();
 
+        }
+
+        private void BackBTN_Click(object sender, RoutedEventArgs e)
+        {
+            WelcomePage wel = new WelcomePage();
+            wel.Show();
+            this.Close();
         }
     }
 }

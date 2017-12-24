@@ -14,6 +14,15 @@
             <RowDefinition Height="*"/>
         </Grid.RowDefinitions>
 
+
+        <Button ToolTip="Back to Admin Settings" x:Name="BackBTN" Style="{DynamicResource MetroCircleButtonStyle}" HorizontalAlignment="Left" VerticalAlignment="Top" Width="55" Height="55" Grid.Column="0" Click="BackBTN_Click" Margin="0,0,0,0.2">
+            <Rectangle Width="30" Height="20" Fill="{Binding Foreground, RelativeSource={RelativeSource FindAncestor, AncestorType={x:Type Button}}}">
+                <Rectangle.OpacityMask>
+                    <VisualBrush Stretch="Fill" Visual="{StaticResource appbar_arrow_left}" />
+                </Rectangle.OpacityMask>
+            </Rectangle>
+        </Button>
+
         <TextBox x:Name="VisiblePass_txt"  HorizontalAlignment="Left" Height="38" Margin="0.333,6.333,0,0" VerticalAlignment="Top" Width="298" FontSize="18" Grid.Row="2" Grid.Column="1" FontFamily="Segoe UI"/>
 
         <TextBlock Text="Student Log In" Style="{StaticResource PageHeaderTextStyle}" Grid.ColumnSpan="2" Foreground="{DynamicResource {x:Static SystemColors.HighlightBrushKey}}" />

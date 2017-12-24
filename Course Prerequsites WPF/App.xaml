@@ -5,7 +5,7 @@
              xmlns:chart="clr-namespace:De.TorstenMandelkow.MetroChart;assembly=De.TorstenMandelkow.MetroChart"
              StartupUri="UIs/WelcomePage.xaml"
              Exit="Application_Exit"
-             ShutdownMode="OnExplicitShutdown">
+             ShutdownMode="OnLastWindowClose">
     <Application.Resources>
 
         <ResourceDictionary    
@@ -169,7 +169,7 @@
                         <Setter Property="HeaderTemplate">
                             <Setter.Value>
                                 <DataTemplate>
-                                    
+
                                 </DataTemplate>
                             </Setter.Value>
                         </Setter>

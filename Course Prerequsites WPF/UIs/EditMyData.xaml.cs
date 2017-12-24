@@ -21,35 +21,9 @@ namespace Course_Prerequsites_WPF.UIs
     /// </summary>
     public partial class EditMyData : Window
     {
-        
         public EditMyData()
         {
             InitializeComponent();
-        }
-        
-        private void idTextBox_TextChanged(object sender, TextChangedEventArgs e)
-        {
-
-        }
-
-        private void nameTextBox_TextChanged(object sender, TextChangedEventArgs e)
-        {
-            
-        }
-
-        private void emailTextBox_TextChanged(object sender, TextChangedEventArgs e)
-        {
-
-        }
-
-        private void passwordTextBox_TextChanged(object sender, TextChangedEventArgs e)
-        {
-
-        }
-
-        private void ayTextBox_TextChanged(object sender, TextChangedEventArgs e)
-        {
-
         }
 
         private void Window_Loaded(object sender, RoutedEventArgs e)
@@ -64,6 +38,13 @@ namespace Course_Prerequsites_WPF.UIs
         {
             WelcomePage.AllStudentsDictionary[WelcomePage.StudentId].Name = nameTextBox.Text;
             WelcomePage.AllStudentsDictionary[WelcomePage.StudentId].Password = passwordTextBox.Text;
+        }
+
+        private void BackBTN_Click(object sender, RoutedEventArgs e)
+        {
+            StudentControls stud = new StudentControls();
+            stud.Show();
+            this.Close();
         }
     }
 }
