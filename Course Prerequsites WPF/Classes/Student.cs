@@ -118,10 +118,10 @@ namespace Course_Prerequsites_WPF.Classes
 
         }
         //Function that check if this student have 16 hr or more in one semster 
-        public bool IsAvailableCreditHours(Student s)
+        public bool IsAvailableCreditHours(Student s, Course c)
         {
 
-            int TotalHours = 0;
+            int TotalHours = c.Hours;
 
             
             foreach (var x in s.CoursesInProgress)
@@ -130,7 +130,7 @@ namespace Course_Prerequsites_WPF.Classes
                 TotalHours += x.Hours;
             }
 
-            if (TotalHours >= 16)
+            if (TotalHours > 16)
 
                 return false;
 

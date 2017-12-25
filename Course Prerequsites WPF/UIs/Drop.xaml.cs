@@ -50,8 +50,8 @@ namespace Course_Prerequsites_WPF.UIs
 
         private void BackBTN_Click(object sender, RoutedEventArgs e)
         {
-            StudentControls stud = new StudentControls();
-            stud.Show();
+            CourseSettings cs = new CourseSettings();
+           cs.Show();
             this.Close();
         }
     }

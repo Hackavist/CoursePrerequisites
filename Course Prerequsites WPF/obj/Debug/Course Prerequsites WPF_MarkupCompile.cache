@@ -4,16 +4,16 @@
 winexe
 C#
 .cs
-C:\Users\hazem\Source\Repos\CoursePrerequisites\Course Prerequsites WPF\obj\Debug\
+E:\Data_Structue_Taslim\Course Prerequsites WPF\obj\Debug\
 Course_Prerequsites_WPF
 none
 false
 DEBUG;TRACE
-C:\Users\hazem\Source\Repos\CoursePrerequisites\Course Prerequsites WPF\App.xaml
+E:\Data_Structue_Taslim\Course Prerequsites WPF\App.xaml
 28-12798891
 
 36-858906599
-21-2124112397
+21266478795
 Resources\Icons.xaml;Resources\IconsNonShared.xaml;UIs\AddAdmin.xaml;UIs\AddFinishedCourses.xaml;UIs\AddNewCourse.xaml;UIs\AddNewCourseSecondStep.xaml;UIs\AddStudent.xaml;UIs\AdminLogIn.xaml;UIs\AdminSettings.xaml;UIs\AllCoursesChart.xaml;UIs\AspecificCourse.xaml;UIs\CourseSettings.xaml;UIs\Drop.xaml;UIs\EditCourse.xaml;UIs\EditCoursePrerequsites.xaml;UIs\EditMyData.xaml;UIs\EnterStudentGrades.xaml;UIs\RegisterToNewCouse.xaml;UIs\RemoveAdmin.xaml;UIs\RemoveStudent.xaml;UIs\StudentControls.xaml;UIs\StudentLogIn.xaml;UIs\StudentsSettings.xaml;UIs\ViewAllCoursesOfStudent.xaml;UIs\ViewMyCourses.xaml;UIs\AdminControls.xaml;UIs\ViewStudentsInCourse.xaml;UIs\WelcomePage.xaml;
 
 False

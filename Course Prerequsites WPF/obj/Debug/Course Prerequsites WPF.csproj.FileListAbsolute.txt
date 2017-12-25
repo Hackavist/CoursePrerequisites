@@ -819,3 +819,85 @@ C:\Users\hazem\Source\Repos\CoursePrerequisites\Course Prerequsites WPF\obj\Debu
 C:\Users\hazem\Source\Repos\CoursePrerequisites\Course Prerequsites WPF\obj\Debug\UIs\StudentControls.baml
 C:\Users\hazem\Source\Repos\CoursePrerequisites\Course Prerequsites WPF\obj\Debug\UIs\EditCoursePrerequsites.baml
 C:\Users\hazem\Source\Repos\CoursePrerequisites\Course Prerequsites WPF\obj\Debug\UIs\EditCoursePrerequsites.g.cs
+E:\Data_Structue_Taslim\Course Prerequsites WPF\bin\Debug\Course Prerequsites WPF.exe.config
+E:\Data_Structue_Taslim\Course Prerequsites WPF\obj\Debug\Course Prerequsites WPF.exe
+E:\Data_Structue_Taslim\Course Prerequsites WPF\obj\Debug\Course Prerequsites WPF.pdb
+E:\Data_Structue_Taslim\Course Prerequsites WPF\bin\Debug\Course Prerequsites WPF.exe
+E:\Data_Structue_Taslim\Course Prerequsites WPF\bin\Debug\Course Prerequsites WPF.pdb
+E:\Data_Structue_Taslim\Course Prerequsites WPF\bin\Debug\De.TorstenMandelkow.MetroChart.dll
+E:\Data_Structue_Taslim\Course Prerequsites WPF\bin\Debug\MahApps.Metro.dll
+E:\Data_Structue_Taslim\Course Prerequsites WPF\bin\Debug\MahApps.Metro.IconPacks.dll
+E:\Data_Structue_Taslim\Course Prerequsites WPF\bin\Debug\MahApps.Metro.IconPacks.Entypo.dll
+E:\Data_Structue_Taslim\Course Prerequsites WPF\bin\Debug\MetroFramework.Design.dll
+E:\Data_Structue_Taslim\Course Prerequsites WPF\bin\Debug\MetroFramework.dll
+E:\Data_Structue_Taslim\Course Prerequsites WPF\bin\Debug\MetroFramework.Fonts.dll
+E:\Data_Structue_Taslim\Course Prerequsites WPF\bin\Debug\System.Windows.Interactivity.dll
+E:\Data_Structue_Taslim\Course Prerequsites WPF\bin\Debug\MahApps.Metro.pdb
+E:\Data_Structue_Taslim\Course Prerequsites WPF\bin\Debug\MahApps.Metro.xml
+E:\Data_Structue_Taslim\Course Prerequsites WPF\bin\Debug\MahApps.Metro.IconPacks.pdb
+E:\Data_Structue_Taslim\Course Prerequsites WPF\bin\Debug\MahApps.Metro.IconPacks.xml
+E:\Data_Structue_Taslim\Course Prerequsites WPF\bin\Debug\MahApps.Metro.IconPacks.Entypo.pdb
+E:\Data_Structue_Taslim\Course Prerequsites WPF\bin\Debug\MahApps.Metro.IconPacks.Entypo.xml
+E:\Data_Structue_Taslim\Course Prerequsites WPF\obj\Debug\Course Prerequsites WPF.csprojResolveAssemblyReference.cache
+E:\Data_Structue_Taslim\Course Prerequsites WPF\obj\Debug\Resources\Icons.baml
+E:\Data_Structue_Taslim\Course Prerequsites WPF\obj\Debug\Resources\IconsNonShared.baml
+E:\Data_Structue_Taslim\Course Prerequsites WPF\obj\Debug\UIs\AddNewCourse.baml
+E:\Data_Structue_Taslim\Course Prerequsites WPF\obj\Debug\UIs\AddNewCourseSecondStep.baml
+E:\Data_Structue_Taslim\Course Prerequsites WPF\obj\Debug\UIs\EditCourse.baml
+E:\Data_Structue_Taslim\Course Prerequsites WPF\obj\Debug\UIs\EditCoursePrerequsites.baml
+E:\Data_Structue_Taslim\Course Prerequsites WPF\obj\Debug\UIs\EnterStudentGrades.baml
+E:\Data_Structue_Taslim\Course Prerequsites WPF\obj\Debug\UIs\StudentLogIn.baml
+E:\Data_Structue_Taslim\Course Prerequsites WPF\obj\Debug\UIs\ViewAllCoursesOfStudent.baml
+E:\Data_Structue_Taslim\Course Prerequsites WPF\obj\Debug\UIs\AddAdmin.g.cs
+E:\Data_Structue_Taslim\Course Prerequsites WPF\obj\Debug\UIs\AddFinishedCourses.g.cs
+E:\Data_Structue_Taslim\Course Prerequsites WPF\obj\Debug\UIs\AddNewCourse.g.cs
+E:\Data_Structue_Taslim\Course Prerequsites WPF\obj\Debug\UIs\AddNewCourseSecondStep.g.cs
+E:\Data_Structue_Taslim\Course Prerequsites WPF\obj\Debug\UIs\AddStudent.g.cs
+E:\Data_Structue_Taslim\Course Prerequsites WPF\obj\Debug\UIs\AdminLogIn.g.cs
+E:\Data_Structue_Taslim\Course Prerequsites WPF\obj\Debug\UIs\AdminSettings.g.cs
+E:\Data_Structue_Taslim\Course Prerequsites WPF\obj\Debug\UIs\AllCoursesChart.g.cs
+E:\Data_Structue_Taslim\Course Prerequsites WPF\obj\Debug\UIs\AspecificCourse.g.cs
+E:\Data_Structue_Taslim\Course Prerequsites WPF\obj\Debug\UIs\CourseSettings.g.cs
+E:\Data_Structue_Taslim\Course Prerequsites WPF\obj\Debug\UIs\Drop.g.cs
+E:\Data_Structue_Taslim\Course Prerequsites WPF\obj\Debug\UIs\EditCourse.g.cs
+E:\Data_Structue_Taslim\Course Prerequsites WPF\obj\Debug\UIs\EditCoursePrerequsites.g.cs
+E:\Data_Structue_Taslim\Course Prerequsites WPF\obj\Debug\UIs\EditMyData.g.cs
+E:\Data_Structue_Taslim\Course Prerequsites WPF\obj\Debug\UIs\EnterStudentGrades.g.cs
+E:\Data_Structue_Taslim\Course Prerequsites WPF\obj\Debug\UIs\RegisterToNewCouse.g.cs
+E:\Data_Structue_Taslim\Course Prerequsites WPF\obj\Debug\UIs\RemoveAdmin.g.cs
+E:\Data_Structue_Taslim\Course Prerequsites WPF\obj\Debug\UIs\RemoveStudent.g.cs
+E:\Data_Structue_Taslim\Course Prerequsites WPF\obj\Debug\UIs\StudentControls.g.cs
+E:\Data_Structue_Taslim\Course Prerequsites WPF\obj\Debug\UIs\StudentLogIn.g.cs
+E:\Data_Structue_Taslim\Course Prerequsites WPF\obj\Debug\UIs\StudentsSettings.g.cs
+E:\Data_Structue_Taslim\Course Prerequsites WPF\obj\Debug\UIs\ViewAllCoursesOfStudent.g.cs
+E:\Data_Structue_Taslim\Course Prerequsites WPF\obj\Debug\UIs\ViewMyCourses.g.cs
+E:\Data_Structue_Taslim\Course Prerequsites WPF\obj\Debug\UIs\AdminControls.g.cs
+E:\Data_Structue_Taslim\Course Prerequsites WPF\obj\Debug\UIs\ViewStudentsInCourse.g.cs
+E:\Data_Structue_Taslim\Course Prerequsites WPF\obj\Debug\UIs\WelcomePage.g.cs
+E:\Data_Structue_Taslim\Course Prerequsites WPF\obj\Debug\App.g.cs
+E:\Data_Structue_Taslim\Course Prerequsites WPF\obj\Debug\GeneratedInternalTypeHelper.g.cs
+E:\Data_Structue_Taslim\Course Prerequsites WPF\obj\Debug\Course Prerequsites WPF_MarkupCompile.cache
+E:\Data_Structue_Taslim\Course Prerequsites WPF\obj\Debug\Course Prerequsites WPF_MarkupCompile.lref
+E:\Data_Structue_Taslim\Course Prerequsites WPF\obj\Debug\App.baml
+E:\Data_Structue_Taslim\Course Prerequsites WPF\obj\Debug\UIs\AddAdmin.baml
+E:\Data_Structue_Taslim\Course Prerequsites WPF\obj\Debug\UIs\AddFinishedCourses.baml
+E:\Data_Structue_Taslim\Course Prerequsites WPF\obj\Debug\UIs\AddStudent.baml
+E:\Data_Structue_Taslim\Course Prerequsites WPF\obj\Debug\UIs\AdminLogIn.baml
+E:\Data_Structue_Taslim\Course Prerequsites WPF\obj\Debug\UIs\AdminSettings.baml
+E:\Data_Structue_Taslim\Course Prerequsites WPF\obj\Debug\UIs\AllCoursesChart.baml
+E:\Data_Structue_Taslim\Course Prerequsites WPF\obj\Debug\UIs\AspecificCourse.baml
+E:\Data_Structue_Taslim\Course Prerequsites WPF\obj\Debug\UIs\CourseSettings.baml
+E:\Data_Structue_Taslim\Course Prerequsites WPF\obj\Debug\UIs\Drop.baml
+E:\Data_Structue_Taslim\Course Prerequsites WPF\obj\Debug\UIs\EditMyData.baml
+E:\Data_Structue_Taslim\Course Prerequsites WPF\obj\Debug\UIs\RegisterToNewCouse.baml
+E:\Data_Structue_Taslim\Course Prerequsites WPF\obj\Debug\UIs\RemoveAdmin.baml
+E:\Data_Structue_Taslim\Course Prerequsites WPF\obj\Debug\UIs\RemoveStudent.baml
+E:\Data_Structue_Taslim\Course Prerequsites WPF\obj\Debug\UIs\StudentControls.baml
+E:\Data_Structue_Taslim\Course Prerequsites WPF\obj\Debug\UIs\StudentsSettings.baml
+E:\Data_Structue_Taslim\Course Prerequsites WPF\obj\Debug\UIs\ViewMyCourses.baml
+E:\Data_Structue_Taslim\Course Prerequsites WPF\obj\Debug\UIs\AdminControls.baml
+E:\Data_Structue_Taslim\Course Prerequsites WPF\obj\Debug\UIs\ViewStudentsInCourse.baml
+E:\Data_Structue_Taslim\Course Prerequsites WPF\obj\Debug\UIs\WelcomePage.baml
+E:\Data_Structue_Taslim\Course Prerequsites WPF\obj\Debug\Course Prerequsites WPF.g.resources
+E:\Data_Structue_Taslim\Course Prerequsites WPF\obj\Debug\Course_Prerequsites_WPF.Properties.Resources.resources
+E:\Data_Structue_Taslim\Course Prerequsites WPF\obj\Debug\Course Prerequsites WPF.csproj.GenerateResource.Cache
