@@ -33,7 +33,7 @@ namespace Course_Prerequsites_WPF.UIs
             }
             else
             {
-                MessageBox.Show("Password Length Must be between 8 and 64");
+                MessageBox.Show("Password length must be between 8 and 64.");
                 return false;
             }
         }
@@ -43,7 +43,7 @@ namespace Course_Prerequsites_WPF.UIs
 
             if (string.IsNullOrEmpty(Username.Text) || string.IsNullOrEmpty(Password.Text))
             {
-                MessageBox.Show("Please enter missing data");
+                MessageBox.Show("Please enter the missing data.");
             }
             else
             {
@@ -59,11 +59,11 @@ namespace Course_Prerequsites_WPF.UIs
                         Admin admin = new Admin(Username.Text, Password.Text, IsGeneralManager);
 
                         WelcomePage.AllAdminsDictionary[Username.Text] = admin;
-                        MessageBox.Show("Admin Has Been Added");
+                        MessageBox.Show("Admin has been added.");
                     }
                     else
                     {
-                        MessageBox.Show("The Provided text Can't contain any of the following Character");
+                        MessageBox.Show("The provided text can't contain any of the following characters.");
                     }
                 }
                 else

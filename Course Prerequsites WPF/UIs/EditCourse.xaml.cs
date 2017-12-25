@@ -143,7 +143,7 @@ namespace Course_Prerequsites_WPF.UIs
                 return true;
 
             }
-            MessageBox.Show("There is some text box contains '%' or '#' or '*' ");
+            MessageBox.Show("Some textbox contains '%' or '#' or '*'.");
             return false;
         }
         void mytrimer()
@@ -162,7 +162,7 @@ namespace Course_Prerequsites_WPF.UIs
             mytrimer();
             if (CheckIfThereIsEmptyTextBox() == true)
             {
-                MessageBox.Show("You cannot leave empty text box");
+                MessageBox.Show("You cannot leave an empty textbox.");
                 return;
             }
             else
