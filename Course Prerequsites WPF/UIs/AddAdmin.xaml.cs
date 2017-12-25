@@ -27,7 +27,7 @@ namespace Course_Prerequsites_WPF.UIs
 
         bool PasswordLengthChecker(string pass)
         {
-            if ((pass.Length > 8) && (pass.Length < 64))
+            if ((pass.Length >= 8) && (pass.Length <= 64))
             {
                 return true;
             }
