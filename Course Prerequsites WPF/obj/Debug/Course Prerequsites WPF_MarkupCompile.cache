@@ -4,17 +4,17 @@
 winexe
 C#
 .cs
-C:\Users\Zeina\Source\Repos\CoursePrerequisites4\Course Prerequsites WPF\obj\Debug\
+D:\Work\Course ds\Course Prerequsites WPF\obj\Debug\
 Course_Prerequsites_WPF
 none
 false
 DEBUG;TRACE
-C:\Users\Zeina\Source\Repos\CoursePrerequisites4\Course Prerequsites WPF\App.xaml
+D:\Work\Course ds\Course Prerequsites WPF\App.xaml
 28-12798891
 
 36-858906599
-21-321137932
+21-511716787
 Resources\Icons.xaml;Resources\IconsNonShared.xaml;UIs\AddAdmin.xaml;UIs\AddFinishedCourses.xaml;UIs\AddNewCourse.xaml;UIs\AddNewCourseSecondStep.xaml;UIs\AddStudent.xaml;UIs\AdminLogIn.xaml;UIs\AdminSettings.xaml;UIs\AllCoursesChart.xaml;UIs\AspecificCourse.xaml;UIs\CourseSettings.xaml;UIs\Drop.xaml;UIs\EditCourse.xaml;UIs\EditCoursePrerequsites.xaml;UIs\EditMyData.xaml;UIs\EnterStudentGrades.xaml;UIs\RegisterToNewCouse.xaml;UIs\RemoveAdmin.xaml;UIs\RemoveStudent.xaml;UIs\StudentControls.xaml;UIs\StudentLogIn.xaml;UIs\StudentsSettings.xaml;UIs\ViewAllCoursesOfStudent.xaml;UIs\ViewMyCourses.xaml;UIs\AdminControls.xaml;UIs\ViewStudentsInCourse.xaml;UIs\WelcomePage.xaml;
 
-False
+True
 

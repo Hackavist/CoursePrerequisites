@@ -158,7 +158,7 @@ namespace Course_Prerequsites_WPF.UIs
                         CodeTextBox.Clear();
                         CourseNameTextBox.Clear();
                         MaximumNumberOfStudentsTextBox.Clear();
-                        CurrentNumberOfStudentsTextBox.Clear();
+                        //CurrentNumberOfStudentsTextBox.Clear();
                         PassingGradeTextBox.Clear();
                         CourseGradeTextBox.Clear();
                         HoursTextBox.Clear();
