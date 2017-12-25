@@ -48,7 +48,7 @@ namespace Course_Prerequsites_WPF.Classes
 
             foreach (var item in pre)
             {
-                PreRequiredCourses.Add(item); // Batl Le3b ya 7azem ya 7azem  
+                PreRequiredCourses.Add(item); 
             }
         }
 
@@ -117,7 +117,7 @@ namespace Course_Prerequsites_WPF.Classes
                             pr.Add(prerequirds[j]);
                         }
                     }
-                    //Creates a costume obkject of the courses class 
+                    //Creates a costume object of the courses class 
                     Course c = new Course(Code, CourseName, MaximumNumberOfStudents, CurrentNumberOfStudents, PassingGrade, CourseGrade, Hours, Instructor, Description, pr);
 
                     //adds it ot the Dictionary of Coures

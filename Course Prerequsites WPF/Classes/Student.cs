@@ -120,10 +120,11 @@ namespace Course_Prerequsites_WPF.Classes
         //Function that check if this student have 16 hr or more in one semster 
         public bool IsAvailableCreditHours(Student s, Course c)
         {
-
+            //we make total hours = to el hours of selected course in combo box to make check if it's hours is suitable or not.
             int TotalHours = c.Hours;
-
             
+            //Loop to add the hours of all the courses in progress to get all the hours of the student + the hours of the course he want to register for
+            //and see if he is allowed to make reister for it or no
             foreach (var x in s.CoursesInProgress)
             {
 
