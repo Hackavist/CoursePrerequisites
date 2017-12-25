@@ -127,7 +127,7 @@ namespace Course_Prerequsites_WPF.Classes
             foreach (var x in s.CoursesInProgress)
             {
 
-                TotalHours += x.Hours;
+               TotalHours += x.Hours;
             }
 
             if (TotalHours > 16)
