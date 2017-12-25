@@ -29,7 +29,6 @@ namespace Course_Prerequsites_WPF.UIs
             CurrentNumberOfStudentsTextBox.ToolTip = "-Textbox can only contain numbers. \n -Number of current students must not exceed the maximum number of students.";
             CourseGradeTextBox.ToolTip = "-Textbox can only contain numbers. \n -Course grade must not exceed 200.";
             PassingGradeTextBox.ToolTip = "-Textbox can only contain numbers. \n -Passing grade must no exceed the course grade.";
-
         }
         void mytrimer()
         {
@@ -63,7 +62,7 @@ namespace Course_Prerequsites_WPF.UIs
             }
             else if (int.Parse(MaximumNumberOfStudentsTextBox.Text) > 500)
             {
-                MessageBox.Show("The maximum number of students in class cannot exceed 500 student.");
+                MessageBox.Show("The maximum number of students in class cannot exceed 500 students.");
                 return false;
             }
             return true;
