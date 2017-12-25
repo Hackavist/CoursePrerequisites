@@ -38,10 +38,13 @@ namespace Course_Prerequsites_WPF.UIs
             PassingGradeTextBox.ToolTip = "-Text Box can only contain numbers \n -Course Grades Must no exceed Course Grades ";
         }
 
-        Course SelectedCourse;
+        public static Course SelectedCourse;
 
         private void CourseSelection_SelectionChanged(object sender, SelectionChangedEventArgs e)
         {
+            if(CourseSelection.SelectedIndex!=-1)
+            {
+
             //makes the info box visible
             InnerCanvas.Visibility = System.Windows.Visibility.Visible;
             // get the selected Course
@@ -54,6 +57,11 @@ namespace Course_Prerequsites_WPF.UIs
             CourseGradeTextBox.Text = SelectedCourse.CourseGrade.ToString();
             InstructorTextBox.Text = SelectedCourse.Instructor;
             DescriptionTextBox.Text = SelectedCourse.Description;
+            }
+            else
+            {
+                InnerCanvas.Visibility = System.Windows.Visibility.Hidden;
+            }
 
         }
         bool CheckNumberOfStudentsTextBoxes()
@@ -177,6 +185,13 @@ namespace Course_Prerequsites_WPF.UIs
             CourseSettings cour = new CourseSettings();
             cour.Show();
             this.Close();
+        }
+
+        private void EditPrerequsitesButton_Click(object sender, RoutedEventArgs e)
+        {
+            EditCoursePrerequsites secondstep = new EditCoursePrerequsites();
+            secondstep.ShowDialog();
+
         }
     }
 }

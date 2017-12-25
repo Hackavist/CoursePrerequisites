@@ -22,9 +22,9 @@
             <TextBlock Style="{ StaticResource SectionHeaderTextStyle}" Text="Course Grade " HorizontalAlignment="Left" VerticalAlignment="Top" FontSize="16" Height="23" Width="111" Canvas.Top="161"/>
             <TextBlock Style="{ StaticResource SectionHeaderTextStyle}" Text="Hours" HorizontalAlignment="Left" VerticalAlignment="Top" FontSize="16" Height="24" Width="47" Canvas.Top="207"/>
             <TextBlock Style="{ StaticResource SectionHeaderTextStyle}" Text ="Instructor" HorizontalAlignment="Left" VerticalAlignment="Top" FontSize="16" Height="23" Width="76" Canvas.Top="265"/>
-            <TextBlock Style="{ StaticResource SectionHeaderTextStyle}" Text="Description" HorizontalAlignment="Left" VerticalAlignment="Bottom" FontSize="16" Height="23" Width="90" Canvas.Top="353" Margin="0"/>
+            <TextBlock Style="{ StaticResource SectionHeaderTextStyle}" Text="Description" HorizontalAlignment="Left" VerticalAlignment="Bottom" FontSize="16" Height="23" Width="90" Canvas.Top="321" Margin="0"/>
 
-            <TextBox HorizontalAlignment="Left" Height="27" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="246" x:Name="CurrentNumberOfStudentsTextBox" Canvas.Left="272" Canvas.Top="10"/>
+            <TextBox HorizontalAlignment="Left" Height="27" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="246" x:Name="CurrentNumberOfStudentsTextBox" Canvas.Left="272" Canvas.Top="10" IsEnabled="False"/>
             <TextBox HorizontalAlignment="Left" Height="29" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="246" x:Name="MaximumNumberOfStudentsTextBox" Canvas.Left="272" Canvas.Top="56"/>
             <TextBox HorizontalAlignment="Left" Height="28" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="246" x:Name="PassingGradeTextBox" Canvas.Left="272" Canvas.Top="106"/>
             <TextBox HorizontalAlignment="Left" Height="28" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="246" x:Name="CourseGradeTextBox" Canvas.Left="272" Canvas.Top="161"/>
@@ -35,6 +35,7 @@
         </Canvas>
         <ComboBox x:Name="CourseSelection" Width="376" Canvas.Left="114" Canvas.Top="85" SelectionChanged="CourseSelection_SelectionChanged"/>
 
-        <Button Content="Done Editting" Width="160" Canvas.Left="202" Canvas.Top="561" Click="Button_Click" FontFamily="Segoe UI" FontWeight="Light" FontSize="20" Foreground="White" Background="#FFF6A10C" Height="46"/>
+        <Button Content="Edit Prerequsites" Width="195" Canvas.Left="38" Canvas.Top="556" FontFamily="Segoe UI" FontWeight="Light" FontSize="20" Foreground="White" Background="#FFF6A10C" Height="46" x:Name="EditPrerequsitesButton" Click="EditPrerequsitesButton_Click"/>
+        <Button Content="Done Editting" Width="195" Canvas.Left="383" Canvas.Top="556" Click="Button_Click" FontFamily="Segoe UI" FontWeight="Light" FontSize="20" Foreground="White" Background="#FFF6A10C" Height="46" x:Name="DoneEdittingButton"/>
     </Canvas>
 </Window>

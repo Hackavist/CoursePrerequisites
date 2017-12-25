@@ -8,7 +8,7 @@
             <ScrollViewer.Effect>
                 <DropShadowEffect/>
             </ScrollViewer.Effect>
-            <StackPanel  Width="560" x:Name="mylist"/>
+            <StackPanel  Width="560" x:Name="mylist" Background="#FFF6A10C"/>
         </ScrollViewer>
 
         <TextBlock HorizontalAlignment="Left" Margin="10,10,0,0" TextWrapping="Wrap" Text="Mark The Prereqsites Of The New Course" VerticalAlignment="Top" Height="35" Width="574" Style="{StaticResource SectionHeaderTextStyle}"/>

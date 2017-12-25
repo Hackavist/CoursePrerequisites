@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Course_Prerequsites_WPF.Classes;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -12,34 +13,68 @@ using System.Windows.Media;
 using System.Windows.Media.Effects;
 using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
-using Course_Prerequsites_WPF.Classes;
-using Course_Prerequsites_WPF.UIs;
+
 namespace Course_Prerequsites_WPF.UIs
 {
     /// <summary>
-    /// Interaction logic for AddNewCourseSecondStep.xaml
+    /// Interaction logic for EditCoursePrerequsites.xaml
     /// </summary>
-    /// Made By : Hazem Khairy ^_^
-    public partial class AddNewCourseSecondStep : Window
+    public partial class EditCoursePrerequsites : Window
     {
+        Course selectedcourse;
         DropShadowEffect shadoweffect = new DropShadowEffect
-            {
-                Direction = 300,
-                ShadowDepth = 9
-            };
-        public AddNewCourseSecondStep()
+        {
+            Direction = 300,
+            ShadowDepth = 9
+        };
+        Dictionary<Course, bool> visited = new Dictionary<Course,bool>();
+        public EditCoursePrerequsites()
         {
             InitializeComponent();
+            // get the required course
+            selectedcourse = EditCourse.SelectedCourse;
             
             //add all courses ( in canvas form ) to the panel
+            fillthegrid();
+            
+            
+        }
+        void fillthegrid()
+        {
             foreach (var x in WelcomePage.AllCoursesDictionary)
             {
+                
+                if (dfs(x.Value)==true && x.Value!=selectedcourse)
+                {
+                    //visited = new Dictionary<Course, bool>();
                 mylist.Children.Add(CreateCanvasElement(x.Value));
+
+                }
             }
         }
+        bool dfs(Course tocheck)
+        {
+            if (tocheck.CourseName==selectedcourse.CourseName)
+                return false ;
+            if (tocheck.PreRequiredCourses.Count == 0)
+                return true;
+
+            bool ret = true;
+            foreach(var x in tocheck.PreRequiredCourses)
+            {
+                if (visited.ContainsKey(WelcomePage.AllCoursesDictionary[x]) &&  visited[WelcomePage.AllCoursesDictionary[x]] != true)
+                {
+                    visited[WelcomePage.AllCoursesDictionary[x]] = true;
+                    ret = ret & dfs(WelcomePage.AllCoursesDictionary[x]);
+                }
+            }
+            return ret;
+        }
+
         List<CheckBox> CheckBoxList = new List<CheckBox>();
         Canvas CreateCanvasElement(Course CourseTmp)
         {
+
             Canvas canvastmp = new Canvas();
             canvastmp.VerticalAlignment = System.Windows.VerticalAlignment.Top;
             canvastmp.HorizontalAlignment = System.Windows.HorizontalAlignment.Left;
@@ -54,9 +89,10 @@ namespace Course_Prerequsites_WPF.UIs
             textblocktmp.FontSize = 20;
             textblocktmp.FontWeight = FontWeights.Bold;
             textblocktmp.Margin = new Thickness(10, 10, 0, 0);
-
             textblocktmp.VerticalAlignment = System.Windows.VerticalAlignment.Top;
             textblocktmp.HorizontalAlignment = System.Windows.HorizontalAlignment.Left;
+
+            // add the text block to the canvas
             canvastmp.Children.Add(textblocktmp);
 
             CheckBox checkboxtmp = new CheckBox();
@@ -70,36 +106,36 @@ namespace Course_Prerequsites_WPF.UIs
             checkboxtmp.FlowDirection = System.Windows.FlowDirection.RightToLeft;
             checkboxtmp.Tag = CourseTmp.CourseName;
 
-
-            canvastmp.Children.Add(checkboxtmp);
+            // mark the already prerequsities course
+            foreach (var x in selectedcourse.PreRequiredCourses)
+            {
+                if (x == CourseTmp.CourseName)
+                {
+                    checkboxtmp.IsChecked = true;
+                }
+            }
+            // add the checkbox to list to easily access it later
             CheckBoxList.Add(checkboxtmp);
+
+            // add the check box to the canvas
+            canvastmp.Children.Add(checkboxtmp);
+            //add tool tip to the canvas
             canvastmp.ToolTip = CourseTmp.PutInfoInToolTip();
             return canvastmp;
         }
 
         private void Button_Click(object sender, RoutedEventArgs e)
         {
-            int counter = 0;
-            List<string> tmp = new List<string>();
+            selectedcourse.PreRequiredCourses = new List<string>();
             foreach (var x in CheckBoxList)
             {
-                if (x.IsChecked == true)
+                if (x.IsChecked==true)
                 {
-                    counter++;
-                    tmp.Add(x.Tag.ToString());
+                    selectedcourse.PreRequiredCourses.Add(x.Tag.ToString());
                 }
             }
-            MessageBoxResult result = MessageBox.Show("Are you sure you want to add " + counter + " courses as prerequsites of the new course !", "Confirm", MessageBoxButton.YesNo);
-            if (result == MessageBoxResult.Yes)
-            {
-                foreach (var x in tmp)
-                    AddNewCourse.CoursePrerequstiesTmp.Add(x);
-                this.Close();
-            }
-            else
-            {
-                MessageBox.Show("Reselect the courses you to be the prerequsites or go back");
-            }
+            EditCourse.SelectedCourse = selectedcourse;
+            this.Close();
         }
     }
 }
