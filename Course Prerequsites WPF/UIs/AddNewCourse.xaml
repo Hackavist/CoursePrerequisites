@@ -4,8 +4,8 @@
         WindowStartupLocation="CenterScreen"
         Title="Add New Course" Height="600" Width="700">
     <Grid>
-        
-        <Button ToolTip="Back to Course Settings" x:Name="BackBTN" Style="{DynamicResource MetroCircleButtonStyle}" Height="60" Width="55" Click="BackBTN_Click" Margin="10,10,624.6,496.4" >
+
+        <Button ToolTip="Back to Course Settings" x:Name="BackBTN" Style="{DynamicResource MetroCircleButtonStyle}" Width="55" Click="BackBTN_Click" Margin="10,10,627,504" >
             <Rectangle Width="30" Height="20" Fill="{Binding Foreground, RelativeSource={RelativeSource FindAncestor, AncestorType={x:Type Button}}}">
                 <Rectangle.OpacityMask>
                     <VisualBrush Stretch="Fill" Visual="{StaticResource appbar_arrow_left}" />

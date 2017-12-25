@@ -20,7 +20,7 @@
             <RowDefinition Height="*"></RowDefinition>
         </Grid.RowDefinitions>
 
-        <Button ToolTip="Back to Admin Settings" x:Name="BackBTN" Style="{DynamicResource MetroCircleButtonStyle}" VerticalAlignment="Top" HorizontalAlignment="Left" Width="55" Height="55" Grid.Column="0" Click="BackBTN_Click" >
+        <Button ToolTip="Back to Admin Settings" x:Name="BackBTN" Style="{DynamicResource MetroCircleButtonStyle}" VerticalAlignment="Top" HorizontalAlignment="Left" Width="55" Height="55" Grid.Column="0" Click="BackBTN_Click" Margin="10,10,0,0" >
             <Rectangle Width="30" Height="20" Fill="{Binding Foreground, RelativeSource={RelativeSource FindAncestor, AncestorType={x:Type Button}}}">
                 <Rectangle.OpacityMask>
                     <VisualBrush Stretch="Fill" Visual="{StaticResource appbar_arrow_left}" />
@@ -29,23 +29,23 @@
         </Button>
 
 
-        <TextBlock Margin="7,5,5,5" Text="Username " Style="{DynamicResource SectionHeaderTextStyle}" HorizontalAlignment="Left" VerticalAlignment="Center" Grid.Column="0" Grid.Row="0">
+        <TextBlock Margin="62,85,0,37" Text="Username " Style="{DynamicResource SectionHeaderTextStyle}" HorizontalAlignment="Left" VerticalAlignment="Center" Grid.Column="0" Grid.Row="0">
             <TextBlock.Foreground>
                 <SolidColorBrush Color="{DynamicResource {x:Static SystemColors.HighlightColorKey}}"/>
             </TextBlock.Foreground>
         </TextBlock>
-        <TextBlock Margin="7,5,5,5" Text="Password " Style="{DynamicResource SectionHeaderTextStyle}" HorizontalAlignment="Left" VerticalAlignment="Center" Grid.Column="0" Grid.Row="1" >
+        <TextBlock Margin="62,61,0,61" Text="Password " Style="{DynamicResource SectionHeaderTextStyle}" HorizontalAlignment="Left" VerticalAlignment="Center" Grid.Column="0" Grid.Row="1" >
             <TextBlock.Foreground>
                 <SolidColorBrush Color="{DynamicResource {x:Static SystemColors.HighlightColorKey}}"/>
             </TextBlock.Foreground>
         </TextBlock>
-        <TextBlock Margin="7,5,5,5" Text="Manager " Style="{DynamicResource SectionHeaderTextStyle}" HorizontalAlignment="Left" VerticalAlignment="Center" Grid.Column="0" Grid.Row="2"  >
+        <TextBlock Margin="62,62,0,62" Text="Manager " Style="{DynamicResource SectionHeaderTextStyle}" HorizontalAlignment="Left" VerticalAlignment="Center" Grid.Column="0" Grid.Row="2"  >
             <TextBlock.Foreground>
                 <SolidColorBrush Color="{DynamicResource {x:Static SystemColors.HighlightColorKey}}"/>
             </TextBlock.Foreground>
         </TextBlock>
 
-        <TextBox x:Name="Username"  HorizontalAlignment="Stretch" VerticalAlignment="Center" Margin="10" Grid.Column="1" Grid.Row="0" />
+        <TextBox x:Name="Username"  HorizontalAlignment="Stretch" VerticalAlignment="Center" Margin="10,87,10,38" Grid.Column="1" Grid.Row="0" />
         <TextBox x:Name="Password" HorizontalAlignment="Stretch" VerticalAlignment="Center" Margin="10" Grid.Column="1" Grid.Row="1" />
         <CheckBox x:Name="GeneralManagerCheck" HorizontalAlignment="Left" VerticalAlignment="Center" Margin="10" Grid.Column="1" Grid.Row="2" />
 

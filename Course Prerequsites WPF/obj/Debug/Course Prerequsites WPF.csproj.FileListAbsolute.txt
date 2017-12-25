@@ -901,5 +901,85 @@ E:\Data_Structue_Taslim\Course Prerequsites WPF\obj\Debug\UIs\WelcomePage.baml
 E:\Data_Structue_Taslim\Course Prerequsites WPF\obj\Debug\Course Prerequsites WPF.g.resources
 E:\Data_Structue_Taslim\Course Prerequsites WPF\obj\Debug\Course_Prerequsites_WPF.Properties.Resources.resources
 E:\Data_Structue_Taslim\Course Prerequsites WPF\obj\Debug\Course Prerequsites WPF.csproj.GenerateResource.Cache
-D:\Work\Course ds\Course Prerequsites WPF\obj\Debug\UIs\EditCoursePrerequsites.baml
-D:\Work\Course ds\Course Prerequsites WPF\obj\Debug\UIs\EditCoursePrerequsites.g.cs
+C:\Users\Zeina\Source\Repos\CoursePrerequisites4\Course Prerequsites WPF\bin\Debug\Course Prerequsites WPF.exe.config
+C:\Users\Zeina\Source\Repos\CoursePrerequisites4\Course Prerequsites WPF\bin\Debug\Course Prerequsites WPF.exe
+C:\Users\Zeina\Source\Repos\CoursePrerequisites4\Course Prerequsites WPF\bin\Debug\Course Prerequsites WPF.pdb
+C:\Users\Zeina\Source\Repos\CoursePrerequisites4\Course Prerequsites WPF\bin\Debug\De.TorstenMandelkow.MetroChart.dll
+C:\Users\Zeina\Source\Repos\CoursePrerequisites4\Course Prerequsites WPF\bin\Debug\MahApps.Metro.dll
+C:\Users\Zeina\Source\Repos\CoursePrerequisites4\Course Prerequsites WPF\bin\Debug\MahApps.Metro.IconPacks.dll
+C:\Users\Zeina\Source\Repos\CoursePrerequisites4\Course Prerequsites WPF\bin\Debug\MahApps.Metro.IconPacks.Entypo.dll
+C:\Users\Zeina\Source\Repos\CoursePrerequisites4\Course Prerequsites WPF\bin\Debug\MetroFramework.Design.dll
+C:\Users\Zeina\Source\Repos\CoursePrerequisites4\Course Prerequsites WPF\bin\Debug\MetroFramework.dll
+C:\Users\Zeina\Source\Repos\CoursePrerequisites4\Course Prerequsites WPF\bin\Debug\MetroFramework.Fonts.dll
+C:\Users\Zeina\Source\Repos\CoursePrerequisites4\Course Prerequsites WPF\bin\Debug\System.Windows.Interactivity.dll
+C:\Users\Zeina\Source\Repos\CoursePrerequisites4\Course Prerequsites WPF\bin\Debug\MahApps.Metro.pdb
+C:\Users\Zeina\Source\Repos\CoursePrerequisites4\Course Prerequsites WPF\bin\Debug\MahApps.Metro.xml
+C:\Users\Zeina\Source\Repos\CoursePrerequisites4\Course Prerequsites WPF\bin\Debug\MahApps.Metro.IconPacks.pdb
+C:\Users\Zeina\Source\Repos\CoursePrerequisites4\Course Prerequsites WPF\bin\Debug\MahApps.Metro.IconPacks.xml
+C:\Users\Zeina\Source\Repos\CoursePrerequisites4\Course Prerequsites WPF\bin\Debug\MahApps.Metro.IconPacks.Entypo.pdb
+C:\Users\Zeina\Source\Repos\CoursePrerequisites4\Course Prerequsites WPF\bin\Debug\MahApps.Metro.IconPacks.Entypo.xml
+C:\Users\Zeina\Source\Repos\CoursePrerequisites4\Course Prerequsites WPF\obj\Debug\Course Prerequsites WPF.csprojResolveAssemblyReference.cache
+C:\Users\Zeina\Source\Repos\CoursePrerequisites4\Course Prerequsites WPF\obj\Debug\Resources\Icons.baml
+C:\Users\Zeina\Source\Repos\CoursePrerequisites4\Course Prerequsites WPF\obj\Debug\Resources\IconsNonShared.baml
+C:\Users\Zeina\Source\Repos\CoursePrerequisites4\Course Prerequsites WPF\obj\Debug\UIs\AddNewCourse.baml
+C:\Users\Zeina\Source\Repos\CoursePrerequisites4\Course Prerequsites WPF\obj\Debug\UIs\AddNewCourseSecondStep.baml
+C:\Users\Zeina\Source\Repos\CoursePrerequisites4\Course Prerequsites WPF\obj\Debug\UIs\EditCourse.baml
+C:\Users\Zeina\Source\Repos\CoursePrerequisites4\Course Prerequsites WPF\obj\Debug\UIs\EditCoursePrerequsites.baml
+C:\Users\Zeina\Source\Repos\CoursePrerequisites4\Course Prerequsites WPF\obj\Debug\UIs\EnterStudentGrades.baml
+C:\Users\Zeina\Source\Repos\CoursePrerequisites4\Course Prerequsites WPF\obj\Debug\UIs\StudentLogIn.baml
+C:\Users\Zeina\Source\Repos\CoursePrerequisites4\Course Prerequsites WPF\obj\Debug\UIs\ViewAllCoursesOfStudent.baml
+C:\Users\Zeina\Source\Repos\CoursePrerequisites4\Course Prerequsites WPF\obj\Debug\UIs\AddAdmin.g.cs
+C:\Users\Zeina\Source\Repos\CoursePrerequisites4\Course Prerequsites WPF\obj\Debug\UIs\AddFinishedCourses.g.cs
+C:\Users\Zeina\Source\Repos\CoursePrerequisites4\Course Prerequsites WPF\obj\Debug\UIs\AddNewCourse.g.cs
+C:\Users\Zeina\Source\Repos\CoursePrerequisites4\Course Prerequsites WPF\obj\Debug\UIs\AddNewCourseSecondStep.g.cs
+C:\Users\Zeina\Source\Repos\CoursePrerequisites4\Course Prerequsites WPF\obj\Debug\UIs\AddStudent.g.cs
+C:\Users\Zeina\Source\Repos\CoursePrerequisites4\Course Prerequsites WPF\obj\Debug\UIs\AdminLogIn.g.cs
+C:\Users\Zeina\Source\Repos\CoursePrerequisites4\Course Prerequsites WPF\obj\Debug\UIs\AdminSettings.g.cs
+C:\Users\Zeina\Source\Repos\CoursePrerequisites4\Course Prerequsites WPF\obj\Debug\UIs\AllCoursesChart.g.cs
+C:\Users\Zeina\Source\Repos\CoursePrerequisites4\Course Prerequsites WPF\obj\Debug\UIs\AspecificCourse.g.cs
+C:\Users\Zeina\Source\Repos\CoursePrerequisites4\Course Prerequsites WPF\obj\Debug\UIs\CourseSettings.g.cs
+C:\Users\Zeina\Source\Repos\CoursePrerequisites4\Course Prerequsites WPF\obj\Debug\UIs\Drop.g.cs
+C:\Users\Zeina\Source\Repos\CoursePrerequisites4\Course Prerequsites WPF\obj\Debug\UIs\EditCourse.g.cs
+C:\Users\Zeina\Source\Repos\CoursePrerequisites4\Course Prerequsites WPF\obj\Debug\UIs\EditCoursePrerequsites.g.cs
+C:\Users\Zeina\Source\Repos\CoursePrerequisites4\Course Prerequsites WPF\obj\Debug\UIs\EditMyData.g.cs
+C:\Users\Zeina\Source\Repos\CoursePrerequisites4\Course Prerequsites WPF\obj\Debug\UIs\EnterStudentGrades.g.cs
+C:\Users\Zeina\Source\Repos\CoursePrerequisites4\Course Prerequsites WPF\obj\Debug\UIs\RegisterToNewCouse.g.cs
+C:\Users\Zeina\Source\Repos\CoursePrerequisites4\Course Prerequsites WPF\obj\Debug\UIs\RemoveAdmin.g.cs
+C:\Users\Zeina\Source\Repos\CoursePrerequisites4\Course Prerequsites WPF\obj\Debug\UIs\RemoveStudent.g.cs
+C:\Users\Zeina\Source\Repos\CoursePrerequisites4\Course Prerequsites WPF\obj\Debug\UIs\StudentControls.g.cs
+C:\Users\Zeina\Source\Repos\CoursePrerequisites4\Course Prerequsites WPF\obj\Debug\UIs\StudentLogIn.g.cs
+C:\Users\Zeina\Source\Repos\CoursePrerequisites4\Course Prerequsites WPF\obj\Debug\UIs\StudentsSettings.g.cs
+C:\Users\Zeina\Source\Repos\CoursePrerequisites4\Course Prerequsites WPF\obj\Debug\UIs\ViewAllCoursesOfStudent.g.cs
+C:\Users\Zeina\Source\Repos\CoursePrerequisites4\Course Prerequsites WPF\obj\Debug\UIs\ViewMyCourses.g.cs
+C:\Users\Zeina\Source\Repos\CoursePrerequisites4\Course Prerequsites WPF\obj\Debug\UIs\AdminControls.g.cs
+C:\Users\Zeina\Source\Repos\CoursePrerequisites4\Course Prerequsites WPF\obj\Debug\UIs\ViewStudentsInCourse.g.cs
+C:\Users\Zeina\Source\Repos\CoursePrerequisites4\Course Prerequsites WPF\obj\Debug\UIs\WelcomePage.g.cs
+C:\Users\Zeina\Source\Repos\CoursePrerequisites4\Course Prerequsites WPF\obj\Debug\App.g.cs
+C:\Users\Zeina\Source\Repos\CoursePrerequisites4\Course Prerequsites WPF\obj\Debug\GeneratedInternalTypeHelper.g.cs
+C:\Users\Zeina\Source\Repos\CoursePrerequisites4\Course Prerequsites WPF\obj\Debug\Course Prerequsites WPF_MarkupCompile.cache
+C:\Users\Zeina\Source\Repos\CoursePrerequisites4\Course Prerequsites WPF\obj\Debug\Course Prerequsites WPF_MarkupCompile.lref
+C:\Users\Zeina\Source\Repos\CoursePrerequisites4\Course Prerequsites WPF\obj\Debug\App.baml
+C:\Users\Zeina\Source\Repos\CoursePrerequisites4\Course Prerequsites WPF\obj\Debug\UIs\AddAdmin.baml
+C:\Users\Zeina\Source\Repos\CoursePrerequisites4\Course Prerequsites WPF\obj\Debug\UIs\AddFinishedCourses.baml
+C:\Users\Zeina\Source\Repos\CoursePrerequisites4\Course Prerequsites WPF\obj\Debug\UIs\AddStudent.baml
+C:\Users\Zeina\Source\Repos\CoursePrerequisites4\Course Prerequsites WPF\obj\Debug\UIs\AdminLogIn.baml
+C:\Users\Zeina\Source\Repos\CoursePrerequisites4\Course Prerequsites WPF\obj\Debug\UIs\AdminSettings.baml
+C:\Users\Zeina\Source\Repos\CoursePrerequisites4\Course Prerequsites WPF\obj\Debug\UIs\AllCoursesChart.baml
+C:\Users\Zeina\Source\Repos\CoursePrerequisites4\Course Prerequsites WPF\obj\Debug\UIs\AspecificCourse.baml
+C:\Users\Zeina\Source\Repos\CoursePrerequisites4\Course Prerequsites WPF\obj\Debug\UIs\CourseSettings.baml
+C:\Users\Zeina\Source\Repos\CoursePrerequisites4\Course Prerequsites WPF\obj\Debug\UIs\Drop.baml
+C:\Users\Zeina\Source\Repos\CoursePrerequisites4\Course Prerequsites WPF\obj\Debug\UIs\EditMyData.baml
+C:\Users\Zeina\Source\Repos\CoursePrerequisites4\Course Prerequsites WPF\obj\Debug\UIs\RegisterToNewCouse.baml
+C:\Users\Zeina\Source\Repos\CoursePrerequisites4\Course Prerequsites WPF\obj\Debug\UIs\RemoveAdmin.baml
+C:\Users\Zeina\Source\Repos\CoursePrerequisites4\Course Prerequsites WPF\obj\Debug\UIs\RemoveStudent.baml
+C:\Users\Zeina\Source\Repos\CoursePrerequisites4\Course Prerequsites WPF\obj\Debug\UIs\StudentControls.baml
+C:\Users\Zeina\Source\Repos\CoursePrerequisites4\Course Prerequsites WPF\obj\Debug\UIs\StudentsSettings.baml
+C:\Users\Zeina\Source\Repos\CoursePrerequisites4\Course Prerequsites WPF\obj\Debug\UIs\ViewMyCourses.baml
+C:\Users\Zeina\Source\Repos\CoursePrerequisites4\Course Prerequsites WPF\obj\Debug\UIs\AdminControls.baml
+C:\Users\Zeina\Source\Repos\CoursePrerequisites4\Course Prerequsites WPF\obj\Debug\UIs\ViewStudentsInCourse.baml
+C:\Users\Zeina\Source\Repos\CoursePrerequisites4\Course Prerequsites WPF\obj\Debug\UIs\WelcomePage.baml
+C:\Users\Zeina\Source\Repos\CoursePrerequisites4\Course Prerequsites WPF\obj\Debug\Course Prerequsites WPF.g.resources
+C:\Users\Zeina\Source\Repos\CoursePrerequisites4\Course Prerequsites WPF\obj\Debug\Course_Prerequsites_WPF.Properties.Resources.resources
+C:\Users\Zeina\Source\Repos\CoursePrerequisites4\Course Prerequsites WPF\obj\Debug\Course Prerequsites WPF.csproj.GenerateResource.Cache
+C:\Users\Zeina\Source\Repos\CoursePrerequisites4\Course Prerequsites WPF\obj\Debug\Course Prerequsites WPF.exe
+C:\Users\Zeina\Source\Repos\CoursePrerequisites4\Course Prerequsites WPF\obj\Debug\Course Prerequsites WPF.pdb
