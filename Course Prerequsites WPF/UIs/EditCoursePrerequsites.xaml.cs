@@ -27,7 +27,7 @@ namespace Course_Prerequsites_WPF.UIs
             Direction = 300,
             ShadowDepth = 9
         };
-        Dictionary<Course, bool> visited = new Dictionary<Course,bool>();
+        Dictionary<Course, bool> dp = new Dictionary<Course,bool>();
         public EditCoursePrerequsites()
         {
             InitializeComponent();
@@ -46,7 +46,6 @@ namespace Course_Prerequsites_WPF.UIs
                 
                 if (dfs(x.Value)==true && x.Value!=selectedcourse)
                 {
-                    //visited = new Dictionary<Course, bool>();
                 mylist.Children.Add(CreateCanvasElement(x.Value));
 
                 }
@@ -54,21 +53,26 @@ namespace Course_Prerequsites_WPF.UIs
         }
         bool dfs(Course tocheck)
         {
-            if (tocheck.CourseName==selectedcourse.CourseName)
-                return false ;
+            if (tocheck.CourseName == selectedcourse.CourseName)
+                return false;
+            
             if (tocheck.PreRequiredCourses.Count == 0)
                 return true;
-
+            
+            if (dp.ContainsKey(tocheck))
+                return dp[tocheck];
+            
             bool ret = true;
-            foreach(var x in tocheck.PreRequiredCourses)
+
+
+            foreach (var x in tocheck.PreRequiredCourses)
             {
-                if (visited.ContainsKey(WelcomePage.AllCoursesDictionary[x]) &&  visited[WelcomePage.AllCoursesDictionary[x]] != true)
-                {
-                    visited[WelcomePage.AllCoursesDictionary[x]] = true;
-                    ret = ret & dfs(WelcomePage.AllCoursesDictionary[x]);
-                }
+
+                ret = ret & dfs(WelcomePage.AllCoursesDictionary[x]);
+
             }
-            return ret;
+
+            return dp[tocheck] = ret;
         }
 
         List<CheckBox> CheckBoxList = new List<CheckBox>();
