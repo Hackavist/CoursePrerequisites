@@ -1,22 +1,22 @@
-﻿
-FC:\Users\Zeina\Source\Repos\CoursePrerequisites4\Course Prerequsites WPF\App.xaml;;
-FC:\Users\Zeina\Source\Repos\CoursePrerequisites4\Course Prerequsites WPF\UIs\AddAdmin.xaml;;
-FC:\Users\Zeina\Source\Repos\CoursePrerequisites4\Course Prerequsites WPF\UIs\AddFinishedCourses.xaml;;
-FC:\Users\Zeina\Source\Repos\CoursePrerequisites4\Course Prerequsites WPF\UIs\AddStudent.xaml;;
-FC:\Users\Zeina\Source\Repos\CoursePrerequisites4\Course Prerequsites WPF\UIs\AdminLogIn.xaml;;
-FC:\Users\Zeina\Source\Repos\CoursePrerequisites4\Course Prerequsites WPF\UIs\AdminSettings.xaml;;
-FC:\Users\Zeina\Source\Repos\CoursePrerequisites4\Course Prerequsites WPF\UIs\AllCoursesChart.xaml;;
-FC:\Users\Zeina\Source\Repos\CoursePrerequisites4\Course Prerequsites WPF\UIs\AspecificCourse.xaml;;
-FC:\Users\Zeina\Source\Repos\CoursePrerequisites4\Course Prerequsites WPF\UIs\CourseSettings.xaml;;
-FC:\Users\Zeina\Source\Repos\CoursePrerequisites4\Course Prerequsites WPF\UIs\Drop.xaml;;
-FC:\Users\Zeina\Source\Repos\CoursePrerequisites4\Course Prerequsites WPF\UIs\EditMyData.xaml;;
-FC:\Users\Zeina\Source\Repos\CoursePrerequisites4\Course Prerequsites WPF\UIs\RegisterToNewCouse.xaml;;
-FC:\Users\Zeina\Source\Repos\CoursePrerequisites4\Course Prerequsites WPF\UIs\RemoveAdmin.xaml;;
-FC:\Users\Zeina\Source\Repos\CoursePrerequisites4\Course Prerequsites WPF\UIs\RemoveStudent.xaml;;
-FC:\Users\Zeina\Source\Repos\CoursePrerequisites4\Course Prerequsites WPF\UIs\StudentControls.xaml;;
-FC:\Users\Zeina\Source\Repos\CoursePrerequisites4\Course Prerequsites WPF\UIs\StudentsSettings.xaml;;
-FC:\Users\Zeina\Source\Repos\CoursePrerequisites4\Course Prerequsites WPF\UIs\ViewMyCourses.xaml;;
-FC:\Users\Zeina\Source\Repos\CoursePrerequisites4\Course Prerequsites WPF\UIs\AdminControls.xaml;;
-FC:\Users\Zeina\Source\Repos\CoursePrerequisites4\Course Prerequsites WPF\UIs\ViewStudentsInCourse.xaml;;
-FC:\Users\Zeina\Source\Repos\CoursePrerequisites4\Course Prerequsites WPF\UIs\WelcomePage.xaml;;
+﻿D:\Work\Course ds\Course Prerequsites WPF\obj\Debug\GeneratedInternalTypeHelper.g.cs
+FD:\Work\Course ds\Course Prerequsites WPF\App.xaml;;
+FD:\Work\Course ds\Course Prerequsites WPF\UIs\AddAdmin.xaml;;
+FD:\Work\Course ds\Course Prerequsites WPF\UIs\AddFinishedCourses.xaml;;
+FD:\Work\Course ds\Course Prerequsites WPF\UIs\AddStudent.xaml;;
+FD:\Work\Course ds\Course Prerequsites WPF\UIs\AdminLogIn.xaml;;
+FD:\Work\Course ds\Course Prerequsites WPF\UIs\AdminSettings.xaml;;
+FD:\Work\Course ds\Course Prerequsites WPF\UIs\AllCoursesChart.xaml;;
+FD:\Work\Course ds\Course Prerequsites WPF\UIs\AspecificCourse.xaml;;
+FD:\Work\Course ds\Course Prerequsites WPF\UIs\CourseSettings.xaml;;
+FD:\Work\Course ds\Course Prerequsites WPF\UIs\Drop.xaml;;
+FD:\Work\Course ds\Course Prerequsites WPF\UIs\EditMyData.xaml;;
+FD:\Work\Course ds\Course Prerequsites WPF\UIs\RegisterToNewCouse.xaml;;
+FD:\Work\Course ds\Course Prerequsites WPF\UIs\RemoveAdmin.xaml;;
+FD:\Work\Course ds\Course Prerequsites WPF\UIs\RemoveStudent.xaml;;
+FD:\Work\Course ds\Course Prerequsites WPF\UIs\StudentControls.xaml;;
+FD:\Work\Course ds\Course Prerequsites WPF\UIs\StudentsSettings.xaml;;
+FD:\Work\Course ds\Course Prerequsites WPF\UIs\ViewMyCourses.xaml;;
+FD:\Work\Course ds\Course Prerequsites WPF\UIs\AdminControls.xaml;;
+FD:\Work\Course ds\Course Prerequsites WPF\UIs\ViewStudentsInCourse.xaml;;
+FD:\Work\Course ds\Course Prerequsites WPF\UIs\WelcomePage.xaml;;
 

@@ -983,3 +983,5 @@ C:\Users\Zeina\Source\Repos\CoursePrerequisites4\Course Prerequsites WPF\obj\Deb
 C:\Users\Zeina\Source\Repos\CoursePrerequisites4\Course Prerequsites WPF\obj\Debug\Course Prerequsites WPF.csproj.GenerateResource.Cache
 C:\Users\Zeina\Source\Repos\CoursePrerequisites4\Course Prerequsites WPF\obj\Debug\Course Prerequsites WPF.exe
 C:\Users\Zeina\Source\Repos\CoursePrerequisites4\Course Prerequsites WPF\obj\Debug\Course Prerequsites WPF.pdb
+D:\Work\Course ds\Course Prerequsites WPF\obj\Debug\UIs\EditCoursePrerequsites.baml
+D:\Work\Course ds\Course Prerequsites WPF\obj\Debug\UIs\EditCoursePrerequsites.g.cs
