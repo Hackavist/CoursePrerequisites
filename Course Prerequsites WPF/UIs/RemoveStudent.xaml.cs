@@ -28,7 +28,7 @@ namespace Course_Prerequsites_WPF.UIs
         private void Window_Loaded(object sender, RoutedEventArgs e)
         {
             foreach (var x in WelcomePage.AllStudentsDictionary)
-                comboBox.Items.Add(x.Key);
+                comboBox.Items.Add(x.Key + ' ' + x.Value.Name);
         }
 
         private void button_Click(object sender, RoutedEventArgs e)
@@ -36,14 +36,15 @@ namespace Course_Prerequsites_WPF.UIs
         {
             if (comboBox.SelectedIndex == -1)
             {
-                MessageBox.Show("There is no selected item. Please select an item or click on the back button.");
+                MessageBox.Show("There is no selected item..Please select an item or click on Back button.");
             }
             else
             {
+                string SelectedId = (comboBox.SelectedItem.ToString().Split(' '))[0];
                 Admin ad = new Admin();
-                ad.RemoveStudent(comboBox.SelectedItem.ToString());
-                comboBox.Items.Remove(comboBox.SelectionBoxItem.ToString());
-                MessageBox.Show("Student has been removed.");
+                ad.RemoveStudent(SelectedId);
+                comboBox.Items.Remove(comboBox.SelectedItem.ToString());
+                MessageBox.Show("Student is removed.");
                 comboBox.SelectedIndex = -1;
               
             }
