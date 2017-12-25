@@ -89,7 +89,32 @@ namespace Course_Prerequsites_WPF.UIs
             if (CheckAllTextBoxs()==true)
             {
                 EnterGrades();
+                UpdateAcademicYear();
+            }
+        }
+        void UpdateAcademicYear()
+        {
+            int tmp = WelcomePage.AllStudentsDictionary[SelectedStudent].FinishedCourses.Count / 8; 
+            if (tmp==0)
+            {
+                WelcomePage.AllStudentsDictionary[SelectedStudent].AcademicYear = "1st year";
+            }
+            else if (tmp==1)
+            {
+                WelcomePage.AllStudentsDictionary[SelectedStudent].AcademicYear = "2nd year";
+            }
+            else if (tmp == 2)
+            {
+                WelcomePage.AllStudentsDictionary[SelectedStudent].AcademicYear = "3rd year";
+            }
+            else if (tmp == 3)
+            {
+                WelcomePage.AllStudentsDictionary[SelectedStudent].AcademicYear = "4th year";
+            }
+            else if (tmp==4)
+            {
 
+                WelcomePage.AllStudentsDictionary[SelectedStudent].AcademicYear = "5th year";
             }
         }
         void EnterGrades()
