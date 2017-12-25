@@ -29,15 +29,7 @@ namespace Course_Prerequsites_WPF.UIs
         {
 
             Student s = new Student();
-            //In case that this student already have all his availaable courses in this semester in 
-            ////the courses in progress
-            //if (s.IsAvailableCreditHours(WelcomePage.AllStudentsDictionary[WelcomePage.StudentId]) == false)
-            //{
-            //    MessageBox.Show("You Can't take more than 16 Credit Hours in one semster" + '\n' + "You are not allowed to register now");
-
-            //}
-            //else
-            //{
+          
                 //Loop on all available courses for this student in the list that is returned from this function
                 foreach (var x in s.ShowAvailableCourses())
                 {
@@ -51,7 +43,7 @@ namespace Course_Prerequsites_WPF.UIs
 
                 }
             }
-       // }
+       
 
         //What will happened when click on register
         private void button1_Click(object sender, RoutedEventArgs e)
