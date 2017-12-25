@@ -4,12 +4,12 @@
         Loaded="Window_Loaded"
         Title="EnterStudentGrades" Height="700" Width="600" >
     <Grid x:Name="maingrid" HorizontalAlignment="Left" Height="118" Margin="10,10,0,0" VerticalAlignment="Top" Width="580">
-        <ComboBox x:Name="StudentsComboBox" HorizontalAlignment="Left" VerticalAlignment="Top" Width="400" Margin="83,59,0,0" SelectionChanged="StudentsComboBox_SelectionChanged"/>
-        <TextBlock Text="Select student" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="83,33,0,0"/>
-        <Grid x:Name="MyGrid" HorizontalAlignment="Left" Height="540" VerticalAlignment="Top" Width="582" Margin="-2,121,0,-543">
 
+        <ComboBox x:Name="StudentsComboBox" HorizontalAlignment="Left" VerticalAlignment="Top" Width="400" Margin="83,71,0,0" SelectionChanged="StudentsComboBox_SelectionChanged"/>
+        <TextBlock Text="Select student" FontFamily="Segoe UI" FontWeight="Light"  HorizontalAlignment="Left" VerticalAlignment="Top" Margin="83,10,0,0" Style="{StaticResource PageHeaderTextStyle}" Foreground="{DynamicResource {x:Static SystemColors.HighlightBrushKey}}"/>
 
-            <TextBlock Text="Enter the Grades of Student :" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="200,10,0,0"/>
+        <Grid x:Name="MyGrid" HorizontalAlignment="Left" Height="540" VerticalAlignment="Top" Width="582" Margin="-2,142,0,-564">
+            <TextBlock Text="Enter the Grades of Student :" HorizontalAlignment="Center" VerticalAlignment="Top" Margin="0,10,0,0" Style="{StaticResource  PageHeaderTextStyle}" Foreground="{DynamicResource {x:Static SystemColors.HighlightBrushKey}}" />
         </Grid>
     </Grid>
 </Window>
