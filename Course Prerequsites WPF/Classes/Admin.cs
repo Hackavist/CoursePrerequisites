@@ -148,13 +148,16 @@ namespace Course_Prerequsites_WPF.Classes
                 throw new NotImplementedException();
             }
         }
+        //Function to remove student
         public void RemoveStudent(string id)
         {
-
+            //Loop on all the courses
             foreach (var x in WelcomePage.AllCoursesDictionary.Keys)
             {
+                //Loop till the number of courses in progress for this student
                 for (int i = 0; i < WelcomePage.AllStudentsDictionary[id].CoursesInProgress.Count; i++)
                 {
+                    //we will decrement the current number of students for all the courses that this student as we will remove him.
                     if (WelcomePage.AllStudentsDictionary[id].CoursesInProgress[i].CourseName == x)
                     {
                         WelcomePage.AllCoursesDictionary[x].CurrentNumberOfStudents--;
@@ -163,7 +166,7 @@ namespace Course_Prerequsites_WPF.Classes
                 }
             }
 
-
+            //Remove this student from all student dictionary.
             WelcomePage.AllStudentsDictionary.Remove(id);
         }
 
