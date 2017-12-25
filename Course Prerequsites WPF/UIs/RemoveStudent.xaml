@@ -9,7 +9,7 @@
         WindowStartupLocation="CenterScreen" 
         Title="RemoveStudent" Height="650" Width="600">
     <Grid>
-        <Button ToolTip="Back to Admin Settings" x:Name="BackBTN" Style="{DynamicResource MetroCircleButtonStyle}" Height="55" Width="55" Click="BackBTN_Click" Margin="10,10,524.6,551">
+        <Button ToolTip="Back to Admin Settings" x:Name="BackBTN" Style="{DynamicResource MetroCircleButtonStyle}" Height="55" Width="55" Click="BackBTN_Click" Margin="10,10,527,554">
                 <Rectangle Width="30" Height="20" Fill="{Binding Foreground, RelativeSource={RelativeSource FindAncestor, AncestorType={x:Type Button}}}">
                     <Rectangle.OpacityMask>
                         <VisualBrush Stretch="Fill" Visual="{StaticResource appbar_arrow_left}" />

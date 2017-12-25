@@ -46,7 +46,8 @@ namespace Course_Prerequsites_WPF.UIs
         {
             WelcomePage.AllStudentsDictionary[selected].CoursesInProgress.Remove(WelcomePage.AllCoursesDictionary[comboBoxCours.SelectedItem.ToString()]);
             MessageBox.Show("You sucessfully dropped "+ comboBoxCours.SelectedItem.ToString());
-            WelcomePage.AllCoursesDictionary[selected].CurrentNumberOfStudents--;
+            //WelcomePage.AllCoursesDictionary[selected].CurrentNumberOfStudents--;
+            //HENA YA HAZEM!!
             comboBoxCours.Items.RemoveAt(comboBoxCours.SelectedIndex);
             comboBoxCours.Text ="";
         }

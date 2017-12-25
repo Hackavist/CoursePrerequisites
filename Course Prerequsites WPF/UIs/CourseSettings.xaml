@@ -19,7 +19,7 @@
             <RowDefinition Height="*" />
         </Grid.RowDefinitions>
 
-        <Button ToolTip="Back to Admin Controls" x:Name="BackBTN" Style="{DynamicResource MetroCircleButtonStyle}" VerticalAlignment="Top" HorizontalAlignment="Left" Height="55" Width="55" Grid.Column="0" Click="BackBTN_Click" Margin="0,0,0,0.2">
+        <Button ToolTip="Back to Admin Controls" x:Name="BackBTN" Style="{DynamicResource MetroCircleButtonStyle}" VerticalAlignment="Top" HorizontalAlignment="Left" Height="55" Width="55" Grid.Column="0" Click="BackBTN_Click" Margin="10,10,0,0" TabIndex="5">
             <Rectangle Width="30" Height="20" Fill="{Binding Foreground, RelativeSource={RelativeSource FindAncestor, AncestorType={x:Type Button}}}">
                 <Rectangle.OpacityMask>
                     <VisualBrush Stretch="Fill" Visual="{StaticResource appbar_arrow_left}" />
@@ -29,7 +29,7 @@
 
         <Button x:Name="AddCourse" Content="Add Course" VerticalAlignment="Center" Height="88" TabIndex="1" FontSize="26" FontFamily="Segoe UI" FontWeight="Light" Foreground="White" Background="#FFF6A10C" Margin="110,10,110,10" Grid.Column="0" Grid.ColumnSpan="2"  Grid.Row="0" Click="AddCourse_Click"/>
         <Button x:Name="EditCourse" Content="Edit Course" VerticalAlignment="Center" Height="88" TabIndex="2" FontSize="26" FontFamily="Segoe UI" FontWeight="Light" Foreground="White" Background="#FFF6A10C" Margin="110,10,110,10" Grid.Column="0" Grid.ColumnSpan="2" Grid.Row="1" Click="EditCourse_Click"/>
-        <Button x:Name="ViewStudentsInCoursebtn" Content="View All Students In a Course" VerticalAlignment="Center"  Height="88"  TabIndex="1" FontSize="21" FontFamily="Segoe UI" FontWeight="Light" Foreground="White" Background="#FFF6A10C" Margin="110,10,110,10" Grid.Column="0" Grid.ColumnSpan="2" Grid.Row="2" Click="ViewStudentsInCourse_Click"  />
+        <Button x:Name="ViewStudentsInCoursebtn" Content="View All Students In a Course" VerticalAlignment="Center"  Height="88"  TabIndex="3" FontSize="21" FontFamily="Segoe UI" FontWeight="Light" Foreground="White" Background="#FFF6A10C" Margin="110,10,110,10" Grid.Column="0" Grid.ColumnSpan="2" Grid.Row="2" Click="ViewStudentsInCourse_Click"  />
         <Button x:Name="dropacoursebutton" Content="Drop a course" VerticalAlignment="Center" Height="88" TabIndex="4" FontSize="20" FontFamily="Segoe UI" FontWeight="Light" Foreground="White" Background="#FFF6A10C" Click="dropacoursebutton_Click" Margin="110,10,110,10" Grid.ColumnSpan="2"  Grid.Column="0"  Grid.Row="3" />
     </Grid>
 </Window>

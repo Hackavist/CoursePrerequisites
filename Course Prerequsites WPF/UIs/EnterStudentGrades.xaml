@@ -5,7 +5,7 @@
         WindowStartupLocation="CenterScreen"
         Title="Enter Student Grades" Height="700" Width="600" >
     <Grid x:Name="maingrid" HorizontalAlignment="Left" Height="118" Margin="10,10,0,0" VerticalAlignment="Top" Width="580">
-        <Button ToolTip="Back to Admin Settings" x:Name="BackBTN" Style="{DynamicResource MetroCircleButtonStyle}" Width="55" Height="55" Grid.Column="0" Click="BackBTN_Click" Margin="0,0,525,63"  >
+        <Button ToolTip="Back to Admin Settings" x:Name="BackBTN" Style="{DynamicResource MetroCircleButtonStyle}" Width="55" Height="55" Grid.Column="0" Click="BackBTN_Click" Margin="10,10,515,53"  >
             <Rectangle Width="30" Height="20" Fill="{Binding Foreground, RelativeSource={RelativeSource FindAncestor, AncestorType={x:Type Button}}}">
                 <Rectangle.OpacityMask>
                     <VisualBrush Stretch="Fill" Visual="{StaticResource appbar_arrow_left}" />
