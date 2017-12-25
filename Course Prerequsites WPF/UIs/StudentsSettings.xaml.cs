@@ -61,5 +61,12 @@ namespace Course_Prerequsites_WPF.UIs
             drp.Show();
             this.Close();
         }
+
+        private void EnterStudentGrades_Click(object sender, RoutedEventArgs e)
+        {
+            EnterStudentGrades stud = new UIs.EnterStudentGrades();
+            stud.Show();
+            this.Close();
+        }
     }
 }
