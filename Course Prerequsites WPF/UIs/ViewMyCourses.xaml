@@ -34,8 +34,8 @@
          ChartTitle="All My Courses "
          ChartSubTitle="This Contains Course taken / or being taking at the moment"
          ToolTip="My Courses " 
-         Palette="{StaticResource ResourceKey=colortest}"
          Height="Auto" Width="Auto" IsEnabled="True"  
+         Palette="{StaticResource CourseChart}"
          SelectedItem="{Binding Path=SelectedItem, Mode=TwoWay}" Margin="0,0,9.6,10.4"
          MouseUp="CoursesChart_MouseUp">
             <chart:StackedBarChart.Series>
@@ -72,11 +72,14 @@
 
             <TextBlock x:Name="Course_PassingGrade" Grid.Column="1" Grid.Row="1" VerticalAlignment="Center" HorizontalAlignment="Left" Text="Passing Grade: " Style="{StaticResource SectionHeaderTextStyle}" Foreground="{DynamicResource {x:Static SystemColors.HighlightBrushKey}}"/>
             <TextBlock x:Name="PassingGrade" Grid.Column="1" Grid.Row="1" VerticalAlignment="Center" HorizontalAlignment="Right" Margin="0,0,30,0" Style="{StaticResource SeriesHeader}" />
+
             <Grid Grid.Row="1" Grid.Column="2">
+
                 <Grid.ColumnDefinitions>
                     <ColumnDefinition Width="*"/>
                     <ColumnDefinition Width="*"/>
                 </Grid.ColumnDefinitions>
+
                 <TextBlock x:Name="instuctor" Text="Instructor: " Grid.Column="0" VerticalAlignment="Center" HorizontalAlignment="Left" Style="{StaticResource SectionHeaderTextStyle}" Foreground="{DynamicResource {x:Static SystemColors.HighlightBrushKey}}"/>
                 <TextBlock x:Name="Instuctor" Grid.Column="1" Grid.Row="1" VerticalAlignment="Center" HorizontalAlignment="Right" Margin="0,0,30,0"  Style="{StaticResource SeriesHeader}" />
             </Grid>

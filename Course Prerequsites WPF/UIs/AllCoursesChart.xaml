@@ -37,8 +37,9 @@
         ToolTip="All Available Courses "
         InnerRadiusRatio="0.77" 
         Margin="10,0,9.6,8.4"
-            Grid.Row="1"
+        Grid.Row="1"
         Height="Auto" Width="Auto" IsEnabled="True"  
+        Palette="{StaticResource ResourceKey=CourseChart}"
         SelectedItem="{Binding Path=SelectedItem, Mode=TwoWay}"
         Mouse.MouseUp="CoursesChart_Click">
             <chart:PieChart.Series>
