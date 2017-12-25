@@ -901,3 +901,5 @@ E:\Data_Structue_Taslim\Course Prerequsites WPF\obj\Debug\UIs\WelcomePage.baml
 E:\Data_Structue_Taslim\Course Prerequsites WPF\obj\Debug\Course Prerequsites WPF.g.resources
 E:\Data_Structue_Taslim\Course Prerequsites WPF\obj\Debug\Course_Prerequsites_WPF.Properties.Resources.resources
 E:\Data_Structue_Taslim\Course Prerequsites WPF\obj\Debug\Course Prerequsites WPF.csproj.GenerateResource.Cache
+D:\Work\Course ds\Course Prerequsites WPF\obj\Debug\UIs\EditCoursePrerequsites.baml
+D:\Work\Course ds\Course Prerequsites WPF\obj\Debug\UIs\EditCoursePrerequsites.g.cs

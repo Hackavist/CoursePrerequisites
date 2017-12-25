@@ -179,6 +179,14 @@ namespace Course_Prerequsites_WPF.UIs
                 MyGrid.Children.Add(AddGrades);
             }
         }
-       
+
+        private void BackBTN_Click(object sender, RoutedEventArgs e)
+        {
+            StudentsSettings stud = new StudentsSettings();
+            stud.Show();
+            this.Close();
+
+            
+        }
     }
 }
