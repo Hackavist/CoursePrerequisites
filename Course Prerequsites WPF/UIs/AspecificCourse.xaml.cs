@@ -32,7 +32,7 @@ namespace Course_Prerequsites_WPF.UIs
             {
                 Elements ele = new Elements()
                 {
-                    Category = "This Course has no Prerequisits",
+                    Category = "This course has no prerequisits.",
                     Number = 0
                 };
                 Prerequsites.Items.Add(ele);

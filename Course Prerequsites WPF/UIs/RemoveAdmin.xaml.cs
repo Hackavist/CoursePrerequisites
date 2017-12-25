@@ -45,14 +45,14 @@ namespace Course_Prerequsites_WPF.UIs
 
         private void RemoveBTN_Click(object sender, RoutedEventArgs e)
         {
-            if (MessageBox.Show("Remove Admin?", "Question", MessageBoxButton.YesNo, MessageBoxImage.Warning) == MessageBoxResult.No)
+            if (MessageBox.Show("Remove admin?", "Question", MessageBoxButton.YesNo, MessageBoxImage.Warning) == MessageBoxResult.No)
             {
                 return;
             }
             else
             {
                 WelcomePage.AllAdminsDictionary.Remove(AdminsCombo.SelectedValue.ToString());
-                MessageBox.Show("Admin Has been removed");
+                MessageBox.Show("Admin has been removed.");
             }
         }
     }

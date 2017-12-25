@@ -96,7 +96,7 @@ namespace Course_Prerequsites_WPF.UIs
                 }
             }
             else
-                MessageBox.Show("Please select student to view his courses ");
+                MessageBox.Show("Please select a student to view their courses.");
         }
 
         private void BackBTN_Click(object sender, RoutedEventArgs e)

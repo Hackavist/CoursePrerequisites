@@ -39,7 +39,7 @@ namespace Course_Prerequsites_WPF.UIs
                 //If no avilable courses this message will appear
                 if (AvailableCourseBox.Items.Count == 0)
                 {
-                    MessageBox.Show("You have no available Courses right now " + '\n' + "Please Click on Back Button.");
+                    MessageBox.Show("You have no available courses right now." + '\n' + "Please click on the back button.");
 
                 }
             }
@@ -51,11 +51,11 @@ namespace Course_Prerequsites_WPF.UIs
             Student s = new Student();
             if (AvailableCourseBox.SelectedIndex == -1)
             {
-                MessageBox.Show("There is no selected item..Please select an item or click on Back button.");
+                MessageBox.Show("There is no selected item. Please select an item or click on the back button.");
             }
             else if (s.IsAvailableCreditHours(WelcomePage.AllStudentsDictionary[WelcomePage.StudentId], WelcomePage.Course.ReturnObj(AvailableCourseBox.SelectionBoxItem.ToString())) == false)
             {
-                MessageBox.Show("You Can't take more than 16 Credit Hours in one semster" + '\n' + "You are not allowed to register now");
+                MessageBox.Show("You can't take more than 16 credit hours in one semster." + '\n' + "You are not allowed to register right now.");
 
             }
             else
@@ -67,7 +67,7 @@ namespace Course_Prerequsites_WPF.UIs
                 //When this student regist to aspecific course the number of students in this course will be incremented
                 WelcomePage.AllCoursesDictionary[AvailableCourseBox.SelectionBoxItem.ToString()].CurrentNumberOfStudents++;
                 //The Message that appears
-                MessageBox.Show("You Registerd successfully to " + AvailableCourseBox.SelectionBoxItem.ToString());
+                MessageBox.Show("Successfully registered to " + AvailableCourseBox.SelectionBoxItem.ToString());
                 //When you regist to this course it will be removed from combo box
                 AvailableCourseBox.Items.Remove(AvailableCourseBox.SelectionBoxItem.ToString());
             }

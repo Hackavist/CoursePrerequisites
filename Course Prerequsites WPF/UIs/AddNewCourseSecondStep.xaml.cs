@@ -89,7 +89,7 @@ namespace Course_Prerequsites_WPF.UIs
                     tmp.Add(x.Tag.ToString());
                 }
             }
-            MessageBoxResult result = MessageBox.Show("Are you sure you want to add " + counter + " courses as prerequsites of the new course !", "Confirm", MessageBoxButton.YesNo);
+            MessageBoxResult result = MessageBox.Show("Are you sure you want to add " + counter + " courses as prerequsites of the new course?", "Confirm", MessageBoxButton.YesNo);
             if (result == MessageBoxResult.Yes)
             {
                 foreach (var x in tmp)
@@ -98,7 +98,7 @@ namespace Course_Prerequsites_WPF.UIs
             }
             else
             {
-                MessageBox.Show("Reselect the courses you to be the prerequsites or go back");
+                MessageBox.Show("Reselect the courses you want to be the prerequsites or go back.");
             }
         }
     }

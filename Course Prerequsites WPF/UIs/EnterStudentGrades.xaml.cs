@@ -58,13 +58,13 @@ namespace Course_Prerequsites_WPF.UIs
                 if (x.Text=="")
                 {
                     //check if the text box is empty
-                    MessageBox.Show("Some text box is empty");
+                    MessageBox.Show("Some textbox is empty.");
                     return false;
                 }
                 else if (!ValidMark(x.Text) )
                 {
                     //check if the text have some text other than numbers and '.' 
-                    MessageBox.Show("each text box should contains numbers only");
+                    MessageBox.Show("Each textbox should contain numbers only.");
                     return false;
                 }
             }
@@ -132,7 +132,7 @@ namespace Course_Prerequsites_WPF.UIs
                 else if (WelcomePage.AllCoursesDictionary[x.Tag.ToString()].CourseGrade < int.Parse(x.Text))
                 {
                     //return if the entered grade is greater than the course grade
-                    MessageBox.Show("you entered Integer bigger than the course grade at " + x.Tag.ToString() + " Text box ");
+                    MessageBox.Show("You entered an integer bigger than the course grade at " + x.Tag.ToString() + " textbox.");
                     return ;
                 }
             }
@@ -168,14 +168,14 @@ namespace Course_Prerequsites_WPF.UIs
                 //check if the student has in progress courses
                 if (WelcomePage.AllStudentsDictionary[SelectedStudent].CoursesInProgress.Count == 0)
                 {
-                    MessageBox.Show("this student have no Current courses in progress");
+                    MessageBox.Show("This student has no current courses in progress.");
                     return;
                 }
                 // create text block control in the top
                 int i = 0;
                 TextBlock InfoTmp = new TextBlock();
                 InfoTmp.Margin = new Thickness(200, 10, 0, 0);
-                InfoTmp.Text = "Enter the Grades of Student : " + WelcomePage.AllStudentsDictionary[SelectedStudent].Name;
+                InfoTmp.Text = "Enter the grades of student: " + WelcomePage.AllStudentsDictionary[SelectedStudent].Name;
                 MyGrid.Children.Add(InfoTmp);
                 foreach (var x in WelcomePage.AllStudentsDictionary[SelectedStudent].CoursesInProgress)
                 {
@@ -188,7 +188,7 @@ namespace Course_Prerequsites_WPF.UIs
                     TextBoxTmp.VerticalAlignment = System.Windows.VerticalAlignment.Top;
                     TextBoxTmp.Width = 120;
                     TextBoxTmp.Height = 23;
-                    TextBoxTmp.ToolTip = "Enter the Grade of " + x.CourseName;
+                    TextBoxTmp.ToolTip = "Enter the grade of " + x.CourseName;
                     TextBoxTmp.Margin = new Thickness(371, 111 + (i * 50), 0, 0);
                     TextBoxTmp.Tag = x.CourseName.ToString();
                     //add the controls to the grid
