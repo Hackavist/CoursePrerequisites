@@ -37,7 +37,7 @@ namespace Course_Prerequsites_WPF.UIs
 
             if (string.IsNullOrEmpty(Username_txt.Text) || string.IsNullOrEmpty(Password_txt.Password))
             {
-                MessageBox.Show("Missing data");
+                MessageBox.Show("Please enter the missing data.");
             }
 
             else
@@ -50,7 +50,7 @@ namespace Course_Prerequsites_WPF.UIs
                 {
                     if (WelcomePage.AllAdminsDictionary[name].Password == password)
                     {
-                        MessageBox.Show("Logging In");
+                        MessageBox.Show("Logging in..");
 
                         WelcomePage.AdminLogedIn = true;
                         WelcomePage.AdminUserName = name;
@@ -63,12 +63,12 @@ namespace Course_Prerequsites_WPF.UIs
                     }
                     else
                     {
-                        MessageBox.Show("Wrong Password");
+                        MessageBox.Show("Wrong password.");
                     }
                 }
                 else
                 {
-                    MessageBox.Show("Admin Does Not Exist");
+                    MessageBox.Show("Admin does not exist.");
                 }
 
             }

@@ -117,7 +117,7 @@ namespace Course_Prerequsites_WPF.Classes
             return AllStudents;
 
         }
-        //Function that check if this student have 16 hr or more in one semster 
+        //Function that check if this student have 20 hr or more in one semster 
         public bool IsAvailableCreditHours(Student s, Course c)
         {
             //we make total hours = to el hours of selected course in combo box to make check if it's hours is suitable or not.
@@ -131,7 +131,7 @@ namespace Course_Prerequsites_WPF.Classes
                TotalHours += x.Hours;
             }
 
-            if (TotalHours > 16)
+            if (TotalHours > 20)
 
                 return false;
 

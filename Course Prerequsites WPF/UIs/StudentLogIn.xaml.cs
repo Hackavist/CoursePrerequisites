@@ -29,7 +29,7 @@ namespace Course_Prerequsites_WPF.UIs
 
             if (string.IsNullOrEmpty(idTextBox.Text) || string.IsNullOrEmpty(Password_txt.Password))
             {
-                MessageBox.Show("Please enter valid username and password.");
+                MessageBox.Show("Please enter a valid username and password.");
             }
             else
             {
@@ -37,7 +37,7 @@ namespace Course_Prerequsites_WPF.UIs
                 {
                     if (WelcomePage.AllStudentsDictionary[idTextBox.Text].Password == Password_txt.Password)
                     {
-                        MessageBox.Show("Logging in...");
+                        MessageBox.Show("Logging in..");
                         WelcomePage.StudentLogedIn = true;
                         WelcomePage.StudentId = idTextBox.Text;
                         WelcomePage.StudentPassword = Password_txt.Password;

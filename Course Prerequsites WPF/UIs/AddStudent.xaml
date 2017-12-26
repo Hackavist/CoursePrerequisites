@@ -8,7 +8,7 @@
         WindowStartupLocation="CenterScreen"
         Title="Add Student" Height="650" Width="600">
     <Grid>
-        <Button ToolTip="Back to Student Settings" x:Name="BackBTN" Style="{DynamicResource MetroCircleButtonStyle}" Width="55" Click="BackBTN_Click" Margin="10,10,527,554">
+        <Button ToolTip="Back to Student Settings" x:Name="BackBTN" Style="{DynamicResource MetroCircleButtonStyle}" Click="BackBTN_Click" Margin="10,10,487,522">
             <Rectangle Width="30" Height="20" Fill="{Binding Foreground, RelativeSource={RelativeSource FindAncestor, AncestorType={x:Type Button}}}">
                 <Rectangle.OpacityMask>
                     <VisualBrush Stretch="Fill" Visual="{StaticResource appbar_arrow_left}" />

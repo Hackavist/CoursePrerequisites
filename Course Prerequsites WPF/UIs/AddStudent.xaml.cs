@@ -94,19 +94,19 @@ namespace Course_Prerequsites_WPF.UIs
         {
             if (string.IsNullOrEmpty(StudName.Text.Trim()) || string.IsNullOrEmpty(StudID.Text.Trim()) || string.IsNullOrEmpty(StudPassword.Text.Trim()) || StudYear.SelectedIndex == -1)
             {
-                MessageBox.Show("Please Enter Missing Data");
+                MessageBox.Show("Please enter the missing data.");
             }
             else if (WelcomePage.ThereIsNoDelimiter(StudName.Text.Trim()) == false || WelcomePage.ThereIsNoDelimiter(StudID.Text.Trim()) == false || WelcomePage.ThereIsNoDelimiter(StudPassword.Text.Trim()) == false)
             {
-                MessageBox.Show("Please Don't Use special characters: (% , # , *) ");
+                MessageBox.Show("Please don't use special characters: (% , # , *) ");
             }
             else if (WelcomePage.IsNotAlphabet(StudName.Text.Trim()) == true)
             {
-                MessageBox.Show("Please Enter Correct Name");
+                MessageBox.Show("Please enter a correct name.");
             }
             else if (WelcomePage.NoSpace(StudPassword.Text.Trim()) == false || WelcomePage.NoSpace(StudID.Text.Trim()) == false)
             {
-                MessageBox.Show("ID and Password Must Not Contain Spaces");
+                MessageBox.Show("ID and password must not contain spaces.");
             }
             else
             {
@@ -119,12 +119,12 @@ namespace Course_Prerequsites_WPF.UIs
 
                 if (WelcomePage.AllStudentsDictionary.ContainsKey(id))
                 {
-                    MessageBox.Show("this ID already exist");
+                    MessageBox.Show("This ID already exists.");
                 }
                 else
                 {
                     WelcomePage.AllStudentsDictionary[id] = s;
-                    MessageBox.Show("Student Added");
+                    MessageBox.Show("Student had been added.");
 
                     StudName.Clear();
                     StudID.Clear();
