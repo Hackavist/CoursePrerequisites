@@ -21,7 +21,7 @@
         <RowDefinition Height="3.5*"></RowDefinition>
         </Grid.RowDefinitions>
         
-        <Button ToolTip="Back to Student Menu" x:Name="BackBTN" Style="{DynamicResource MetroCircleButtonStyle}" HorizontalAlignment="Left" Width="55" Grid.Column="0" Click="BackBTN_Click" Margin="0,0,0,0.2">
+        <Button ToolTip="Back to Student Menu" x:Name="BackBTN" Style="{DynamicResource MetroCircleButtonStyle}" HorizontalAlignment="Left" Width="55" Grid.Column="0" Click="BackBTN_Click" Margin="10,10,0,606" Grid.RowSpan="2">
             <Rectangle Width="30" Height="20" Fill="{Binding Foreground, RelativeSource={RelativeSource FindAncestor, AncestorType={x:Type Button}}}">
                 <Rectangle.OpacityMask>
                     <VisualBrush Stretch="Fill" Visual="{StaticResource appbar_arrow_left}" />
@@ -37,8 +37,9 @@
         ToolTip="All Available Courses "
         InnerRadiusRatio="0.77" 
         Margin="10,0,9.6,8.4"
-            Grid.Row="1"
+        Grid.Row="1"
         Height="Auto" Width="Auto" IsEnabled="True"  
+        Palette="{StaticResource ResourceKey=CourseChart}"
         SelectedItem="{Binding Path=SelectedItem, Mode=TwoWay}"
         Mouse.MouseUp="CoursesChart_Click">
             <chart:PieChart.Series>

@@ -20,7 +20,7 @@
             <RowDefinition Height="*" />
         </Grid.RowDefinitions>
 
-        <Button ToolTip="Back to Course Settings" x:Name="BackBTN" Style="{DynamicResource MetroCircleButtonStyle}" HorizontalAlignment="Left" VerticalAlignment="Top" Width="55" Height="55" Grid.Column="0" Click="BackBTN_Click" Margin="0,0,0,0.2">
+        <Button ToolTip="Back to Course Settings" x:Name="BackBTN" Style="{DynamicResource MetroCircleButtonStyle}" HorizontalAlignment="Left" VerticalAlignment="Top" Width="55" Height="55" Grid.Column="0" Click="BackBTN_Click" Margin="10,10,0,0">
             <Rectangle Width="30" Height="20" Fill="{Binding Foreground, RelativeSource={RelativeSource FindAncestor, AncestorType={x:Type Button}}}">
                 <Rectangle.OpacityMask>
                     <VisualBrush Stretch="Fill" Visual="{StaticResource appbar_arrow_left}" />
@@ -33,7 +33,7 @@
 
         <ComboBox x:Name="comboBoxName" Grid.Column="1" Grid.Row="0"  HorizontalAlignment="Stretch" VerticalAlignment="Center" Margin="30"  FontSize="20" FontFamily="Segoe UI" FontWeight="Light" SelectionChanged="comboBoxName_SelectionChanged" />
         <ComboBox x:Name="comboBoxCours" Grid.Column="1" Grid.Row="1"  HorizontalAlignment="Stretch" VerticalAlignment="Center" Margin="30"  FontSize="20" FontFamily="Segoe UI" FontWeight="Light"/>
-      
+
         <Button x:Name="dropButton"  Content="Drop Course" Grid.Column="0" Grid.ColumnSpan="2" Grid.Row="2"  HorizontalAlignment="Center" VerticalAlignment="Center"  FontSize="27" FontFamily="Segoe UI" FontWeight="Light" Foreground="White" Background="#FFF6A10C" Click="dropButton_Click"/>
 
     </Grid>

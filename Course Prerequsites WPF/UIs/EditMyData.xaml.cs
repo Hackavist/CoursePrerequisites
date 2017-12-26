@@ -38,6 +38,7 @@ namespace Course_Prerequsites_WPF.UIs
         {
             WelcomePage.AllStudentsDictionary[WelcomePage.StudentId].Name = nameTextBox.Text;
             WelcomePage.AllStudentsDictionary[WelcomePage.StudentId].Password = passwordTextBox.Text;
+            MessageBox.Show("Your data has been edited.");
         }
 
         private void BackBTN_Click(object sender, RoutedEventArgs e)

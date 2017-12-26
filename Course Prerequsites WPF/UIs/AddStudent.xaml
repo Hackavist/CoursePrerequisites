@@ -8,7 +8,7 @@
         WindowStartupLocation="CenterScreen"
         Title="Add Student" Height="650" Width="600">
     <Grid>
-        <Button ToolTip="Back to Student Settings" x:Name="BackBTN" Style="{DynamicResource MetroCircleButtonStyle}" Height="60" Width="55" Click="BackBTN_Click" Margin="10,10,522.6,547">
+        <Button ToolTip="Back to Student Settings" x:Name="BackBTN" Style="{DynamicResource MetroCircleButtonStyle}" Width="55" Click="BackBTN_Click" Margin="10,10,527,554">
             <Rectangle Width="30" Height="20" Fill="{Binding Foreground, RelativeSource={RelativeSource FindAncestor, AncestorType={x:Type Button}}}">
                 <Rectangle.OpacityMask>
                     <VisualBrush Stretch="Fill" Visual="{StaticResource appbar_arrow_left}" />
@@ -26,7 +26,7 @@
                 <SolidColorBrush Color="{DynamicResource {x:Static SystemColors.HighlightColorKey}}"/>
             </TextBlock.Foreground>
         </TextBlock>
-        
+
         <TextBlock Text="ID" HorizontalAlignment="Left" Height="34" Margin="20,180,0,0" VerticalAlignment="Top" Style="{StaticResource SectionHeaderTextStyle}">
             <TextBlock.Foreground>
                 <SolidColorBrush Color="{DynamicResource {x:Static SystemColors.HighlightColorKey}}"/>
@@ -44,7 +44,7 @@
                 <SolidColorBrush Color="{DynamicResource {x:Static SystemColors.HighlightColorKey}}"/>
             </TextBlock.Foreground>
         </TextBlock>
-        
+
         <Image HorizontalAlignment="Left" Height="100" VerticalAlignment="Top" Width="100" Margin="480,499,0,0" Source="/Course Prerequsites WPF;component/Images/plus.png" Mouse.MouseUp="Image_MouseUp"/>
 
     </Grid>

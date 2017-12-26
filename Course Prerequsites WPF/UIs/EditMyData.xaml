@@ -23,7 +23,7 @@
             <RowDefinition Height="*"></RowDefinition>
         </Grid.RowDefinitions>
 
-        <Button ToolTip="Back to Student Menu" x:Name="BackBTN" Style="{DynamicResource MetroCircleButtonStyle}" HorizontalAlignment="Left" Width="55" Height="55" Grid.Column="0" Click="BackBTN_Click" Margin="0,0,0,0.2">
+        <Button ToolTip="Back to Student Menu" x:Name="BackBTN" Style="{DynamicResource MetroCircleButtonStyle}" HorizontalAlignment="Left" Width="55" Height="55" Grid.Column="0" Click="BackBTN_Click" Margin="10,10,0,38">
             <Rectangle Width="30" Height="20" Fill="{Binding Foreground, RelativeSource={RelativeSource FindAncestor, AncestorType={x:Type Button}}}">
                 <Rectangle.OpacityMask>
                     <VisualBrush Stretch="Fill" Visual="{StaticResource appbar_arrow_left}" />
@@ -40,8 +40,8 @@
 
         <TextBox x:Name="nameTextBox" Grid.Column="1" Grid.Row="1" HorizontalAlignment="Stretch" Margin="30,30,30,30" VerticalAlignment="Stretch" FontFamily="Segoe UI" FontWeight="Light" TextWrapping="Wrap" />
         <TextBox x:Name="idTextBox" Grid.Column="1" Grid.Row="2" HorizontalAlignment="Stretch" Margin="30,30,30,30" VerticalAlignment="Stretch" FontFamily="Segoe UI" FontWeight="Light" TextWrapping="Wrap" IsReadOnly="True" IsUndoEnabled="False"/>
-        <TextBox x:Name="passwordTextBox"  Grid.Column="1" Grid.Row="4" HorizontalAlignment="Stretch" Margin="30,30,30,30" VerticalAlignment="Stretch" FontFamily="Segoe UI" FontWeight="Light" TextWrapping="Wrap" />
-        <TextBox x:Name="ayTextBox"  Grid.Column="1" Grid.Row="3" HorizontalAlignment="Stretch" Margin="30,30,30,30" VerticalAlignment="Stretch" FontFamily="Segoe UI" FontWeight="Light" TextWrapping="Wrap"  IsReadOnly="True" IsUndoEnabled="False"/>
+        <TextBox x:Name="passwordTextBox"  Grid.Column="1" Grid.Row="3" HorizontalAlignment="Stretch" Margin="30,35,30,24" VerticalAlignment="Stretch" FontFamily="Segoe UI" FontWeight="Light" TextWrapping="Wrap" />
+        <TextBox x:Name="ayTextBox"  Grid.Column="1" Grid.Row="4" HorizontalAlignment="Stretch" Margin="30,37,30,24" VerticalAlignment="Stretch" FontFamily="Segoe UI" FontWeight="Light" TextWrapping="Wrap"  IsReadOnly="True" IsUndoEnabled="False"/>
 
         <Button Content="Edit Data" Grid.Column="0" Grid.ColumnSpan="2" Grid.Row="5" VerticalAlignment="Center" HorizontalAlignment="Stretch" Margin="140,10,140,10" FontSize="25" FontFamily="Segoe UI"  FontWeight="Light" Foreground="White" Background="#FFF6A10C" Click="Button_Click"/>
 

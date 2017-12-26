@@ -45,7 +45,11 @@ namespace Course_Prerequsites_WPF.UIs
         private void dropButton_Click(object sender, RoutedEventArgs e)
         {
             WelcomePage.AllStudentsDictionary[selected].CoursesInProgress.Remove(WelcomePage.AllCoursesDictionary[comboBoxCours.SelectedItem.ToString()]);
-            MessageBox.Show("You Sucessfully Droped"+ comboBoxCours.SelectedItem.ToString());
+            MessageBox.Show("You sucessfully dropped "+ comboBoxCours.SelectedItem.ToString());
+            //WelcomePage.AllCoursesDictionary[selected].CurrentNumberOfStudents--;
+            //HENA YA HAZEM!!
+            comboBoxCours.Items.RemoveAt(comboBoxCours.SelectedIndex);
+            comboBoxCours.Text ="";
         }
 
         private void BackBTN_Click(object sender, RoutedEventArgs e)

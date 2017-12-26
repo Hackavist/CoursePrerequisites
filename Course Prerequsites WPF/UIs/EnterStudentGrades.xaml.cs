@@ -30,16 +30,24 @@ namespace Course_Prerequsites_WPF.UIs
         List<TextBlock> CoursesNameLabels = new List<TextBlock>();
         List<TextBox> CoursesGradeTextBox = new List<TextBox>();
 
+        Button AddGrades = new Button
+        {
+            Content="Done",
+            Height = 30 ,
+            Width =100,
+            HorizontalAlignment=System.Windows.HorizontalAlignment.Left,
+            VerticalAlignment = System.Windows.VerticalAlignment.Top,
+            
+            
+        };
         private void Window_Loaded(object sender, RoutedEventArgs e)
         {
-
+            AddGrades.Click+= Done_Click;
             foreach (var x in WelcomePage.AllStudentsDictionary)
             {
                 StudentsComboBox.Items.Add(x.Key+' ' +x.Value.Name);
             }
         }
-        Button AddGrades = new Button();
-        
         
         
         bool CheckAllTextBoxs()
@@ -81,6 +89,7 @@ namespace Course_Prerequsites_WPF.UIs
             if (CheckAllTextBoxs()==true)
             {
                 EnterGrades();
+
             }
         }
         void EnterGrades()
@@ -117,15 +126,13 @@ namespace Course_Prerequsites_WPF.UIs
             //remove all in progress courses of the student
             WelcomePage.AllStudentsDictionary[SelectedStudent].CoursesInProgress = new List<Classes.Course>();
             MessageBox.Show("This student passed : " + PassedCourses.ToString() );
+            StudentsComboBox.SelectedIndex = -1;
         }
 
         private void StudentsComboBox_SelectionChanged(object sender, SelectionChangedEventArgs e)
         {
-            if (StudentsComboBox.SelectedIndex == -1)
-            {
-                MessageBox.Show("Please select some student");
-            }
-            else
+            MyGrid.Children.Clear();
+            if (StudentsComboBox.SelectedIndex != -1)
             {
                 string[] tosplit = StudentsComboBox.SelectedValue.ToString().Split(' ');
                 SelectedStudent = tosplit[0];
@@ -168,17 +175,20 @@ namespace Course_Prerequsites_WPF.UIs
                     CoursesGradeTextBox.Add(TextBoxTmp);
                 }
                 //add Done Button at the end of grid
-                AddGrades.Content = "Done";
 
-                AddGrades.Height = 30;
-                AddGrades.Width = 100;
-                AddGrades.HorizontalAlignment = System.Windows.HorizontalAlignment.Left;
-                AddGrades.VerticalAlignment = System.Windows.VerticalAlignment.Top;
                 AddGrades.Margin = new Thickness(250, 111 + (i * 50), 0, 0);
-                AddGrades.Click += Done_Click;
+
                 MyGrid.Children.Add(AddGrades);
             }
         }
-       
+
+        private void BackBTN_Click(object sender, RoutedEventArgs e)
+        {
+            StudentsSettings stud = new StudentsSettings();
+            stud.Show();
+            this.Close();
+
+            
+        }
     }
 }
