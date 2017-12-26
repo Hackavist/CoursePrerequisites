@@ -31,11 +31,11 @@ namespace Course_Prerequsites_WPF.UIs
                 CourseSelection.Items.Add(x.Value.CourseName);
             }
             // add tooltip for each textbox
-            HoursTextBox.ToolTip = "-Text Box can only contain numbers \n -Number of hours Must not exceed 6";
-            MaximumNumberOfStudentsTextBox.ToolTip = "-Text Box can only contain numbers \n -Number of students Must not exceed 500";
-            CurrentNumberOfStudentsTextBox.ToolTip = "-Text Box can only contain numbers \n -Number of Current students Must not the maximum";
-            CourseGradeTextBox.ToolTip = "-Text Box can only contain numbers \n -Course Grade Must not exceed 200";
-            PassingGradeTextBox.ToolTip = "-Text Box can only contain numbers \n -Course Grades Must no exceed Course Grades ";
+            HoursTextBox.ToolTip = "-Textbox can only contain numbers. \n -Number of hours must not exceed 6.";
+            MaximumNumberOfStudentsTextBox.ToolTip = "-Textbox can only contain numbers. \n -Number of students must not exceed 500.";
+            CurrentNumberOfStudentsTextBox.ToolTip = "-Textbox can only contain numbers. \n -Number of current students must not exceed the maximum number of students.";
+            CourseGradeTextBox.ToolTip = "-Textbox can only contain numbers. \n -Course grade must not exceed 200.";
+            PassingGradeTextBox.ToolTip = "-Textbox can only contain numbers. \n -Passing grade must no exceed the course grade.";
         }
 
         public static Course SelectedCourse;
@@ -68,22 +68,22 @@ namespace Course_Prerequsites_WPF.UIs
         {
             if (WelcomePage.IsNumber(CurrentNumberOfStudentsTextBox.Text) == false)
             {
-                MessageBox.Show("Text Box of Current Number of Students must have only integer numbers .");
+                MessageBox.Show("Textbox of current number of students must have only integer numbers.");
                 return false;
             }
             else if (WelcomePage.IsNumber(MaximumNumberOfStudentsTextBox.Text) == false)
             {
-                MessageBox.Show("Text Box of Maximum Number of Students must have only integer numbers .");
+                MessageBox.Show("Textbox of maximum number of students must have only integer numbers.");
                 return false;
             }
             else if (int.Parse(MaximumNumberOfStudentsTextBox.Text) < int.Parse(CurrentNumberOfStudentsTextBox.Text))
             {
-                MessageBox.Show("The Current Number of student of this course exceeds the maximum number");
+                MessageBox.Show("The current number of student in this course exceeds the maximum number.");
                 return false;
             }
             else if (int.Parse(MaximumNumberOfStudentsTextBox.Text) > 500)
             {
-                MessageBox.Show("The Maximum number of students in class cannot exceed 500 student");
+                MessageBox.Show("The maximum number of students in class cannot exceed 500 students.");
                 return false;
             }
             return true;
@@ -101,22 +101,22 @@ namespace Course_Prerequsites_WPF.UIs
         {
             if (WelcomePage.IsNumber(CourseGradeTextBox.Text) == false)
             {
-                MessageBox.Show("The Text box of Course Grade must have only integer Number ");
+                MessageBox.Show("The textbox of course grade must have only integer number.");
                 return false;
             }
             else if (WelcomePage.IsNumber(PassingGradeTextBox.Text) == false)
             {
-                MessageBox.Show("The Text box of Passing Grade must have only integer Number ");
+                MessageBox.Show("The textbox of passing grade must have only integer number.");
                 return false;
             }
             else if (int.Parse(PassingGradeTextBox.Text) >= int.Parse(CourseGradeTextBox.Text))
             {
-                MessageBox.Show("Passing Grade of course cannot exceed the course Grade");
+                MessageBox.Show("Passing grade of course cannot exceed the course grade.");
                 return false;
             }
             else if (int.Parse(CourseGradeTextBox.Text) > 200)
             {
-                MessageBox.Show("Course Grade cannot exceed 200");
+                MessageBox.Show("Course grade cannot exceed 200.");
                 return false;
             }
             return true;
@@ -125,12 +125,12 @@ namespace Course_Prerequsites_WPF.UIs
         {
             if (WelcomePage.IsNumber(HoursTextBox.Text) == false)
             {
-                MessageBox.Show("The Text box of hours must have only integer Number ");
+                MessageBox.Show("The hours textbox can only contain integer numbers.");
                 return false;
             }
             else if (int.Parse(HoursTextBox.Text) > 6)
             {
-                MessageBox.Show("The Hours cannot exceed 6 hours");
+                MessageBox.Show("The hours cannot exceed 6 hours.");
                 return false;
             }
             return true;
@@ -175,7 +175,7 @@ namespace Course_Prerequsites_WPF.UIs
                     SelectedCourse.PassingGrade = int.Parse(PassingGradeTextBox.Text);
                     SelectedCourse.Description = DescriptionTextBox.Text.ToString();
                     WelcomePage.AllCoursesDictionary[SelectedCourse.CourseName] = SelectedCourse;
-                    MessageBox.Show("Done Editting ^_^");
+                    MessageBox.Show("Done editing.");
                 }
             }
         }
