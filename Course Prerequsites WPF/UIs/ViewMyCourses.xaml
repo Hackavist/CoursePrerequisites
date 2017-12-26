@@ -13,13 +13,17 @@
     </Window.DataContext>
 
     <Grid  Margin="15" xmlns:chart="clr-namespace:De.TorstenMandelkow.MetroChart;assembly=De.TorstenMandelkow.MetroChart" >
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="315*"/>
+            <ColumnDefinition Width="377*"/>
+        </Grid.ColumnDefinitions>
         <Grid.RowDefinitions>
             <RowDefinition Height="0.3*"></RowDefinition>
             <RowDefinition Height="3*"></RowDefinition>
             <RowDefinition Height="*"></RowDefinition>
         </Grid.RowDefinitions>
 
-        <Button ToolTip="Back to Student Menu" x:Name="BackBTN" Style="{DynamicResource MetroCircleButtonStyle}" HorizontalAlignment="Left"  Width="55" Grid.Column="0" Click="BackBTN_Click" Margin="0,0,0,436" Grid.RowSpan="2">
+        <Button ToolTip="Back to Student Menu" x:Name="BackBTN" Style="{DynamicResource MetroCircleButtonStyle}" HorizontalAlignment="Left"  Width="70" Grid.Column="0" Click="BackBTN_Click" Height="45" VerticalAlignment="Top">
             <Rectangle Width="30" Height="20" Fill="{Binding Foreground, RelativeSource={RelativeSource FindAncestor, AncestorType={x:Type Button}}}">
                 <Rectangle.OpacityMask>
                     <VisualBrush Stretch="Fill" Visual="{StaticResource appbar_arrow_left}" />
@@ -36,8 +40,8 @@
          ToolTip="My Courses " 
          Height="Auto" Width="Auto" IsEnabled="True"  
          Palette="{StaticResource CourseChart}"
-         SelectedItem="{Binding Path=SelectedItem, Mode=TwoWay}" Margin="0,0,9.6,10.4"
-         MouseUp="CoursesChart_MouseUp">
+         SelectedItem="{Binding Path=SelectedItem, Mode=TwoWay}" Margin="0,0,10,10"
+         MouseUp="CoursesChart_MouseUp" Grid.ColumnSpan="2">
             <chart:StackedBarChart.Series>
                 <chart:ChartSeries
                         SeriesTitle="Finshed Courses"
@@ -52,7 +56,7 @@
             </chart:StackedBarChart.Series>
         </chart:StackedBarChart>
 
-        <Grid Grid.Row="2">
+        <Grid Grid.Row="2" Grid.ColumnSpan="2">
 
             <Grid.RowDefinitions>
                 <RowDefinition Height="*"></RowDefinition>
