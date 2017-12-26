@@ -75,6 +75,8 @@ namespace Course_Prerequsites_WPF.UIs
             cour.Show();
             this.Close();
         }
+
+       
     }
 }
 

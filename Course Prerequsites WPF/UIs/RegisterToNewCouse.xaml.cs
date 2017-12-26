@@ -55,7 +55,7 @@ namespace Course_Prerequsites_WPF.UIs
             }
             else if (s.IsAvailableCreditHours(WelcomePage.AllStudentsDictionary[WelcomePage.StudentId], WelcomePage.Course.ReturnObj(AvailableCourseBox.SelectionBoxItem.ToString())) == false)
             {
-                MessageBox.Show("You can't take more than 16 credit hours in one semster." + '\n' + "You are not allowed to register right now.");
+                MessageBox.Show("You can't take more than 20 credit hours in one semster." + '\n' + "You are not allowed to register right now.");
 
             }
             else

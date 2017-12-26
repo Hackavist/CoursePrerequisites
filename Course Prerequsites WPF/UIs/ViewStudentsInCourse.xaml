@@ -9,7 +9,7 @@
         Title="ViewStudentsInCourse" Height="650" Width="600" Background="#FFFFFFFF">
     <Grid Margin="10">
 
-        <Button ToolTip="Back to Course Settings" x:Name="BackBTN" Style="{DynamicResource MetroCircleButtonStyle}" Width="55" Click="BackBTN_Click" Margin="10,10,507,534" TabIndex="3">
+        <Button ToolTip="Back to Course Settings" x:Name="BackBTN" Style="{DynamicResource MetroCircleButtonStyle}" Click="BackBTN_Click" Margin="10,10,497,510" TabIndex="3">
             <Rectangle Width="30" Height="20" Fill="{Binding Foreground, RelativeSource={RelativeSource FindAncestor, AncestorType={x:Type Button}}}">
                 <Rectangle.OpacityMask>
                     <VisualBrush Stretch="Fill" Visual="{StaticResource appbar_arrow_left}" />
