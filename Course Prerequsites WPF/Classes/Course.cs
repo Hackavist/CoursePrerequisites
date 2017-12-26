@@ -48,22 +48,22 @@ namespace Course_Prerequsites_WPF.Classes
 
             foreach (var item in pre)
             {
-                PreRequiredCourses.Add(item); 
+                PreRequiredCourses.Add(item);
             }
         }
 
         public string PutInfoInToolTip()
         {
-            string ret="";
-            ret = "Course Name : " +CourseName+"\n";
+            string ret = "";
+            ret = "Course Name : " + CourseName + "\n";
             ret += "Course Code : " + Code + "\n";
-            ret += "Current Number of Students at Course : " + CurrentNumberOfStudents+ "\n";
+            ret += "Current Number of Students at Course : " + CurrentNumberOfStudents + "\n";
             ret += "Maximum Number of Students at Course : " + MaximumNumberOfStudents + "\n";
             ret += "Passing Grade for Course : " + PassingGrade + "\n";
-            ret += "Course Grade for Course : " + CourseGrade+ "\n";
+            ret += "Course Grade for Course : " + CourseGrade + "\n";
             ret += "Credit Hours of Course : " + Hours + "\n";
             ret += "Instuctor Name : " + Instructor + "\n";
-            ret += "description : " + Description + "\n"; 
+            ret += "description : " + Description + "\n";
             return ret;
         }
 
@@ -155,7 +155,7 @@ namespace Course_Prerequsites_WPF.Classes
             }
             else return null;
         }
-       
+
         public void WriteFile()
         {
             if (WelcomePage.AllCoursesDictionary != null)
@@ -216,7 +216,6 @@ namespace Course_Prerequsites_WPF.Classes
         {
             File.WriteAllText(@"AllCoursesFile.txt", string.Empty);
         }
-
     }
 
 }

@@ -22,13 +22,14 @@ namespace Course_Prerequsites_WPF.UIs
     {
         public List<Elements> Pre = new List<Elements>();
         public static string CourseNa;
+        public static int count=0;
 
         public AspecificCourse(string str)
         {
             WindowStartupLocation = System.Windows.WindowStartupLocation.CenterScreen;
             InitializeComponent();
             CourseNa = str;
-            if (WelcomePage.AllCoursesDictionary[CourseNa].PreRequiredCourses.Count==0)
+            if (WelcomePage.AllCoursesDictionary[CourseNa].PreRequiredCourses.Count == 0)
             {
                 Elements ele = new Elements()
                 {
@@ -39,13 +40,20 @@ namespace Course_Prerequsites_WPF.UIs
             }
             else
             {
-                for (int i = 0; i < WelcomePage.AllCoursesDictionary[CourseNa].PreRequiredCourses.Count; i++)
+                string name = CourseNa;
+                int i = 0;
+                while (WelcomePage.AllCoursesDictionary[name].PreRequiredCourses.Count != 0)
                 {
-                    Elements ele = new Elements();
-                    ele.Category = WelcomePage.AllCoursesDictionary[CourseNa].PreRequiredCourses[i];
-                    ele.Number = i;
+                    Elements ele = new Elements()
+                    {
+                        Category = WelcomePage.AllCoursesDictionary[name].PreRequiredCourses[0],
+                        Number = i
+                    };
+                    i++;
                     Prerequsites.Items.Add(ele);
+                    name = WelcomePage.AllCoursesDictionary[name].PreRequiredCourses[0];
                 }
+                count = i;
             }
         }
 
@@ -95,7 +103,7 @@ namespace Course_Prerequsites_WPF.UIs
                     Empty = frame.FindResource("Empty") as DataTemplate;
                     return Empty;
                 }
-                else if (order < WelcomePage.AllCoursesDictionary[AspecificCourse.CourseNa].PreRequiredCourses.Count - 1)
+                else if (order < AspecificCourse.count-1)
                 {
                     NormalItem = frame.FindResource("NormalItem") as DataTemplate;
                     return NormalItem;
