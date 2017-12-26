@@ -38,7 +38,7 @@ namespace Course_Prerequsites_WPF.UIs
 
             if (CourseNames.SelectedIndex == -1)
             {
-                MessageBox.Show("Please Select Course Name");
+                MessageBox.Show("Please select course name.");
             }
             else
             {
@@ -52,7 +52,7 @@ namespace Course_Prerequsites_WPF.UIs
                 {
                     if (displayNames.Count == 0)
                     {
-                        MessageBox.Show("No Students Registered");
+                        MessageBox.Show("No students registered.");
                     }
                     else
                     {
@@ -62,7 +62,7 @@ namespace Course_Prerequsites_WPF.UIs
                 }
                 else
                 {
-                    MessageBox.Show("Course Doesn't Exist");
+                    MessageBox.Show("Course deos not exist.");
                 }
             }
             CourseNames.SelectedIndex = -1;

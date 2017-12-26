@@ -36,14 +36,14 @@ namespace Course_Prerequsites_WPF.UIs
         {
             if (comboBox.SelectedIndex == -1)
             {
-                MessageBox.Show("There is no selected item..Please select an item or click on Back button.");
+                MessageBox.Show("There is no selected item. Please select an item or click on the back button.");
             }
             else
             {
                 Admin ad = new Admin();
                 ad.RemoveStudent(comboBox.SelectedItem.ToString());
                 comboBox.Items.Remove(comboBox.SelectionBoxItem.ToString());
-                MessageBox.Show("Student is removed.");
+                MessageBox.Show("Student has been removed.");
                 comboBox.SelectedIndex = -1;
               
             }
